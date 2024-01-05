@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("../include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("../include/footer.html");
+  });
+</script>
+
+<style>
+/* style guide layout */
+body {background-color: #f5f5f5;}
+
+.guide_wrap:not(:first-child) {margin-top: 100px;}
+.guide-t1 {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #614699; font-size: 28px; font-weight: 600; color: #614699;}
+.guide-t2 {font-size: 20px; font-weight: 600; color: #333;}
+
+.guide-color-wrap {display: flex; gap: 20px}
+.guide-color-box {width: calc((100% / 3) - (40px / 2)); background-color: #fff;}
+.guide-color-display {display: flex; height: 80px;}
+.guide-color-display > div {height: 100%;}
+.guide-color_black1 {background-color: #333333;}
+.guide-color_black2 {background-color: #555555;}
+.guide-color_main {background-color: #614699;}
+.guide-color_sub1 {background-color: #519ca3;}
+.guide-color_sub2 {background-color: #ff7b7b;}
+.guide-color_sub3 {background-color: #dddddd;}
+.guide-color-txtbox {padding: 20px;}
+.guide-color-txtbox p:nth-child(1) {font-size: 18px; font-weight: 400; color: #333;}
+.guide-color-txtbox p:nth-child(2) {font-size: 14px; font-weight: 400; color: #999;}
+
+.guide-btn-row {display: flex; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid #ddd;}
+.guide-btn-row .guide-btn-t1 {font-size: 18px; font-weight: 400; color: #333; width: 80px;}
+
+.guide-form-wrap {display: flex; gap: 50px}
+.guide-form-box {display: flex; flex-direction: column; gap: 20px 0; width: calc((100% / 2) - (50px / 2));}
+</style>
+
+<body>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div style="padding: 200px 0 100px">
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Colors</p>
+          <div class="guide_ct">
+            <div class="guide-color-wrap">
+              <div class="guide-color-box">
+                <div class="guide-color-display">
+                  <div class="w50 guide-color_black1"></div>
+                  <div class="w50 guide-color_black2"></div>
+                </div>
+                <div class="guide-color-txtbox">
+                  <p>Black</p>
+                  <p>#333333, #555555</p>
+                </div>
+              </div>
+              <div class="guide-color-box">
+                <div class="guide-color-display">
+                  <div class="w100 guide-color_main"></div>
+                </div>
+                <div class="guide-color-txtbox">
+                  <p>Main Color</p>
+                  <p>#614699</p>
+                </div>
+              </div>
+              <div class="guide-color-box">
+                <div class="guide-color-display">
+                  <div class="w33 guide-color_sub1"></div>
+                  <div class="w33 guide-color_sub2"></div>
+                  <div class="w33 guide-color_sub3"></div>
+                </div>
+                <div class="guide-color-txtbox">
+                  <p>Subcolor</p>
+                  <p>#519ca3, #ff7b7b, #dddddd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Typography</p>
+          <div class="guide_ct">
+            <p class="guide-t2"># Font</p>
+            <h6>- Title(h1 ~ h6) : 에스코어 드림</h6>
+            <p class="f-dream">- class(f-dream) : 에스코어 드림</p>
+            <p>- Basic : Pretendard</p>
+          </div>
+          <br/>
+          <br/>
+          <div class="guide_ct">
+            <p class="guide-t2"># Titles & Headings</p>
+            <h1>H1 - Extra bold, 70px</h1>
+            <h2>H2 - Bold, 50px</h2>
+            <h3>H3 - Semi bold, 40px</h3>
+            <h4>H4 - Medium, 30px</h4>
+            <h5>H5 - Bold, 20px</h5>
+            <h6>H6 - Bold, 16px</h6>
+          </div>
+          <br/>
+          <br/>
+          <div class="guide_ct">
+            <p class="guide-t2"># Body Text</p>
+            <div class="conText-1">동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. <br/>무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.</div>
+          </div>
+          <br/>
+          <br/>
+          <div class="guide_ct">
+            <p class="guide-t2"># Hyperlink</p>
+            <h6>
+              <a href="" class="linkText">링크연결</a>
+            </h6>
+            <div class="conText-1">
+              <a href="" class="linkText">(밑줄없이 색상만)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Buttons</p>
+          <div class="guide_ct">
+            <div class="guide-btn-row">
+              <span class="guide-btn-t1">Stlye</span>
+              <button type="button" class="btn sizeM round25">Button A</button>
+              <button type="button" class="btn sizeM white round25">Button B</button>
+              <button type="button" class="btn sizeM round25 active">Active</button>
+            </div>
+            <div class="guide-btn-row">
+              <span class="guide-btn-t1">Round</span>
+              <button type="button" class="btn sizeM round25">Round 25</button>
+              <button type="button" class="btn sizeM round5">Round 5</button>
+              <button type="button" class="btn sizeM">Round 0</button>
+            </div>
+            <div class="guide-btn-row">
+              <span class="guide-btn-t1">Size</span>
+              <button type="button" class="btn sizeL">Size Large</button>
+              <button type="button" class="btn sizeM">Size Mideum</button>
+              <button type="button" class="btn sizeS">Size Small</button>
+            </div>
+            <div class="guide-btn-row">
+              <span class="guide-btn-t1">Color</span>
+              <button type="button" class="btn sizeM">Default Color</button>
+              <button type="button" class="btn sizeM colorMain">Main Color</button>
+              <button type="button" class="btn sizeM colorSub1">Sub1 color</button>
+              <button type="button" class="btn sizeM colorSub2">Sub2 color</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Form Elements</p>
+          <div class="guide_ct">
+            <div class="guide-form-wrap">
+              <ul class="guide-form-box">
+                <li>
+                  <input type="text" name="" id="" class="fm-input w100" placeholder="Text Field">
+                </li>
+                <li>
+                  <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100" placeholder="Search"><button type="submit" class="fm-search-submit"><img src="../src/img/icon-search_black.png" alt="검색"></button></div>
+                </li>
+                <li>
+                  <input type="text" name="" id="" class="fm-input w100" placeholder="Success Validation">
+                </li>
+                <li>
+                  <input type="text" name="" id="" class="fm-input w100 error" placeholder="Error Validation">
+                </li>
+                <li>
+                  <select name="" id="" class="fm-select fm-select-1 w100">
+                    <option value="" disabled selected hidden>Select Box</option>
+                    <option value="">Select Box1</option>
+                    <option value="">Select Box2</option>
+                    <option value="">Select Box3</option>
+                  </select>
+                </li>
+                <li>
+                  <select name="" id="" class="fm-select fm-select-2 w100">
+                    <option value="" disabled selected hidden>Select Box</option>
+                    <option value="">Select Box1</option>
+                    <option value="">Select Box2</option>
+                    <option value="">Select Box3</option>
+                  </select>
+                </li>
+                <li>
+                  <div class="input-container horizontal">
+                    <div class="check-wr">
+                      <input type="checkbox" name="" id="chk1" class="fm-check" checked>
+                      <label for="chk1">Checkbox</label>
+                    </div>
+                    <div class="check-wr">
+                      <input type="checkbox" name="" id="chk2" class="fm-check">
+                      <label for="chk2">Checkbox</label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-container horizontal">
+                    <div class="radio-wr">
+                      <input type="radio" name="radioname" id="rd1" class="fm-radio" checked>
+                      <label for="rd1">Yes</label>
+                    </div>
+                    <div class="radio-wr">
+                      <input type="radio" name="radioname" id="rd2" class="fm-radio">
+                      <label for="rd2">No</label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="guide-form-box">
+                <li>
+                  <div class="fm-alert primary">
+                    <button type="button" class="fm-alert__close"></button>
+                    <p class="fm-alert__cnt">Primary Alert Style</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="fm-alert success">
+                    <button type="button" class="fm-alert__close"></button>
+                    <p class="fm-alert__cnt">Success Alert Style</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="fm-alert error">
+                    <button type="button" class="fm-alert__close"></button>
+                    <p class="fm-alert__cnt">Error Alert Style</p>
+                  </div>
+                </li>
+                <li>
+                  <textarea name="" id="" class="fm-textar" placeholder="내용을 입력하세요"></textarea>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Board - List { -->
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Board - List</p>
+          <div class="guide_ct">
+            <div class="bl-wr">
+                <div class="bl-top">
+                  <select name="" id="" class="fm-select fm-select-2 w100 bl-top-select">
+                    <option value="">전체</option>
+                    <option value="">옵션2</option>
+                    <option value="">옵션3</option>
+                  </select>
+                </div>
+                <div class="bl-body">
+                  <table class="bl-table">
+                    <thead>
+                      <tr>
+                        <th class="bl-no">NO</th>
+                        <th class="bl-subject">제목</th>
+                        <th class="bl-date">작성일</th>
+                        <th class="bl-hits">조회수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bl-no">21</td>
+                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-date">2023-12-31</td>
+                        <td class="bl-hits">359</td>
+                      </tr>
+                      <tr>
+                        <td class="bl-no">20</td>
+                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-date">2023-12-31</td>
+                        <td class="bl-hits">359</td>
+                      </tr>
+                      <tr>
+                        <td class="bl-no">19</td>
+                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-date">2023-12-31</td>
+                        <td class="bl-hits">359</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="bl-btm">
+                  <ul class="bl-page-wr">
+                    <li class="bl-page">
+                      <a href="">PREV</a>
+                    </li>
+                    <li class="bl-page active">
+                      <a href="">1</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">2</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">3</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">4</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">5</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">NEXT</a>
+                    </li>
+                  </ul>
+                  <form action="" class="bl-search">
+                    <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100" placeholder="Search"><button type="submit" class="fm-search-submit"><img src="../src/img/icon-search_black.png" alt="검색"></button></div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Board - List -->
+    <!-- Board - View { -->
+      <div class="guide_wrap">
+        <div class="container">
+          <div class="wrapper">
+            <p class="guide-t1">Board - View</p>
+            <div class="guide_ct">
+              <div class="bv-wr">
+                <div class="bv-top">
+                  <div class="bv-subject">
+                    글제목이 나오는 부분
+                  </div>
+                  <div class="bv-info">
+                    <div class="bv-date">작성일 : 2023-12-31</div>
+                    <div class="bv-hits">조회수 : 1975</div>
+                  </div>
+                </div>
+                <div class="bv-body">
+                  <ul class="bv-file-wr">
+                    <li class="bv-file">
+                      <p class="bv-file-field">첨부파일 #1</p>
+                      <a href="" class="bv-file-link">파일명이 들어갑니다.pdf</a>
+                    </li>
+                    <li class="bv-file">
+                      <p class="bv-file-field">첨부파일 #2</p>
+                      <a href="" class="bv-file-link">파일명이 들어갑니다.docx</a>
+                    </li>
+                  </ul>
+                  <div class="bv-content">
+                    <img src="../src/img/img-sample.jpg" alt="">
+                    <br>
+                    <br>
+                    <p style="font-size: 25px; font-weight: 400; color: #333;">내용이 들어갑니다.</p>
+                    <br>
+                    <p style="font-size: 16px; font-weight: 300; color: #333;">
+                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    </p>
+                    <p style="font-size: 16px; font-weight: 300; color: #333;">
+                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 
+                    </p>
+                    <br>
+                    <p style="font-size: 16px; font-weight: 300; color: #333;">
+                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    </p>
+                  </div>
+                  <ul class="bv-link-wr">
+                    <li class="bv-link">
+                      <p class="bv-link-field">연관링크 #1</p>
+
+                      <a href="" class="bv-link-url">https://abc.com</a>
+                    </li>
+                    <li class="bv-link">
+                      <p class="bv-link-field">연관링크 #2</p>
+                      <a href="" class="bv-link-url">https://abc.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fm-bottom-btn_box">
+                  <a href="" class="btn sizeS">목록보기</a>
+                  <a href="" class="btn sizeS">글작성하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- } Board - View -->
+    <!-- Board - Write (+등록폼) { -->
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Board - Write</p>
+          <div class="guide_ct">
+            <form action="" class="register_fm">
+              <div class="fm_section">
+                <p class="fm-tit"><span class="c-main">01.</span> 글내용입력</p>
+                <div class="fm_inner">
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>제목</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="" id="" class="fm-input" placeholder="제목입력">
+                    </div>
+                  </div>
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>이름</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="" id="" class="fm-input" placeholder="실명입력">
+                    </div>
+                  </div>
+    
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>첨부파일</span>
+                    </div>
+                    <div class="fm-ct">
+                      <div class="filebox">
+                        <label for="fileImsiId">
+                          <span class="filebtn">파일선택</span>
+                          <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
+                        </label>
+                        <!-- 실제 전송되는 input[type=file] -->
+                        <input type="file" id="fileImsiId" class="upload-hidden">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>이메일</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="" id="" class="fm-input fm-mail-input1">
+                      <span class="fm-sym">@</span>
+                      <input type="text" name="" id="" class="fm-input fm-mail-input2">
+                      <select name="" id="" class="fm-select fm-select-1 w fm-mail-select">
+                        <option value="" disabled selected hidden>선택하세요</option>
+                        <option value="naver.com">네이버</option>
+                        <option value="gmail.com">Gmail</option>
+                        <option value="daum.net">다음</option>
+                        <option value="hanmail.net">한메일</option>
+                        <option value="nate.com">네이트</option>
+                        <option value="hotmail.com">핫메일</option>
+                        <option value="w">직접입력</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>전화번호</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="" id="" class="fm-input">
+                      <span class="fm-sym">-</span>
+                      <input type="text" name="" id="" class="fm-input">
+                      <span class="fm-sym">-</span>
+                      <input type="text" name="" id="" class="fm-input">
+                    </div>
+                  </div>
+                  <div class="fm-row">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>내용입력</span>
+                    </div>
+                    <div class="fm-ct">
+                      <textarea name="" id="" class="fm-textar" placeholder="내용을 입력하세요"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fm-bottom-btn_box">
+                <input type="submit" class="btn sizeS" value="저장하기">
+                <a href="" class="btn sizeS">목록보기</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Board - Write (+등록폼) -->
+  </div>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <script>
+  //input[type=file] style custom (return : file name)
+  const inputFileName = (el) => {
+    const fileInput = el.target;
+    let filename = "";
+
+    if(window.FileReader){
+      filename = fileInput.files[0].name;
+    } else {
+      filename = fileInput.value.split('/').pop().split('\\').pop();
+    }
+
+    fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+  }
+
+  $(document).ready(function(){
+    const fileTargets = $('.filebox .upload-hidden');
+
+    fileTargets.each(function(){
+      const _fileTarget = $(this);
+      
+      _fileTarget.on('change', function(el){
+        inputFileName(el)
+      });
+    });
+  });
+
+  // Email Select
+  $('.fm-mail-select').on('change', function() {
+    let mailAddr = $(this).val();
+
+    if (mailAddr == 'w') {
+      $('.fm-mail-input2').val('').attr("readonly",false).focus();
+    } else {
+      $('.fm-mail-input2').val(mailAddr).attr("readonly",true);
+    }
+  }); 
+  </script>
+</body>
+</html>

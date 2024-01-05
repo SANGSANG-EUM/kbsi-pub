@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ARiA</title>
 
-  <!-- src > css, js 연결 -->
+  <!-- src > css -->
+  <link rel="stylesheet" href="./src/css/fonts.css">
+  <link rel="stylesheet" href="./src/css/common.css">
+  <link rel="stylesheet" href="./src/css/normal.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="./src/plugin/swiper/swiper-bundle.min.css">
+
+  <!-- src > js -->
+  <script src="./src/js/jquery-3.7.0.min.js"></script>
+  <script src="./src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="./src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="./src/plugin/swiper/swiper-bundle.min.js"></script>
+
 </head>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#header-loaction').load("./include/header.html");
+  });
+  $(document).ready(function () {
+    $('#footer-loaction').load("./include/footer.html");
+  });
+</script>
+
 <body>
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
   <!-- 메인페이지 작성 -->
+  <div class="content main">
+    <!-- 임시 내용-->
+    <div class="main_visual" style="height: 100vh; background-color: #ddd; padding-top: 110px;">
+      <div class="container">
+        <div class="wrapper">
+          <div class="main_visual-inner">
+            <h1>메인비주얼</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_section1" style="height: 100vh; background-color: #aaa;">
+      <div class="container">
+        <div class="wrapper">
+          <div class="main_section1-inner">
+            <h1>메인섹션1</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } header 임시 인클루드 -->
 </body>
+
 </html>
