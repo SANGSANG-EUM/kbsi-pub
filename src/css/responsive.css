@@ -1,0 +1,86 @@
+@media screen and (max-width:1600px) {
+
+}
+
+@media screen and (max-width:1440px) {
+
+}
+
+@media screen and (max-width:1290px) {
+  /* Board-Write */
+  .fm-ct.flex {display: flex; align-items: center;}
+  .fm-ct.flex .fm-input {width: calc(100% / 3 - 40px / 3);}
+  .fm-ct.flex .fm-sym {margin: 0; width: 20px; text-align: center;}
+  .fm-ct.flex .fm-mail-select {margin-left: 5px; width: calc(100% / 3);}
+}
+
+@media screen and (max-width:1023px) {
+  /* common */
+  .container {padding-left: 30px; padding-right: 30px;}
+
+  /* header */
+  .gnb-ul {display: none;}
+
+  /* Board-Write */
+  .fm_inner {padding: 25px 20px;}
+  .fm-lb {width: 110px;}
+  .fm-ct {width: calc(100% - 110px);}
+
+  /* Board-View */
+  .bv-subject {padding: 15px 10px; font-size: 18px;}
+  .bv-info {padding: 15px 10px;}
+  .bv-file, .bv-link {padding: 10px;}
+  .bv-content {padding: 20px 10px;}
+}
+
+@media screen and (max-width:767px) {
+  /* Board-Write */
+  .fm-row {flex-direction: column; gap: 5px;}
+  .fm-lb, .fm-ct {width: 100%;}
+
+  /* Board-List */
+  .bl-table th {font-size: 16px;}
+  .bl-hits {display: none;}
+  .bl-date {width: 120px;}
+  .bl-page > a {padding: 0 2vw;}
+
+}
+
+@media screen and (max-width:480px) {
+  /* common */
+  .container {padding-left: 15px; padding-right: 15px;}
+  .header, .footer {display: none;}
+
+  /* Board-Write */
+  .fm_inner {padding: 20px 15px;}
+  .fm-t1 {font-size: 16px;}
+  .fm-input {padding: 0 10px; width: 100%; font-size: 14px;}
+  .fm-ct.flex .fm-mail-select {padding: 0 10px; padding-right: 30px; font-size: 14px;}
+  .fm-select-1 {background-size: 9px; background-position: center right 10px;}
+  .fm-ct.flex {flex-wrap: wrap; gap: 5px 0;}
+  .fm-row--email .fm-ct.flex .fm-input {width: calc(100% / 2 - 10px);}
+  .fm-ct.flex .fm-mail-select {margin-left: 0; width: 100%;}
+  .filebox .filebtn, .filebox .upload-name {font-size: 14px;}
+  .fm-ct.flex .fm-sym {font-size: 14px;}
+  .fm-textar {padding: 10px; font-size: 14px;}
+
+  /* Board-List */
+  .fm-select {padding: 0 10px; font-size: 14px;}
+  .fm-select-2 {background-size: 7px; background-position: center right 10px;}
+  .bl-top-select {max-width: 50%;}
+  .bl-body {padding: 10px 0;}
+  .bl-no {display: none;}
+  .bl-table th {padding: 7.5px 5px; font-size: 14px;}
+  .bl-table td {padding: 10px 5px; font-size: 14px;}
+  .fm-search-submit {width: 40px;}
+  .fm-search-wr .fm-input {padding-right: 35px;}
+  .bl-btm {flex-direction: column-reverse;}
+  .bl-search {max-width: 100%;}
+  .bl-page > a {padding: 0 min(3.8vw, 15px);}
+
+  /* Board-View */
+  .bv-subject {padding: 10px; font-size: 16px;}
+  .bv-info {padding: 10px;}
+  .bv-file-field, .bv-link-field {width: 75px; font-size: 12px;}
+  .bv-info, .bv-file-link, .bv-link-url {font-size: 14px;}
+}

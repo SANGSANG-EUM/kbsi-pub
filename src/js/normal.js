@@ -32,7 +32,7 @@ $(document).ready(function () {
   });
 
   // 헤더 전체메뉴
-  $('body').on('mouseenter', '.gnb-ul, .head-bg', function () {
+  $('body').on('mouseenter focusin', '.gnb-ul, .head-bg', function () {
     let menuHeight = $('.header').outerHeight();
     let dep2Height = 0;
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
     }).stop().slideDown(200);
   });
 
-  $('body').on('mouseleave', '.gnb-ul, .head-bg', function () {
+  $('body').on('mouseleave focusout', '.gnb-ul, .head-bg', function () {
     $('.gnb2-ul').stop().slideUp(200);
     $('.head-bg').stop().slideUp(200);
   });

@@ -93,6 +93,14 @@ h6 {font-size: 16px; font-weight: 700;}
 
 .btn.active {border-color: #614699 !important; background-color: #614699 !important; color: #fff !important;}
 
+.btn.icon1 {display: flex; align-items: center; justify-content: center; gap: 10px;}
+.btn.icon1.icon1_f {flex-direction: row-reverse;}
+.btn.icon1.icon1_b {flex-direction: row;}
+.btn.icon2 {position: relative;}
+.btn.icon2 > img {position: absolute; top: 50%; transform: translateY(-50%);}
+.btn.icon2_f > img {left: 20px;}
+.btn.icon2_b > img {right: 20px;}
+
 .sizeL {width: 280px; height: 60px; line-height: 56px; font-size: 20px;}
 .sizeM {width: 220px; height: 50px; line-height: 46px; font-size: 16px;}
 .sizeS {width: 140px; height: 35px; line-height: 31px; font-size: 14px;}
@@ -111,7 +119,7 @@ h6 {font-size: 16px; font-weight: 700;}
 
 .fm-sym {margin: 0 5px; font-size: 16px; font-weight: 400; color: #999;}
 
-.fm-input {height: 40px; padding: 0 15px; border: 1px solid #ddd; font-size: 16px; font-weight: 400; color: #333; border-radius: 5px;}
+.fm-input {max-width: 100%; height: 40px; padding: 0 15px; border: 1px solid #ddd; font-size: 16px; font-weight: 400; color: #333; border-radius: 5px;}
 .fm-input.error {border-color:#614699 ;}
 .fm-input::placeholder {color: #999;}
 .fm-search-wr {position: relative;}
@@ -135,15 +143,17 @@ h6 {font-size: 16px; font-weight: 700;}
 .input-container.horizontal {gap: 10px 20px;}
 .input-container.vertical {flex-direction: column; gap: 20px 10px;}
 
-.fm-check, .fm-radio {position: absolute; width: 0; height: 0; opacity: 0; visibility: 0;}
+.fm-check, .fm-radio {position: absolute; width: 0; height: 0; opacity: 0; visibility: hidden;}
 .fm-check + label, .fm-radio + label {position: relative; padding-left: 33px;}
 
 .fm-check + label::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 20px; height: 20px; border: 2px solid #ddd; background-color: #fff;}
 .fm-check:checked + label::before {background: #fff url('../img/icon-check.png') no-repeat center / 50%;}
+.fm-check:focus + label::before {outline: 2px solid #333;}
 
 .fm-radio + label::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 16px; height: 16px; border: 1px solid #ddd; border-radius: 50%; background-color: #fff;}
 .fm-radio:checked + label::before {border-color: #2983ff;}
 .fm-radio:checked + label::after {content: ''; position: absolute; top: 50%; left: 4px; transform: translateY(-50%); width: 10px; height: 10px; border-radius: 50%; background-color: #2983ff;}
+.fm-radio:focus + label::before {outline: 2px solid #333;}
 
 .fm-alert {position: relative; padding: 20px; padding-right: 40px; border-radius: 5px; color: #fff; font-weight: 400;}
 .fm-alert.primary {background-color: #614699;}

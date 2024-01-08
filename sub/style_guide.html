@@ -155,29 +155,37 @@ body {background-color: #f5f5f5;}
           <p class="guide-t1">Buttons</p>
           <div class="guide_ct">
             <div class="guide-btn-row">
-              <span class="guide-btn-t1">Stlye</span>
+              <span class="guide-btn-t1">Style</span>
               <button type="button" class="btn sizeM round25">Button A</button>
               <button type="button" class="btn sizeM white round25">Button B</button>
               <button type="button" class="btn sizeM round25 active">Active</button>
             </div>
             <div class="guide-btn-row">
               <span class="guide-btn-t1">Round</span>
-              <button type="button" class="btn sizeM round25">Round 25</button>
-              <button type="button" class="btn sizeM round5">Round 5</button>
-              <button type="button" class="btn sizeM">Round 0</button>
+              <button type="button" class="btn sizeM round25"><span>Round 25</span></button>
+              <button type="button" class="btn sizeM round5"><span>Round 5</span></button>
+              <button type="button" class="btn sizeM"><span>Round 0</span></button>
             </div>
             <div class="guide-btn-row">
               <span class="guide-btn-t1">Size</span>
-              <button type="button" class="btn sizeL">Size Large</button>
-              <button type="button" class="btn sizeM">Size Mideum</button>
-              <button type="button" class="btn sizeS">Size Small</button>
+              <button type="button" class="btn sizeL"><span>Size Large</span></button>
+              <button type="button" class="btn sizeM"><span>Size Mideum</span></button>
+              <button type="button" class="btn sizeS"><span>Size Small</span></button>
             </div>
             <div class="guide-btn-row">
               <span class="guide-btn-t1">Color</span>
-              <button type="button" class="btn sizeM">Default Color</button>
-              <button type="button" class="btn sizeM colorMain">Main Color</button>
-              <button type="button" class="btn sizeM colorSub1">Sub1 color</button>
-              <button type="button" class="btn sizeM colorSub2">Sub2 color</button>
+              <button type="button" class="btn sizeM"><span>Default Color</span></button>
+              <button type="button" class="btn sizeM colorMain"><span>Main Color</span></button>
+              <button type="button" class="btn sizeM colorSub1"><span>Sub1 color</span></button>
+              <button type="button" class="btn sizeM colorSub2"><span>Sub2 color</span></button>
+            </div>
+            <div class="guide-btn-row">
+              <span class="guide-btn-t1">Icon</span>
+              <!-- 아이콘 버튼 내 내용, 이미지 태그 순서 : <span>버튼명</span><img src="..."> / 아이콘 위치는 클래스명으로 변경 -->
+              <button type="button" class="btn sizeM icon1 icon1_f"><span>Button</span><img src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
+              <button type="button" class="btn sizeM icon1 icon1_b"><span>Button</span><img src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
+              <button type="button" class="btn sizeM icon2 icon2_f"><span>Button</span><img src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
+              <button type="button" class="btn sizeM icon2 icon2_b"><span>Button</span><img src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
             </div>
           </div>
         </div>
@@ -298,19 +306,19 @@ body {background-color: #f5f5f5;}
                     <tbody>
                       <tr>
                         <td class="bl-no">21</td>
-                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
                         <td class="bl-date">2023-12-31</td>
                         <td class="bl-hits">359</td>
                       </tr>
                       <tr>
                         <td class="bl-no">20</td>
-                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
                         <td class="bl-date">2023-12-31</td>
                         <td class="bl-hits">359</td>
                       </tr>
                       <tr>
                         <td class="bl-no">19</td>
-                        <td class="bl-subject">리스트 제목입니다.</td>
+                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
                         <td class="bl-date">2023-12-31</td>
                         <td class="bl-hits">359</td>
                       </tr>
@@ -427,7 +435,7 @@ body {background-color: #f5f5f5;}
               <div class="fm_section">
                 <p class="fm-tit"><span class="c-main">01.</span> 글내용입력</p>
                 <div class="fm_inner">
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--subject">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>제목</span>
                     </div>
@@ -435,7 +443,7 @@ body {background-color: #f5f5f5;}
                       <input type="text" name="" id="" class="fm-input" placeholder="제목입력">
                     </div>
                   </div>
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--name">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>이름</span>
                     </div>
@@ -444,14 +452,14 @@ body {background-color: #f5f5f5;}
                     </div>
                   </div>
     
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--file">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>첨부파일</span>
                     </div>
                     <div class="fm-ct">
                       <div class="filebox">
                         <label for="fileImsiId">
-                          <span class="filebtn">파일선택</span>
+                          <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
                           <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
                         </label>
                         <!-- 실제 전송되는 input[type=file] -->
@@ -459,11 +467,11 @@ body {background-color: #f5f5f5;}
                       </div>
                     </div>
                   </div>
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--email">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>이메일</span>
                     </div>
-                    <div class="fm-ct">
+                    <div class="fm-ct flex">
                       <input type="text" name="" id="" class="fm-input fm-mail-input1">
                       <span class="fm-sym">@</span>
                       <input type="text" name="" id="" class="fm-input fm-mail-input2">
@@ -479,11 +487,11 @@ body {background-color: #f5f5f5;}
                       </select>
                     </div>
                   </div>
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--tel">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>전화번호</span>
                     </div>
-                    <div class="fm-ct">
+                    <div class="fm-ct flex">
                       <input type="text" name="" id="" class="fm-input">
                       <span class="fm-sym">-</span>
                       <input type="text" name="" id="" class="fm-input">
@@ -491,7 +499,7 @@ body {background-color: #f5f5f5;}
                       <input type="text" name="" id="" class="fm-input">
                     </div>
                   </div>
-                  <div class="fm-row">
+                  <div class="fm-row fm-row--cnt">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>내용입력</span>
                     </div>
@@ -513,11 +521,31 @@ body {background-color: #f5f5f5;}
     <!-- } Board - Write (+등록폼) -->
   </div>
 
-  <!-- header 임시 인클루드 { -->
+  <!-- footer 임시 인클루드 { -->
   <div id="footer-loaction"></div>
-  <!-- } header 임시 인클루드 -->
+  <!-- } footer 임시 인클루드 -->
 
   <script>
+  // 파일선택 버튼 키보드로 접근 가능하도록 코드 추가
+  // 파일 선택 버튼 요소 가져오기
+  const fileSelectBtn = document.getElementById('fileSelectBtn');
+
+  // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+  fileSelectBtn.addEventListener('click', function() {
+    // 파일 input 클릭
+    const fileInput = document.getElementById('fileImsiId');
+    fileInput.click();
+  });
+
+  // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
+  fileSelectBtn.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    // 파일 input 클릭
+    const fileInput = document.getElementById('fileImsiId');
+    fileInput.click();
+    }
+  });
+
   //input[type=file] style custom (return : file name)
   const inputFileName = (el) => {
     const fileInput = el.target;
