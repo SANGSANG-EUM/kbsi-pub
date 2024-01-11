@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="../src/css/normal.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
-  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">  
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
 
   <!-- src > js -->
   <script src="../src/js/jquery-3.7.0.min.js"></script>
@@ -19,6 +21,9 @@
   <!-- plugin > js -->
   <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
   <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+
 </head>
 
 <!-- header, footer 임시 인클루드 -->
@@ -66,7 +71,7 @@ body {background-color: #f5f5f5;}
   <div id="header-loaction"></div>
   <!-- } header 임시 인클루드 -->
 
-  <div style="padding: 200px 0 100px">
+  <div id="container" style="padding: 200px 0 100px">
     <div class="guide_wrap">
       <div class="container">
         <div class="wrapper">
@@ -460,7 +465,8 @@ body {background-color: #f5f5f5;}
                       <div class="filebox">
                         <label for="fileImsiId">
                           <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
-                          <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
+                          <!-- <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled"> -->
+                          <span class="upload-name">선택된 파일 없음</span>
                         </label>
                         <!-- 실제 전송되는 input[type=file] -->
                         <input type="file" id="fileImsiId" class="upload-hidden">
@@ -526,51 +532,42 @@ body {background-color: #f5f5f5;}
   <!-- } footer 임시 인클루드 -->
 
   <script>
-  // 파일선택 버튼 키보드로 접근 가능하도록 코드 추가
-  // 파일 선택 버튼 요소 가져오기
-  const fileSelectBtn = document.getElementById('fileSelectBtn');
+    // // 파일선택 버튼 키보드로 접근 가능하도록 코드 추가
+    // // 파일 선택 버튼 요소 가져오기
+    // const fileSelectBtn = document.getElementById('fileSelectBtn');
 
-  // 파일 선택 버튼에 클릭 이벤트 리스너 추가
-  fileSelectBtn.addEventListener('click', function() {
-    // 파일 input 클릭
-    const fileInput = document.getElementById('fileImsiId');
-    fileInput.click();
-  });
+    // // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+    // fileSelectBtn.addEventListener('click', function() {
+    //   // 파일 input 클릭
+    //   const fileInput = document.getElementById('fileImsiId');
+    //   fileInput.click();
+    // });
 
-  // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
-  fileSelectBtn.addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
-    // 파일 input 클릭
-    const fileInput = document.getElementById('fileImsiId');
-    fileInput.click();
-    }
-  });
+    // //input[type=file] style custom (return : file name)
+    // const inputFileName = (el) => {
+    //   const fileInput = el.target;
+    //   let filename = "";
 
-  //input[type=file] style custom (return : file name)
-  const inputFileName = (el) => {
-    const fileInput = el.target;
-    let filename = "";
+    //   if(window.FileReader){
+    //     filename = fileInput.files[0].name;
+    //   } else {
+    //     filename = fileInput.value.split('/').pop().split('\\').pop();
+    //   }
 
-    if(window.FileReader){
-      filename = fileInput.files[0].name;
-    } else {
-      filename = fileInput.value.split('/').pop().split('\\').pop();
-    }
+    //   fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+    // }
 
-    fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
-  }
+    // $(document).ready(function(){
+    //   const fileTargets = $('.filebox .upload-hidden');
 
-  $(document).ready(function(){
-    const fileTargets = $('.filebox .upload-hidden');
+    //   fileTargets.each(function(){
+    //     const _fileTarget = $(this);
 
-    fileTargets.each(function(){
-      const _fileTarget = $(this);
-      
-      _fileTarget.on('change', function(el){
-        inputFileName(el)
-      });
-    });
-  });
+    //     _fileTarget.on('change', function(el){
+    //       inputFileName(el)
+    //     });
+    //   });
+    // });
 
   // Email Select
   $('.fm-mail-select').on('change', function() {

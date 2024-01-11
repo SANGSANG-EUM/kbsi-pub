@@ -7,39 +7,42 @@
   <title>ARiA</title>
 
   <!-- src > css -->
-  <link rel="stylesheet" href="./src/css/fonts.css">
-  <link rel="stylesheet" href="./src/css/common.css">
-  <link rel="stylesheet" href="./src/css/normal.css">
-  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
-  <link rel="stylesheet" href="./src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">  
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
 
   <!-- src > js -->
-  <script src="./src/js/jquery-3.7.0.min.js"></script>
-  <script src="./src/js/normal.js"></script>
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
   <!-- plugin > js -->
-  <script src="./src/plugin/matchheight/jquery.matchHeight.js"></script>
-  <script src="./src/plugin/swiper/swiper-bundle.min.js"></script>
-
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
 </head>
 
-<!-- header, footer 임시 인클루드 -->
-<script>
-  $(document).ready(function () {
-    $('#header-loaction').load("./include/header.html");
-  });
-  $(document).ready(function () {
-    $('#footer-loaction').load("./include/footer.html");
-  });
-</script>
-
 <body>
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("./include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("./include/footer.html");
+    });
+  </script>
+  
   <!-- header 임시 인클루드 { -->
   <div id="header-loaction"></div>
   <!-- } header 임시 인클루드 -->
 
   <!-- 메인페이지 작성 -->
-  <div class="content main">
+  <div id="container" class="content main">
     <!-- 임시 내용-->
     <div class="main_visual" style="height: 100vh; background-color: #ddd; padding-top: 110px;">
       <div class="container">

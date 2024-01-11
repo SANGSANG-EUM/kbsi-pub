@@ -1,5 +1,8 @@
 @media screen and (max-width:1600px) {
-
+  /* sub */
+  /* > 서브페이지 */
+  .sub-aside {top: auto; transform: translate(0); right: 10px; bottom: 10px;}
+  .sub-aside-ul {flex-direction: row;}
 }
 
 @media screen and (max-width:1440px) {
@@ -7,6 +10,36 @@
 }
 
 @media screen and (max-width:1290px) {
+  /* header */
+  .head-logo {width: 120px;}
+  .head-in {height: 80px;}
+  .tnb-ul {padding: 0 15px;}
+
+  /* footer */
+  .ft-top-ul {padding: 10px 0;}
+  .ft-top-li a {font-size: 15px;}
+
+  /* sub */
+  /* > 서브비주얼 */
+  .sub-vis-wr, .sub-vs-txt-wr {flex-direction: column;}
+  .sub-vs-txt-wr {gap: 10px;}
+  .sub-vs-txt {text-align: center;}
+  .sub-vs-txt br {display: none;}
+  .sub-visual {padding-top: 80px;}
+
+  /* > 서브페이지 */
+  .sub-title {font-size: clamp(25px, 8vw, 40px);}
+
+  /* 이용내역 */
+  /* > 분석지원 */
+  /*  > 이용기기 보유현황 */
+  .app-form-outer {flex-direction: column;}
+  .app-form-in.left, .app-form-in.right {width: 100%;}
+  .app-form-submit-wr {flex-direction: row;}
+  .input-container {flex-wrap: wrap;}
+  .app-step-txt3 {padding-top: 10px; font-size: 18px;}
+  .app-step-circle {border-width: 10px;}
+
   /* Board-Write */
   .fm-ct.flex {display: flex; align-items: center;}
   .fm-ct.flex .fm-input {width: calc(100% / 3 - 40px / 3);}
@@ -19,7 +52,32 @@
   .container {padding-left: 30px; padding-right: 30px;}
 
   /* header */
-  .gnb-ul {display: none;}
+  .header.white {background-color: #fff;}
+  .tnb-wr {display: flex; align-items: center; gap: 20px;}
+  .hd-ham {position: relative; display: block; width: 40px; height: 40px; border: 0; background: none;}
+  .header.shadow .hd-ham > span, .header.shadow .hd-ham > span::after, .header.shadow .hd-ham > span::before {background-color: #333;}
+  .hd-ham.open > span {background-color: transparent !important;}
+  .hd-ham.open > span::after, .hd-ham.open > span::before {top: 50%; background-color: #333;}
+  .hd-ham.open > span::after {transform: translate(-50%, -50%) rotate(45deg);}
+  .hd-ham.open > span::before {transform: translate(-50%, -50%) rotate(-45deg);}
+  .hd-ham > span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 3px; background-color: #fff; border-radius: 5px; transition: .2s;}
+  .hd-ham > span::after, .hd-ham > span::before {content: ''; position: absolute; left: 50%; width: 100%; height: 3px; background-color: #fff; border-radius: 5px; transition: .2s;}
+  .hd-ham > span::after {top: -10px; transform: translate(-50%, -50%);}
+  .hd-ham > span::before {top: 10px; transform: translate(-50%, 50%);}
+  .gnb-ul {display: none; gap: 5vw; position: fixed; z-index: 1000; top: 80px; right: 0; padding: 7vh 20px; width: max(300px, 50%); height: calc(100% - 80px); overflow-y: auto; background-color: #fff;}
+  .gnb-ul::before {content: ''; position: fixed; top: 80px; left: 0; width: min(calc(100% - 300px), 50%); height: 100%; background-color: rgba(0, 0, 0, .5); z-index: 0;}
+  .gnb-li {padding: 20px 0; flex-direction: column; height: auto;}
+  .gnb2-ul {position: static; transform: translate(0); padding: 10px 0;}
+  .gnb-li {cursor: pointer;}
+  .gnb-li > a {color: #333; pointer-events: none; cursor: pointer; font-size: 26px;}
+  .gnb-li.open > a {color: var(--main-color) !important;}
+  .gnb2-li > a {font-size: 18px;}
+
+  /* sub */
+  /* > 서브페이지 */
+  .sub-aside-ul {gap: 5px;}
+  .sub-aside-li > a {width: 60px; height: 60px; border-radius: 5px; gap: 0;}
+  .sub-aside-li > a img {transform: scale(0.7);}
 
   /* Board-Write */
   .fm_inner {padding: 25px 20px;}
@@ -34,6 +92,64 @@
 }
 
 @media screen and (max-width:767px) {
+  /* common */
+  .container {padding-left: 15px; padding-right: 15px;}
+  .fm-check + label, .fm-radio + label, .fm-input, .fm-select, .filebox .upload-name, .filebox .filebtn, .filelist > li, .fm-textar {font-size: 14px;}
+  .file-del-btn {font-size: 12px; width: 50px;}
+
+  /* footer */
+  .ft-top-ul {gap: 30px;}
+  .ft-top-li a {font-size: 14px;}
+  .ft-top-li:not(:last-child):after {right: -14.5px;}
+  .ft-info-li {font-size: 14px;}
+  .ft-copyright {font-size: 12px;}
+
+  /* sub */
+  /* > 서브비주얼 */
+  .sub-vs-quick-wr {gap: 10px;}
+  .sub-vs-quick-btn {width: 60px; height: 100%;}
+  .sub-vs-quick-btn-wr > p {height: auto;}
+  .sub-vs-quick-btn::after {width: 20px;}
+  .sub-vs-quick-btn::before {height: 20px;}
+  .sub-vs-quick-li > a {font-size: 13px;}
+
+  /* > 서브로케이션 */
+  .sub-location {border: 0;}
+  .sub-loca-wr {position: relative; gap: 0;}
+  .sub-loca-ul {display: none; position: absolute; top: 100%; flex-direction: column; padding: 10px 20px; width: 100%; background-color: #fff; z-index: 100; border-bottom: 1px solid #333;}
+  .sub-loca-li {border: 0 !important; padding: 10px 0;}
+  .sub-loca-li.active {display: none;}
+  .sub-loca-btn {display: block; width: 100%; border: 0; background: #333 url('../img/icon-arrow_subloca.png') no-repeat center right 13px / 12px; color: #fff;}
+  .sub-loca-home {display: none;}
+
+  /* > 서브페이지 */
+  .sub-tab-ul {gap: 0;}
+  .sub-tab-li > a {font-size: 14px; padding: 0 10px; text-align: center;}
+  .sub-title-info {font-size: 15px;}
+
+  /* 이용내역 */
+  /* > 분석지원 */
+  /*  > 이용기기 보유현황 */
+  .sub-vs-quick-ul {width: 100%;}
+  .app-form-table th {padding: 10px; font-size: 14px;}
+  .app-form-table td {padding: 10px;}
+  .em-app-info-box {flex-direction: column; align-items: flex-start;}
+  .em-app-info.left, .em-app-info.right {width: 100%;}
+  .em-app-info, .noti-check-box {margin: 0;}
+  .em-app-info.right {margin: 10px 0 0; padding: 10px 0 0; border: 0; border-top: 1px solid #ddd;}
+  .noti-check-txt {padding-top: 5px;}
+  .app-form-btns > .btn {font-size: 14px;}
+  .app-form-btns > .btn > b {font-size: 16px;}
+  .date_today {font-size: 14px;}
+  .app-side-table th {padding: 10px; width: auto; text-align: center; font-size: 14px;}
+  .app-side-table td {padding: 10px; font-size: 14px;}
+  .device-info-txt1 {font-size: 20px;}
+  .app-step-txt3, .app-step-txt1 {font-size: 14px; text-align: center;}
+  .app-step-txt3 {padding-top: 1vw;}
+  .app-step-ul {gap: 5vw;}
+  .app-step-li:not(:last-child)::after {right: -2.5vw; width: 17px; height: 35px;}
+  .app-step-circle {padding: 10px; width: clamp(90px, 28vw, 280px); height: clamp(90px, 28vw, 280px); border-width: 5px;}
+
   /* Board-Write */
   .fm-row {flex-direction: column; gap: 5px;}
   .fm-lb, .fm-ct {width: 100%;}
@@ -48,8 +164,60 @@
 
 @media screen and (max-width:480px) {
   /* common */
-  .container {padding-left: 15px; padding-right: 15px;}
-  .header, .footer {display: none;}
+  .container {padding-left: 7.5px; padding-right: 7.5px;}
+
+  /* header */
+  .head-in {height: 60px;}
+  .head-logo {width: 100px;}
+  .hd-ham {width: 25px;}
+  .tnb-wr {gap: 15px;}
+  .tnb-li img {transform: scale(0.8);}
+  .tnb-ul {gap: 0 7.5px; padding: 0 7.5px;}
+  .gnb-li {padding: 2.5vh 0;}
+  .gnb2-li {padding: 5px 0;}
+  
+  /* footer */
+  .ft-top-ul {gap: 10px;}
+  .ft-top-li a {font-size: 13px;}
+  .ft-top-li:not(:last-child):after {right: -5px; height: 8px;}
+  .btn.foot-btn {font-size: 12px; padding: 0 15px;}
+  .ft-info-ul {flex-direction: column; gap: 5px;}
+  .ft-info-li {flex-direction: column; align-items: flex-start; gap: 0;}
+  .gnb-ul, .gnb-ul::before {top: 60px;}
+  .gnb-ul {height: calc(100% - 60px);}
+
+  /* sub */
+  /* > 서브비주얼 */
+  .sub-vs-quick-li {width: calc(100% / 2 - 10px / 2);}
+  .sub-vs-quick-li > a {gap: 1vw; padding: 0 3vw;}
+  .sub-vs-quick-li img {transform: scale(0.8);}
+  .sub-vs-txt {font-size: 14px;}
+  .sub-visual {padding-top: 60px;}
+  .sub-vis-wr {padding: 35px 0 20px;}
+
+  /* > 서브페이지 */
+  .sub-aside-li > a img {display: none;}
+  .sub-aside-li > a > span {margin: 0;}
+  .sub-aside-li > a {height: 25px;}
+  .sub-title-info {font-size: 14px;}
+
+  /* 이용내역 */
+  /* > 분석지원 */
+  /*  > 이용기기 보유현황 */
+  .app-form-title {flex-direction: column; align-items: flex-start; gap: 10px;}
+  .app-form-table th, .app-form-table td {display: block; width: 100%;}
+  .app-form-table th {border: 0; padding-bottom: 0;}
+  .app-form-table td {padding-top: 5px;}
+  .app-form-table .empty {display: none;}
+  .app-form-key br {display: none;}
+  .app-form-caution {padding: 15px 20px; font-size: 14px;}
+  .app-form-in.left .app-form-box:not(:last-child) {padding-bottom: 30px; margin-bottom: 30px;}
+  .app-form-submit-wr {flex-direction: column;}
+  .app-step-li:not(:last-child)::after {width: 4vw;}
+  .app-step-txt1 {font-size: 10px;}
+  .app-step-txt3 {font-size: 12px;}
+  .device-info-txt1 {font-size: 16px;}
+  .app-form-outer {padding-bottom: 30px; margin-bottom: 30px;}
 
   /* Board-Write */
   .fm_inner {padding: 20px 15px;}

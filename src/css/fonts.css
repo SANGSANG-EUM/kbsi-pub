@@ -1,5 +1,33 @@
 @font-face {
   font-family: "SCDream";
+  src: local("SCDream1"), url("../fonts/SCDream1.otf?#iefix") format("opentype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SCDream";
+  src: local("SCDream2"), url("../fonts/SCDream2.otf?#iefix") format("opentype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SCDream";
+  src: local("SCDream3"), url("../fonts/SCDream3.otf?#iefix") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SCDream";
+  src: local("SCDream4"), url("../fonts/SCDream4.otf?#iefix") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SCDream";
   src: local("SCDream5"), url("../fonts/SCDream5.otf?#iefix") format("opentype");
   font-weight: 500;
   font-display: swap;

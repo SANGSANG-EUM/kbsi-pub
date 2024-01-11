@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > Sign Up</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div id="container" class="content sub">
+    <div class="join_wrap join1_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <div class="join_inner">
+            <div class="sub-title-wr">
+              <h3 class="sub-title join-title">본인인증</h2>
+            </div>
+            <ul class="join-step-ul">
+              <li class="join-step-li">
+                <p class="join-step-num">01</p>
+                <p class="join-step-txt">약관동의</p>
+              </li>
+              <li class="join-step-li active">
+                <p class="join-step-num">02</p>
+                <p class="join-step-txt">본인인증</p>
+              </li>
+              <li class="join-step-li">
+                <p class="join-step-num">03</p>
+                <p class="join-step-txt">회원정보입력</p>
+              </li>
+              <li class="join-step-li">
+                <p class="join-step-num">04</p>
+                <p class="join-step-txt">가입완료</p>
+              </li>
+            </ul>
+            <div class="join-cert-wr">
+              <div class="join-cert-box">
+                <p>01. 본인 명의의 휴대전화가 있거나 아이핀에 가입되어 있는 경우</p>
+                <ul class="join-cert-ul">
+                  <li class="join-cert-li">
+                    <button type="button" onclick="" class="btn sizeM round5 colorSub1"><span>휴대전화 인증</span></button>
+                  </li>
+                  <li class="join-cert-li">
+                    <button type="button" onclick="" class="btn sizeM round5 colorSub1"><span>아이핀 인증</span></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="join-cert-box">
+                <p>02. 본인 명의의 휴대전화가 없고, 아이핀에 가입되어 있지 않은 경우</p>
+                <ul class="join-cert-ul">
+                  <li class="join-cert-li">
+                    <a href="" target="_blank" class="btn sizeM round5 colorSub1"><span>사이렌24 바로가기</span></a>
+                  </li>
+                  <li class="join-cert-li">
+                    <button type="button" onclick="" class="btn sizeM round5 colorSub1"><span>아이핀 인증</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-wr join-btn-wr">
+              <a href="../sub/join3.html" class="btn sizeM round5"><span>다음단계</span></a>
+              <button type="submit" class="btn sizeM round5"><span>가입취소</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>
