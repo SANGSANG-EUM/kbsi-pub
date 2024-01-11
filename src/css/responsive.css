@@ -96,6 +96,7 @@
   .container {padding-left: 15px; padding-right: 15px;}
   .fm-check + label, .fm-radio + label, .fm-input, .fm-select, .filebox .upload-name, .filebox .filebtn, .filelist > li, .fm-textar {font-size: 14px;}
   .file-del-btn {font-size: 12px; width: 50px;}
+  .btn {font-size: 14px;}
 
   /* footer */
   .ft-top-ul {gap: 30px;}
@@ -149,6 +150,15 @@
   .app-step-ul {gap: 5vw;}
   .app-step-li:not(:last-child)::after {right: -2.5vw; width: 17px; height: 35px;}
   .app-step-circle {padding: 10px; width: clamp(90px, 28vw, 280px); height: clamp(90px, 28vw, 280px); border-width: 5px;}
+
+  .pop-in {border: 0; padding: 0;}
+  .pop-list-mid {overflow-x: auto; padding: 20px 0 0;}
+  .pop-list-table {width: 670px;}
+  .pop-list-page-wr {margin-top: 20px;}
+  .pop-list-top .btn {padding: 0 15px; min-width: auto;}
+  .bl-post {flex-shrink: 0;}
+  .pop-list-table th {font-size: 14px;}
+  .pop-top {padding-bottom: 3vw;}
 
   /* Board-Write */
   .fm-row {flex-direction: column; gap: 5px;}
@@ -218,6 +228,9 @@
   .app-step-txt3 {font-size: 12px;}
   .device-info-txt1 {font-size: 16px;}
   .app-form-outer {padding-bottom: 30px; margin-bottom: 30px;}
+
+  .pop-box {padding: 30px 7.5px;}
+
 
   /* Board-Write */
   .fm_inner {padding: 20px 15px;}

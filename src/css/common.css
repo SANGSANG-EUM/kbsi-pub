@@ -1,6 +1,6 @@
 /* Reset */
 * {margin:0; padding:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; word-break: keep-all;}
-html,body{max-width: 100%; min-height: 100%;}
+html,body{max-width: 100%; min-height: 100%; scroll-behavior: smooth;}
 html{overflow-x: hidden; -webkit-text-size-adjust: none;}
 body{-webkit-print-color-adjust:exact; background: #fff; font-family: 'Pretendard'; font-style: normal; font-size: 16px; font-weight: 300; color: #333; line-height: 1.5; letter-spacing: -0.5px;}
 ul, li, dl,dt,dd {margin:0;padding:0;list-style:none}
@@ -82,7 +82,7 @@ h6 {font-size: 16px; font-weight: 700;}
 
 /* Buttons */
 .btn-wr {display: flex; align-items: center; justify-content: center; gap: 10px;}
-.btn {display: block; width: auto; height: auto; max-width: 100%; border: 2px solid #333; font-weight: 400; color: #fff; background-color: #333; text-align: center; transition: .2s;}
+.btn {display: inline-block; width: auto; height: auto; max-width: 100%; border: 2px solid #333; font-weight: 400; color: #fff; background-color: #333; text-align: center; transition: .2s;}
 
 .btn.white {background-color: #fff; color: #333;}
 .btn.colorMain {border-color: #614699; background-color: #614699; color: #fff;}
@@ -90,10 +90,14 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn.colorSub2 {border-color: #ff7b7b; background-color: #ff7b7b; color: #fff;}
 
 .btn:hover {background-color: #fff; color: #333;}
+.btn:hover img {filter: invert(17%) sepia(8%) saturate(11%) hue-rotate(319deg) brightness(39%) contrast(87%);}
 .btn.white:hover {background-color: #333; color: #fff;}
 .btn.colorMain:hover {color: #614699;}
+.btn.colorMain:hover img {filter: invert(30%) sepia(90%) saturate(3937%) hue-rotate(219deg) brightness(65%) contrast(88%);}
 .btn.colorSub1:hover {color: #519ca3;}
+.btn.colorSub1:hover img {filter: invert(47%) sepia(11%) saturate(1570%) hue-rotate(137deg) brightness(110%) contrast(88%);}
 .btn.colorSub2:hover {color: #ff7b7b;}
+.btn.colorSub2:hover img {filter: invert(40%) sepia(140%) saturate(800%) hue-rotate(309deg) brightness(101%) contrast(102%);}
 
 .btn.active {border-color: #614699 !important; background-color: #614699 !important; color: #fff !important;}
 
@@ -105,9 +109,9 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn.icon2_f > img {left: 20px;}
 .btn.icon2_b > img {right: 20px;}
 
-.sizeL {min-width: 280px; height: 60px; line-height: 56px; font-size: 20px;}
-.sizeM {min-width: 220px; height: 50px; line-height: 46px; font-size: 16px;}
-.sizeS {min-width: 140px; height: 35px; line-height: 31px; font-size: 14px;}
+.sizeL {width: 280px; height: 60px; line-height: 56px; font-size: 20px;}
+.sizeM {width: 220px; height: 50px; line-height: 46px; font-size: 16px;}
+.sizeS {width: 140px; height: 35px; line-height: 31px; font-size: 14px;}
 .btn.pd35 {padding: 0 35px;}
 
 /* Board - Write (+등록폼) */
@@ -149,8 +153,9 @@ h6 {font-size: 16px; font-weight: 700;}
 .scrollbar.pink::-webkit-scrollbar-thumb {background: var(--sub-color__pink);}
 .scrollbar.green::-webkit-scrollbar-thumb {background: var(--sub-color__green);}
 
+.file-wr {display: flex; padding: 5px; border: 1px solid #ddd; font-size: 0;}
 .filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0;}
-.filebox label {display: inline-block; padding: 5px; border: 1px solid #ddd; font-size: 0; cursor: pointer;}
+.filebox label {display: inline-block; cursor: pointer;}
 .filebox .filebtn {display: inline-block; width: 82px; height: 28px; line-height: 26px; border: 1px solid #ddd; font-size: 16px; font-weight: 400; color: #999; text-align: center; background-color: #eee; vertical-align: middle;}
 .filebox .upload-name {display: inline-block; -webkit-appearance: none; -moz-appearance: none; appearance: none; width: calc(100% - 82px); padding-left: 10px; font-size: 16px; font-weight: 400; color: #999; border: 0; background: none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align: middle;}
 
@@ -190,6 +195,7 @@ h6 {font-size: 16px; font-weight: 700;}
 .bl-date {width: 200px;}
 .bl-hits {width: 100px;}
 .bl-btm {display: flex; align-items: center; justify-content: space-between; gap: 20px;}
+.bl-btm.center {justify-content: center;}
 .bl-page-wr {display: flex; border: 1px solid #ddd; border-right: 0;}
 .bl-page {border-right: 1px solid #ddd; background-color: #fff;}
 .bl-page.active {background-color: #f1f1f1;}

@@ -43,7 +43,7 @@
   <div id="header-loaction"></div>
   <!-- } header 임시 인클루드 -->
 
-  <div class="sub status_of_device">
+  <div class="sub device_form">
     <!-- 서브비주얼 { -->
     <div class="sub-visual sub-visual2">
       <div class="container">
@@ -198,26 +198,26 @@
               </div>
               <div class="app-step-wr">
                 <ul class="app-step-ul">
-                  <li class="app-step-li active">
-                    <div class="app-step-circle" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="800">
+                  <li class="app-step-li">
+                    <a href="#deviceForm1" class="app-step-circle" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
                       <p class="app-step-txt1">STEP</p>
                       <p class="app-step-txt2">01</p>
                       <p class="app-step-txt3">기기이용 신청내역</p>
-                    </div>
+                    </a>
                   </li>
                   <li class="app-step-li">
-                    <div class="app-step-circle" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="800">
+                    <a href="#deviceForm2"  class="app-step-circle" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="800">
                       <p class="app-step-txt1">STEP</p>
                       <p class="app-step-txt2">02</p>
                       <p class="app-step-txt3">시료특성 및 기타</p>
-                    </div>
+                    </a>
                   </li>
                   <li class="app-step-li">
-                    <div class="app-step-circle" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="800">
+                    <a href="javascript:void(0);"  class="app-step-circle" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="800">
                       <p class="app-step-txt1">STEP</p>
                       <p class="app-step-txt2">03</p>
                       <p class="app-step-txt3">신청완료</p>
-                    </div>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -229,14 +229,15 @@
             <div class="wrapper">
               <div class="app-form-outer">
                 <div class="app-form-in left">
-                  <div class="app-form-box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                  <div id="deviceForm1" class="app-form-box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
                     <div class="app-form-title">
-                      <p class="fm-tit"><span class="icon-bar"></span>기기이용신청내역</p>
+                      <p class="fm-tit"><span class="icon-bar"></span>기기이용 신청내역</p>
                       <div class="app-form-btns"><button type="button" class="btn round25" onclick="devicePop()">동일장비
                           신청내역 불러오기</button></div>
                     </div>
                     <!-- 필수입력 : app-form-key에 'req' 클래스 추가   -->
                     <table class="app-form-table">
+                      <caption>기기이용 신청내역</caption>
                       <tbody>
                         <tr>
                           <th colspan="2">
@@ -476,7 +477,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="app-form-box" data-aos="fade-up" data-aos-duration="1000">
+                  <div id="deviceForm2" class="app-form-box" data-aos="fade-up" data-aos-duration="1000">
                     <div class="app-form-title">
                       <p class="fm-tit"><span class="icon-bar"></span>시료특성 및 기타</p>
                       <div class="app-form-btns"><button type="button" class="btn round25"><b>+</b>시료추가</button><button
@@ -484,6 +485,7 @@
                     </div>
                     <!-- 필수입력 : app-form-key에 'req' 클래스 추가   -->
                     <table class="app-form-table">
+                      <caption>시료특성 및 기타</caption>
                       <tbody>
                         <tr>
                           <th>
@@ -642,10 +644,12 @@
                           </th>
                           <td>
                             <div class="filebox">
-                              <label for="fileImsiId" class="w100">
-                                <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
-                                <span class="upload-name">선택된 파일 없음</span>
-                              </label>
+                              <div class="file-wr w100">
+                                <label for="fileImsiId">
+                                  <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
+                                </label>
+                                <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
+                              </div>
                               <!-- 실제 전송되는 input[type=file] -->
                               <input type="file" name="fileImsi" id="fileImsiId" class="upload-hidden">
                               <ul class="filelist">
@@ -722,6 +726,7 @@
                     <ul class="app-side-ul">
                       <li class="app-side-li">
                         <table class="app-side-table">
+                          <caption>신청자 정보</caption>
                           <tbody>
                             <tr>
                               <th>소속기관</th>
@@ -836,7 +841,7 @@
                           src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
                       <button type="button" class="btn pd35 icon1 icon1_b"><span>임시저장</span><img
                           src="../src/img/icon-aside_info.png" alt="icon" style="width: 20px;"></button>
-                      <button type="button" class="btn pd35 colorMain icon1 icon1_b"><span>제출하기</span><img
+                      <button type="submit" class="btn pd35 colorMain icon1 icon1_b" onclick="completePop()"><span>제출하기</span><img
                           src="../src/img/icon-aside_app.png" alt="icon" style="width: 20px;"></button>
                     </div>
                   </div>
@@ -877,6 +882,7 @@
               </div>
               <div class="pop-list-mid">
                 <table class="pop-list-table">
+                  <caption>동일장비 신청내역</caption>
                   <thead>
                     <tr>
                       <th>번호</th>
@@ -900,6 +906,7 @@
                       <td>TS003</td>
                       <td>SHRIMP</td>
                       <td>230703-230724</td>
+                      <!-- 버튼에 active 클래스 추가시 핑크색으로 변경 -->
                       <td><button type="button" class="device-list-btn">선택</button></td>
                     </tr>
                     <tr>
@@ -911,6 +918,7 @@
                       <td>TS003</td>
                       <td>SHRIMP</td>
                       <td>230703-230724</td>
+                      <!-- 버튼에 active 클래스 추가시 핑크색으로 변경 -->
                       <td><button type="button" class="device-list-btn">선택</button></td>
                     </tr>
                     <tr>
@@ -922,6 +930,7 @@
                       <td>TS003</td>
                       <td>SHRIMP</td>
                       <td>230703-230724</td>
+                      <!-- 버튼에 active 클래스 추가시 핑크색으로 변경 -->
                       <td><button type="button" class="device-list-btn">선택</button></td>
                     </tr>
                     <tr>
@@ -933,6 +942,7 @@
                       <td>TS003</td>
                       <td>SHRIMP</td>
                       <td>230703-230724</td>
+                      <!-- 버튼에 active 클래스 추가시 핑크색으로 변경 -->
                       <td><button type="button" class="device-list-btn">선택</button></td>
                     </tr>
                     <tr>
@@ -944,6 +954,7 @@
                       <td>TS003</td>
                       <td>SHRIMP</td>
                       <td>230703-230724</td>
+                      <!-- 버튼에 active 클래스 추가시 핑크색으로 변경 -->
                       <td><button type="button" class="device-list-btn">선택</button></td>
                     </tr>
                   </tbody>
@@ -981,6 +992,31 @@
     </div>
     <!-- } 동일장비 신청내역 팝업 -->
 
+        <!-- 동일장비 신청내역 팝업 { -->
+          <div class="pop complete-pop">
+            <div class="pop-dim"></div>
+            <div class="pop-box scrollbar pink">
+              <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+              <div class="pop-in">
+                <div class="pop-top">
+                  <div class="sub-title-wr">
+                    <h3 class="sub-title"><b>기기이용신청이 완료</b>되었습니다.</h3>
+                  </div>
+                </div>
+                <div class="pop-content">
+                  <div class="sub-title-wr">
+                    <p class="sub-title-info">신청완료 안내문구가 들어갈 곳 신청완료 안내문구가 들어갈 곳 <br> 신청완료 안내문구가 들어갈 곳</p>
+                  </div>
+                </div>
+                <div class="pop-btns">
+                  <a href="/" class="btn sizeM">메인으로 이동</a>
+                  <a href="" class="btn sizeM">신청내역 확인</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- } 동일장비 신청내역 팝업 -->
+
   </div>
 
   <!-- footer 임시 인클루드 { -->
@@ -988,15 +1024,28 @@
   <!-- } footer 임시 인클루드 -->
 
   <script>
-    function devicePop() {
-      $('.device-pop').fadeIn();
-      $('body, html, .container').addClass('scroll-lock');
-    };
+  // 장비 팝업 열기
+  function devicePop() {
+    $('.device-pop').fadeIn();
+    $('body, html, .container').addClass('scroll-lock');
+  };
 
-    function popClose() {
-      $('.device-pop').fadeOut();
-      $('body, html, .container').removeClass('scroll-lock');
-    }
+  // 장비 팝업 내 선택 버튼 단순 active 클래스 붙이기
+  $('.device-list-btn').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
+  // 제출하기 팝업
+  function completePop() {
+    $('.complete-pop').fadeIn();
+    $('body, html, .container').addClass('scroll-lock');
+  };
+
+  // 팝업 닫기
+  function popClose() {
+    $('.pop').fadeOut();
+    $('body, html, .container').removeClass('scroll-lock');
+  }
   </script>
 
 </body>

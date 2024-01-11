@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 이용신청 > 분석지원 > 이용기기 보유현황</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub device_list">
+    <!-- 서브비주얼 { -->
+    <div class="sub-visual sub-visual2">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-vis-wr">
+            <div class="sub-vs-txt-wr" data-aos="fade-up" data-aos-duration="1000">
+              <p class="sub-vs-tit">
+                이용 <b>신청</b>
+              </p>
+              <p class="sub-vs-txt">
+                <span>KBSI 장비활용</span>을 위한 이용신청 및 분석신청에 <br> 관련된 내용입니다.
+              </p>
+            </div>
+            <div class="sub-vs-quick-wr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <ul class="sub-vs-quick-ul">
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
+                    <span>분석신청</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
+                    <span>Q&A</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
+                    <span>시료접수</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
+                    <span>계산서</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li on">
+                  <a href="">
+                    <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
+                    <span>아카데미</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
+                    <span>가상캠퍼스</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="sub-vs-quick-btn-wr">
+                <p>quick menu</p>
+                <button type="button" class="sub-vs-quick-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브비주얼 -->
+
+    <!-- 서브로케이션 { -->
+    <div class="sub-location">
+      <div class="wrapper">
+        <div class="sub-loca-wr">
+          <button type="button" class="sub-loca-btn">
+            분석지원
+          </button>
+          <ul class="sub-loca-ul">
+            <li class="sub-loca-li active">
+              <a href="">분석지원</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">선도연구활동</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">연구장비 아카데미</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">분석용역계약</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">우수회원</a>
+            </li>
+          </ul>
+          <div class="sub-loca-home">
+            <a href="/"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브로케이션 -->
+
+    <!-- 사이드바 { -->
+    <aside class="sub-aside">
+      <ul class="sub-aside-ul">
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_video.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>홍보동영상</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_info.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>이용안내</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_app.png" alt="" style="width: 29px;">
+            <span>체험신청</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- } 사이드바 -->
+
+    <!-- 콘텐츠 내용 { -->
+    <!-- 아래 input 및 textarea의 name, id값은 임의로 작성하였으니 개발시 수정 필요  -->
+    <div id="container" class="sub-inner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-title-wr">
+            <h3 class="sub-title"><b>분석</b> 지원</h3>
+            <p class="sub-title-info"><span>KBSI 분석지원</span>을 신청하는 페이지입니다. 유의사항을 꼭 확인해 주세요.</p>
+          </div>
+          <div class="sub-tab-wr">
+            <ul class="sub-tab-ul">
+              <li class="sub-tab-li">
+                <a href="">분석지원 소개</a>
+              </li>
+              <li class="sub-tab-li active">
+                <a href="">이용기기 보유현황</a>
+              </li>
+              <li class="sub-tab-li">
+                <a href="">시료접수 안내</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="subsec">
+          <div class="container">
+            <div class="wrapper">
+              <form action="">
+                <div class="device-list-top">
+                  <div class="device-list-top-box">
+                    <div class="app-form-title">
+                      <p class="fm-tit"><span class="icon-bar"></span>동종장비 선택</p>
+                    </div>
+                    <ul class="device-select-ul">
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel1" id="device_sel1">
+                        <label for="device_sel1" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-txt">Atype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel2" id="device_sel2">
+                        <label for="device_sel2" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-txt">Btype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel3" id="device_sel3">
+                        <label for="device_sel3" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-txt">Ctype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel4" id="device_sel4">
+                        <label for="device_sel4" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-txt">Atype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel5" id="device_sel5">
+                        <label for="device_sel5" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-txt">Btype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel6" id="device_sel6">
+                        <label for="device_sel6" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-txt">Ctype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel7" id="device_sel7">
+                        <label for="device_sel7" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-txt">Atype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel8" id="device_sel8">
+                        <label for="device_sel8" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-txt">Btype 장비</span>
+                        </label>
+                      </li>
+                      <li class="device-select-li">
+                        <input type="checkbox" name="device_sel9" id="device_sel9">
+                        <label for="device_sel9" class="device-select-btn">
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-txt">Ctype 장비</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="device-list-top-box">
+                    <div class="app-form-title">
+                      <p class="fm-tit"><span class="icon-bar"></span>지역센터</p>
+                    </div>
+                    <ul class="region-select-ul">
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel1" id="region_sel1">
+                        <label for="region_sel1" class="region-select-btn">
+                          <span class="region-sel-txt">서울센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel2" id="region_sel2">
+                        <label for="region_sel2" class="region-select-btn">
+                          <span class="region-sel-txt">서울서부센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel3" id="region_sel3">
+                        <label for="region_sel3" class="region-select-btn">
+                          <span class="region-sel-txt">대덕본원</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel4" id="region_sel4">
+                        <label for="region_sel4" class="region-select-btn">
+                          <span class="region-sel-txt">오창센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel5" id="region_sel5">
+                        <label for="region_sel5" class="region-select-btn">
+                          <span class="region-sel-txt">전주센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel6" id="region_sel6">
+                        <label for="region_sel6" class="region-select-btn">
+                          <span class="region-sel-txt">광주센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel7" id="region_sel7">
+                        <label for="region_sel7" class="region-select-btn">
+                          <span class="region-sel-txt">춘천센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel8" id="region_sel8">
+                        <label for="region_sel8" class="region-select-btn">
+                          <span class="region-sel-txt">대구센터</span>
+                        </label>
+                      </li>
+                      <li class="region-select-li">
+                        <input type="checkbox" name="region_sel9" id="region_sel9">
+                        <label for="region_sel9" class="region-select-btn">
+                          <span class="region-sel-txt">부산센터</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="device-list-top-box">
+                    <div class="search-wr">
+                      <input type="text" id="schInput" name="schInput" class="fm-input" placeholder="#장비명">
+                      <label for="schInput"class="sound_only">검색어 입력</label>
+                      <button type="button" class="btn">검색하기</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="bl-wr device-list-wr">
+                <div class="bl-top">
+                  <div class="bl-select-wr">
+                    <select name="" id="" class="fm-select fm-select-2 w100 bl-top-select">
+                      <option value="">전체</option>
+                      <option value="">옵션2</option>
+                      <option value="">옵션3</option>
+                    </select>
+                    <div class="bl-select-txt">
+                      전체 총 175종의 장비를 검색하였습니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="bl-body">
+                  <ul class="device-list-ul">
+                    <li class="device-list-li">
+                      
+                    </li>
+                  </ul>
+                </div>
+                <div class="bl-btm center">
+                  <ul class="bl-page-wr">
+                    <li class="bl-page">
+                      <a href="">PREV</a>
+                    </li>
+                    <li class="bl-page active">
+                      <a href="">1</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">2</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">3</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">4</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">5</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">NEXT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 콘텐츠 내용 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

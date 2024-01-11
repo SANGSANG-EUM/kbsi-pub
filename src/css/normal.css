@@ -7,17 +7,17 @@
 .header {position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: .5s; border-bottom: 1px solid rgba(255, 255, 255, .3);}
 .header.hidden {margin-top: -150px;}
 .header.shadow {box-shadow: 0 0 10px 2px rgba(0, 0, 0, .05); background-color: #fff;}
-.header.white {background-color: #fff;}
+.header.white, .header.open {background-color: #fff;}
 .head-in {display: flex; align-items: center; justify-content: space-between; margin: auto; padding: 0 3vw; width: 100%; max-width: calc(1500px + 6vw); height: 100px;}
 .head-logo {display: flex; align-items: center; justify-content: center; width: 140px;}
 .logo_g {display: none;}
-.header.shadow .logo_g, .header.white .logo_g {display: block;}
-.header.shadow .logo_w, .header.white .logo_w {display: none;}
+.header.shadow .logo_g, .header.white .logo_g, .header.open .logo_g {display: block;}
+.header.shadow .logo_w, .header.white .logo_w, .header.open .logo_w {display: none;}
 .head-bg {position: absolute; top: 100px; left: 0; width: 100vw; height: 500px; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; display: none;}
 .gnb-ul {display: flex; align-items: center; gap: 80px; height: 100%;}
 .gnb-li {display: flex; align-items: center; position: relative; height: 100%;}
 .gnb-li > a {font-size: 17px; font-weight: 500; color: #fff; transition: .2s;}
-.header.shadow .gnb-li > a, .header.white .gnb-li > a {color: #000;}
+.header.shadow .gnb-li > a, .header.white .gnb-li > a,  .header.open .gnb-li > a {color: #000;}
 .gnb2-ul {position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding: 20px 0; text-align: center; display: none;}
 .gnb2-li {padding: 10px 0;}
 .gnb2-li > a {white-space: nowrap;}
@@ -136,7 +136,36 @@
 
 /* 이용내역 */
 /* > 분석지원 */
-/*  > 이용기기 보유현황 */
+/*  > 이용기기 보유현황(목록) */
+.device-list-top {padding: 0 35px; border: 1px solid #ddd;}
+.device-list-top-box {padding: 30px 0;}
+.device-list-top-box:not(:last-child) {border-bottom: 1px dotted #000;}
+.device-list-top-box input[type="checkbox"] {position: absolute; width: 0; height: 0; opacity: 0;}
+.device-list-top-box input[type="checkbox"]:focus-visible ~ label {outline: 2px solid #333;}
+.device-list-top-box .fm-tit {font-size: 18px;}
+
+.device-select-ul {display: flex; gap: 20px;}
+.device-select-li {flex: 1; height: calc(1240px / 9 - 160px / 9);}
+.device-select-btn {display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 5px; padding: 20px; width: 100%; height: 100%; border-radius: 10px; background-color: #f1f1f1; cursor: pointer;}
+.device-sel-icon {display: flex; align-items: center; justify-content: center; width: 100%; height: 80%;}
+.device-sel-icon img {max-width: 65%; max-height: 90%;}
+.device-sel-txt {display: block; width: 100%; height: 20%; font-size: 16px; font-weight: 400; color: #000; text-align: center;}
+.device-select-li input[type="checkbox"]:checked ~ .device-select-btn {background-color: #333;}
+.device-select-li input[type="checkbox"]:checked ~ .device-select-btn .device-sel-txt {color: #fff;}
+.device-select-li input[type="checkbox"]:checked ~ .device-select-btn .device-sel-icon img {filter: invert(1) brightness(1000%) contrast(100%);}
+
+.region-select-ul {display: flex; gap: 10px; flex-wrap: wrap;}
+.region-select-li {width: calc(100% / 5 - 40px / 5);}
+.region-select-btn {display: flex; align-items: center; justify-content: center; height:45px; text-align: center; font-size: 16px; font-weight: 600; color: #333; border: 1px solid #ddd; cursor: pointer;}
+.region-select-li input[type="checkbox"]:checked ~ .region-select-btn {border-color: #333; background-color: #333; color: #fff;}
+
+.search-wr {display: flex; gap: 15px;}
+.search-wr .fm-input {width: clamp(calc(100% - 245px), 80%, calc(100% - 100px)); height: 50px;}
+.search-wr .btn {width: clamp(100px, 20%, 245px);}
+
+
+
+/*  > 이용기기 보유현황(신청) */
 .device-info-box {padding: 20px; background-color: #333; color: #fff; text-align: center;}
 .device-info-txt1 {font-size: 30px; font-weight: 500;}
 .device-info-txt2 {font-size: 16px; font-weight: 300;}
@@ -144,8 +173,7 @@
 .app-step-ul {display: flex; align-items: center; justify-content: center; gap: min(10vw, 190px);}
 .app-step-li {position: relative;}
 .app-step-li:not(:last-child)::after {content: ''; display: block; position: absolute; right: -5vw; top: 50%; transform: translate(50%, -50%); width: 28px; height: 42px; background: url('../img/icon-arrow_app.png') no-repeat center / contain;}
-.app-step-circle {display: flex; flex-direction: column; align-items: center; justify-content: center; width: clamp(100px, 25vw, 280px); height: clamp(100px, 25vw, 280px); border-radius: 50%; border: 20px solid #f3f3f3; background-color: #fff;}
-.app-step-li.active .app-step-circle {background-color: var(--main-color); color: #fff; text-align: center;}
+.app-step-circle {display: flex; flex-direction: column; align-items: center; justify-content: center; width: clamp(100px, 25vw, 280px); height: clamp(100px, 25vw, 280px); border-radius: 50%; border: 20px solid #f3f3f3; background-color: #fff; transition: .2s;}
 .app-step-txt1 {font-size: 16px; font-weight: 500; line-height: 1.2;}
 .app-step-txt2 {font-size: clamp(18px, 5vw, 55px); font-weight: 700; line-height: 1.2;}
 .app-step-txt3 {padding-top: 20px; font-size: 20px; font-weight: 600; line-height: 1.2;}
@@ -156,6 +184,7 @@
 .app-form-in.right {width: 365px;}
 .app-form-in.left .app-form-box:not(:last-child) {margin-bottom: 65px; padding-bottom: 65px; border-bottom: 1px dotted #000;}
 .app-form-in.right .app-form-box:not(:last-child) {padding-bottom: 50px;}
+.app-form-box {scroll-margin: 150px;}
 .app-form-title {display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 10px;}
 .app-form-title .fm-tit {margin-bottom: 0;}
 .app-form-btns {display: flex; align-items: center; gap: 10px;}
@@ -233,6 +262,9 @@
 .pop-list-table td {padding: 8px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; word-break: break-all; font-size: 14px; font-weight: 300; color: #333;}
 .pop-list-btm {justify-content: center;}
 .device-list-btn {padding: 3px 10px; font-size: 14px; font-weight: 600; color: #fff; border-radius: 20px; border: 0; background-color: #333;}
+.device-list-btn.active {background-color: var(--sub-color__pink);}
+
+.pop-btns {display: flex; align-items: center; justify-content: center; gap: 10px; padding-top: clamp(30px, 6vw, 50px);}
 
 /* login */
 .login_wrap {padding: 100px 0;}
@@ -271,3 +303,4 @@
 .ft-btm__right .btn:hover {background-color: #fff; color: #000;}
 .sch-submit:hover {}
 .pop-close-btn:hover::after, .pop-close-btn:hover::before {background-color: var(--sub-color__pink);}
+.app-step-li .app-step-circle:hover {background-color: var(--main-color); color: #fff; text-align: center;}

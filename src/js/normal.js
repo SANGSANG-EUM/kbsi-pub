@@ -209,6 +209,7 @@ $(document).ready(function () {
         filename = fileInput.value.split('/').pop().split('\\').pop();
       }
 
+      // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
       fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
     };
 
