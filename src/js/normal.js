@@ -171,6 +171,11 @@ $(document).ready(function () {
     $('.tnb-noti').focus();
   });
 
+  // 모바일 서브로케이션
+  $('.sub-loca-btn').on('click', function() {
+    $('.sub-loca-ul').stop().slideToggle();
+  });
+
 
   // 파일선택
     // 파일 선택 버튼 요소 가져오기
@@ -220,9 +225,4 @@ $(document).ready(function () {
     //   });
     // });
 
-
-    // 모바일 서브로케이션
-    $('.sub-loca-btn').on('click', function() {
-      $('.sub-loca-ul').stop().slideToggle();
-    });
 });

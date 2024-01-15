@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../src/plugin/aos/aos.css">
   <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
 
-
   <!-- src > js -->
   <script src="../src/js/jquery-3.7.0.min.js"></script>
   <script src="../src/js/normal.js"></script>
@@ -193,7 +192,7 @@
           <div class="container">
             <div class="wrapper">
               <form action="">
-                <div class="device-list-top">
+                <div class="device-list-top" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                   <div class="device-list-top-box">
                     <div class="app-form-title">
                       <p class="fm-tit"><span class="icon-bar"></span>동종장비 선택</p>
@@ -328,8 +327,8 @@
                   <div class="device-list-top-box">
                     <div class="search-wr">
                       <input type="text" id="schInput" name="schInput" class="fm-input" placeholder="#장비명">
-                      <label for="schInput"class="sound_only">검색어 입력</label>
-                      <button type="button" class="btn">검색하기</button>
+                      <label for="schInput" class="sound_only">검색어 입력</label>
+                      <button type="submit" class="btn">검색하기</button>
                     </div>
                   </div>
                 </div>
@@ -337,7 +336,7 @@
               <div class="bl-wr device-list-wr">
                 <div class="bl-top">
                   <div class="bl-select-wr">
-                    <select name="" id="" class="fm-select fm-select-2 w100 bl-top-select">
+                    <select name="sel1" id="sel1" class="fm-select fm-select-2 w100 bl-top-select">
                       <option value="">전체</option>
                       <option value="">옵션2</option>
                       <option value="">옵션3</option>
@@ -345,12 +344,161 @@
                     <div class="bl-select-txt">
                       전체 총 175종의 장비를 검색하였습니다.
                     </div>
+                    <label for="sel1" class="sound_only">정렬옵션</label>
                   </div>
                 </div>
                 <div class="bl-body">
-                  <ul class="device-list-ul">
+                  <ul class="device-list-ul" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                    <!-- loop { -->
                     <li class="device-list-li">
-                      
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명 2줄가능 2줄이상 ...전자동 천연물 전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동
+                          천연물...
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
+                    </li>
+                    <!-- } loop -->
+                    <li class="device-list-li">
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명이 들어가는 부분
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
+                    </li>
+                    <li class="device-list-li">
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1 용도1 용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3 용도3 용도3 용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명 2줄가능 2줄이상 ...전자동 천연물 전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동
+                          천연물...
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
+                    </li>
+                    <li class="device-list-li">
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명 2줄가능 2줄이상 ...전자동 천연물 전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동
+                          천연물...
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
+                    </li>
+                    <li class="device-list-li">
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명 2줄가능 2줄이상 ...전자동 천연물 전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동
+                          천연물...
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
+                    </li>
+                    <li class="device-list-li">
+                      <a href="" class="device-list-link">
+                        <div class="device-list-thumb">
+                          <img src="../src/img/sample-device_thumb.jpg" alt="">
+                        </div>
+                        <div class="device-list-hash-wr">
+                          <div class="device-list-hash">용도1</div>
+                          <div class="device-list-hash">용도2</div>
+                          <div class="device-list-hash">용도3</div>
+                        </div>
+                        <div class="device-list-name">
+                          장비명 2줄가능 2줄이상 ...전자동 천연물 전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동 천연물...전자동 천연물 분리시스템 전자동
+                          천연물...
+                        </div>
+                        <div class="device-list-info">
+                          대전본원
+                        </div>
+                      </a>
+                      <div class="device-list-btns">
+                        <button type="button"
+                          class="btn round25 icon1 icon1_f device-list-btn-wish"><span>관심기기</span><img
+                            src="../src/img/icon-heart.png" alt="찜하기"></button>
+                        <a href="./device_form.html" class="btn round25 device-list-btn-link">기기이용신청</a>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -392,6 +540,13 @@
   <!-- footer 임시 인클루드 { -->
   <div id="footer-loaction"></div>
   <!-- } footer 임시 인클루드 -->
+
+  <script>
+    // 찜하기 버튼 단순 active 클래스 붙이기
+    $('.device-list-btn-wish').on('click', function () {
+      $(this).toggleClass('active');
+    });
+  </script>
 
 </body>
 

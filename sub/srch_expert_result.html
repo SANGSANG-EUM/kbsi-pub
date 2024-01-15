@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 통합검색결과(전문가)</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <!-- 공동 작업자 css 추가 -->
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub srch_device_result">
+    <!-- 서브비주얼 { -->
+    <div class="sub-visual sub-visual2">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-vis-wr">
+            <div class="sub-vs-txt-wr" data-aos="fade-up" data-aos-duration="1000">
+              <p class="sub-vs-tit">
+                통합 <b>검색</b>
+              </p>
+              <p class="sub-vs-txt">
+                <span>KBSI 장비와 전문가</span>를 검색하기 위한 <br> 통합검색 페이지입니다.
+              </p>
+            </div>
+            <div class="sub-vs-quick-wr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <ul class="sub-vs-quick-ul">
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
+                    <span>분석신청</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
+                    <span>Q&A</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
+                    <span>시료접수</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
+                    <span>계산서</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li on">
+                  <a href="">
+                    <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
+                    <span>아카데미</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
+                    <span>가상캠퍼스</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="sub-vs-quick-btn-wr">
+                <p>quick menu</p>
+                <button type="button" class="sub-vs-quick-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브비주얼 -->
+
+    <!-- 서브로케이션 { -->
+    <div class="sub-location">
+      <div class="wrapper">
+        <div class="sub-loca-wr">
+          <button type="button" class="sub-loca-btn">
+            분석지원
+          </button>
+          <ul class="sub-loca-ul">
+            <li class="sub-loca-li active">
+              <a href="">분석지원</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">선도연구활동</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">연구장비 아카데미</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">분석용역계약</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">우수회원</a>
+            </li>
+          </ul>
+          <div class="sub-loca-home">
+            <a href="/"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브로케이션 -->
+
+    <!-- 사이드바 { -->
+    <aside class="sub-aside">
+      <ul class="sub-aside-ul">
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_video.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>홍보동영상</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_info.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>이용안내</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_app.png" alt="" style="width: 29px;">
+            <span>체험신청</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- } 사이드바 -->
+
+    <!-- 콘텐츠 내용 { -->
+    <div id="container" class="sub-inner">
+      <div class="container">
+        <div class="wrapper">
+
+          <div class="sub-title-wr">
+            <h3 class="sub-title"><b>통합</b> 검색</h3>
+            <p class="sub-title-info">장비명, 또는 전문가명으로 검색하면 <span>검색어에 따른 결과 페이지</span>를 보여줍니다.</p>
+          </div>
+
+          <!-- 검색 결과 { -->
+          <div class="srch_result_wrap">
+            <div class="left">
+              <!-- 통합검색 입력 박스 { -->
+              <div class="inter-srch-input-box">
+                <form action="">
+                  <div class="inter-srch-input-bar">
+                    <p>검색어</p>
+                    <div class="fm-search-wr">
+                      <input type="text" name="srchInput" id="srchInput" class="fm-input w100" placeholder="Search">
+                      <label for="srchInput" class="sound_only">검색어</label>
+                      <button type="submit" class="fm-search-submit"><img src="../src/img/icon-search_black.png"
+                          alt="검색"></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- } 통합검색 입력 박스 -->
+
+              <!-- 검색된 전문가 { -->
+              <div class="srch-result-expert expert" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">
+                  <span class="icon-bar"></span>
+                  검색된 KBSI 전문가
+                  <span class="amount">총 3명</span>
+                </p>
+                <div class="srch-expert-sl-wrap">
+                  <div class="swiper-wrapper">
+                    <!-- loop { -->
+                    <div class="srch-expert-sl swiper-slide">
+                      <div class="srch-expert-sl-top">
+                        <div class="srch-expert-sl-thumb">
+                          <img src="../src/img/srch-expert-thumb01.png" alt="전문가 이미지">
+                        </div>
+                        <div class="srch-expert-sl-basic">
+                          <div class="srch-expert-sl-name-wr">
+                            <p><span class="name">김영희</span><span class="role">책임연구원</span></p>
+                            <p> 오창분석과학연구소 / 재무부</p>
+                          </div>
+                          <div class="srch-expert-sl-links">
+                            <a href="" class="btn round25 pd35 sizeS">프로필</a>
+                            <a href="" class="btn round25 pd35 sizeS">활동이력</a>
+                            <a href="" class="btn round25 pd35 sizeS">분석성과</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="srch-expert-sl-btm">
+                        <ul class="srch-expert-sl-info-wr">
+                          <li class="srch-expert-sl-info field">
+                            <div class="srch-expert-sl-info__l">전문분야</div>
+                            <div class="srch-expert-sl-info__r">환경분석, 지질학</div>
+                          </li>
+                          <li class="srch-expert-sl-info keyword">
+                            <div class="srch-expert-sl-info__l">키워드</div>
+                            <div class="srch-expert-sl-info__r">
+                              <div class="srch-expert-sl-keyword-wr"><span>#환경</span><span>#지질학</span><span>#미생물</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="srch-expert-sl-info tel">
+                            <div class="srch-expert-sl-info__l">연락처</div>
+                            <div class="srch-expert-sl-info__r">
+                              <p><b>T.</b>042. 0090. 9909</p>
+                              <p><b>E.</b>webadmin@kbsi.or.kr</p>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="srch-expert-sl-img-wr">
+                          <div class="srch-expert-sl-img">
+                            <img src="../src/img/sample-device_thumb.jpg" alt="">
+                          </div>
+                          <div class="srch-expert-sl-img">
+                            <iframe src="https://www.youtube.com/embed/muD4vjIU6ck?si=MwL69mIkbdZqemJi&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- } loop -->
+                    <div class="srch-expert-sl swiper-slide">
+                      <div class="srch-expert-sl-top">
+                        <div class="srch-expert-sl-thumb">
+                          <img src="../src/img/srch-expert-thumb01.png" alt="전문가 이미지">
+                        </div>
+                        <div class="srch-expert-sl-basic">
+                          <div class="srch-expert-sl-name-wr">
+                            <p><span class="name">김영희</span><span class="role">책임연구원</span></p>
+                            <p> 오창분석과학연구소 / 재무부</p>
+                          </div>
+                          <div class="srch-expert-sl-links">
+                            <a href="" class="btn round25 pd35 sizeS">프로필</a>
+                            <a href="" class="btn round25 pd35 sizeS">활동이력</a>
+                            <a href="" class="btn round25 pd35 sizeS">분석성과</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="srch-expert-sl-btm">
+                        <ul class="srch-expert-sl-info-wr">
+                          <li class="srch-expert-sl-info field">
+                            <div class="srch-expert-sl-info__l">전문분야</div>
+                            <div class="srch-expert-sl-info__r">환경분석, 지질학</div>
+                          </li>
+                          <li class="srch-expert-sl-info keyword">
+                            <div class="srch-expert-sl-info__l">키워드</div>
+                            <div class="srch-expert-sl-info__r">
+                              <div class="srch-expert-sl-keyword-wr"><span>#환경</span><span>#지질학</span><span>#미생물</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="srch-expert-sl-info tel">
+                            <div class="srch-expert-sl-info__l">연락처</div>
+                            <div class="srch-expert-sl-info__r">
+                              <p><b>T.</b>042. 0090. 9909</p>
+                              <p><b>E.</b>webadmin@kbsi.or.kr</p>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="srch-expert-sl-img-wr">
+                          <div class="srch-expert-sl-img">
+                            <img src="../src/img/sample-device_thumb.jpg" alt="">
+                          </div>
+                          <div class="srch-expert-sl-img">
+                            <iframe src="https://www.youtube.com/embed/muD4vjIU6ck?si=MwL69mIkbdZqemJi&amp;start=17"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="srch-expert-sl swiper-slide">
+                      <div class="srch-expert-sl-top">
+                        <div class="srch-expert-sl-thumb">
+                          <img src="../src/img/srch-expert-thumb01.png" alt="전문가 이미지">
+                        </div>
+                        <div class="srch-expert-sl-basic">
+                          <div class="srch-expert-sl-name-wr">
+                            <p><span class="name">김영희</span><span class="role">책임연구원</span></p>
+                            <p> 오창분석과학연구소 / 재무부</p>
+                          </div>
+                          <div class="srch-expert-sl-links">
+                            <a href="" class="btn round25 pd35 sizeS">프로필</a>
+                            <a href="" class="btn round25 pd35 sizeS">활동이력</a>
+                            <a href="" class="btn round25 pd35 sizeS">분석성과</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="srch-expert-sl-btm">
+                        <ul class="srch-expert-sl-info-wr">
+                          <li class="srch-expert-sl-info field">
+                            <div class="srch-expert-sl-info__l">전문분야</div>
+                            <div class="srch-expert-sl-info__r">환경분석, 지질학</div>
+                          </li>
+                          <li class="srch-expert-sl-info keyword">
+                            <div class="srch-expert-sl-info__l">키워드</div>
+                            <div class="srch-expert-sl-info__r">
+                              <div class="srch-expert-sl-keyword-wr"><span>#환경</span><span>#지질학</span><span>#미생물</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="srch-expert-sl-info tel">
+                            <div class="srch-expert-sl-info__l">연락처</div>
+                            <div class="srch-expert-sl-info__r">
+                              <p><b>T.</b>042. 0090. 9909</p>
+                              <p><b>E.</b>webadmin@kbsi.or.kr</p>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="srch-expert-sl-img-wr">
+                          <div class="srch-expert-sl-img">
+                            <img src="../src/img/sample-device_thumb.jpg" alt="">
+                          </div>
+                          <div class="srch-expert-sl-img">
+                            <iframe src="https://www.youtube.com/embed/muD4vjIU6ck?si=MwL69mIkbdZqemJi&amp;start=17"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="srch-expert-sl-ctr">
+                    <button type="button" class="srch-expert-sl-btn left"></button>
+                    <button type="button" class="srch-expert-sl-btn right"></button>
+                  </div>
+                </div>
+              </div>
+              <!-- } 검색된 전문가 -->
+
+
+              <!-- 검색된 장비 { -->
+              <div class="srch-result-expert device" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">
+                  <span class="icon-bar"></span>
+                  검색된 장비
+                  <span class="amount">총 <b>2</b>개</span>
+                </p>
+                <div class="srch-ex-device-box">
+                  <!-- 검색 장비 loop { -->
+                  <div class="equip-info-wrap">
+                    <div class="equip-info-txt-box">
+                      <p class="title">초고분해능 15T 퓨리에변환 이온 싸이클로트론공명 질량분석기</p>
+                      <p class="text">15 T FT-ICR</p>
+                    </div>
+                    <div class="equip-info-list">
+                      <div class="equip-info-item01">
+                        <div class="left">영문약어</div>
+                        <div class="right">15 T FT-ICR</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">설치장소</div>
+                        <div class="right">대덕본원</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">주문담당자</div>
+                        <div class="right charge-wrap">
+                          <span>홍길동 연구원연구원</span>
+                          <span><b>T.</b> 042-123-1234</span>
+                          <span><b>E.</b> QWE123@KBSI.RE.KR</span>
+                        </div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">전문분석분야</div>
+                        <div class="right">금석연구, 나노입자연구</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">키워드</div>
+                        <div class="right keyword-wrap">
+                          <span class="keyword">#환경</span>
+                          <span class="keyword">#지질학</span>
+                          <span class="keyword">#미생물</span>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="i-col-2 match_h equip-info-box-wrap">
+                      <li style="height: 189px;">
+                        <div class="inner">
+                          <p class="title">활용분야</p>
+                          <p class="text">광물내의 미량원소 및 동위원소 분석</p>
+                          <p class="text">광물 형성 시기와 형성 메카니즘 규명</p>
+                          <p class="text">첨단 재료에 대한 미세 영역 표면 분석</p>
+                        </div>
+                      </li>
+                      <li style="height: 189px;">
+                        <div class="inner">
+                          <p class="title">관련성과</p>
+                          <p class="text">광물내의 미량원소 및 동위원소 분석</p>
+                          <p class="text">광물 형성 시기와 형성 메카니즘 규명</p>
+                          <p class="text">첨단 재료에 대한 미세 영역 표면 분석</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="equip-info-btn-box">
+                      <a href="" class="btn sizeS round25">
+                        <span>상세조회</span>
+                      </a>
+                      <button type="button" class="btn round25 sizeS w167" onclick="calculatorPop()">
+                        <span>가견적 계산기</span>
+                      </button>
+                      <button type="button" class="btn round25 sizeS" onclick="deviceSchedulePop()">
+                        <span>장비스케줄</span>
+                      </button>
+                      <a href="" class="btn round25 sizeS">
+                        <span>상담신청</span>
+                      </a>
+                      <a href="" class="btn round25 sizeS active">
+                        <span>분석신청</span>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- } 검색 장비 loop -->
+                  <div class="equip-info-wrap">
+                    <div class="equip-info-txt-box">
+                      <p class="title">초고분해능 15T 퓨리에변환 이온 싸이클로트론공명 질량분석기</p>
+                      <p class="text">15 T FT-ICR</p>
+                    </div>
+                    <div class="equip-info-list">
+                      <div class="equip-info-item01">
+                        <div class="left">영문약어</div>
+                        <div class="right">15 T FT-ICR</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">설치장소</div>
+                        <div class="right">대덕본원</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">주문담당자</div>
+                        <div class="right charge-wrap">
+                          <span>홍길동 연구원연구원</span>
+                          <span><b>T.</b> 042-123-1234</span>
+                          <span><b>E.</b> QWE123@KBSI.RE.KR</span>
+                        </div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">전문분석분야</div>
+                        <div class="right">금석연구, 나노입자연구</div>
+                      </div>
+                      <div class="equip-info-item01">
+                        <div class="left">키워드</div>
+                        <div class="right keyword-wrap">
+                          <span class="keyword">#환경</span>
+                          <span class="keyword">#지질학</span>
+                          <span class="keyword">#미생물</span>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="i-col-2 match_h equip-info-box-wrap">
+                      <li style="height: 189px;">
+                        <div class="inner">
+                          <p class="title">활용분야</p>
+                          <p class="text">광물내의 미량원소 및 동위원소 분석</p>
+                          <p class="text">광물 형성 시기와 형성 메카니즘 규명</p>
+                          <p class="text">첨단 재료에 대한 미세 영역 표면 분석</p>
+                        </div>
+                      </li>
+                      <li style="height: 189px;">
+                        <div class="inner">
+                          <p class="title">관련성과</p>
+                          <p class="text">광물내의 미량원소 및 동위원소 분석</p>
+                          <p class="text">광물 형성 시기와 형성 메카니즘 규명</p>
+                          <p class="text">첨단 재료에 대한 미세 영역 표면 분석</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="equip-info-btn-box">
+                      <a href="" class="btn sizeS round25">
+                        <span>상세조회</span>
+                      </a>
+                      <button type="button" class="btn round25 sizeS w167" onclick="calculatorPop()">
+                        <span>가견적 계산기</span>
+                      </button>
+                      <button type="button" class="btn round25 sizeS" onclick="deviceSchedulePop()">
+                        <span>장비스케줄</span>
+                      </button>
+                      <a href="" class="btn round25 sizeS">
+                        <span>상담신청</span>
+                      </a>
+                      <a href="" class="btn round25 sizeS active">
+                        <span>분석신청</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- } 검색된 전문가 -->
+            </div>
+            <div class="right">
+              <div class="related-list" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <!-- box { -->
+                <div class="related-box">
+                  <p class="fm-tit">관심전문가</p>
+                  <ul class="related-content">
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">홍길동 책임연구원</p>
+                        <p class="related-content__txt">오창분석과학연구소 / 기초소재연구팀</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">홍길동 책임연구원</p>
+                        <p class="related-content__txt">오창분석과학연구소 / 기초소재연구팀</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">홍길동 책임연구원</p>
+                        <p class="related-content__txt">오창분석과학연구소 / 기초소재연구팀</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">홍길동 책임연구원</p>
+                        <p class="related-content__txt">오창분석과학연구소 / 기초소재연구팀오창분구팀오창분석과학연구소 / 기초소재연구팀</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- } box -->
+                <!-- box { -->
+                <div class="related-box">
+                  <p class="fm-tit">관심장비</p>
+                  <ul class="related-content">
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로트론공명질량분석기</p>
+                        <p class="related-content__txt">대덕본원 / 김주영</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로트론공명질량분석기</p>
+                        <p class="related-content__txt">대덕본원 / 김주영</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로트론공명질량분석기</p>
+                        <p class="related-content__txt">대덕본원 / 김주영</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- } box -->
+              </div>
+            </div>
+          </div>
+          <!-- } 검색 결과 -->
+
+        </div>
+      </div>
+    </div>
+    <!-- } 콘텐츠 내용 -->
+
+    <!-- 가견적 계산기 팝업 { -->
+    <div class="pop calculator-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>가견적 계산기</b></h3>
+            </div>
+          </div>
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info">가견적 계산기 가견적 계산기 가견적 계산기 가견적 계산기 가견적 계산기</p>
+            </div>
+          </div>
+          <div class="pop-btns">
+            <a href="/" class="btn sizeM">메인으로 이동</a>
+            <a href="" class="btn sizeM">신청내역 확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 가견적 계산기 팝업 -->
+
+    <!-- 장비스케줄 팝업 { -->
+      <div class="pop device_schedule-pop">
+        <div class="pop-dim"></div>
+        <div class="pop-box scrollbar pink">
+          <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+          <div class="pop-in">
+            <div class="pop-top">
+              <div class="sub-title-wr">
+                <h3 class="sub-title"><b>장비스케줄</b></h3>
+              </div>
+            </div>
+            <div class="pop-content">
+              <div class="sub-title-wr">
+                <p class="sub-title-info">장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄</p>
+              </div>
+            </div>
+            <div class="pop-btns">
+              <a href="/" class="btn sizeM">메인으로 이동</a>
+              <a href="" class="btn sizeM">신청내역 확인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- } 가장비스케줄 팝업 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+  <script>
+    // 메인 팝업(배너) 슬라이드        
+    let bannerSl = new Swiper(".srch-expert-sl-wrap", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      // autoplay: {
+      //   delay: 4000,
+      //   disableOnInteraction: false,
+      // },
+      speed: 600,
+      navigation: {
+        nextEl: ".srch-expert-sl-btn.right",
+        prevEl: ".srch-expert-sl-btn.left",
+      },
+      a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+      },
+    });
+  
+    // 가견적 계산기 팝업
+    function calculatorPop() {
+      $('.calculator-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+  
+    // 장비스케줄 팝업
+    function deviceSchedulePop() {
+      $('.device_schedule-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+  
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
+
+</body>
+
+</html>

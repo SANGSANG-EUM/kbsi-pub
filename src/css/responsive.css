@@ -3,9 +3,46 @@
   /* > 서브페이지 */
   .sub-aside {top: auto; transform: translate(0); right: 10px; bottom: 10px;}
   .sub-aside-ul {flex-direction: row;}
+
+  /* 통합검색결과 */
+  .srch_result_wrap {gap: 2vw;}
+  .srch_result_wrap > .right {width: calc(35% - 2vw);}
+
+
+  /* > 전문가 검색 결과 */
+  .srch-expert-sl {padding: min(5vw, 30px) min(3vw, 35px);}
+  .srch-expert-sl-btm {gap: 1vw;}
+  .srch-expert-sl-info-wr {width: calc(100% - 326px - 2vw);}
+  .srch-expert-sl-img-wr {gap: 1vw;}
+
+  /* > 장비 검색 결과 */
+  .equip-info-wrap {padding: min(5vw, 30px) min(3vw, 35px);}
+  .equip-info-box-wrap {padding-top: 1vw; margin: -0.5vw;}
+  .equip-info-box-wrap > li {padding: 0.5vw;}
+  .equip-info-item01 {align-items: flex-start; padding: 15px 20px; height: auto;}
+  .equip-info-item01 .right.charge-wrap {display: flex; flex-direction: column; gap: 3px;}
+  .equip-info-item01 .right.charge-wrap span {padding: 0;}
+  .equip-info-box-wrap > li .inner {padding: 15px 20px;}
+  .srch-equipment-thumb-btn-box {top: -40px; width: 100%; justify-content: flex-end; gap: 25px;}
+
 }
 
 @media screen and (max-width:1440px) {
+  /* 이용내역 */
+  /* > 분석지원 */
+  /*  > 이용기기 보유현황(목록) */
+  .device-list-ul {gap: 2vw;}
+  .device-list-li {width: calc(100% / 3 - 4vw / 3); padding: 2vw;}
+  .device-list-name {font-size: 18px;}
+  .device-list-btns .btn {font-size: 14px;}
+  .device-select-ul {flex-wrap: wrap; gap: 1.5vw;}
+  .device-select-li {flex: none; width: calc(100% / 7 - 9vw / 7);}
+  .device-list-hash {min-width: auto;}
+
+  /*  > 이용기기 보유현황(상세정보) */
+  .view-dt-left {width: 50%;}
+  .view-dt-right {width: 50%;}
+
 
 }
 
@@ -32,13 +69,48 @@
 
   /* 이용내역 */
   /* > 분석지원 */
-  /*  > 이용기기 보유현황 */
+  /*  > 이용기기 보유현황(목록) */
+  .device-select-li {flex: none; width: calc(100% / 6 - 7.5vw / 6);}
+
+  /*  > 이용기기 보유현황(신청) */
   .app-form-outer {flex-direction: column;}
   .app-form-in.left, .app-form-in.right {width: 100%;}
   .app-form-submit-wr {flex-direction: row;}
   .input-container {flex-wrap: wrap;}
   .app-step-txt3 {padding-top: 10px; font-size: 18px;}
   .app-step-circle {border-width: 10px;}
+
+  /*  > 이용기기 보유현황(상세정보) */
+  .view-dt-sl {padding-top: 20px;}
+  .view-dt-right {padding-left: 20px;}
+  .view-dt-info-box {padding: 20px;}
+  .view-dt-info-price-box .title {font-size: 18px;}
+  .view-dt-info-price-box .price-wrap {margin-top: 0;}
+  .view-dt-info-price-box .price-wrap .orprice {font-size: 20px;}
+  .view-dt-info-price-box .price-wrap .saleprice {font-size: 20px;}
+  .view-dt-info-btns {padding-top: 24px;}
+
+  .view-map-info-list {padding: 12px;}
+  .view-map-info-item {flex-direction: column; line-height: normal; padding: 8px 0;}
+  .view-map-info-item .text01 {width: 100%; font-size: 16px; padding-bottom: 4px;}
+  .view-map-info-item .text02 {width: 100%; line-height: normal;}
+
+  .view-desc-item .inner {padding: 30px;}
+  .view-desc-item .inner .left {width: 200px;}
+  .view-desc-item .inner .right {width: calc(100% - 200px);}
+
+  .img-exp-pop .pop-box {padding: 60px 0;}
+
+  /* 통합검색결과 */
+  .srch_result_wrap {flex-direction: column;}
+  .srch_result_wrap > .left, .srch_result_wrap > .right {width: 100%;}
+  .related-list {flex-direction: row; gap: 1vw; flex-wrap: wrap;}
+  .related-box {width: calc(50% - 0.5vw); padding: 15px 20px;}
+
+  /* > 전문가 검색 결과 */
+  
+  /* > 장비 검색 결과 */
+  .jqcloud {margin: auto; max-width: 100%;}
 
   /* Board-Write */
   .fm-ct.flex {display: flex; align-items: center;}
@@ -78,6 +150,37 @@
   .sub-aside-ul {gap: 5px;}
   .sub-aside-li > a {width: 60px; height: 60px; border-radius: 5px; gap: 0;}
   .sub-aside-li > a img {transform: scale(0.7);}
+
+  /* 이용내역 */
+  /* > 분석지원 */
+  /*  > 이용기기 보유현황(목록) */
+  .device-select-li {flex: none; width: calc(100% / 5 - 6vw / 5);}
+  .device-list-li {width: calc(100% / 2 - 2vw / 2);}
+  .device-list-thumb {height: clamp(200px, 50vw, 330px);}
+  .device-list-btns {gap: 2vw;}
+  .device-list-btn-wish {width: 40%;}
+  .device-list-btn-link {width: 60%;}
+
+  /*  > 이용기기 보유현황(상세정보) */
+  .view-dt-box {flex-direction: column;}
+  .view-dt-left {width: 100%;}
+  .view-dt-right {width: 100%; padding-left: 0; padding-top: 20px;}
+
+
+  /* 통합검색결과 */
+
+
+  /* > 전문가 검색 결과 */
+  .srch-expert-sl-ctr {right: 3vw;}
+  .srch-expert-sl-btm {padding-top: 15px; margin-top: 15px;}
+  .srch-expert-sl-info__l {width: 80px;}
+
+  /* > 장비 검색 결과 */
+  .srch-expert-item .inner-top {flex-direction: column; align-items: flex-start;}
+  .srch-expert-item .inner-top .expert-thumb {overflow: hidden; padding-bottom: 132px;}
+  .srch-expert-item .inner-top .expert-info {padding-left: 0; padding-top: 10px; width: 100%;}
+  .srch-expert-list {margin: -7.5px;}
+  .srch-expert-item {padding: 7.5px;}
 
   /* Board-Write */
   .fm_inner {padding: 25px 20px;}
@@ -122,6 +225,7 @@
   .sub-loca-li.active {display: none;}
   .sub-loca-btn {display: block; width: 100%; border: 0; background: #333 url('../img/icon-arrow_subloca.png') no-repeat center right 13px / 12px; color: #fff;}
   .sub-loca-home {display: none;}
+  .sub-loca-wr--1 .sub-loca-btn {background: #333;}
 
   /* > 서브페이지 */
   .sub-tab-ul {gap: 0;}
@@ -130,7 +234,19 @@
 
   /* 이용내역 */
   /* > 분석지원 */
-  /*  > 이용기기 보유현황 */
+  /*  > 이용기기 보유현황(목록) */
+  .device-select-li {flex: none; width: calc(100% / 3 - 3vw / 3);}
+  .region-select-ul {gap: 1.5vw;}
+  .region-select-li {width: calc(100% / 3 - 3vw / 3);}
+  .search-wr {gap: 5px;}
+  .search-wr .fm-input {height: 40px;}
+  .search-wr .btn {height: 40px;}
+  .bl-select-wr {flex-direction: column-reverse; align-items: flex-start; gap: 10px;}
+  .device-list-ul {gap: 30px;}
+  .device-list-li {padding: 20px 10px; width: 100%;}
+  .device-list-thumb {height: clamp(200px, 100vw, 450px);}
+
+  /*  > 이용기기 보유현황(신청) */
   .sub-vs-quick-ul {width: 100%;}
   .app-form-table th {padding: 10px; font-size: 14px;}
   .app-form-table td {padding: 10px;}
@@ -159,6 +275,75 @@
   .bl-post {flex-shrink: 0;}
   .pop-list-table th {font-size: 14px;}
   .pop-top {padding-bottom: 3vw;}
+
+  /*  > 이용기기 보유현황(상세정보) */
+  .view-dt-sl {padding-top: 10px;}
+  .view-dt-thumb-sl .img-exp-btn {bottom: 10px; right: 10px;}
+
+  .view-dt-info-box {padding: 14px;}
+  .view-dt-info-item .inner {padding: 0 15px; height: 38px;}
+  .view-dt-info-item .inner .text01 {font-size: 14px;}
+  .view-dt-info-item .inner .text02 {font-size: 14px;}
+  .view-dt-info-btns {padding-top: 14px; gap: 0 8px;}
+
+  .view-map-box {flex-direction: column;}
+  .view-map-box > * {width: 100%;}
+  .view-map-info {padding: 20px;}
+  .view-map-info-list {padding: 0;}
+
+  .view-desc-item .inner {flex-direction: column; padding: 20px;}
+  .view-desc-item .inner .left .icon {display: none;}
+  .view-desc-item .inner .left {width: 100%; padding: 0;}
+  .view-desc-item .inner .right {width: 100%;}
+  .view-desc-text-item {padding-left: 14px; padding-bottom: 8px; font-size: 14px;}
+  .view-desc-wrap.i-col-2 > * {width: 100%;}
+
+  .table-wrap {overflow-x: auto;}
+  .table-wrap table {width: 670px;}
+  .table-wrap .table-caption {width: 670px;}
+  .table-wrap table thead tr th {font-size: 14px; height: auto; padding: 8px;}
+  .table-wrap table tbody tr td {padding: 8px;}
+
+  .view-dt-info-btns .btn {font-size: 14px;}
+  .view-dt-info-price-box {padding-top: 14px;}
+  .view-dt-info-price-box .title {font-size: 16px;}
+  .view-dt-info-price-box .price-wrap .sale-percent {font-size: 14px; padding: 2px 9px;}
+
+  .view-map-info-item .text01 {font-size: 14px;}
+  .view-map-info-item .text02 {font-size: 14px;}
+  .view-map-info-item .text02 a {font-size: 14px;}
+
+  /* 통합검색결과 */
+  .related-box {width: 100%;}
+  .related-box .fm-tit {font-size: 18px;}
+
+  /* > 전문가 검색 결과 */
+  .srch-expert-sl-top {gap: 3vw;}
+  .srch-expert-sl-name-wr {font-size: 14px;}
+  .srch-expert-sl-name-wr .name {font-size: 20px;}
+  .srch-expert-sl-name-wr .role {font-size: 16px;}
+  .srch-expert-sl-ctr {gap: 5px; right: 10px;}
+  .srch-expert-sl-btn {background-size: 18px;}
+  .srch-expert-sl-btm {flex-direction: column;}
+  .srch-expert-sl-info-wr {width: 100%;}
+  .srch-expert-sl-img {width: 100%; height: 30vw;}
+  .srch-expert-sl-links {gap: 1vw;}
+  .srch-expert-sl-links .btn {min-width: auto; width: auto; padding: 0 15px;}
+
+  /* > 장비 검색 결과 */
+  .equip-info-box-wrap > li .inner .title {padding-bottom: 10px; font-size: 16px;}
+  .equip-info-txt-box .title {font-size: 20px;}
+  .equip-info-item01 .left {width: 120px;} 
+  .equip-info-item01 .right {width: calc(100% - 120px);}
+  .equip-info-btn-box {gap: 1vw; flex-wrap: wrap; padding-top: 15px;}
+  .equip-info-btn-box > .btn, .equip-info-btn-box .btn.w167 {width: calc(50% - 0.5vw);}
+  .equip-info-btn-box > .btn.active {width: 100%;}
+  .srch-thesis-item {padding: 17px 25px 8px;}
+  .srch-thesis-box {flex-direction: column; gap: 5px;}
+  .srch-thesis-box .thesis-name > span {font-size: 16px;}
+  .srch-thesis-box .thesis-text {font-size: 14px;}
+  .srch-thesis-title {font-size: 18px; padding-bottom: 5px;}
+  .thesis-btn-wr .btn {font-size: 12px;}
 
   /* Board-Write */
   .fm-row {flex-direction: column; gap: 5px;}
@@ -213,7 +398,21 @@
 
   /* 이용내역 */
   /* > 분석지원 */
-  /*  > 이용기기 보유현황 */
+  /*  > 이용기기 보유현황(목록) */
+  .device-select-li {height: auto;}
+  .device-select-btn {padding: 5px; gap: 0;}
+  .device-sel-icon {height: 65%;}
+  .device-sel-txt {height: 35%; font-size: 14px;}
+  .device-sel-icon img {transform: scale(0.8);}
+  .region-select-btn {font-size: 14px;}
+  .bl-select-txt {font-size: 14px;}
+  .device-list-name {font-size: 16px;}
+  .device-list-info {margin-top: 10px; font-size: 14px;}
+  .device-list-btns {padding-top: 10px;}
+  .device-list-hash-wr {gap: 5px; padding: 15px 0;}
+  .device-list-hash {font-size: 12px; padding: 5px 10px;} 
+
+  /*  > 이용기기 보유현황(신청) */
   .app-form-title {flex-direction: column; align-items: flex-start; gap: 10px;}
   .app-form-table th, .app-form-table td {display: block; width: 100%;}
   .app-form-table th {border: 0; padding-bottom: 0;}
@@ -231,6 +430,56 @@
 
   .pop-box {padding: 30px 7.5px;}
 
+  /*  > 이용기기 보유현황(상세정보) */
+  .view-dt-thumb-sl .img-exp-btn {width: 38px; height: 38px;}
+  .view-dt-thumb-sl .img-exp-btn img {display: inline-block; width: 26px;}
+  
+  .view-dt-info-price-box .price-wrap {}
+  .view-dt-info-price-box .price-wrap .orprice {font-size: 16px; margin-right: 14px;}
+  .view-dt-info-price-box .price-wrap .orprice::after {width: 8px; height: 14px; right: -18px; background-size: 100%;}
+  .view-dt-info-price-box .price-wrap .saleprice {font-size: 16px; padding-left: 6px;}
+  .view-dt-info-price-box .price-wrap .sale-percent {margin-left: 8px; font-size: 12px; padding: 2px 6px;}
+
+  /* 통합검색결과 */
+  .srch_result_wrap > .left .fm-tit {font-size: 20px;}
+  .inter-srch-input-bar, .inter-srch-input-bar > .fm-search-wr, .inter-srch-input-bar > .fm-search-wr .fm-input, .inter-srch-input-bar > p {height: 40px; font-size: 14px;}
+  .inter-srch-input-bar > .fm-search-wr .fm-input {padding: 0 15px;}
+  .related-content__tit, .equip-info-box-wrap > li .inner .title {font-size: 14px;}
+  .related-content__txt {font-size: 13px;}
+  .related-content > li {padding: 10px 12px;}
+  .related-content > li::after {top: 17px; width: 3px; height: 3px;}
+  .equip-info-item01 .right.charge-wrap, .equip-info-item01 .right {width: 100%;}
+  .equip-info-box-wrap > li .inner {padding: 8px 12px;}
+  .equip-info-box-wrap > li .inner .text {padding-left: 10px;}
+  .equip-info-box-wrap > li .inner .text::before {width: 3px; height: 3px;}
+  .related-box {padding: 8px 15px;}
+
+  /* > 전문가 검색 결과 */
+  .srch-expert-sl-wrap, .srch-ex-device-box {padding-top: 0;}
+  .srch-expert-sl-top {flex-direction: column; gap: 2vw;}
+  .srch-expert-sl-thumb {width: 110px; height: 110px;}
+  .srch-expert-sl-basic {gap: 2vw;}
+  .srch-expert-sl-info {flex-direction: column; gap: 3px; padding: 8px 12px; font-size: 14px;}
+  .srch-expert-sl-img-wr, .srch-expert-sl-btm {gap: 6px;}
+  .srch-expert-sl-links .btn {font-size: 14px;}
+  .srch-ex-device-box, .related-list {gap: 10px;}
+  .srch-expert-sl-ctr {top: 15px;}
+
+  /* 장비 검색 결과 */
+  .equip-info-item01 {flex-direction: column; gap: 5px; padding: 8px 12px;}
+  .equip-info-txt-box .title {font-size: 18px;}
+  .equip-info-box-wrap > li {width: 100%;}
+  .equip-info-item01 .left, .equip-info-item01 .right, .equip-info-item01 .right.keyword-wrap .keyword, .equip-info-box-wrap > li .inner .text {font-size: 14px;}
+  .srch-expert-list {margin: -0.5vw;}
+  .srch-expert-item {padding: 0.5vw; width: 100%;}
+  .srch-expert-item .inner-top .expert-thumb {width: 110px; padding-bottom: 110px;}
+  .srch-expert-item .inner-top .name .ex-sort, .srch-expert-item .inner-top .etc, .srch-expert-item .inner-top .keyword {font-size: 14px;}
+  .srch-expert-item .inner-top .keyword {padding-top: 2px;}
+  .srch-thesis-item {padding: 15px 15px 8px;}
+  .srch-thesis-box {padding: 10PX 12px;}
+  .srch-thesis-box::before {top: 17px; width: 3px; height: 3px;}
+  .srch-thesis-box .thesis-name > span {font-size: 14px;}
+  .srch-thesis-box .thesis-text {font-size: 13px;}
 
   /* Board-Write */
   .fm_inner {padding: 20px 15px;}

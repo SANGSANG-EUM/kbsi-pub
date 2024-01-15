@@ -92,6 +92,7 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn:hover {background-color: #fff; color: #333;}
 .btn:hover img {filter: invert(17%) sepia(8%) saturate(11%) hue-rotate(319deg) brightness(39%) contrast(87%);}
 .btn.white:hover {background-color: #333; color: #fff;}
+/* .btn.white:hover img {filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(103%) contrast(102%);} */
 .btn.colorMain:hover {color: #614699;}
 .btn.colorMain:hover img {filter: invert(30%) sepia(90%) saturate(3937%) hue-rotate(219deg) brightness(65%) contrast(88%);}
 .btn.colorSub1:hover {color: #519ca3;}
@@ -99,7 +100,7 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn.colorSub2:hover {color: #ff7b7b;}
 .btn.colorSub2:hover img {filter: invert(40%) sepia(140%) saturate(800%) hue-rotate(309deg) brightness(101%) contrast(102%);}
 
-.btn.active {border-color: #614699 !important; background-color: #614699 !important; color: #fff !important;}
+/* .btn.active {border-color: #614699 !important; background-color: #614699 !important; color: #fff !important;} */
 
 .btn.icon1 {display: flex; align-items: center; justify-content: center; gap: 10px;}
 .btn.icon1.icon1_f {flex-direction: row-reverse;}
@@ -203,6 +204,8 @@ h6 {font-size: 16px; font-weight: 700;}
 .bl-search {width: 100%; max-width: 350px;}
 .bl-post {font-size: 16px; font-weight: 400; color: #333;}
 .bl-post > span {font-size: 20px; font-weight: 600; color: var(--sub-color__pink);}
+.bl-select-wr {display: flex; align-items: center; gap: 0 20px;}
+.bl-select-txt {font-weight: 400;}
 
 /* Board - View */
 .bv-top {border-top: 2px solid #614699;}

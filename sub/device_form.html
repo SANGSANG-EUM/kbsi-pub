@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../src/plugin/aos/aos.css">
   <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
 
-
   <!-- src > js -->
   <script src="../src/js/jquery-3.7.0.min.js"></script>
   <script src="../src/js/normal.js"></script>
@@ -237,7 +236,7 @@
                     </div>
                     <!-- 필수입력 : app-form-key에 'req' 클래스 추가   -->
                     <table class="app-form-table">
-                      <caption>기기이용 신청내역</caption>
+                      <caption class="sound_only">기기이용 신청내역</caption>
                       <tbody>
                         <tr>
                           <th colspan="2">
@@ -485,7 +484,7 @@
                     </div>
                     <!-- 필수입력 : app-form-key에 'req' 클래스 추가   -->
                     <table class="app-form-table">
-                      <caption>시료특성 및 기타</caption>
+                      <caption class="sound_only">시료특성 및 기타</caption>
                       <tbody>
                         <tr>
                           <th>
@@ -726,7 +725,7 @@
                     <ul class="app-side-ul">
                       <li class="app-side-li">
                         <table class="app-side-table">
-                          <caption>신청자 정보</caption>
+                          <caption class="sound_only">신청자 정보</caption>
                           <tbody>
                             <tr>
                               <th>소속기관</th>
@@ -882,7 +881,7 @@
               </div>
               <div class="pop-list-mid">
                 <table class="pop-list-table">
-                  <caption>동일장비 신청내역</caption>
+                  <caption class="sound_only">동일장비 신청내역</caption>
                   <thead>
                     <tr>
                       <th>번호</th>
@@ -992,30 +991,30 @@
     </div>
     <!-- } 동일장비 신청내역 팝업 -->
 
-        <!-- 동일장비 신청내역 팝업 { -->
-          <div class="pop complete-pop">
-            <div class="pop-dim"></div>
-            <div class="pop-box scrollbar pink">
-              <button type="button" class="pop-close-btn" onclick="popClose()"></button>
-              <div class="pop-in">
-                <div class="pop-top">
-                  <div class="sub-title-wr">
-                    <h3 class="sub-title"><b>기기이용신청이 완료</b>되었습니다.</h3>
-                  </div>
-                </div>
-                <div class="pop-content">
-                  <div class="sub-title-wr">
-                    <p class="sub-title-info">신청완료 안내문구가 들어갈 곳 신청완료 안내문구가 들어갈 곳 <br> 신청완료 안내문구가 들어갈 곳</p>
-                  </div>
-                </div>
-                <div class="pop-btns">
-                  <a href="/" class="btn sizeM">메인으로 이동</a>
-                  <a href="" class="btn sizeM">신청내역 확인</a>
-                </div>
-              </div>
+    <!-- 동일장비 신청내역 팝업 { -->
+    <div class="pop complete-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>기기이용신청이 완료</b>되었습니다.</h3>
             </div>
           </div>
-          <!-- } 동일장비 신청내역 팝업 -->
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info">신청완료 안내문구가 들어갈 곳 신청완료 안내문구가 들어갈 곳 <br> 신청완료 안내문구가 들어갈 곳</p>
+            </div>
+          </div>
+          <div class="pop-btns">
+            <a href="/" class="btn sizeM">메인으로 이동</a>
+            <a href="" class="btn sizeM">신청내역 확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 동일장비 신청내역 팝업 -->
 
   </div>
 
