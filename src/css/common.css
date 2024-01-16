@@ -20,6 +20,10 @@ input{border-radius: 0;}
 .wrapper2 {width: 1400px; max-width: 100%; margin: 0 auto;}
 .scroll-lock {overflow: hidden;}
 .sound_only {display: inline-block !important; position: absolute; top: 0; left: 0; width: 0; height: 0; margin: 0 !important; padding: 0 !important; font-size: 0; line-height: 0; border: 0 !important; overflow: hidden !important;}
+.sub-lr-outer {display: flex; gap: clamp(40px, 8vw, 70px); padding: clamp(30px, 8vw, 70px) 0 0;}
+.sub-left {width: calc(100% - 365px - 70px);}
+.sub-right {width: 365px;}
+.board-wr {padding-top: clamp(30px, 5vw, 60px);}
 
 /* Font */
 h1, h2, h3, h4, h5, h6 {font-family: 'SCDream';}
@@ -116,8 +120,8 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn.pd35 {padding: 0 35px;}
 
 /* Board - Write (+등록폼) */
-.fm-tit {margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #333;}
-.fm_inner {padding: 40px 35px; border: 1px solid #ddd; border-top: 2px solid #614699; background-color: #fff;}
+.fm-tit {margin-bottom: 10px; font-size: 23px; font-weight: 600; color: #333;}
+.fm_inner {padding: 40px 35px; border: 1px solid #ddd; border-top: 2px solid #333; background-color: #fff;}
 .fm-row {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: flex-start; padding: 10px 0; border-bottom: 1px solid #eee;}
 .fm-row:first-child {border-top: 1px solid #eee;}
 .fm-lb {width: 170px;}
@@ -187,14 +191,14 @@ h6 {font-size: 16px; font-weight: 700;}
 /* Board - List */
 .bl-top-select {max-width: 235px;}
 .bl-body {padding: 10px 0 25px;}
-.bl-table {width: 100%; border-top: 2px solid #614699;}
+.bl-table {width: 100%; border-top: 2px solid #333;}
 .bl-table th {padding: 15px 10px; font-size: 18px; font-weight: 600; color: #333; border-bottom: 1px solid #333;}
 .bl-table td {padding: 15px 10px; font-size: 16px; font-weight: 400; color: #333; text-align: center; border-bottom: 1px solid #dddddd;}
 .bl-table td.bl-subject {text-align: left;}
-.bl-table td.bl-subject > a {word-break: break-all;}
+.bl-table td.bl-subject > a {display: block; word-break: break-all;}
 .bl-no {width: 80px;}
-.bl-date {width: 200px;}
-.bl-hits {width: 100px;}
+.bl-date {width: 120px;}
+.bl-hits {width: 80px;}
 .bl-btm {display: flex; align-items: center; justify-content: space-between; gap: 20px;}
 .bl-btm.center {justify-content: center;}
 .bl-page-wr {display: flex; border: 1px solid #ddd; border-right: 0;}
@@ -208,7 +212,7 @@ h6 {font-size: 16px; font-weight: 700;}
 .bl-select-txt {font-weight: 400;}
 
 /* Board - View */
-.bv-top {border-top: 2px solid #614699;}
+.bv-top {border-top: 2px solid #333;}
 .bv-subject {font-size: 20px; font-weight: 400; color: #333; padding: 15px;}
 .bv-info {display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 15px 20px; border-top: 1px solid #333; background-color: #f1f1f1; font-size: 16px; font-weight: 400; color: #333; border-bottom: 1px solid #ddd;}
 .bv-body {border-bottom: 1px solid #ddd;}

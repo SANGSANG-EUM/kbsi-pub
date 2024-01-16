@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 이용신청 > Q&A</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub qna">
+    <!-- 서브비주얼 { -->
+    <div class="sub-visual sub-visual2">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-vis-wr">
+            <div class="sub-vs-txt-wr" data-aos="fade-up" data-aos-duration="1000">
+              <p class="sub-vs-tit">
+                활용 <b>안내</b>
+              </p>
+              <p class="sub-vs-txt">
+                <span>ARIA 서비스를</span>이용하시기 편리하도록 <br> 정보를 제공해드리는 페이지입니다.
+              </p>
+            </div>
+            <div class="sub-vs-quick-wr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <ul class="sub-vs-quick-ul">
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
+                    <span>분석신청</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
+                    <span>Q&A</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
+                    <span>시료접수</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
+                    <span>계산서</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li on">
+                  <a href="">
+                    <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
+                    <span>아카데미</span>
+                  </a>
+                </li>
+                <li class="sub-vs-quick-li">
+                  <a href="">
+                    <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
+                    <span>가상캠퍼스</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="sub-vs-quick-btn-wr">
+                <p>quick menu</p>
+                <button type="button" class="sub-vs-quick-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브비주얼 -->
+
+    <!-- 서브로케이션 { -->
+    <div class="sub-location">
+      <div class="wrapper">
+        <div class="sub-loca-wr">
+          <button type="button" class="sub-loca-btn">
+            Q&A
+          </button>
+          <ul class="sub-loca-ul">
+            <li class="sub-loca-li">
+              <a href="">공지사항</a>
+            </li>
+            <li class="sub-loca-li active">
+              <a href="">Q&A</a>
+            </li>
+            <li class="sub-loca-li">
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+          <div class="sub-loca-home">
+            <a href="/"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브로케이션 -->
+
+    <!-- 사이드바 { -->
+    <aside class="sub-aside">
+      <ul class="sub-aside-ul">
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_video.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>홍보동영상</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_info.png" alt="" style="width: 26px; margin-bottom: 3px;">
+            <span>이용안내</span>
+          </a>
+        </li>
+        <li class="sub-aside-li">
+          <a href="">
+            <img src="../src/img/icon-aside_app.png" alt="" style="width: 29px;">
+            <span>체험신청</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- } 사이드바 -->
+
+    <!-- 콘텐츠 내용 { -->
+    <!-- 아래 input 및 textarea의 name, id값은 임의로 작성하였으니 개발시 수정 필요  -->
+    <div id="container" class="sub-inner">
+
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-title-wr">
+            <h3 class="sub-title"><b>Q</b> & <b>A</b></h3>
+            <p class="sub-title-info"><span>ARIA</span>에 궁금하신 점이 있으시면 무엇이든 물어보세요.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="subsec">
+          <div class="container">
+            <div class="wrapper">
+              <div class="sub-lr-outer qna-lr-outer">
+                <div class="sub-left qna-left">
+                  <!-- qna 카테고리 { -->
+                  <div class="qna-cate-wr">
+                    <div class="qna-cate-box qna-cate-box--1">
+                      <div class="qna-cate-title">
+                        <div class="fm-tit qna-cate-txt1">
+                          <span class="icon-bar"></span>
+                          분석관련 문의
+                          <p class="qna-cate-txt2">아래 카테고리를 선택하시면 해당 게시물만 노출됩니다.</p>
+                        </div>
+                      </div>
+                      <ul class="qna-cate-ul">
+                        <li class="qna-cate-li">
+                          <a href="">SEM</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">TEM</a>
+                        </li>
+                        <li class="qna-cate-li active">
+                          <a href="">NMR</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">XRD</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">MS</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">SEM</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">TEM</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">NMR</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">XRD</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">MS</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="qna-cate-box qna-cate-box--2">
+                      <div class="qna-cate-title">
+                        <div class="fm-tit qna-cate-txt1">
+                          <span class="icon-bar"></span>
+                          일반문의
+                          <p class="qna-cate-txt2">분류를 선택하세요.</p>
+                        </div>
+                      </div>
+                      <ul class="qna-cate-ul">
+                        <li class="qna-cate-li">
+                          <a href="">시스템</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">회원관련</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">불편/오류</a>
+                        </li>
+                        <li class="qna-cate-li">
+                          <a href="">비용/결제</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- } qna 카테고리 -->
+
+                  <!-- board list { -->
+                  <div class="bl-wr">
+                    <div class="bl-body">
+                      <!-- bl-status-icon 상태값 클래스 : 완료-fin 추가 / 처리지연-del 추가 -->
+                      <table class="bl-table">
+                        <thead>
+                          <tr>
+                            <th class="bl-no">NO</th>
+                            <th class="bl-subject">제목</th>
+                            <th class="bl-writer">작성자</th>
+                            <th class="bl-date">작성일</th>
+                            <th class="bl-status">상태</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다. 리스트 제목입니다. 리스트 제목입니다. 리스트 제목입니다. 리스트 제목입니다.</a>
+                            </td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon">등록</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon">접수</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon">처리중</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon del">처리지연</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon fin">완료</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bl-no">21</td>
+                            <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                            <td class="bl-writer">홍길동</td>
+                            <td class="bl-date">2023-12-31</td>
+                            <td class="bl-status">
+                              <div class="bl-status-icon">취소</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="bl-btm">
+                      <ul class="bl-page-wr">
+                        <li class="bl-page">
+                          <a href="">PREV</a>
+                        </li>
+                        <li class="bl-page active">
+                          <a href="">1</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">2</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">3</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">4</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">5</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">NEXT</a>
+                        </li>
+                      </ul>
+                      <form action="" class="bl-search">
+                        <div class="pop-sch-wr">
+                          <input type="text" name="input11" id="input11" class="fm-input" placeholder="검색어 입력"
+                            title="검색어 입력">
+                          <label for="input11" class="sound_only">검색어 입력</label>
+                          <button type="button" class="btn sizeS pd35">검색하기</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- } board list -->
+                </div>
+                <div class="sub-right qna-right">
+
+                  <div class="qna-ct-box">
+                    <p class="qna-ct-box__title fm-tit">
+                      분석지원 <span>상담센터</span>
+                    </p>
+                    <div class="qna-ct-box__tel">
+                      <img src="../src/img/icon-tel.png" alt="전화번호">
+                      <a href="tel:14-3333">14-3333</a>
+                    </div>
+                    <ul class="qna-ct-box__ul">
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">1번</span>
+                        <span>바이오분야</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">2번</span>
+                        <span>소재분야</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">3번</span>
+                        <span>환경분야</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">4번</span>
+                        <span>기타문의</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="related-list aos-init aos-animate">
+                    <!-- box { -->
+                    <div class="related-box overflow black">
+                      <p class="fm-tit">새로 올라온 질문</p>
+                      <ul class="related-content">
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">KBSI의 장비는 어디어디에 있나요 ?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">세금계산서를 받고 싶은데 어떻게 해야 하는지 알려주세요</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- } box -->
+                    <!-- box { -->
+                    <div class="related-box overflow">
+                      <p class="fm-tit">많이 본 Q&A</p>
+                      <ul class="related-content">
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- } box -->
+                  </div>
+
+                  <ul class="qna-btn-list">
+                    <li class="qna-btn border-out">
+                      <a href="" class="qna-btn-link border-in">
+                        <span class="qna-btn-icon">
+                          <img src="../src/img/icon-qna_btn1.png" alt="">
+                        </span>
+                        <span class="qna-btn-txt">
+                          FAQ 바로가기
+                        </span>
+                      </a>
+                    </li>
+                    <li class="qna-btn border-out" onclick="qnaPop()">
+                      <button type="button" class="qna-btn-link border-in">
+                        <span class="qna-btn-icon">
+                          <img src="../src/img/icon-qna_btn2.png" alt="">
+                        </span>
+                        <span class="qna-btn-txt">
+                          Q&A 작성하기
+                        </span>
+                      </button>
+                    </li>
+                    <li class="qna-btn border-out">
+                      <a href="" class="qna-btn-link border-in">
+                        <span class="qna-btn-icon">
+                          <img src="../src/img/icon-qna_btn3.png" alt="">
+                        </span>
+                        <span class="qna-btn-txt">
+                          MY Q&A
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- } 콘텐츠 내용 -->
+
+    <!-- 팝업 { -->
+    <div class="pop qna-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top" style="border: 0; padding: 0;">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>Q&A</b> 작성하기</h3>
+            </div>
+          </div>
+          <div class="pop-content">
+            <form action="" class="register_fm">
+              <div class="fm_section">
+                <div class="fm_inner">
+                  <div class="fm-row fm-row--subject">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>제목</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="qnainput1" id="qnainput1" class="fm-input" placeholder="제목입력">
+                      <label for="qnainput1" class="sound_only">제목입력</label>
+                    </div>
+                  </div>
+                  <div class="fm-row fm-row--name">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>이름</span>
+                    </div>
+                    <div class="fm-ct">
+                      <input type="text" name="qnainput2" id="qnainput2" class="fm-input" placeholder="실명입력">
+                      <label for="qnainput2" class="sound_only">실명입력</label>
+                    </div>
+                  </div>
+    
+                  <div class="fm-row fm-row--file">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>첨부파일</span>
+                    </div>
+                    <div class="fm-ct">
+                      <div class="filebox">
+                        <div class="file-wr">
+                          <label for="fileImsiId">
+                            <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
+                          </label>
+                          <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
+                        </div>
+                        <!-- 실제 전송되는 input[type=file] -->
+                        <input type="file" id="fileImsiId" class="upload-hidden">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fm-row fm-row--email">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>이메일</span>
+                    </div>
+                    <div class="fm-ct flex">
+                      <input type="text" name="qnainput3" id="qnainput3" class="fm-input fm-mail-input1">
+                      <label for="qnainput3" class="sound_only">이메일 아이디 입력</label>
+                      <span class="fm-sym">@</span>
+                      <input type="text" name="qnainput4" id="qnainput4" class="fm-input fm-mail-input2">
+                      <label for="qnainput4" class="sound_only">이메일 도메인 입력</label>
+                      <select name="qnainput4-1" id="qnainput4-1" class="fm-select fm-select-1 w fm-mail-select">
+                        <option value="" disabled selected hidden>선택하세요</option>
+                        <option value="naver.com">네이버</option>
+                        <option value="gmail.com">Gmail</option>
+                        <option value="daum.net">다음</option>
+                        <option value="hanmail.net">한메일</option>
+                        <option value="nate.com">네이트</option>
+                        <option value="hotmail.com">핫메일</option>
+                        <option value="w">직접입력</option>
+                      </select>
+                      <label for="qnainput4-1" class="sound_only">이메일 도메인 선택</label>
+                    </div>
+                  </div>
+                  <div class="fm-row fm-row--tel">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>전화번호</span>
+                    </div>
+                    <div class="fm-ct flex">
+                      <input type="text" name="qnainput5" id="qnainput5" class="fm-input">
+                      <label for="qnainput5" class="sound_only">전화번호 첫번째 자리 입력</label>
+                      <span class="fm-sym">-</span>
+                      <input type="text" name="qnainput6" id="qnainput6" class="fm-input">
+                      <label for="qnainput6" class="sound_only">전화번호 두번째 자리 입력</label>
+                      <span class="fm-sym">-</span>
+                      <input type="text" name="qnainput7" id="qnainput7" class="fm-input">
+                      <label for="qnainput7" class="sound_only">전화번호 세번째 자리 입력</label>
+                    </div>
+                  </div>
+                  <div class="fm-row fm-row--cnt">
+                    <div class="fm-lb">
+                      <span class="fm-t1"><i class="req">*</i>내용입력</span>
+                    </div>
+                    <div class="fm-ct">
+                      <textarea name="qnainput8" id="qnainput8" class="fm-textar" placeholder="내용을 입력하세요"></textarea>
+                      <label for="qnainput8" class="sound_only">내용입력</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fm-bottom-btn_box">
+                <input type="submit" class="btn sizeS" value="저장하기">
+                <a href="" class="btn sizeS">목록보기</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 팝업 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+  <script>
+    // 팝업 열기
+    function qnaPop() {
+      $('.qna-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
+
+</body>
+
+</html>

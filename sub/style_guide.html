@@ -464,10 +464,14 @@ body {background-color: #f5f5f5;}
                     <div class="fm-ct">
                       <div class="filebox">
                         <div class="file-wr">
-                          <label for="fileImsiId">
+                          <!-- <label for="fileImsiId">
                             <span class="upload-name">선택된 파일 없음</span>
                           </label>
-                          <input class="upload-name" value="선택된 파일 없음" title="" disabled="disabled">
+                          <input class="upload-name" value="선택된 파일 없음" title="" disabled="disabled"> -->
+                          <label for="fileImsiId">
+                            <span id="fileSelectBtn" class="filebtn" tabindex="0">파일선택</span>
+                          </label>
+                          <input class="upload-name" value="선택된 파일 없음." title="" disabled="disabled">
                         </div>
                         <!-- 실제 전송되는 input[type=file] -->
                         <input type="file" id="fileImsiId" class="upload-hidden">
@@ -569,17 +573,6 @@ body {background-color: #f5f5f5;}
     //     });
     //   });
     // });
-
-  // Email Select
-  $('.fm-mail-select').on('change', function() {
-    let mailAddr = $(this).val();
-
-    if (mailAddr == 'w') {
-      $('.fm-mail-input2').val('').attr("readonly",false).focus();
-    } else {
-      $('.fm-mail-input2').val(mailAddr).attr("readonly",true);
-    }
-  }); 
   </script>
 </body>
 </html>

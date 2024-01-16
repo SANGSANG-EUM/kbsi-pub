@@ -10,8 +10,8 @@ $(document).ready(function () {
     dateFormat: "yy.mm.dd(D)",
     minDate: new Date(),
     // maxDate: new Date(),
-    showOtherMonths: true,       // 현재 월에 속하지 않는 날짜도 달력 위젯에 표시하도록 지시
-    selectOtherMonths: true,     // 이전 월 및 다음 월의 날짜를 선택할 수 있도록 함
+    showOtherMonths: true, // 현재 월에 속하지 않는 날짜도 달력 위젯에 표시하도록 지시
+    selectOtherMonths: true, // 이전 월 및 다음 월의 날짜를 선택할 수 있도록 함
     prevText: '이전 달',
     nextText: '다음 달',
     monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
@@ -22,7 +22,7 @@ $(document).ready(function () {
     showMonthAfterYear: true,
     yearSuffix: '년'
   });
-  
+
   $('.datepicker').datepicker();
 
 
@@ -62,7 +62,7 @@ $(document).ready(function () {
     $('body').on('mouseenter focusin', '.gnb-ul, .head-bg', function () {
       let menuHeight = $('.header').outerHeight();
       let dep2Height = 0;
-  
+
       // 각 .gnb2-ul 요소의 높이를 체크하여 가장 큰 값을 찾습니다.
       $('.gnb2-ul').each(function () {
         let height = $(this).outerHeight();
@@ -70,16 +70,16 @@ $(document).ready(function () {
           dep2Height = height;
         }
       });
-  
+
       $('.gnb2-ul').stop().slideDown(200);
       $('.head-bg').css({
         'top': menuHeight + 'px',
         height: dep2Height + 'px'
       }).stop().slideDown(200);
-  
+
       $('.header').addClass('open');
     });
-  
+
     $('body').on('mouseleave focusout', '.gnb-ul, .head-bg', function () {
       $('.gnb2-ul').stop().slideUp(200);
       $('.head-bg').stop().slideUp(200);
@@ -87,7 +87,7 @@ $(document).ready(function () {
     });
   } else {
     $('body').on('click', '.gnb-li', function () {
-      if($(this).hasClass('open')) {
+      if ($(this).hasClass('open')) {
         $(this).removeClass('open');
         $(this).find('.gnb2-ul').stop().slideUp();
       } else {
@@ -171,58 +171,79 @@ $(document).ready(function () {
     $('.tnb-noti').focus();
   });
 
+
+  // 서브로케이션
+  if ($('.sub-loca-ul').find('.sub-loca-li').length < 4) {
+    $('.sub-loca-wr').addClass('sub-loca-wr--1');
+  }
+  if ($('.sub-loca-ul').find('.sub-loca-li').length > 1) {
+    $('.sub-loca-wr').addClass('arrow');
+  }
+
+
   // 모바일 서브로케이션
-  $('.sub-loca-btn').on('click', function() {
+  $('.sub-loca-wr.arrow .sub-loca-btn').on('click', function () {
     $('.sub-loca-ul').stop().slideToggle();
   });
 
 
   // 파일선택
-    // 파일 선택 버튼 요소 가져오기
-    const fileSelectBtn = document.getElementById('fileSelectBtn');
-    const fileInput = document.getElementById('fileImsiId');
+  // 파일 선택 버튼 요소 가져오기
+  const fileSelectBtn = document.getElementById('fileSelectBtn');
+  const fileInput = document.getElementById('fileImsiId');
 
-    // 파일 선택 버튼에 클릭 이벤트 리스너 추가
-    fileSelectBtn.addEventListener('click', function (event) {
+  // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+  fileSelectBtn.addEventListener('click', function (event) {
+    // 파일 input 클릭
+    fileInput.click();
+    event.preventDefault(); // 기본 이벤트 방지
+  });
+
+  // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
+  fileSelectBtn.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
       // 파일 input 클릭
       fileInput.click();
       event.preventDefault(); // 기본 이벤트 방지
-    });
+    }
+  });
 
-    // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
-    fileSelectBtn.addEventListener('keydown', function (event) {
-      if (event.key === 'Enter') {
-        // 파일 input 클릭
-        fileInput.click();
-        event.preventDefault(); // 기본 이벤트 방지
-      }
-    });
+  // input[type=file]의 변경 이벤트 리스너 추가
+  fileInput.addEventListener('change', function (event) {
+    inputFileName(event);
+  });
 
-    // input[type=file]의 변경 이벤트 리스너 추가
-    fileInput.addEventListener('change', function (event) {
-      inputFileName(event);
-    });
+  // input[type=file] style custom (return : file name)
+  const inputFileName = (event) => {
+    const fileInput = event.target;
+    let filename = "";
 
-    // input[type=file] style custom (return : file name)
-    const inputFileName = (event) => {
-      const fileInput = event.target;
-      let filename = "";
+    if (window.FileReader) {
+      filename = fileInput.files[0].name;
+    } else {
+      filename = fileInput.value.split('/').pop().split('\\').pop();
+    }
 
-      if (window.FileReader) {
-        filename = fileInput.files[0].name;
-      } else {
-        filename = fileInput.value.split('/').pop().split('\\').pop();
-      }
+    // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
+    fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+  };
 
-      // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
-      fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
-    };
+  // Email Select
+  $('.fm-mail-select').on('change', function () {
+    let mailAddr = $(this).val();
 
-    // JQuery 코드를 사용하지 않고 위의 input[type=file] 변경 이벤트 리스너만 사용할 경우
-    // $(document).ready(function () {
-    //   fileInput.addEventListener('change', function (event) {
-    //     inputFileName(event);
-    //   });
-    // });
+    if (mailAddr == 'w') {
+      $('.fm-mail-input2').val('').attr("readonly", false).focus();
+    } else {
+      $('.fm-mail-input2').val(mailAddr).attr("readonly", true);
+    }
+  });
+
+  // JQuery 코드를 사용하지 않고 위의 input[type=file] 변경 이벤트 리스너만 사용할 경우
+  // $(document).ready(function () {
+  //   fileInput.addEventListener('change', function (event) {
+  //     inputFileName(event);
+  //   });
+  // });
 
 });

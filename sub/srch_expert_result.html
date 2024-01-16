@@ -44,7 +44,7 @@
   <div id="header-loaction"></div>
   <!-- } header 임시 인클루드 -->
 
-  <div class="sub srch_device_result">
+  <div class="sub srch_expert_result">
     <!-- 서브비주얼 { -->
     <div class="sub-visual sub-visual2">
       <div class="container">
@@ -113,23 +113,11 @@
       <div class="wrapper">
         <div class="sub-loca-wr">
           <button type="button" class="sub-loca-btn">
-            분석지원
+            통합검색
           </button>
           <ul class="sub-loca-ul">
             <li class="sub-loca-li active">
-              <a href="">분석지원</a>
-            </li>
-            <li class="sub-loca-li">
-              <a href="">선도연구활동</a>
-            </li>
-            <li class="sub-loca-li">
-              <a href="">연구장비 아카데미</a>
-            </li>
-            <li class="sub-loca-li">
-              <a href="">분석용역계약</a>
-            </li>
-            <li class="sub-loca-li">
-              <a href="">우수회원</a>
+              <a href="">통합검색</a>
             </li>
           </ul>
           <div class="sub-loca-home">
@@ -247,7 +235,10 @@
                             <img src="../src/img/sample-device_thumb.jpg" alt="">
                           </div>
                           <div class="srch-expert-sl-img">
-                            <iframe src="https://www.youtube.com/embed/muD4vjIU6ck?si=MwL69mIkbdZqemJi&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/muD4vjIU6ck?si=MwL69mIkbdZqemJi&amp;start=17"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
                           </div>
                         </div>
                       </div>
@@ -615,29 +606,29 @@
     <!-- } 가견적 계산기 팝업 -->
 
     <!-- 장비스케줄 팝업 { -->
-      <div class="pop device_schedule-pop">
-        <div class="pop-dim"></div>
-        <div class="pop-box scrollbar pink">
-          <button type="button" class="pop-close-btn" onclick="popClose()"></button>
-          <div class="pop-in">
-            <div class="pop-top">
-              <div class="sub-title-wr">
-                <h3 class="sub-title"><b>장비스케줄</b></h3>
-              </div>
+    <div class="pop device_schedule-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>장비스케줄</b></h3>
             </div>
-            <div class="pop-content">
-              <div class="sub-title-wr">
-                <p class="sub-title-info">장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄</p>
-              </div>
+          </div>
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info">장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄 장비스케줄</p>
             </div>
-            <div class="pop-btns">
-              <a href="/" class="btn sizeM">메인으로 이동</a>
-              <a href="" class="btn sizeM">신청내역 확인</a>
-            </div>
+          </div>
+          <div class="pop-btns">
+            <a href="/" class="btn sizeM">메인으로 이동</a>
+            <a href="" class="btn sizeM">신청내역 확인</a>
           </div>
         </div>
       </div>
-      <!-- } 가장비스케줄 팝업 -->
+    </div>
+    <!-- } 가장비스케줄 팝업 -->
 
   </div>
 
@@ -646,7 +637,7 @@
   <!-- } footer 임시 인클루드 -->
 
   <script>
-    // 메인 팝업(배너) 슬라이드        
+    // 슬라이드        
     let bannerSl = new Swiper(".srch-expert-sl-wrap", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -666,19 +657,19 @@
         slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
       },
     });
-  
+
     // 가견적 계산기 팝업
     function calculatorPop() {
       $('.calculator-pop').fadeIn();
       $('body, html, .container').addClass('scroll-lock');
     };
-  
+
     // 장비스케줄 팝업
     function deviceSchedulePop() {
       $('.device_schedule-pop').fadeIn();
       $('body, html, .container').addClass('scroll-lock');
     };
-  
+
     // 팝업 닫기
     function popClose() {
       $('.pop').fadeOut();

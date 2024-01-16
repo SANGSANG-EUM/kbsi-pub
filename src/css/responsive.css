@@ -4,10 +4,12 @@
   .sub-aside {top: auto; transform: translate(0); right: 10px; bottom: 10px;}
   .sub-aside-ul {flex-direction: row;}
 
+
+  .device-aca-info-ul {padding-top: min(4.5vw, 80px);}
+
   /* 통합검색결과 */
   .srch_result_wrap {gap: 2vw;}
   .srch_result_wrap > .right {width: calc(35% - 2vw);}
-
 
   /* > 전문가 검색 결과 */
   .srch-expert-sl {padding: min(5vw, 30px) min(3vw, 35px);}
@@ -28,7 +30,7 @@
 }
 
 @media screen and (max-width:1440px) {
-  /* 이용내역 */
+  /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
   .device-list-ul {gap: 2vw;}
@@ -43,6 +45,15 @@
   .view-dt-left {width: 50%;}
   .view-dt-right {width: 50%;}
 
+  /* > 연구장비 아카데미 */
+  .device-aca-eduing-sl-btn-box {width: auto; top: -64px; left: inherit; right: 0; transform: none; gap: 25px;}
+  .device-aca-eduing-sl-btn-box .prev {width: 18px; height: 27px;}
+  .device-aca-eduing-sl-btn-box .next {width: 18px; height: 27px;}
+
+  /*  > 우수회원 소개 */
+  .mb_info-step-wr .app-step-ul {gap: 4vw;}
+  .mb_info-step-wr .app-step-li .app-step-circle, .mb_info-step-wr .app-step-li {width: calc((100vw - 100px) / 4 -  12vw / 4); height: calc((100vw - 100px) / 4 -  12vw / 4);}
+  .mb_info-step-wr .app-step-li:not(:last-child)::after {right: -2vw; width: 14px;}
 
 }
 
@@ -67,14 +78,14 @@
   /* > 서브페이지 */
   .sub-title {font-size: clamp(25px, 8vw, 40px);}
 
-  /* 이용내역 */
+  /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
   .device-select-li {flex: none; width: calc(100% / 6 - 7.5vw / 6);}
 
   /*  > 이용기기 보유현황(신청) */
-  .app-form-outer {flex-direction: column;}
-  .app-form-in.left, .app-form-in.right {width: 100%;}
+  .app-form-outer, .sub-lr-outer {flex-direction: column;}
+  .app-form-in.left, .sub-left, .app-form-in.right, .sub-right {width: 100%;}
   .app-form-submit-wr {flex-direction: row;}
   .input-container {flex-wrap: wrap;}
   .app-step-txt3 {padding-top: 10px; font-size: 18px;}
@@ -100,6 +111,39 @@
   .view-desc-item .inner .right {width: calc(100% - 200px);}
 
   .img-exp-pop .pop-box {padding: 60px 0;}
+
+  /* > 연구장비 아카데미 */
+  .device-aca-eduing-sl-item .inner {padding: 26px;}
+  .device-aca-eduend-list > li .inner {padding: 26px;}
+  .device-aca-eduend-list > li .inner .icon {top: 26px; right: 26px;}
+
+  /*  > 우수회원 소개 */
+  .mb_info-slider {border-width: 10px;}
+  .mb_info-slide-in {padding: clamp(10px, 3vw, 30px) 80px;}
+  .mb_info-sl-btn {width: 45px; height: 45px;}
+  .mb_info-sl-btn.prev {left: 15px;}
+  .mb_info-sl-btn.next {right: 15px;}
+  .mb_info-slide-img {width: 15%;}
+  .mb_info-slide-img img {max-width: 100%;}
+  .mb_info-slide-cnt {width: 77%;}
+
+
+  /* 활용안내 */
+  /* > 공지사항 */
+  .notice-ul > li .inner-box {padding: 30px;}
+  .notice-ul > li .inner-top .title {margin: 18px 0 24px;}
+
+  .notice-ul-btm {flex-direction: column-reverse; gap: 20px; padding-top: 40px;}
+  .bl-search2 {width: 100%;}
+  .bl-search2-wr{justify-content: flex-end; width: 100%;}
+
+  /* > Q&A */
+  .qna-right {flex-direction: row; flex-wrap: wrap; gap: 1vw;}
+  .qna-ct-box {margin: 0; order: 1; width: calc(50% - 0.5vw);}
+  .qna-btn-list {gap: 0.5vw; padding: 0; order: 2; width: calc(50% - 0.5vw);}
+  .qna-right .related-list {order: 3; width: 100%;}
+  .qna-btn {height: 80px;}
+  .qna-ct-box__ul {max-width: 350px; margin: auto; padding-top: 15px;}
 
   /* 통합검색결과 */
   .srch_result_wrap {flex-direction: column;}
@@ -151,7 +195,7 @@
   .sub-aside-li > a {width: 60px; height: 60px; border-radius: 5px; gap: 0;}
   .sub-aside-li > a img {transform: scale(0.7);}
 
-  /* 이용내역 */
+  /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
   .device-select-li {flex: none; width: calc(100% / 5 - 6vw / 5);}
@@ -166,10 +210,32 @@
   .view-dt-left {width: 100%;}
   .view-dt-right {width: 100%; padding-left: 0; padding-top: 20px;}
 
+  /* > 연구장비 아카데미 */
+  .device-aca-info-ul {margin: -20px 0;}
+  .device-aca-info-ul > li {padding: 20px 0;}
+
+  .device-aca-eduing-wrap {padding-top: 70px;}
+  .device-aca-eduend-list > li {width: 50%;}
+
+  /*  > 우수회원 소개 */
+  .mb_info-step-wr .app-step-li .app-step-circle, .mb_info-step-wr .app-step-li {width: calc((100vw - 60px) / 4 -  12vw / 4); height: calc((100vw - 60px) / 4 -  12vw /4);}
+  .mb_info-step-wr .app-step-txt2 {font-size: clamp(16px, 4vw, 26px);}
+  .mb_info-quick.left {width: 100%; text-align: center; border: 0;}
+  .mb_info-quick.left img {width: 60px;}
+  .mb_info-quick.right {width: 100%; text-align: center;}
+  .mb_info-quick {padding-top: 5px; padding-bottom: 5px;}
+  .mb_info-quick-in {flex-direction: column;}
+  .sub-info-wr {gap: 5%;}
+  .sub-info-txt-wr {width: min(65%, 700px);}
+
+  /* 활용안내 */
+  /* > 공지사항 */
+  .notice-ul-wrap {padding-top: 40px;}
+  .notice-ul {margin: -8px;}
+  .notice-ul > li {padding: 8px; width: 50%;}
+  .notice-ul > li .inner-box {padding: 20px;}
 
   /* 통합검색결과 */
-
-
   /* > 전문가 검색 결과 */
   .srch-expert-sl-ctr {right: 3vw;}
   .srch-expert-sl-btm {padding-top: 15px; margin-top: 15px;}
@@ -181,6 +247,11 @@
   .srch-expert-item .inner-top .expert-info {padding-left: 0; padding-top: 10px; width: 100%;}
   .srch-expert-list {margin: -7.5px;}
   .srch-expert-item {padding: 7.5px;}
+
+  /* Board-List */
+  .bl-body {padding-bottom: 10px;}
+  .bl-btm {flex-direction: column-reverse;}
+  .bl-search {display: flex; justify-content: flex-end; width: 100%; max-width: 100%;}
 
   /* Board-Write */
   .fm_inner {padding: 25px 20px;}
@@ -223,16 +294,16 @@
   .sub-loca-ul {display: none; position: absolute; top: 100%; flex-direction: column; padding: 10px 20px; width: 100%; background-color: #fff; z-index: 100; border-bottom: 1px solid #333;}
   .sub-loca-li {border: 0 !important; padding: 10px 0;}
   .sub-loca-li.active {display: none;}
-  .sub-loca-btn {display: block; width: 100%; border: 0; background: #333 url('../img/icon-arrow_subloca.png') no-repeat center right 13px / 12px; color: #fff;}
+  .sub-loca-btn {display: block; width: 100%; border: 0; background: #333; color: #fff;}
+  .sub-loca-wr.arrow .sub-loca-btn {background: #333 url('../img/icon-arrow_subloca.png') no-repeat center right 13px / 12px;}
   .sub-loca-home {display: none;}
-  .sub-loca-wr--1 .sub-loca-btn {background: #333;}
 
   /* > 서브페이지 */
   .sub-tab-ul {gap: 0;}
   .sub-tab-li > a {font-size: 14px; padding: 0 10px; text-align: center;}
   .sub-title-info {font-size: 15px;}
 
-  /* 이용내역 */
+  /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
   .device-select-li {flex: none; width: calc(100% / 3 - 3vw / 3);}
@@ -275,6 +346,7 @@
   .bl-post {flex-shrink: 0;}
   .pop-list-table th {font-size: 14px;}
   .pop-top {padding-bottom: 3vw;}
+  .pop-sch-wr .btn {width: 100px; padding: 0;}
 
   /*  > 이용기기 보유현황(상세정보) */
   .view-dt-sl {padding-top: 10px;}
@@ -313,9 +385,81 @@
   .view-map-info-item .text02 {font-size: 14px;}
   .view-map-info-item .text02 a {font-size: 14px;}
 
+  /* > 연구장비 아카데미 */
+  .device-aca-eduing-wrap .fm-tit {margin-bottom: 10px;}
+  .device-aca-eduing-sl-btn-box {top: -37px; gap: 15px;}
+  .device-aca-eduing-sl-btn-box .prev {width: 13px; height: 20px;}
+  .device-aca-eduing-sl-btn-box .next {width: 13px; height: 20px;}
+
+  .device-aca-eduing-sl-item .inner {padding: 18px;}
+  .device-aca-eduing-sl-item .inner .cate {font-size: 14px; padding-bottom: 14px;}
+  .device-aca-eduing-sl-item .inner .title {font-size: 16px;}
+  .device-aca-eduing-sl-item .inner .date {font-size: 13px; margin-top: 10px; margin-bottom: 14px;}
+  .device-aca-eduing-sl-item .inner .btn {font-size: 14px;}
+
+  .device-aca-eduend-wrap {padding-top: 50px; margin-top: 60px;}
+  .device-aca-eduend-wrap .fm-tit {margin-bottom: 10px;}
+
+  .device-aca-eduend-list {margin: -5px;}
+  .device-aca-eduend-list > li {padding: 5px;}
+  .device-aca-eduend-list > li .inner {padding: 18px;}
+  .device-aca-eduend-list > li .inner .cate {font-size: 14px; padding-bottom: 14px;}
+  .device-aca-eduend-list > li .inner .title {font-size: 16px;}
+  .device-aca-eduend-list > li .inner .date {font-size: 13px; margin-top: 10px; margin-bottom: 14px;}
+  .device-aca-eduend-list > li .inner .btn {font-size: 14px;}
+  .device-aca-eduend-list > li .inner .icon {top: 18px; right: 18px; font-size: 14px; width: 64px;}
+  .device-aca-eduend-list > li .inner .icon span:first-child {display: inline-block; margin-bottom: -2px;}
+  .device-aca-eduend-list > li .inner .icon span:last-child {margin-left: 4px;}
+  .device-aca-eduend-paging {padding-top: clamp(15px, 6vw, 44px);}
+
+  /*  > 우수회원 소개 */
+  .mb_info_link-in {height: 25vw;}
+  .mb_info-link-txt2 {padding-top: 5px;}
+  .sub-info-wr, .sub-info-wr.reverse {flex-direction: column-reverse; align-items: center !important;}
+  .sub-info-txt-wr {width: 100%; text-align: center;}  
+  .sub-info-img-wr {width: 50% !important;} 
+  .mb_info-step-wr .app-step-li .app-step-circle, .mb_info-step-wr .app-step-li {width: calc((100vw - 30px) / 4 -  12vw / 4); height: calc((100vw - 30px) / 4 -  12vw /4);}
+  .mb_info-step-wr .app-step-txt3 {padding-top: 0;}
+  .mb_info-slider {border-width: 5px;}
+  .mb_info-slide-in {padding-left: 60px; padding-right: 60px;}
+  .mb_info-sl-btn {width: 35px; height: 35px;}
+  .mb_info-sl-btn.prev {left: 10px;}
+  .mb_info-sl-btn.next {right: 10px;}
+
+  /* 활용안내 */
+  /* > 공지사항 */
+  .notice-ul {margin: -5px;}
+  .notice-ul > li {padding: 5px;}
+  .notice-ul > li .inner-box {padding: 20px 12px;}
+  .notice-ul > li .inner-top .notice-num {font-size: 14px; padding: 0 16px; height: 20px;}
+  .notice-ul > li .inner-top .title {font-size: 16px; margin: 10px 0 18px;}
+  .notice-ul > li .inner-bot {padding-top: 8px;}
+  .notice-ul > li .bot-item span {font-size: 13px;}
+
+  .notice-ul-btm {padding-top: 20px;}
+  .bl-search2-wr .fm-select {width: 120px;}
+  .bl-search2-bar {width: calc(100% - 120px);}
+  .bl-search2-wr .fm-input {margin-left: 4px; width: calc(100% - 102px);}
+  .bl-search2-wr .btn {font-size: 14px; width: 90px;}
+
+  /* > Q&A */
+  .qna-btn-icon {display: flex; align-items: center; top: 2px; width: 30px;}
+  .qna-btn-icon::after {display: none; }
+  .qna-btn-link {justify-content: flex-start; gap: 20px; padding: min(5vw, 20px);}
+  .qna-btn {height: auto; flex: 1;}
+  .qna-ct-box, .qna-btn-list {width: auto; flex: auto;}
+
+  .qna .bl-no, .qna .bl-date  {display: none;}
+
+  .qna-cate-wr {flex-direction: column;}
+  .qna-cate-li > a {padding: 10px 5px;}
+  .qna-cate-box--2 .qna-cate-li {width: calc(100% / 4);}
+  .qna-cate-box--2 .qna-cate-li:nth-child(2) {border-right: 1px solid #ddd;}
+  .qna-cate-title {padding: 10px; padding-right: 75px;}
+
   /* 통합검색결과 */
   .related-box {width: 100%;}
-  .related-box .fm-tit {font-size: 18px;}
+  .fm-tit {font-size: 18px;}
 
   /* > 전문가 검색 결과 */
   .srch-expert-sl-top {gap: 3vw;}
@@ -396,7 +540,7 @@
   .sub-aside-li > a {height: 25px;}
   .sub-title-info {font-size: 14px;}
 
-  /* 이용내역 */
+  /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
   .device-select-li {height: auto;}
@@ -440,8 +584,43 @@
   .view-dt-info-price-box .price-wrap .saleprice {font-size: 16px; padding-left: 6px;}
   .view-dt-info-price-box .price-wrap .sale-percent {margin-left: 8px; font-size: 12px; padding: 2px 6px;}
 
+  /* > 연구장비 아카데미 */
+  .device-aca-eduend-list > li {width: 100%;}
+
+  /*  > 우수회원 소개 */
+  .mb_info-app-wr {flex-direction: column;}
+  .mb_info_link-in {height: auto; gap: 20px;}
+  .mb_info-step-wr .app-step-txt3 {display: none;}
+  .mb_info-step-wr .app-step-li:not(:last-child)::after {width: 2vw;}
+  .mb_info-step-wr .app-step-li .app-step-circle, .mb_info-step-wr .app-step-li {width: calc((100vw - 15px) / 4 -  12vw / 4); height: calc((100vw - 15px) / 4 -  12vw / 4);}
+  .mb_info-slide-in {flex-direction: column; align-items: center; padding: 20px 10px;}
+  .mb_info-slide-cnt {width: 100%; padding-left: 0; margin-left: 0; border: 0;}
+  .mb_info-slide-img {width: 30%; text-align: center;}
+  .mb_info-slide-img img {max-height: 60px;}
+  .mb_info-slide-cnt {text-align: center;}
+  .mb_info-slide-txt {padding-top: 6px;}
+  .mb_info-sl-btn.prev {left: 10px; top: 10px; transform: translate(0);}
+  .mb_info-sl-btn.next {right: 10px; top: 10px; transform: translate(0);}
+
+  .device-aca-info-ul {padding-top: 0;}
+
+  /* 활용안내 */
+  /* > 공지사항 */
+  .notice-ul > li {width: 100%;}
+
+  .bl-search2-wr {flex-direction: column; gap: 4px;}
+  .bl-search2-wr .fm-select {width: 100%;}
+  .bl-search2-wr .fm-input {margin-left: 0; width: calc(100% - 98px);}
+  .bl-search2-bar {width: 100%;}
+
+  /* > Q&A */
+  .bl-status-icon {width: 50px; height: 20px; font-size: 12px;}
+  .pop-sch-wr {width: 100%;}
+  .qna-cate-li > a {font-size: 14px;}
+  .qna-ct-box__li {font-size: 13px;}
+  .qna-ct-box {padding: 15px;}
+
   /* 통합검색결과 */
-  .srch_result_wrap > .left .fm-tit {font-size: 20px;}
   .inter-srch-input-bar, .inter-srch-input-bar > .fm-search-wr, .inter-srch-input-bar > .fm-search-wr .fm-input, .inter-srch-input-bar > p {height: 40px; font-size: 14px;}
   .inter-srch-input-bar > .fm-search-wr .fm-input {padding: 0 15px;}
   .related-content__tit, .equip-info-box-wrap > li .inner .title {font-size: 14px;}
