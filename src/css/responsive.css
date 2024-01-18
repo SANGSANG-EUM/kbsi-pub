@@ -398,7 +398,8 @@
   .device-aca-eduing-sl-item .inner .btn {font-size: 14px;}
 
   .device-aca-eduend-wrap {padding-top: 50px; margin-top: 60px;}
-  .device-aca-eduend-wrap .fm-tit {margin-bottom: 10px;}
+  .device-aca-eduend-title {margin-bottom: 10px;}
+  .device-aca-eduend-wrap .fm-tit {margin-bottom: 0;}
 
   .device-aca-eduend-list {margin: -5px;}
   .device-aca-eduend-list > li {padding: 5px;}

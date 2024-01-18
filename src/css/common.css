@@ -227,3 +227,12 @@ h6 {font-size: 16px; font-weight: 700;}
 .bv-link:first-child {border-top: 1px solid #ddd;}
 .bv-file-field {background-color: #f1f1f1; border: 1px solid #ddd; color: #666;}
 .bv-link-field {background-color: #999; border: 1px solid #999; color: #fff;}
+
+/* search */
+.mw100 {max-width: 100%;}
+.search-box {display: flex; gap: 10px; justify-content: space-between; padding: 23px 25px; width: 100%; border: 1px solid #ddd; background-color: #f7f7f7;}
+.search-input-wr {display: flex}
+.search-input-wr .search-btn {display: flex; align-items: center; justify-content: center; gap: 7px; flex-shrink: 0; width: 115px; background-color: #544477; border-color: #544477; color: #fff; border: 0;}
+.search-input-wr .fm-input {width: calc(100% - 115px); border: 1px solid #544477;}
+.search-input-wr .fm-input::placeholder {color: #c0c0c0;}
+.bl-search.mw100 .search-input-wr {width: 100%;}
