@@ -62,10 +62,14 @@
   .head-logo {width: 120px;}
   .head-in {height: 80px;}
   .tnb-ul {padding: 0 15px;}
+  .header-mypage .head-in {padding: 0 1vw;}
 
   /* footer */
   .ft-top-ul {padding: 10px 0;}
   .ft-top-li a {font-size: 15px;}
+  .ft-my-container {padding: 0 1vw;}
+  .ft-my-in {flex-direction: column; gap: 10px;}
+  .ft-my-cnt-wr {padding-left: 0; border: 0;}
 
   /* sub */
   /* > 서브비주얼 */
@@ -511,10 +515,12 @@
   .head-logo {width: 100px;}
   .hd-ham {width: 25px;}
   .tnb-wr {gap: 15px;}
+  .tnb-li {gap: 0.5vw;}
   .tnb-li img {transform: scale(0.8);}
   .tnb-ul {gap: 0 7.5px; padding: 0 7.5px;}
   .gnb-li {padding: 2.5vh 0;}
   .gnb2-li {padding: 5px 0;}
+  .header-mypage .tnb-txt {font-size: 12px;}
   
   /* footer */
   .ft-top-ul {gap: 10px;}

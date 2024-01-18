@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 마이페이지 - 외부</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <!-- 공동 작업자 css 추가 -->
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+
+  <!-- 워드클라우드 라이브러리 JQCloud -->
+  <script src="../src/plugin/JQCloud/jqcloud.min.js"></script>
+  <link rel="stylesheet" href="../src/plugin/JQCloud/jqcloud.min.css">
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header_mypage.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer_mypage.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub my-page-sub my-member">
+    <div class="my-page-wrap">
+
+      <!-- 마이페이지 왼쪽 메뉴 { -->
+      <div class="my-page-left-menu">
+        <div class="my-page-left-menu-wrap">
+          <div class="my-page-left-menu-top">
+            <p>MY PAGE</p>
+            <button class="my-page-left-menu-btn" type="button">
+              <span></span>
+            </button>
+          </div>
+          <div class="my-page-left-menu-content">
+            <!-- 마이페이지 메뉴 { -->
+            <!-- 
+              .my-page-menu-depth2-ul : active 클래스 추가 입력시 오픈 상태
+              .my-page-menu-depth2-ul > li : active 클래스 추가 입력시 하위 a 태그에 active 효과
+            -->
+            <div class="my-page-menu-wrap">
+              <ul class="my-page-menu-depth1-ul">
+                <li>
+                  <button class="my-page-menu-depth1">서비스 이용현황</button>
+                  <ul class="my-page-menu-depth2-ul">
+                    <li><a href="">서비스 이용현황2</a></li>
+                    <li><a href="">서비스 이용현황2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="my-page-menu-depth1">분석의뢰 신청</button>
+                  <ul class="my-page-menu-depth2-ul">
+                    <li><a href="">분석의뢰 신청2</a></li>
+                    <li><a href="">분석의뢰 신청2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="my-page-menu-depth1 active">연구성과 현황</button>
+                  <ul class="my-page-menu-depth2-ul active">
+                    <li class="active"><a href="">당해년도 반영예정 연구성과</a></li>
+                    <li><a href="">과거 등록된 연구성과</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- } 마이페이지 메뉴 -->
+            <!-- 마이페이지 배너 영역 { -->
+            <div class="my-page-left-banner-wrap">
+              <div class="my-page-left-banner">
+                <!-- <img src="" alt=""> -->
+                <span style="font-weight: 600; font-size: 20px; line-height: 135px;">베너영역</span>
+              </div>
+              <div class="my-page-left-banner">
+                <!-- <img src="" alt=""> -->
+                <span style="font-weight: 600; font-size: 20px; line-height: 135px;">베너영역</span>
+              </div>
+            </div>
+            <!-- } 마이페이지 배너 영역 -->
+          </div>
+        </div>
+      </div>
+      <!-- } 마이페이지 왼쪽 메뉴 -->
+
+      <!-- 마이페이지 오른쪽 내용 { -->
+      <div class="my-page-content">
+
+        <!-- 마이페이지 로케이션 { -->
+        <div class="my-page-location">
+          <ul class="my-page-loc-ul">
+            <li class="my-page-open-menu-btn-wrap">
+              <button class="my-page-open-menu-btn" type="button">
+                <span></span>
+              </button>
+            </li>
+            <li>
+              <a class="home" href=""><img src="../src/img/icon-home-w.png" alt="마이페이지 홈으로"></a>
+            </li>
+            <li class="text">
+              좌측메뉴 클릭 시 나오는 메뉴 제목
+            </li>
+          </ul>
+        </div>
+        <!-- } 마이페이지 로케이션 -->
+
+
+        <!-- 마이페이지 콘텐츠 { -->
+        <div class="my-content my-content2">
+          <div class="my-wrapper detail">
+            <!-- 마이페이지 섹션 { -->
+            <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-border-box my-app-status-box">
+                <div class="my-box-title-wrap">
+                  <p class="title">신청현황</p>
+                  <!-- <button class="btn round25 sizeS" type="button">
+                      <span>분석캘린더</span>
+                    </button> -->
+                </div>
+                <div class="my-app-status-ul-wrap">
+                  <ul class="my-app-status-ul">
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon01.png" alt="신청">
+                          </div>
+                          <p>신청</p>
+                        </div>
+                        <div class="f-dream num">133</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon02.png" alt="시료접수">
+                          </div>
+                          <p>시료접수</p>
+                        </div>
+                        <div class="f-dream num zero">0</div><!-- 숫자가 0일때 zero 클래스 추가 -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon03.png" alt="분석">
+                          </div>
+                          <p>분석</p>
+                        </div>
+                        <div class="f-dream num">133</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon06.png" alt="청구">
+                          </div>
+                          <p>청구</p>
+                        </div>
+                        <div class="f-dream num">27</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon04.png" alt="결제">
+                          </div>
+                          <p>결제</p>
+                        </div>
+                        <div class="f-dream num">578</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="inner-top">
+                          <div class="icon">
+                            <img src="../src/img/my-app-status-icon05.png" alt="최소현황">
+                          </div>
+                          <p>취소</p>
+                        </div>
+                        <div class="f-dream num zero">0</div><!-- 숫자가 0일때 zero 클래스 추가 -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- } 마이페이지 섹션 -->
+            <!-- 마이페이지 섹션 { -->
+            <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-app-table-wrap">
+                <div class="bl-wr">
+                  <div class="bl-body">
+                    <table class="bl-table">
+                      <thead>
+                        <tr>
+                          <th class="bl-no">접수번호</th>
+                          <th class="bl-subject">내용</th>
+                          <th class="bl-amount">총액</th>
+                          <th class="bl-status">상태</th>
+                          <th class="bl-document">서류</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon">등록</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon delay">처리지연</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon com">완료</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon com">완료</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon com">완료</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-amount">99,879</td>
+                          <td class="bl-status">
+                            <div class="status-wrap">
+                              <span class="status-icon com">완료</span>
+                              <!-- 각 상태값에 따른 구분값
+                              <span class="status-icon">접수</span>
+                              <span class="status-icon">처리중</span>
+                              <span class="status-icon delay">처리지연</span>
+                              <span class="status-icon com">완료</span>
+                              <span class="status-icon can">취소</span>
+                              -->
+                            </div>
+                          </td>
+                          <td class="bl-document">
+                            <div class="document-wrap">
+                              <span class="document-icon">서류이름</span>
+                              <span class="document-icon">서류이름</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+  
+                  <div class="bl-btm">
+                    <div class="search-box">
+                      <ul class="bl-page-wr">
+                        <li class="bl-page">
+                          <a href="">PREV</a>
+                        </li>
+                        <li class="bl-page active">
+                          <a href="">1</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">2</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">3</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">4</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">5</a>
+                        </li>
+                        <li class="bl-page">
+                          <a href="">NEXT</a>
+                        </li>
+                      </ul>
+                      <form action="" class="bl-search">
+                        <div class="search-input-wr">
+                          <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요." title="검색어를 입력하세요.">
+                          <label for="search1" class="sound_only">검색어 입력</label>
+                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </section>
+            <!-- } 마이페이지 섹션 -->
+            <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="related-list horizontal">
+                <!-- box { -->
+                <div class="related-box overflow">
+                  <p class="fm-tit">선도지원장비</p>
+                  <ul class="related-content">
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">KBSI의 장비는 어디어디에 있나요 ?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">세금계산서를 받고 싶은데 어떻게 해야 하는지 알려주세요</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- } box -->
+                <!-- box { -->
+                <div class="related-box">
+                  <p class="fm-tit">교육현황</p>
+                  <ul class="related-content">
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- } box -->
+              </div>
+            </section>
+          </div>
+          <div class="my-wrapper member">
+            <!-- 마이페이지 우측 회원정보 { -->
+            <div class="my-page-member-wr">
+              <!-- 회원 정보 { -->
+              <div class="my-page-member-box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="my-page-member-info">
+                  <div class="my-page-member-info-top">
+                    <div class="thumb-box">
+                      <div class="thumb">
+                        <img src="../src/img/my-page-member-thumb01.png" alt="회원 이미지">
+                      </div>
+                      <button class="thumb-change-btn">
+                        <img src="../src/img/icon-config.png" alt="이미지 변경 버튼">
+                      </button>
+                    </div>
+                    <p class="name">홍길동</p>
+                  </div>
+                  <div class="my-page-member-info-btm">
+                    <p class="text">우수회원 / 기업회원</p>
+                  </div>
+                </div>
+              </div>
+              <!-- } 회원 정보 -->
+
+              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="related-btn-wr">
+                  <p class="fm-tit">즐겨찾는 메뉴</p>
+                  <button type="button" class="btn-plus" onclick="menuPop()"></button>
+                </div>
+                <ul class="related-menu-ul sub-vs-quick-ul">
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
+                      <span>분석신청</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
+                      <span>계산서</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
+                      <span>Q&amp;A</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
+                      <span>시료접수</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li on">
+                    <a href="">
+                      <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
+                      <span>아카데미</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
+                      <span>가상캠퍼스</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">자주쓰는 장비</p>
+                <ul class="related-content">
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">워드클라우드</p>
+                <div id="word-cloud"></div>
+              </div>
+
+            </div>
+            <!-- } 마이페이지 우측 회원정보 -->
+          </div>
+        </div>
+        <!-- } 마이페이지 콘텐츠 -->
+
+
+      </div>
+      <!-- } 마이페이지 오른쪽 내용 -->
+
+
+    </div>
+
+    <!-- 팝업 { -->
+    <div class="pop menu-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"></h3>
+            </div>
+          </div>
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 팝업 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+  <script>
+    const myPageLeftMenuToggle = () => {
+      let leftMenuBtn = $('.my-page-left-menu-btn');
+      let leftMenuOpenBtnWrap = $('.my-page-open-menu-btn-wrap');
+      let leftMenuOpenBtn = $('.my-page-open-menu-btn');
+      let leftWrap = $('.my-page-left-menu');
+      let rightWrap = $('.my-page-content');
+
+      leftMenuBtn.on('click', function () {
+        leftWrap.addClass('hidden');
+        rightWrap.addClass('on');
+        leftMenuOpenBtnWrap.show();
+      });
+
+      leftMenuOpenBtn.on('click', function () {
+        leftWrap.removeClass('hidden');
+        rightWrap.removeClass('on');
+        leftMenuOpenBtnWrap.hide();
+      });
+    }
+
+    const myPageMenuToggle = () => {
+      let depth1 = $('.my-page-menu-depth1');
+      let depth2Wrap = $('.my-page-menu-depth2-ul');
+
+      depth1.on('click', function () {
+
+        if($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $(this).next('.my-page-menu-depth2-ul').slideUp();
+        } else {
+          depth1.removeClass('active');
+          depth2Wrap.slideUp();
+          $(this).addClass('active');
+          $(this).next('.my-page-menu-depth2-ul').slideDown();
+        }
+      });
+    }
+
+    // 워드 클라우드
+    const wordCloud = () => {
+      let words = [{
+          text: '이온',
+          weight: 3,
+          link: 'https://www.naver.com/', // 링크 사용시
+        },
+        {
+          text: '초고분해능',
+          weight: 2,
+        },
+        {
+          text: '싸이클',
+          weight: 3,
+        },
+        {
+          text: '질량분석기',
+          weight: 4,
+        },
+        {
+          text: '상상이음',
+          weight: 1,
+        },
+        {
+          text: '아이폰13Pro',
+          weight: 2,
+        },
+        {
+          text: '퍼블리싱',
+          weight: 1,
+        },
+        {
+          text: '반응형',
+          weight: 3,
+        },
+        {
+          text: '팝업',
+          weight: 4,
+        },
+        {
+          text: '아이스아메리카노',
+          weight: 1,
+        },
+        {
+          text: '검색',
+          weight: 5,
+        },
+      ];
+
+      let colorsArr = ['#ff7b7b', '#614699', '#333333', '#519ca3', '#555555'];
+
+      $('#word-cloud').jQCloud(words, {
+        width: 300,
+        height: 200,
+        autoResize: true,
+        steps: 5,
+        colors: colorsArr,
+        fontSize: {
+          min: 12,
+          max: 26
+        },
+      });
+    };
+
+    // 팝업
+    const menuPop = () => {
+      $('.menu-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    const popClose = () => {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+
+    $(document).ready(function () {
+      myPageMenuToggle();
+      myPageLeftMenuToggle();
+      wordCloud();
+    });
+  </script>
+
+</body>
+
+</html>
