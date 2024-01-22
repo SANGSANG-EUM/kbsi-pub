@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../src/css/fonts.css">
   <link rel="stylesheet" href="../src/css/common.css">
   <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
   <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
@@ -43,117 +44,125 @@
   <!-- } header 임시 인클루드 -->
 
   <div class="sub faq">
-    <!-- 서브비주얼 { -->
-    <div class="sub-visual sub-visual2">
-      <div class="container">
-        <div class="wrapper">
-          <div class="sub-vis-wr">
-            <div class="sub-vs-txt-wr" data-aos="fade-up" data-aos-duration="1000">
-              <p class="sub-vs-tit">
-                활용 <b>안내</b>
-              </p>
-              <p class="sub-vs-txt">
-                <span>ARIA 서비스를</span>이용하시기 편리하도록 <br> 정보를 제공해드리는 페이지입니다.
-              </p>
-            </div>
-            <div class="sub-vs-quick-wr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-              <ul class="sub-vs-quick-ul">
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
-                    <span>분석신청</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
-                    <span>Q&A</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
-                    <span>시료접수</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
-                    <span>계산서</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li on">
-                  <a href="">
-                    <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
-                    <span>아카데미</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
-                    <span>가상캠퍼스</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="sub-vs-quick-btn-wr">
-                <p>quick menu</p>
-                <button type="button" class="sub-vs-quick-btn"></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- } 서브비주얼 -->
 
     <!-- 서브로케이션 { -->
     <div class="sub-location">
       <div class="wrapper">
         <div class="sub-loca-wr">
-          <button type="button" class="sub-loca-btn">
-            FAQ
-          </button>
+          <a href="/" class="sub-loca-home"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
           <ul class="sub-loca-ul">
             <li class="sub-loca-li">
-              <a href="">공지사항</a>
+              <button type="button" class="sub-loca-btn" title="열기">이용안내</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">ARIA소개</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용신청</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석과학성과</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">가상공간</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용안내</a>
+                </li>
+              </ul>
             </li>
             <li class="sub-loca-li">
-              <a href="">Q&A</a>
-            </li>
-            <li class="sub-loca-li active">
-              <a href="">FAQ</a>
+              <button type="button" class="sub-loca-btn" title="열기">FAQ</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">공지사항</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">Q&A</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">FAQ</a>
+                </li>
+              </ul>
             </li>
           </ul>
-          <div class="sub-loca-home">
-            <a href="/"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
-          </div>
         </div>
       </div>
     </div>
     <!-- } 서브로케이션 -->
 
     <!-- 사이드바 { -->
-    <aside class="sub-aside">
-      <ul class="sub-aside-ul">
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_video.png" alt="" style="width: 26px; margin-bottom: 3px;">
-            <span>홍보동영상</span>
-          </a>
-        </li>
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_info.png" alt="" style="width: 26px; margin-bottom: 3px;">
-            <span>이용안내</span>
-          </a>
-        </li>
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_app.png" alt="" style="width: 29px;">
-            <span>체험신청</span>
-          </a>
-        </li>
-      </ul>
+    <aside class="side-bar">
+      <button type="button" class="side-bar-btn">
+        <span class="pc">MORE</span>
+        <span class="mo">QUICK MENU</span>
+      </button>
+      <div class="side-bar-box">
+        <p class="title">
+          QUICK<br>
+          MENU
+        </p>
+        <button type="button" class="quick-more-btn" onclick="menuPop()">
+          <span></span>
+        </button>
+        <!-- a 대신 button 사용 시에도 class=".inner-btn 고정" -->
+        <ul class="side-quick-ul">
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon01.png" alt="분석신청">
+                <img src="../src/img/side-quick-icon01-active.png" alt="분석신청">
+              </div>
+              <p class="text">분석신청</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon02.png" alt="계산서">
+                <img src="../src/img/side-quick-icon02-active.png" alt="계산서">
+              </div>
+              <p class="text">계산서</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon03.png" alt="Q&A">
+                <img src="../src/img/side-quick-icon03-active.png" alt="Q&A">
+              </div>
+              <p class="text">Q&amp;A</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon04.png" alt="아카데미">
+                <img src="../src/img/side-quick-icon04-active.png" alt="아카데미">
+              </div>
+              <p class="text">아카데미</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon05.png" alt="시료접수">
+                <img src="../src/img/side-quick-icon05-active.png" alt="시료접수">
+              </div>
+              <p class="text">시료접수</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon06.png" alt="가상캠퍼스">
+                <img src="../src/img/side-quick-icon06-active.png" alt="가상캠퍼스">
+              </div>
+              <p class="text">가상캠퍼스</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
     <!-- } 사이드바 -->
 
@@ -163,9 +172,27 @@
 
       <div class="container">
         <div class="wrapper">
-          <div class="sub-title-wr">
-            <h3 class="sub-title"><b>F A Q</b></h3>
-            <p class="sub-title-info"><span>ARIA</span>에 자주하시는질문을 정리하여 소개하는 페이지입니다.</p>
+          <div class="sub-top-wr">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>F A Q</b></h3>
+              <p class="sub-title-info"><span>ARIA</span>에 자주하시는질문을 정리하여 소개하는 페이지입니다.</p>
+            </div>
+            <!-- 즐겨찾기 추가 체크박스 { -->
+            <div class="fav-btn-wr">
+              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+              <label for="favBtn" class="fav-btn">
+                <span class="fav-btn-img default">
+                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
+                </span>
+                <span class="fav-btn-img check">
+                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                </span>
+                <span class="fav-btn-txt">
+                  즐겨찾기 메뉴에 추가
+                </span>
+              </label>
+            </div>
+            <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
       </div>
@@ -233,18 +260,21 @@
                   <!-- } faq 카테고리 -->
 
                   <!-- 검색 박스 { -->
-                    <div class="search-box">
-                      <form action="" class="bl-search mw100">
+                  <div class="search-box">
+                    <form action="" class="bl-search mw100">
+                      <div class="search-in">
                         <div class="search-input-wr">
                           <input type="text" name="search2" id="search2" class="fm-input" placeholder="검색어를 입력하세요."
                             title="검색어를 입력하세요.">
                           <label for="search2" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                              style="width: 20px;"><span>검색하기</span></button>
                         </div>
-                      </form>
-                    </div>
+                      </div>
+                    </form>
+                  </div>
                   <!-- } 검색 박스 -->
-                  
+
                   <!-- faq 리스트 { -->
                   <div class="faq-list-wr">
                     <div class="faq-list-sch-title">
@@ -265,7 +295,9 @@
                           <div class="faq-list-cnt-in">
                             <div class="faq-icon faq-a">A</div>
                             <div class="faq-answer">
-                              - 이용신청은 예약의뢰이므로담당자와사전협의후신청하시기바랍니다. <br> - 이용신청 후, 담당자가접수처리하기전에는 예약 현황에 반영되지않습니다. <br> <br> 기기검색 장애시 상단 통합검색에서 장비(기기)코드 또는 기기명로 검색하신 후, <br> 검색된 장비중 해당 장비명을 클릭→ 기기스케줄 버튼 클릭→ 하단 이용신청 버튼 클릭하여 예약신청을 진행하십시오.
+                              - 이용신청은 예약의뢰이므로담당자와사전협의후신청하시기바랍니다. <br> - 이용신청 후, 담당자가접수처리하기전에는 예약 현황에 반영되지않습니다. <br> <br>
+                              기기검색 장애시 상단 통합검색에서 장비(기기)코드 또는 기기명로 검색하신 후, <br> 검색된 장비중 해당 장비명을 클릭→ 기기스케줄 버튼 클릭→ 하단 이용신청
+                              버튼 클릭하여 예약신청을 진행하십시오.
                             </div>
                           </div>
                         </div>
@@ -424,43 +456,43 @@
                       </ul>
                     </div>
                     <!-- } box -->
-                     <!-- box { -->
-                      <div class="related-box">
-                        <p class="fm-tit">일반문의 카테고리</p>
-                        <ul class="related-category-ul">
-                          <li class="active">
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="">
-                              # 카테고리1
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- } box -->
+                    <!-- box { -->
+                    <div class="related-box">
+                      <p class="fm-tit">일반문의 카테고리</p>
+                      <ul class="related-category-ul">
+                        <li class="active">
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            # 카테고리1
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- } box -->
                   </div>
 
                 </div>
@@ -475,6 +507,27 @@
     </div>
     <!-- } 콘텐츠 내용 -->
 
+    <!-- 팝업 { -->
+    <div class="pop menu-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"></h3>
+            </div>
+          </div>
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 팝업 -->
+
   </div>
 
   <!-- footer 임시 인클루드 { -->
@@ -482,7 +535,7 @@
   <!-- } footer 임시 인클루드 -->
 
   <script>
-    $('.faq-list-btn').on('click', function() {
+    $('.faq-list-btn').on('click', function () {
       if ($(this).hasClass('open')) {
         $(this).removeClass('open');
         $('.faq-list-cnt').stop().slideUp();
@@ -493,6 +546,18 @@
         $(this).next('.faq-list-cnt').stop().slideDown();
       }
     });
+
+    // 팝업
+    const menuPop = () => {
+      $('.menu-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    const popClose = () => {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
   </script>
 
 </body>

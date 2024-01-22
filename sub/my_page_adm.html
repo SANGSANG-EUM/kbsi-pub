@@ -137,7 +137,7 @@
           <div class="my-wrapper detail">
             <!-- 마이페이지 섹션 { -->
             <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
-              <div class="my-border-box my-app-status-box">
+              <div class="my-border-box my-app-status-box my-app-status-box--4">
                 <div class="my-box-title-wrap">
                   <p class="title">신청현황</p>
                   <!-- <button class="btn round25 sizeS" type="button">
@@ -378,10 +378,13 @@
                         </li>
                       </ul>
                       <form action="" class="bl-search">
-                        <div class="search-input-wr">
-                          <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요." title="검색어를 입력하세요.">
-                          <label for="search1" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                        <div class="search-in">
+                          <div class="search-input-wr">
+                            <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
+                              title="검색어를 입력하세요.">
+                            <label for="search1" class="sound_only">검색어 입력</label>
+                            <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                          </div>
                         </div>
                       </form>
                     </div>
@@ -416,7 +419,7 @@
               </div>
               <!-- } 회원 정보 -->
 
-              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+              <div class="related-box fav" data-aos="fade-up" data-aos-duration="1000">
                 <div class="related-btn-wr">
                   <p class="fm-tit">즐겨찾는 메뉴</p>
                   <button type="button" class="btn-plus" onclick="menuPop()"></button>
@@ -508,11 +511,18 @@
 
   <script>
     const myPageLeftMenuToggle = () => {
+
       let leftMenuBtn = $('.my-page-left-menu-btn');
       let leftMenuOpenBtnWrap = $('.my-page-open-menu-btn-wrap');
       let leftMenuOpenBtn = $('.my-page-open-menu-btn');
       let leftWrap = $('.my-page-left-menu');
       let rightWrap = $('.my-page-content');
+
+      if ($(window).width() < 768) {
+        leftWrap.addClass('hidden');
+      } else {
+        leftWrap.removeClass('hidden');
+      }
 
       leftMenuBtn.on('click', function () {
         leftWrap.addClass('hidden');

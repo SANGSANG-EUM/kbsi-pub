@@ -173,17 +173,47 @@ $(document).ready(function () {
 
 
   // 서브로케이션
-  if ($('.sub-loca-ul').find('.sub-loca-li').length < 4) {
-    $('.sub-loca-wr').addClass('sub-loca-wr--1');
-  }
-  if ($('.sub-loca-ul').find('.sub-loca-li').length > 1) {
-    $('.sub-loca-wr').addClass('arrow');
-  }
+  // if ($('.sub-loca-ul').find('.sub-loca-li').length < 4) {
+  //   $('.sub-loca-wr').addClass('sub-loca-wr--1');
+  // }
+  // if ($('.sub-loca-ul').find('.sub-loca-li').length > 1) {
+  //   $('.sub-loca-wr').addClass('arrow');
+  // }
 
 
   // 모바일 서브로케이션
-  $('.sub-loca-wr.arrow .sub-loca-btn').on('click', function () {
-    $('.sub-loca-ul').stop().slideToggle();
+  // $('.sub-loca-wr.arrow .sub-loca-btn').on('click', function () {
+  //   $('.sub-loca-ul').stop().slideToggle();
+  // });
+
+  // 서브로케이션
+  $('.sub-loca-btn').on('click', function() {
+
+    if($(this).hasClass('open')) {
+      $(this).attr('title', '열기');
+      $(this).removeClass('open');
+      $(this).siblings('.sub-loca-2dep-ul').stop().slideUp();
+    } else {
+      $('.sub-loca-btn').removeClass('open');
+      $('.sub-loca-btn').attr('title', '열기');
+      $('.sub-loca-2dep-ul').stop().slideUp();
+      $(this).attr('title', '닫기');
+      $(this).addClass('open');
+      $(this).siblings('.sub-loca-2dep-ul').stop().slideDown();
+    }
+  });
+
+  // 서브로케이션 외의 영역 클릭시 박스 사라짐
+  $(document).on('mouseup focusout', function (e) {
+    if ($(".sub-loca-ul").has(e.target).length === 0) {
+      $('.sub-loca-btn').removeClass('open').attr('title', '열기');
+      $('.sub-loca-2dep-ul').stop().slideUp();
+    }
+  });
+
+  // 사이드바
+  $('.side-bar-btn').on('click', function() {
+    $(this).parents('.side-bar').toggleClass('open');
   });
 
 

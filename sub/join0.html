@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > Sign Up</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container" class="content sub">
+    <div class="join_wrap join0_wrap member_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <div class="login-logo-wr">
+            <a href="/" class="login-logo">
+              <img src="../src/img/login_logo.png" alt="ARiA">
+            </a>
+          </div>
+          <div class="join_inner member-box">
+            <div class="join0_info-wr">
+              <div class="loin0_info-img">
+                <img src="../src/img/join0_info.png" alt="">
+              </div>
+              <div class="sub-title-wr vertical left">
+                <h3 class="sub-title join-title"><b>회원가입</b>안내</h3>
+                <p class="sub-title-info"><span>ARIA의 모든 정보는 무료로 제공</span>되며, 서비스 이용은 회원가입을 원칙으로 하고 있습니다. <br>
+                  회원으로 가입하실 때, 입력하신 정보는 사이트를 이용하실 때의 서비스 이용을 위해서만 사용되며 철저하게 비밀이 보장됩니다.</p>
+              </div>
+            </div>
+            <div class="join0-content-wr">
+              <ul class="join0-sel-btn-ul">
+                <li class="join0-sel-btn-li border-out">
+                  <a href="./join1.html" class="border-in">
+                    <div class="join0-sel-btn-img">
+                      <img src="../src/img/join0_national.png" alt="">
+                    </div>
+                    <div class="join0-sel-btn-txt"><b>내국인</b> 회원가입</div>
+                  </a>
+                </li>
+                <li class="join0-sel-btn-li border-out">
+                  <a href="javascript:void(0);" onclick="foreignPop()" class="border-in">
+                    <div class="join0-sel-btn-img">
+                      <img src="../src/img/join0_foreign.png" alt="">
+                    </div>
+                    <div class="join0-sel-btn-txt"><b>외국인</b> 회원가입</div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="join0-guide-ul">
+                <li class="join0-guide-li">
+                  <div class="join0-guide-l">
+                    <p class="join0-guide-l__txt1">내국인</p>
+                    <p class="join0-guide-l__txt2">KOREAN</p>
+                  </div>
+                  <div class="join0-guide-r">
+                    <div class="join0-guide-r__row match_h">
+                      <div class="join0-guide-r__key">국내회원</div>
+                      <div class="join0-guide-r__val">대한민국 국민으로서 본인인증이 가능한 회원</div>
+                    </div>
+                    <div class="join0-guide-r__row match_h">
+                      <div class="join0-guide-r__key">국내거주 외국인회원</div>
+                      <div class="join0-guide-r__val">외국 국적의 사람으로 대한민국에 거주하고 본인인증이 가능한 회원</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="join0-guide-li">
+                  <div class="join0-guide-l">
+                    <p class="join0-guide-l__txt1">외국인</p>
+                    <p class="join0-guide-l__txt2">FOREIGNER</p>
+                  </div>
+                  <div class="join0-guide-r">
+                    <div class="join0-guide-r__row match_h">
+                      <div class="join0-guide-r__key">국외거주 외국인회원</div>
+                      <div class="join0-guide-r__val">외국 국적의 사람으로 해외에 거주하고 국외기관에 소속된 외국인</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="join-btn-wr">
+            <a href="./login.html" class="btn round25 sizeM join-btn">로그인 페이지로 이동</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 외국인 회원가입 팝업 { -->
+    <div class="pop join_foreign-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-top">
+          <div class="sub-title-wr">
+            <h3 class="sub-title"><b>외국인</b> 회원가입</h3>
+            <p class="sub-title-info">외국인 회원가입에 대한 안내입니다.</p>
+          </div>
+        </div>
+        <div class="pop-in">
+          <div class="pop-content">
+            <div class="pop-foreign-top">
+              <img src="../src/img/join0_foreign.png" alt="">
+              <p>FOREIGNER</p>
+            </div>
+            <div class="pop-foreign-info">
+              <p class="pop-foreign-info__txt1">국외거주 외국인의 경우 회원가입은  관리자 안내를 통해 가입 하실 수 있습니다.</p>
+              <p class="pop-foreign-info__txt2"><span>대표전화</span>로 문의 하시기 바랍니다.</p>
+              <div class="qna-ct-box__tel">
+                <img src="../src/img/icon-tel.png" alt="전화번호">
+                <a href="tel:14-3333">14-3333</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 외국인 회원가입 팝업 -->
+
+  </div>
+
+  
+  <script>
+    // 팝업 열기
+    function foreignPop() {
+      $('.join_foreign-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
+
+</body>
+
+</html>

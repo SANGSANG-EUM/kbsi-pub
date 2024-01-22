@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../src/css/fonts.css">
   <link rel="stylesheet" href="../src/css/common.css">
   <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
   <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
@@ -43,117 +44,125 @@
   <!-- } header 임시 인클루드 -->
 
   <div class="sub qna">
-    <!-- 서브비주얼 { -->
-    <div class="sub-visual sub-visual2">
-      <div class="container">
-        <div class="wrapper">
-          <div class="sub-vis-wr">
-            <div class="sub-vs-txt-wr" data-aos="fade-up" data-aos-duration="1000">
-              <p class="sub-vs-tit">
-                활용 <b>안내</b>
-              </p>
-              <p class="sub-vs-txt">
-                <span>ARIA 서비스를</span>이용하시기 편리하도록 <br> 정보를 제공해드리는 페이지입니다.
-              </p>
-            </div>
-            <div class="sub-vs-quick-wr" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-              <ul class="sub-vs-quick-ul">
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
-                    <span>분석신청</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
-                    <span>Q&A</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
-                    <span>시료접수</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
-                    <span>계산서</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li on">
-                  <a href="">
-                    <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
-                    <span>아카데미</span>
-                  </a>
-                </li>
-                <li class="sub-vs-quick-li">
-                  <a href="">
-                    <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
-                    <span>가상캠퍼스</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="sub-vs-quick-btn-wr">
-                <p>quick menu</p>
-                <button type="button" class="sub-vs-quick-btn"></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- } 서브비주얼 -->
 
     <!-- 서브로케이션 { -->
     <div class="sub-location">
       <div class="wrapper">
         <div class="sub-loca-wr">
-          <button type="button" class="sub-loca-btn">
-            Q&A
-          </button>
+          <a href="/" class="sub-loca-home"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
           <ul class="sub-loca-ul">
             <li class="sub-loca-li">
-              <a href="">공지사항</a>
-            </li>
-            <li class="sub-loca-li active">
-              <a href="">Q&A</a>
+              <button type="button" class="sub-loca-btn" title="열기">이용안내</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">ARIA소개</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용신청</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석과학성과</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">가상공간</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용안내</a>
+                </li>
+              </ul>
             </li>
             <li class="sub-loca-li">
-              <a href="">FAQ</a>
+              <button type="button" class="sub-loca-btn" title="열기">Q&A</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">공지사항</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">Q&A</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">FAQ</a>
+                </li>
+              </ul>
             </li>
           </ul>
-          <div class="sub-loca-home">
-            <a href="/"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
-          </div>
         </div>
       </div>
     </div>
     <!-- } 서브로케이션 -->
 
     <!-- 사이드바 { -->
-    <aside class="sub-aside">
-      <ul class="sub-aside-ul">
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_video.png" alt="" style="width: 26px; margin-bottom: 3px;">
-            <span>홍보동영상</span>
-          </a>
-        </li>
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_info.png" alt="" style="width: 26px; margin-bottom: 3px;">
-            <span>이용안내</span>
-          </a>
-        </li>
-        <li class="sub-aside-li">
-          <a href="">
-            <img src="../src/img/icon-aside_app.png" alt="" style="width: 29px;">
-            <span>체험신청</span>
-          </a>
-        </li>
-      </ul>
+    <aside class="side-bar">
+      <button type="button" class="side-bar-btn">
+        <span class="pc">MORE</span>
+        <span class="mo">QUICK MENU</span>
+      </button>
+      <div class="side-bar-box">
+        <p class="title">
+          QUICK<br>
+          MENU
+        </p>
+        <button type="button" class="quick-more-btn" onclick="menuPop()">
+          <span></span>
+        </button>
+        <!-- a 대신 button 사용 시에도 class=".inner-btn 고정" -->
+        <ul class="side-quick-ul">
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon01.png" alt="분석신청">
+                <img src="../src/img/side-quick-icon01-active.png" alt="분석신청">
+              </div>
+              <p class="text">분석신청</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon02.png" alt="계산서">
+                <img src="../src/img/side-quick-icon02-active.png" alt="계산서">
+              </div>
+              <p class="text">계산서</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon03.png" alt="Q&A">
+                <img src="../src/img/side-quick-icon03-active.png" alt="Q&A">
+              </div>
+              <p class="text">Q&amp;A</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon04.png" alt="아카데미">
+                <img src="../src/img/side-quick-icon04-active.png" alt="아카데미">
+              </div>
+              <p class="text">아카데미</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon05.png" alt="시료접수">
+                <img src="../src/img/side-quick-icon05-active.png" alt="시료접수">
+              </div>
+              <p class="text">시료접수</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon06.png" alt="가상캠퍼스">
+                <img src="../src/img/side-quick-icon06-active.png" alt="가상캠퍼스">
+              </div>
+              <p class="text">가상캠퍼스</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
     <!-- } 사이드바 -->
 
@@ -184,10 +193,10 @@
                         <div class="fm-tit qna-cate-txt1">
                           <span class="icon-bar"></span>
                           분석관련 문의
-                          <p class="qna-cate-txt2">아래 카테고리를 선택하시면 해당 게시물만 노출됩니다.</p>
+                          <!-- <p class="qna-cate-txt2">아래 카테고리를 선택하시면 해당 게시물만 노출됩니다.</p> -->
                         </div>
                       </div>
-                      <ul class="qna-cate-ul">
+                      <!-- <ul class="qna-cate-ul">
                         <li class="qna-cate-li">
                           <a href="">SEM</a>
                         </li>
@@ -218,6 +227,67 @@
                         <li class="qna-cate-li">
                           <a href="">MS</a>
                         </li>
+                      </ul> -->
+                      <ul class="faq-cate-ul qna-cate-ul">
+                        <li class="faq-cate-li qna-cate-li active">
+                          <a href="">
+                            <p class="faq-cate-txt">전체</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate1.png" alt=""></div>
+                            <p class="faq-cate-txt">TEM</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate2.png" alt=""></div>
+                            <p class="faq-cate-txt">서류발급</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate3.png" alt=""></div>
+                            <p class="faq-cate-txt">시스템</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate4.png" alt=""></div>
+                            <p class="faq-cate-txt">회원제</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate5.png" alt=""></div>
+                            <p class="faq-cate-txt">결제관련</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate6.png" alt=""></div>
+                            <p class="faq-cate-txt">개인정보</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate7.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate8.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate9.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                     <div class="qna-cate-box qna-cate-box--2">
@@ -225,10 +295,13 @@
                         <div class="fm-tit qna-cate-txt1">
                           <span class="icon-bar"></span>
                           일반문의
-                          <p class="qna-cate-txt2">분류를 선택하세요.</p>
+                          <!-- <p class="qna-cate-txt2">분류를 선택하세요.</p> -->
                         </div>
                       </div>
                       <ul class="qna-cate-ul">
+                        <li class="qna-cate-li active">
+                          <a href="">전체</a>
+                        </li>
                         <li class="qna-cate-li">
                           <a href="">시스템</a>
                         </li>
@@ -320,37 +393,49 @@
                       </table>
                     </div>
                     <div class="bl-btm">
-                      <ul class="bl-page-wr">
-                        <li class="bl-page">
-                          <a href="">PREV</a>
-                        </li>
-                        <li class="bl-page active">
-                          <a href="">1</a>
-                        </li>
-                        <li class="bl-page">
-                          <a href="">2</a>
-                        </li>
-                        <li class="bl-page">
-                          <a href="">3</a>
-                        </li>
-                        <li class="bl-page">
-                          <a href="">4</a>
-                        </li>
-                        <li class="bl-page">
-                          <a href="">5</a>
-                        </li>
-                        <li class="bl-page">
-                          <a href="">NEXT</a>
-                        </li>
-                      </ul>
-                      <form action="" class="bl-search">
-                        <div class="pop-sch-wr">
-                          <input type="text" name="input11" id="input11" class="fm-input" placeholder="검색어 입력"
-                            title="검색어 입력">
-                          <label for="input11" class="sound_only">검색어 입력</label>
-                          <button type="button" class="btn sizeS pd35">검색하기</button>
-                        </div>
-                      </form>
+                      <div class="search-box">
+                        <ul class="bl-page-wr">
+                          <li class="bl-page">
+                            <a href="">PREV</a>
+                          </li>
+                          <li class="bl-page active">
+                            <a href="">1</a>
+                          </li>
+                          <li class="bl-page">
+                            <a href="">2</a>
+                          </li>
+                          <li class="bl-page">
+                            <a href="">3</a>
+                          </li>
+                          <li class="bl-page">
+                            <a href="">4</a>
+                          </li>
+                          <li class="bl-page">
+                            <a href="">5</a>
+                          </li>
+                          <li class="bl-page">
+                            <a href="">NEXT</a>
+                          </li>
+                        </ul>
+                        <form action="" class="bl-search">
+                          <div class="search-in">
+                            <select name="input1" id="input1" class="fm-select fm-select-2" title="선택">
+                              <option value="" disabled="" selected="" hidden="">선택</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                              <option value="">선택</option>
+                            </select>
+                            <label for="input1" class="sound_only"></label>
+                            <div class="search-input-wr">
+                              <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
+                                title="검색어를 입력하세요.">
+                              <label for="search1" class="sound_only">검색어 입력</label>
+                              <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png"
+                                  alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                   <!-- } board list -->
@@ -520,7 +605,7 @@
                       <label for="qnainput2" class="sound_only">실명입력</label>
                     </div>
                   </div>
-    
+
                   <div class="fm-row fm-row--file">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>첨부파일</span>

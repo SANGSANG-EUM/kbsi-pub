@@ -1,4 +1,24 @@
+@media screen and (max-width:1800px) {
+
+  /* 마이페이지 */
+  .my-content {padding: 3vw; padding-bottom: 50px;}
+  .my-content2 {gap: 2vw;}
+  .my-border-box {padding: max(10px, 2vw);}
+  .my-app-status-ul {gap: 1vw;}
+  .my-app-status-ul li .inner {padding: 10px 15px;}
+  .my-app-status-ul li .inner .num {font-size: clamp(14px, 3vw, 30px);}
+
+  /* > 행정담당 */
+  .my-content2 .my-wrapper.member {width: 300px;}
+  .my-content2 .my-wrapper.detail {width: calc(100% - 300px - 2vw);}
+  .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 20%;}
+  .my-content2 .sub-vs-quick-li > a {font-size: 13px;}
+}
+
 @media screen and (max-width:1600px) {
+  /* common */
+  .search-box {flex-direction: column; align-items: center;}
+
   /* sub */
   /* > 서브페이지 */
   .sub-aside {top: auto; transform: translate(0); right: 10px; bottom: 10px;}
@@ -27,9 +47,28 @@
   .equip-info-box-wrap > li .inner {padding: 15px 20px;}
   .srch-equipment-thumb-btn-box {top: -40px; width: 100%; justify-content: flex-end; gap: 25px;}
 
+  /* 마이페이지 */
+  .my-app-status-ul {flex-wrap: wrap; justify-content: flex-start;}
+  .my-app-status-ul li {flex: none;}
+
+
+  /* > 외부 */
+  .my-app-status-box--6 .my-app-status-ul li {width: calc(100% / 3 - 2vw / 3);}
+
+  /* > 행정담당 */
+  .my-app-status-box--4 .my-app-status-ul li {width: calc(100% / 4 - 3vw / 4);}
+
+  /* > 장비담당 */
+  .my-app-status-box--5 .my-app-status-ul li {width: calc(100% / 3 - 2vw / 3);}
 }
 
 @media screen and (max-width:1440px) {
+  /* 사이드바 */
+  .side-bar {right: 0%; transform: translate(100%, -50%); transition: .3s;}
+  .side-bar.open {transform: translate(0%, -50%);}
+  .side-bar-box {border-radius: 15px 0 0 15px;}
+  /* .side-bar-box > .title {display: none; */
+  .side-bar-btn {display: block; position: absolute; top: 50%; right: 100%; transform: translateY(-50%); padding: 10px; height: 70px; border-radius: 15px 0 0 15px; border: 0; font-size: 12px; font-weight: 500; background-color: var(--sub-color__pink); color: #fff; writing-mode: vertical-rl;}
   /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
@@ -37,8 +76,8 @@
   .device-list-li {width: calc(100% / 3 - 4vw / 3); padding: 2vw;}
   .device-list-name {font-size: 18px;}
   .device-list-btns .btn {font-size: 14px;}
-  .device-select-ul {flex-wrap: wrap; gap: 1.5vw;}
-  .device-select-li {flex: none; width: calc(100% / 7 - 9vw / 7);}
+  /* .device-select-ul {flex-wrap: wrap; gap: 1.5vw;} */
+  /* .device-select-li {flex: none; width: calc(100% / 7 - 9vw / 7);} */
   .device-list-hash {min-width: auto;}
 
   /*  > 이용기기 보유현황(상세정보) */
@@ -62,7 +101,7 @@
   .head-logo {width: 120px;}
   .head-in {height: 80px;}
   .tnb-ul {padding: 0 15px;}
-  .header-mypage .head-in {padding: 0 1vw;}
+  .header-mypage .head-in {padding: 0 max(10px, 1vw);}
 
   /* footer */
   .ft-top-ul {padding: 10px 0;}
@@ -80,12 +119,16 @@
   .sub-visual {padding-top: 80px;}
 
   /* > 서브페이지 */
-  .sub-title {font-size: clamp(25px, 8vw, 40px);}
+  .sub-title {font-size: clamp(25px, 8vw, 36px);}
+  .sub-top-wr {flex-direction: column; align-items: flex-start;}
+  .sub-title-wr {width: 100%;}
 
   /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
-  .device-select-li {flex: none; width: calc(100% / 6 - 7.5vw / 6);}
+  /* .device-select-li {flex: none; width: calc(100% / 6 - 7.5vw / 6);} */
+  .device-list-top-category {flex-direction: column;}
+  .region-select-li {width: calc(100% / 4 - 21px / 4);}
 
   /*  > 이용기기 보유현황(신청) */
   .app-form-outer, .sub-lr-outer {flex-direction: column;}
@@ -110,11 +153,23 @@
   .view-map-info-item .text01 {width: 100%; font-size: 16px; padding-bottom: 4px;}
   .view-map-info-item .text02 {width: 100%; line-height: normal;}
 
-  .view-desc-item .inner {padding: 30px;}
-  .view-desc-item .inner .left {width: 200px;}
-  .view-desc-item .inner .right {width: calc(100% - 200px);}
+  .view-desc-item .inner {padding: 24px;}
+  .view-desc-item .inner .left {width: 170px;}
+  .view-desc-item .inner .right {width: calc(100% - 170px);}
 
   .img-exp-pop .pop-box {padding: 60px 0;}
+  .img-exp-pop .pop-close-btn {top: 0; right: 0;}
+
+  .view-dt-info-item .inner {padding: 0 16px;}
+  .view-dt-info-item .inner .text02 {font-size: 16px;}
+
+  .view-content-right {padding-left: 30px;}
+
+  .device-info-box .icon {width: 62px; height: 62px;}
+  .device-info-box .icon img {width: 40px;}
+  .device-info-txt-box {width: calc(100% - 220px); padding: 0 14px;}
+  .device-info-txt1 {font-size: 24px;}
+  .device-info-loc {width: 158px; font-size: 14px;}
 
   /* > 연구장비 아카데미 */
   .device-aca-eduing-sl-item .inner {padding: 26px;}
@@ -142,23 +197,59 @@
   .bl-search2-wr{justify-content: flex-end; width: 100%;}
 
   /* > Q&A */
-  .qna-right {flex-direction: row; flex-wrap: wrap; gap: 1vw;}
+  .qna-right {flex-direction: row; flex-wrap: wrap; gap: max(10px, 1vw);}
   .qna-ct-box {margin: 0; order: 1; width: calc(50% - 0.5vw);}
-  .qna-btn-list {gap: 0.5vw; padding: 0; order: 2; width: calc(50% - 0.5vw);}
+  .qna-btn-list {gap: max(5px, 0.5vw); padding: 0; order: 2; width: calc(50% - 0.5vw);}
   .qna-right .related-list {order: 3; width: 100%;}
   .qna-btn {height: 80px;}
   .qna-ct-box__ul {max-width: 350px; margin: auto; padding-top: 15px;}
+  .qna-right .qna-ct-box {margin: 0;}
+
+  /* > FAQ */
+  .faq-right .qna-ct-box, .faq-right .qna-btn-list {width: 100%;}
+  .faq-right .related-list, .faq-right .qna-btn-list {padding-top: max(10px, 1vw);}
+  .faq-list-btn {padding: 2vw 2.5vw;}
+  .faq-q-title {font-size: 18px;}
+  .faq-icon.faq-q {width: 30px; height: 30px; font-size: 18px;}
+
 
   /* 통합검색결과 */
-  .srch_result_wrap {flex-direction: column;}
+  .srch_result_wrap {flex-direction: column; gap: max(10px, 1vw);}
   .srch_result_wrap > .left, .srch_result_wrap > .right {width: 100%;}
-  .related-list {flex-direction: row; gap: 1vw; flex-wrap: wrap;}
-  .related-box {width: calc(50% - 0.5vw); padding: 15px 20px;}
+  .related-list {flex-direction: row; gap: max(10px, 1vw); flex-wrap: wrap;}
+  .related-box {width: calc(50% - 0.5vw); padding: max(10px, 2vw) max(15px, 2vw);}
 
   /* > 전문가 검색 결과 */
   
   /* > 장비 검색 결과 */
   .jqcloud {margin: auto; max-width: 100%;}
+
+
+  /* 마이페이지 */
+  .my-page-sub {padding-top: 80px;}
+
+  /* > 외부 */
+  .my-content2 .my-wrapper.member {width: 200px;}
+  .my-content2 .my-wrapper.detail {width: calc(100% - 200px - 2vw);}
+  .my-content2 .my-wrapper.member .related-box {width: 100%;}
+  .my-content2 .my-wrapper.member .my-page-member-info {padding: 15px;}
+  .my-page-member-info-top .name {font-size: 18px; margin: 10px 0 5px;}
+  .my-page-member-info-btm p {font-size: 14px;}
+  .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 5%;}
+  /* .my-content2 .my-wrapper.member .related-menu-ul {flex-direction: column;} */
+  .my-content2 .my-wrapper.member .related-menu-li {width: 100%;}
+  .my-sec .bl-table th {font-size: 16px; width: auto; word-break: break-all;}
+  .my-sec .bl-table td {font-size: 14px; width: auto; word-break: break-all;}
+
+  /* > 행정담당 */
+  .my-app-status-box--4 .my-app-status-ul li {width: calc(100% / 2 - 1vw / 2);}
+
+  /* > 장비담당 */
+  .my-border-box-wrap.col2 {display: flex; margin: 0; gap: clamp(10px, 2vw, 20px);}
+  .my-border-box-wrap.col2 > li {padding: 0;}
+  .my-noti-list-item .title, .my-noti-list-item .date {width: 100%;}
+  .my-box-title-wrap {margin-bottom: 0;}
+  
 
   /* Board-Write */
   .fm-ct.flex {display: flex; align-items: center;}
@@ -170,12 +261,13 @@
 @media screen and (max-width:1023px) {
   /* common */
   .container {padding-left: 30px; padding-right: 30px;}
+  .search-input-wr {width: 100%;}
 
   /* header */
   .header.white {background-color: #fff;}
   .tnb-wr {display: flex; align-items: center; gap: 20px;}
   .hd-ham {position: relative; display: block; width: 40px; height: 40px; border: 0; background: none;}
-  .header.shadow .hd-ham > span, .header.shadow .hd-ham > span::after, .header.shadow .hd-ham > span::before {background-color: #333;}
+  .header .hd-ham > span, .header .hd-ham > span::before, .header .hd-ham > span::after, .header.shadow .hd-ham > span, .header.shadow .hd-ham > span::after, .header.shadow .hd-ham > span::before {background-color: #333;}
   .hd-ham.open > span {background-color: transparent !important;}
   .hd-ham.open > span::after, .hd-ham.open > span::before {top: 50%; background-color: #333;}
   .hd-ham.open > span::after {transform: translate(-50%, -50%) rotate(45deg);}
@@ -202,7 +294,7 @@
   /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
-  .device-select-li {flex: none; width: calc(100% / 5 - 6vw / 5);}
+  /* .device-select-li {flex: none; width: calc(100% / 5 - 6vw / 5);} */
   .device-list-li {width: calc(100% / 2 - 2vw / 2);}
   .device-list-thumb {height: clamp(200px, 50vw, 330px);}
   .device-list-btns {gap: 2vw;}
@@ -213,6 +305,12 @@
   .view-dt-box {flex-direction: column;}
   .view-dt-left {width: 100%;}
   .view-dt-right {width: 100%; padding-left: 0; padding-top: 20px;}
+
+  .view-content-ct {flex-direction: column;}
+  .view-content-left {width: 100%;}
+  .view-content-right {width: 100%; padding-left: 0; padding-top: 20px;}
+
+  .view-charge-list li .inner .thumb {padding-bottom: 15.408%;}
 
   /* > 연구장비 아카데미 */
   .device-aca-info-ul {margin: -20px 0;}
@@ -239,6 +337,11 @@
   .notice-ul > li {padding: 8px; width: 50%;}
   .notice-ul > li .inner-box {padding: 20px;}
 
+  /* > FAQ */
+  .faq-cate-ul {gap: 1vw;}
+  .faq-cate-li {width: calc(100% / 4 - 3vw / 4);}
+  .faq-cate-li:first-child > a {font-size: 18px;}
+
   /* 통합검색결과 */
   /* > 전문가 검색 결과 */
   .srch-expert-sl-ctr {right: 3vw;}
@@ -251,6 +354,29 @@
   .srch-expert-item .inner-top .expert-info {padding-left: 0; padding-top: 10px; width: 100%;}
   .srch-expert-list {margin: -7.5px;}
   .srch-expert-item {padding: 7.5px;}
+
+  /* 마이페이지 */
+
+  /* > 외부 */
+  .my-content2 {flex-direction: column-reverse;}
+  .my-content2 .my-wrapper.member {width: 100%;}
+  .my-content2 .my-page-member-wr {flex-direction: row; flex-wrap: wrap;}
+  .my-content2 .my-page-member-box {width: 170px;}
+  .my-content2 .my-wrapper.member .related-box.fav {width: calc(100% - 170px - max(10px, 2vw));}
+  .my-content2 .my-page-member-box {display: flex; align-items: center; justify-content: center;}
+  .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: -15px;}
+  .my-content2 .my-wrapper.member .related-menu-li {width: calc(100% / 2 - 7px / 2);}
+  .my-content2 .my-wrapper.detail {width: 100%;}
+
+  /* > 장비담당 */
+  .my-device-box .my-box-title-wrap {width: 110px;}
+  .my-device-ul-wrap {width: calc(100% - 110px);}
+  .my-device-ul li .inner {padding: 10px 15px;}
+  .my-device-ul li .inner .text01 {font-size: 16px;}
+  .my-device-ul li .inner .text02 {font-size: 12px; padding-top: 5px; line-height: 1.2;}
+  .my-border-box-wrap.col2 {flex-direction: column;}
+  .my-border-box-wrap.col2 > li {width: 100%;}
+  .my-noti-list-item .date {text-align: left; padding-left: 19px; font-size: 14px;}
 
   /* Board-List */
   .bl-body {padding-bottom: 10px;}
@@ -293,24 +419,35 @@
   .sub-vs-quick-li > a {font-size: 13px;}
 
   /* > 서브로케이션 */
-  .sub-location {border: 0;}
+  /* .sub-location {border: 0;}
   .sub-loca-wr {position: relative; gap: 0;}
   .sub-loca-ul {display: none; position: absolute; top: 100%; flex-direction: column; padding: 10px 20px; width: 100%; background-color: #fff; z-index: 100; border-bottom: 1px solid #333;}
   .sub-loca-li {border: 0 !important; padding: 10px 0;}
   .sub-loca-li.active {display: none;}
   .sub-loca-btn {display: block; width: 100%; border: 0; background: #333; color: #fff;}
   .sub-loca-wr.arrow .sub-loca-btn {background: #333 url('../img/icon-arrow_subloca.png') no-repeat center right 13px / 12px;}
+  .sub-loca-home {display: none;} */
+  .sub-location {height: auto; margin-top: 80px;}
   .sub-loca-home {display: none;}
+  .sub-loca-ul {flex-direction: column; width: 100%; border: 0;}
+  .sub-loca-li {width: 100%; border: 0; border-bottom: 1px solid rgba(245, 245, 245, .3);}
+  .sub-loca-btn {height: 30px; padding: 0 15px; font-size: 14px; background-size: 12px;}
+  .sub-loca-2dep-ul {padding: 0 0 5px; z-index: 10; border-top: 1px solid rgba(245, 245, 245, .3);}
+  .sub-loca-2dep-li > a {padding: 5px 15px; font-size: 14px;}
 
   /* > 서브페이지 */
   .sub-tab-ul {gap: 0;}
   .sub-tab-li > a {font-size: 14px; padding: 0 10px; text-align: center;}
   .sub-title-info {font-size: 15px;}
+  .sub-title-wr {flex-direction: column; align-items: center;}
+  .sub-title {padding: 0;}
+  .sub-title::after {top: -8px; left: 50%; transform: translateX(-50%);}
+  .sub-top-wr {align-items: center;}
 
   /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
-  .device-select-li {flex: none; width: calc(100% / 3 - 3vw / 3);}
+  /* .device-select-li {flex: none; width: calc(100% / 3 - 3vw / 3);} */
   .region-select-ul {gap: 1.5vw;}
   .region-select-li {width: calc(100% / 3 - 3vw / 3);}
   .search-wr {gap: 5px;}
@@ -320,6 +457,13 @@
   .device-list-ul {gap: 30px;}
   .device-list-li {padding: 20px 10px; width: 100%;}
   .device-list-thumb {height: clamp(200px, 100vw, 450px);}
+
+  .device-select-ul {gap: 1.5vw;}
+  .device-select-li {width: calc(100% / 4 - 4.5vw / 4); height: 90px;}
+  .device-sel-icon img {width: 40%;}
+  .device-sel-icon {height: 60%;}
+  .device-sel-txt {font-size: 14px;}
+  .device-select-btn {padding: 10px;}
 
   /*  > 이용기기 보유현황(신청) */
   .sub-vs-quick-ul {width: 100%;}
@@ -388,6 +532,28 @@
   .view-map-info-item .text01 {font-size: 14px;}
   .view-map-info-item .text02 {font-size: 14px;}
   .view-map-info-item .text02 a {font-size: 14px;}
+
+  .device-info-box {flex-direction: column; align-items: flex-start; padding: 20px; position: relative;}
+  .device-info-box .icon {width: 50px; height: 50px; position: absolute; top: 20px; right: 20px;}
+  .device-info-box .icon img {width: 32px;}
+  .device-info-txt-box {width: 100%; padding: 0; padding-bottom: 12px; padding-right: 60px;}
+  .device-info-loc {width: 100%; height: 40px;}
+
+  .view-charge-list li .inner {padding: 18px;}
+  .view-charge-list li .inner .thumb {width: 90px; padding-bottom: 21.532%;}
+  .view-charge-list li .inner .info {width: calc(100% - 90px);}
+
+  .view-hash-box {padding: 14px;}
+  .view-hash-box .view-hash-item {padding: 4px;}
+  .view-hash-box .view-hash-item span {font-size: 14px; padding: 1px 10px;}
+
+  .view-same-box {padding: 18px;}
+  .view-same-box .title {font-size: 18px;}
+  .view-same-text {font-size: 14px;}
+  .view-same-ul li {padding: 10px 0;}
+
+  .view-content-right {margin: 0;}
+  .view-content-right .view-section:first-child {padding-top: 0;}
 
   /* > 연구장비 아카데미 */
   .device-aca-eduing-wrap .fm-tit {margin-bottom: 10px;}
@@ -459,8 +625,27 @@
   .qna-cate-wr {flex-direction: column;}
   .qna-cate-li > a {padding: 10px 5px;}
   .qna-cate-box--2 .qna-cate-li {width: calc(100% / 4);}
-  .qna-cate-box--2 .qna-cate-li:nth-child(2) {border-right: 1px solid #ddd;}
-  .qna-cate-title {padding: 10px; padding-right: 75px;}
+  /* .qna-cate-box--2 .qna-cate-li:nth-child(2) {border-right: 1px solid #ddd;} */
+  /* .qna-cate-title {padding: 10px; padding-right: 75px;} */
+
+  .qna-cate-ul {padding-top: 5px;}
+  .qna-cate-box--2 .qna-cate-ul {width: 100%; flex-direction: row;}
+  .faq-cate-ul.qna-cate-ul {gap: 1vw;}
+  .faq-cate-li.qna-cate-li {width: calc(100% / 5 - 4vw / 5); height: auto;}
+  .qna-cate-box--1, .qna-cate-box--2 {padding: 3vw;}
+
+  /* > FAQ */
+  .faq-left {gap: 5vw;}
+  .faq-cate-wr {padding: 3vw;}
+  .faq-cate-ul {gap: 1vw;}
+  .faq-cate-li {width: calc(100% / 4 - 3vw / 4); height: 60px;}
+  .faq-cate-li:first-child > a, .faq-cate-li > a {font-size: 16px !important; gap: 2vw;}
+  .faq-cate-li .faq-cate-icon img {max-width: 5vw; max-height: 5vw;}
+  .faq-q-title {font-size: 16px; gap: 15px;}
+  .faq-list-cnt-in {gap: 15px; padding: 3.5vw;}
+  .faq-answer {padding: 3px 0;}
+  .faq-icon.faq-q {width: 26px; height: 26px; font-size: 16px;}
+  .faq-q-cate {margin: 0; font-size: 14px;}
 
   /* 통합검색결과 */
   .related-box {width: 100%;}
@@ -494,6 +679,45 @@
   .srch-thesis-title {font-size: 18px; padding-bottom: 5px;}
   .thesis-btn-wr .btn {font-size: 12px;}
 
+  /* 마이페이지 */
+  .my-page-left-menu {position: fixed; top: 80px; left: 0; background-color: #fff; z-index: 10;}
+  .my-page-left-menu.hidden {position: fixed; top: 80px;}
+  .my-page-left-menu::after {content: ''; position: fixed; top: 0; right: 0; width: calc(100% - 243px); height: 100vh; background-color: rgba(0, 0, 0, .5); z-index: 10; transition: .3s; display: block; opacity: 1;}
+  .my-page-left-menu.hidden::after {right: -100%; transition: .3s; opacity: 0;}
+  .my-page-left-menu-wrap {min-height: calc(100vh - 80px);}
+  .my-page-content {width: 100%;}
+  .my-page-open-menu-btn-wrap {display: block !important;}
+  .my-page-loc-ul .text {font-size: 16px; padding: 0 2vw;}
+  .my-sec .bl-table td.bl-document .document-icon, .my-sec .bl-table td.bl-status .status-icon {width: auto; padding: 0 2.5vw; font-size: 12px;}
+  .my-app-status-ul li .inner-top {font-size: 16px;}
+  .my-app-status-ul li .inner-top .icon {width: 5vw; height: 5vw;}
+  .my-app-status-ul li .inner-top .icon img {max-width: 60%; max-height: 60%;}
+  .my-box-title-wrap .title, .related-box .fm-tit {font-size: 18px;}
+  .related-list.horizontal .related-box {width: 100%;}
+  .my-wrapper {margin: -10px 0;}
+  .my-sec {padding: 10px 0;}
+  .my-page-left-menu-content {height: calc(100vh - 80px - 50px); overflow-y: auto;}
+
+  /* > 장비담당 */
+  .my-device-box {flex-direction: column;}
+  .my-device-box .my-box-title-wrap {width: 100%; padding: 0; margin: 0 0 10px 0;}
+  .my-device-ul-wrap {width: 100%;}
+  .my-device-ul li .inner .text01 {font-size: 14px;}
+  .my-device-ul li .inner .text02 {padding-top: 2px;}
+
+  /* 사이드바 */
+  .side-bar {top: auto; bottom: 0; transform: translate(0, 100%); width: 100%;}
+  .side-bar.open {transform: translate(0);}
+  .side-bar-box {display: flex; justify-content: center; align-items: center; gap: 1vw;}
+  .quick-more-btn {width: 64.35px; height: 64.35px; margin: 0;}
+  .side-bar-btn {right: auto; left: 50%; bottom: 100%; top: auto; transform: translateX(-50%); writing-mode: horizontal-tb; height: auto; width: 60px; border-radius: 10px 10px 0 0; width: 100px; padding: 7.5px;}
+  .side-quick-ul {display: flex; margin: 0; gap: 1vw; justify-content: center;}
+  .side-quick-ul li {padding: 0;}
+  /* .side-quick-ul li .inner-btn {width: 100%; height: calc((100vw - 20px) / 6 - 5vw / 6);} */
+  .side-bar-box > .title {display: none;}
+  .side-bar-btn > span.pc {display: none;}
+  .side-bar-btn > span.mo {display: block;}
+
   /* Board-Write */
   .fm-row {flex-direction: column; gap: 5px;}
   .fm-lb, .fm-ct {width: 100%;}
@@ -509,24 +733,31 @@
 @media screen and (max-width:480px) {
   /* common */
   .container {padding-left: 7.5px; padding-right: 7.5px;}
+  .search-input-wr .fm-input {width: calc(100% - 40px);}
+  .search-input-wr .search-btn {width: 40px;}
+  .search-input-wr .search-btn span {display: none;}
 
   /* header */
   .head-in {height: 60px;}
-  .head-logo {width: 100px;}
+  .head-logo {width: 90px;}
   .hd-ham {width: 25px;}
   .tnb-wr {gap: 15px;}
+  .tnb-ul {gap: 0 7.5px; padding: 0 7.5px;}
   .tnb-li {gap: 0.5vw;}
   .tnb-li img {transform: scale(0.8);}
-  .tnb-ul {gap: 0 7.5px; padding: 0 7.5px;}
+  .tnb {height: 30px;}
   .gnb-li {padding: 2.5vh 0;}
   .gnb2-li {padding: 5px 0;}
   .header-mypage .tnb-txt {font-size: 12px;}
+  .hd-ham > span, .hd-ham > span::before, .hd-ham > span::after {height: 2px;}
+  .hd-ham > span::before {top: 7px;}
+  .hd-ham > span::after {top: -7px;}
   
   /* footer */
   .ft-top-ul {gap: 10px;}
   .ft-top-li a {font-size: 13px;}
   .ft-top-li:not(:last-child):after {right: -5px; height: 8px;}
-  .btn.foot-btn {font-size: 12px; padding: 0 15px;}
+  .btn.foot-btn {font-size: 12px; padding: 0 15px; height: 30px; line-height: 27px;}
   .ft-info-ul {flex-direction: column; gap: 5px;}
   .ft-info-li {flex-direction: column; align-items: flex-start; gap: 0;}
   .gnb-ul, .gnb-ul::before {top: 60px;}
@@ -541,19 +772,25 @@
   .sub-visual {padding-top: 60px;}
   .sub-vis-wr {padding: 35px 0 20px;}
 
+  /* > 서브로케이션 */
+  .sub-location {margin-top: 60px;}
+
   /* > 서브페이지 */
   .sub-aside-li > a img {display: none;}
   .sub-aside-li > a > span {margin: 0;}
   .sub-aside-li > a {height: 25px;}
   .sub-title-info {font-size: 14px;}
+  .fav-btn {width: 150px; height: 30px; gap: 5px; font-size: 13px;}
+  .fav-btn-img {width: 15px;}
 
   /* 이용신청 */
   /* > 분석지원 */
   /*  > 이용기기 보유현황(목록) */
-  .device-select-li {height: auto;}
+  /* .device-select-li {height: auto;} */
+  .device-select-li {width: calc(100% / 3 - 3vw / 3); height: 70px;}
   .device-select-btn {padding: 5px; gap: 0;}
   .device-sel-icon {height: 65%;}
-  .device-sel-txt {height: 35%; font-size: 14px;}
+  .device-sel-txt {font-size: 14px;}
   .device-sel-icon img {transform: scale(0.8);}
   .region-select-btn {font-size: 14px;}
   .bl-select-txt {font-size: 14px;}
@@ -586,10 +823,26 @@
   .view-dt-thumb-sl .img-exp-btn img {display: inline-block; width: 26px;}
   
   .view-dt-info-price-box .price-wrap {}
-  .view-dt-info-price-box .price-wrap .orprice {font-size: 16px; margin-right: 14px;}
-  .view-dt-info-price-box .price-wrap .orprice::after {width: 8px; height: 14px; right: -18px; background-size: 100%;}
+  .view-dt-info-price-box .price-wrap .orprice {font-size: 16px;}
   .view-dt-info-price-box .price-wrap .saleprice {font-size: 16px; padding-left: 6px;}
-  .view-dt-info-price-box .price-wrap .sale-percent {margin-left: 8px; font-size: 12px; padding: 2px 6px;}
+  .view-dt-info-price-box .price-wrap .sale-percent {font-size: 12px; padding: 2px 6px;}
+
+  .view-charge-list li .inner {padding: 12px;}
+  .view-charge-list li .inner .info {width: calc(100% - 70px);}
+  .view-charge-list li .inner .info .name-wrap {gap: 0 4px; padding-bottom: 4px; margin-bottom: 4px;}
+  .view-charge-list li .inner .info .name-wrap .name {font-size: 16px;}
+  .view-charge-list li .inner .thumb {width: 70px; padding-bottom: 22.951%;}
+  .view-charge-list li .inner .info .cate {font-size: 13px;}
+  .view-charge-list li .inner .info .num-wrap {padding-top: 4px;}
+
+  .view-hash-box {padding: 12px;}
+  .view-same-box {padding: 12px;}
+  .view-desc-item .inner {padding: 12px;}
+
+  .view-dt-info-btns {flex-direction: column; gap: 8px;}
+  .view-dt-info-btns > * {width: 100%!important;}
+
+  .view-dt-info-item .inner {height: auto; flex-direction: column; align-items: flex-start; padding: 6px 10px;}
 
   /* > 연구장비 아카데미 */
   .device-aca-eduend-list > li {width: 100%;}
@@ -627,6 +880,24 @@
   .qna-ct-box__li {font-size: 13px;}
   .qna-ct-box {padding: 15px;}
 
+  .faq-cate-li.qna-cate-li > a {gap: 0;}
+  .qna-cate-box--2 .qna-cate-ul {gap: 1vw;}
+  .qna-cate-box--2 .qna-cate-li > a {font-size: 13px;}
+
+  /* > FAQ */
+  .faq-cate-ul {gap: 1vw;}
+  .faq-cate-li {width: calc(100% / 4 - 3vw / 4); height: 35px;}
+  .faq-cate-li:first-child > a, .faq-cate-li > a {font-size: 13px !important; gap: 0;}
+  .faq-cate-li .faq-cate-icon img {display: none;}
+  .related-category-ul {padding-top: 0;}
+  .related-category-ul > li a {font-size: 14px;}
+  .faq-q-title, .faq-answer {font-size: 14px; gap: 7.5px; padding: 0;}
+  .faq-q-cate {font-size: 12px; padding: 2px 10px;}
+  .faq-icon.faq-q, .faq-icon.faq-a {width: 20px; height: 20px; font-size: 12px;}
+  .faq-question {padding: 0;}
+  .faq-list-cnt-in {gap: 7.5px; padding: 2vw 2.5vw;}
+  
+
   /* 통합검색결과 */
   .inter-srch-input-bar, .inter-srch-input-bar > .fm-search-wr, .inter-srch-input-bar > .fm-search-wr .fm-input, .inter-srch-input-bar > p {height: 40px; font-size: 14px;}
   .inter-srch-input-bar > .fm-search-wr .fm-input {padding: 0 15px;}
@@ -638,7 +909,7 @@
   .equip-info-box-wrap > li .inner {padding: 8px 12px;}
   .equip-info-box-wrap > li .inner .text {padding-left: 10px;}
   .equip-info-box-wrap > li .inner .text::before {width: 3px; height: 3px;}
-  .related-box {padding: 8px 15px;}
+  /* .related-box {padding: 8px 15px;} */
 
   /* > 전문가 검색 결과 */
   .srch-expert-sl-wrap, .srch-ex-device-box {padding-top: 0;}
@@ -666,6 +937,40 @@
   .srch-thesis-box::before {top: 17px; width: 3px; height: 3px;}
   .srch-thesis-box .thesis-name > span {font-size: 14px;}
   .srch-thesis-box .thesis-text {font-size: 13px;}
+  .my-app-table-wrap .bl-wr, .my-unpaid-box .bl-wr, .my-edu-box .bl-wr {position: relative;}
+  .my-app-table-wrap .bl-wr::before, .my-unpaid-box .bl-wr::before, .my-edu-box .bl-wr::before {content: '← 양옆으로 드래그하여 확인 →'; position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 12px;}
+  .my-app-table-wrap .bl-body, .my-unpaid-box .bl-body, .my-edu-box .bl-body {overflow: auto; padding-top: 25px;}
+  .my-app-table-wrap .bl-table, .my-unpaid-box .bl-table, .my-edu-box .bl-table {width: 500px;}
+
+  /* 마이페이지 */
+  .my-page-left-menu, .my-page-left-menu.hidden {top: 60px;}
+  .my-page-left-menu-wrap {min-height: calc(100vh - 60px);}
+  .my-page-loc-ul .text {font-size: 14px;}
+  .my-page-sub {padding-top: 60px;}
+  .my-app-status-ul li .inner {padding: 5px; border-radius: 5px;}
+  .my-app-status-ul li .inner-top .icon {margin-right: 5px;}
+  .my-wrapper {margin: -5px 0;}
+  .my-sec {padding: 5px 0;}
+  .my-sec .bl-table th {font-size: 14px;}
+  .my-app-status-ul {padding-top: 5px;}
+
+  /* > 외부 */
+  .my-content2 .my-page-member-box, .my-content2 .my-wrapper.member .related-box.fav {width: 100%;}
+
+  /* > 장비담당 */
+  .my-noti-list-item .title {font-size: 14px;}
+  .my-noti-list-item .date {font-size: 12px;}
+
+  /* 사이드바 */
+  /* .side-quick-ul {flex-wrap: wrap;} */
+  .side-quick-ul {gap: 0.5vw;}
+  .side-quick-ul li {width: calc((100vw - 20px) / 6 - 2.5vw / 6); height: calc((100vw - 20px) / 6 - 2.5vw / 6);}
+  .side-quick-ul li .inner-btn {width: 100%; height: 100%;}
+  .side-bar-box {flex-direction: column;}
+  .quick-more-btn {width: 100%; height: 30px;}
+  .side-quick-ul li .inner-btn .icon {padding-bottom: 0.5vw;}
+  .side-quick-ul li .inner-btn .text {font-size: 10px;}
+  .quick-more-btn, .side-quick-ul li .inner-btn {border-radius: 5px;}
 
   /* Board-Write */
   .fm_inner {padding: 20px 15px;}
