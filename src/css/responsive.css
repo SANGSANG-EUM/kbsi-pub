@@ -94,6 +94,10 @@
   .mb_info-step-wr .app-step-li .app-step-circle, .mb_info-step-wr .app-step-li {width: calc((100vw - 100px) / 4 -  12vw / 4); height: calc((100vw - 100px) / 4 -  12vw / 4);}
   .mb_info-step-wr .app-step-li:not(:last-child)::after {right: -2vw; width: 14px;}
 
+  /* 선도연구활동 */
+  /* > 사업공고 */
+  .ln-my-business-btn-box {width: auto; z-index: 1; top: -41px; left: inherit; right: 0; transform: none; gap: 0 25px;}
+
 }
 
 @media screen and (max-width:1290px) {
@@ -256,6 +260,18 @@
   .fm-ct.flex .fm-input {width: calc(100% / 3 - 40px / 3);}
   .fm-ct.flex .fm-sym {margin: 0; width: 20px; text-align: center;}
   .fm-ct.flex .fm-mail-select {margin-left: 5px; width: calc(100% / 3);}
+
+  /* 선도연구활동 */
+  /* > 사업공고 */
+  .ln-list {margin: -15px;}
+  .ln-list > li {padding: 15px;}
+  .ln-list > li .inner {padding: 22px;}
+  .ln-list > li .inner .inner-btm .btn {width: 100px;}
+
+  .ln-my-business-sl-item .inner {padding: 22px;}
+  .ln-my-business-sl-item .inner-btm .btn {width: 100px;}
+
+  .ln-table-wrap .bl-table td {font-size: 14px; width: auto; word-break: break-all;}
 }
 
 @media screen and (max-width:1023px) {
@@ -393,6 +409,40 @@
   .bv-info {padding: 15px 10px;}
   .bv-file, .bv-link {padding: 10px;}
   .bv-content {padding: 20px 10px;}
+
+  /* 선도연구활동 */
+  /* > 사업공고 */
+  .ln-list {margin: -10px;}
+  .ln-list > li {padding: 10px;}
+  .ln-list > li .inner .cate {padding: 4px 14px; font-size: 16px;}
+  .ln-list > li .inner .title {font-size: 20px; margin: 20px 0;}
+  .ln-list > li .inner .info-item {padding: 4px 14px;}
+  .ln-list > li .inner .info-item .left {font-size: 14px;}
+  .ln-list > li .inner .info-item .right {font-size: 14px;}
+  .ln-list > li .inner .inner-btm .dday {font-size: 15px;}
+
+  .ln-my-business-sl-item .inner .cate {font-size: 16px;}
+  .ln-my-business-sl-item .inner-btm {padding-top: 18px;}
+  .ln-my-business-sl-item .inner-btm .dday {font-size: 15px;}
+  .ln-my-business-sl-item .inner-btm .dday.end {font-size: 15px;}
+
+  /* 회원가입 */
+  /* > 본인인증 */
+  .join2-sel-btn-li .inner {padding: 30px 20px;}
+  .join2-sel-btn-li .inner .go-btn {width: 100%; height: 40px;}
+  .join2-sel-btn-li .inner .text-box {margin: 20px 0 30px;}
+  .join2-sel-btn-li .inner .text-box .text02 {font-size: 16px; min-height: 2.76em;}
+  .join2-sel-btn-li .inner .text-box .text02 br {display: none;}
+
+  .join2-caution-box {padding: 30px 20px;}
+
+  /* > 회원가입 완료 */
+  .join4-box {padding: 50px 20px;}
+  .join4-box .icon {width: 220px;}
+  .join4-box .text-box {padding-top: 32px;}
+  .join4-box .text-box .text01 {font-size: 32px;}
+  .join4-box .text-box .text01::before {font-size: 28px; left: -17px;}
+  .join4-box .text-box .text01::after {font-size: 28px;}
 }
 
 @media screen and (max-width:767px) {
@@ -728,6 +778,44 @@
   .bl-date {width: 120px;}
   .bl-page > a {padding: 0 2vw;}
 
+  /* 선도연구활동 */
+  /* > 사업공고 */
+  .ln-list > li {width: 100%;}
+  .ln-list > li .inner .cate {font-size: 14px;}
+  .ln-list > li .inner .title {font-size: 18px;}
+  .ln-list > li .inner .inner-btm {padding-top: 10px;}
+  .ln-list > li .inner .inner-btm .dday {font-size: 13px; width: 80px; height: 25px;}
+  .ln-list > li .inner .inner-btm .btn {font-size: 13px; height: 25px; line-height: 22px; width: 80px;}
+
+  .ln-my-business-sl-item .inner .cate {font-size: 14px;}
+  .ln-my-business-sl-item .inner .title {font-size: 18px;}
+  .ln-my-business-sl-item .inner .date {font-size: 14px;}
+  .ln-my-business-sl-item .inner-btm {padding-top: 10px;}
+  .ln-my-business-sl-item .inner-btm .dday {font-size: 13px; width: 80px; height: 25px;}
+  .ln-my-business-sl-item .inner-btm .btn {font-size: 13px; height: 25px; line-height: 22px; width: 80px;}
+
+  /* 회원가입 */
+  /* > 본인인증 */
+  .join2-sel-btn-li .inner {padding: 2vw;}
+  .join2-sel-btn-li .inner .icon {height: 80px;}
+  .join2-sel-btn-li .inner .icon img {height: 100%;}
+  .join2-sel-btn-li .inner .text-box {margin: 16px 0 20px;}
+  .join2-sel-btn-li .inner .text-box .text01 {padding-bottom: 12px;}
+  .join2-sel-btn-li .inner .text-box .text02 {font-size: 14px; min-height: 4.14em;}
+  .join2-sel-btn-li .inner .go-btn {height: 30px; font-size: 13px;}
+
+  .join2-caution-box {padding: 20px;}
+  .join2-caution-box p {font-size: 14px; padding-left: 24px; word-break: break-all;}
+  .join2-caution-box p::before {width: 16px; height: 23px; background-size: 100%; top: 0;}
+
+  /* > 회원가입 완료 */
+  .join4-box {padding: 30px 20px;}
+  .join4-box .text-box .text01 {font-size: 26px;}
+  .join4-box .text-box .text01 .mo-on {display: block;}
+  .join4-box .text-box .text01::before {display: none;}
+  .join4-box .text-box .text01::after {display: none;}
+
+  .join4-box .text-box .text02 {font-size: 15px;}
 }
 
 @media screen and (max-width:480px) {
@@ -937,10 +1025,10 @@
   .srch-thesis-box::before {top: 17px; width: 3px; height: 3px;}
   .srch-thesis-box .thesis-name > span {font-size: 14px;}
   .srch-thesis-box .thesis-text {font-size: 13px;}
-  .my-app-table-wrap .bl-wr, .my-unpaid-box .bl-wr, .my-edu-box .bl-wr {position: relative;}
-  .my-app-table-wrap .bl-wr::before, .my-unpaid-box .bl-wr::before, .my-edu-box .bl-wr::before {content: '← 양옆으로 드래그하여 확인 →'; position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 12px;}
-  .my-app-table-wrap .bl-body, .my-unpaid-box .bl-body, .my-edu-box .bl-body {overflow: auto; padding-top: 25px;}
-  .my-app-table-wrap .bl-table, .my-unpaid-box .bl-table, .my-edu-box .bl-table {width: 500px;}
+  .my-app-table-wrap .bl-wr, .my-unpaid-box .bl-wr, .my-edu-box .bl-wr, .ln-table-wrap .bl-wr {position: relative;}
+  .my-app-table-wrap .bl-wr::before, .my-unpaid-box .bl-wr::before, .my-edu-box .bl-wr::before, .ln-table-wrap .bl-wr::before {content: '← 양옆으로 드래그하여 확인 →'; position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 12px;}
+  .my-app-table-wrap .bl-body, .my-unpaid-box .bl-body, .my-edu-box .bl-body, .ln-table-wrap .bl-body {overflow: auto; padding-top: 25px;}
+  .my-app-table-wrap .bl-table, .my-unpaid-box .bl-table, .my-edu-box .bl-table, .ln-table-wrap .bl-table {width: 500px;}
 
   /* 마이페이지 */
   .my-page-left-menu, .my-page-left-menu.hidden {top: 60px;}
@@ -1004,4 +1092,33 @@
   .bv-info {padding: 10px;}
   .bv-file-field, .bv-link-field {width: 75px; font-size: 12px;}
   .bv-info, .bv-file-link, .bv-link-url {font-size: 14px;}
+
+  /* 선도연구활동 */
+  /* > 사업공고 */
+  .ln-list > li .inner {padding: 16px;}
+  .ln-list > li .inner .title {margin: 12px 0; font-size: 16px;}
+  .ln-list > li .inner .info-item {flex-direction: column; align-items: flex-start;}
+  .ln-list > li .inner .info-item .left {font-size: 13px;}
+  .ln-list > li .inner .info-item .right {font-size: 13px;}
+
+  .ln-my-business-sl-item .inner {padding: 16px;}
+  .ln-my-business-sl-item .inner .title {margin: 12px 0; font-size: 16px;}
+
+  /* 회원가입 */
+  /* > 본인인증 */
+  .join2-sel-btn-ul {flex-direction: column;}
+  .join2-sel-btn-li .inner {padding: 3vw;}
+  .join2-sel-btn-li .inner .icon {height: 60px;}
+  .join2-sel-btn-li .inner .text-box {margin: 10px 0 12px;}
+  .join2-sel-btn-li .inner .text-box .text01 {padding-bottom: 8px;}
+  .join2-sel-btn-li .inner .text-box .text02 {min-height: 2.76em;}
+
+  .join2-caution-box {padding: 3vw;}
+
+  /* > 회원가입 완료 */
+  .join4-box {padding: 25px 14px;}
+  .join4-box .icon {width: 160px;}
+  .join4-box .text-box {padding-top: 10px;}
+  .join4-box .text-box .text01 {font-size: 20px;}
+  .join4-box .text-box .text02 {font-size: 13px; margin-top: 10px;}
 }

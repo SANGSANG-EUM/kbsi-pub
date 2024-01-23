@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../src/css/fonts.css">
   <link rel="stylesheet" href="../src/css/common.css">
   <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
   <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
@@ -28,401 +29,504 @@
 
 <body>
 
-  <!-- header, footer 임시 인클루드 -->
-  <script>
-    $(document).ready(function () {
-      $('#header-loaction').load("../include/header.html");
-    });
-    $(document).ready(function () {
-      $('#footer-loaction').load("../include/footer.html");
-    });
-  </script>
-
-  <!-- header 임시 인클루드 { -->
-  <div id="header-loaction"></div>
-  <!-- } header 임시 인클루드 -->
-
+  <!-- 인풋 ID값, name값 등 임의로 설정해뒀으니 개발시 변경하여 사용 / 단 카카오 주소검색 관련 ID값 수정시 스크립트 수정도 필요 -->
   <div id="container" class="content sub">
-    <div class="join_wrap join1_wrap">
+    <div class="join_wrap join3_wrap member_wrap">
       <div class="container">
         <div class="wrapper">
-          <div class="join_inner">
-            <div class="sub-title-wr">
-              <h3 class="sub-title join-title">회원정보입력</h2>
+          <form action="">
+            <div class="login-logo-wr">
+              <a href="/" class="login-logo">
+                <img src="../src/img/login_logo.png" alt="ARiA">
+              </a>
             </div>
-            <ul class="join-step-ul">
-              <li class="join-step-li">
-                <p class="join-step-num">01</p>
-                <p class="join-step-txt">약관동의</p>
-              </li>
-              <li class="join-step-li">
-                <p class="join-step-num">02</p>
-                <p class="join-step-txt">본인인증</p>
-              </li>
-              <li class="join-step-li active">
-                <p class="join-step-num">03</p>
-                <p class="join-step-txt">회원정보입력</p>
-              </li>
-              <li class="join-step-li">
-                <p class="join-step-num">04</p>
-                <p class="join-step-txt">가입완료</p>
-              </li>
-            </ul>
-            <form action="">
-              <div class="join-form-wr">
-                <div class="fm_section join-form-box">
-                  <p class="fm-tit"><span class="c-main">01.</span> 회원정보 입력</p>
-                  <div class="fm_inner">
-                    <div class="fm-row fm-row--id">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>아이디</span>
-                      </div>
-                      <div class="fm-ct">
-                        <input type="text" name="" id="" class="fm-input" placeholder="아이디 입력">
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--name">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>이름</span>
-                      </div>
-                      <div class="fm-ct">
-                        <input type="text" name="" id="" class="fm-input" placeholder="실명 입력">
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--pw">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>비밀번호</span>
-                      </div>
-                      <div class="fm-ct">
-                        <input type="password" name="" id="" class="fm-input" placeholder="비밀번호 입력">
-                        <input type="password" name="" id="" class="fm-input" placeholder="비밀번호 확인">
-                        <p class="fm-info">*영문, 숫자, 특수기호 포함 8자 이상</p>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--email">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>이메일</span>
-                      </div>
-                      <div class="fm-ct flex">
-                        <input type="text" name="" id="" class="fm-input fm-mail-input1">
-                        <span class="fm-sym">@</span>
-                        <input type="text" name="" id="" class="fm-input fm-mail-input2">
-                        <select name="" id="" class="fm-select fm-select-1 w fm-mail-select">
-                          <option value="" disabled="" selected="" hidden="">선택하세요</option>
-                          <option value="naver.com">네이버</option>
-                          <option value="gmail.com">Gmail</option>
-                          <option value="daum.net">다음</option>
-                          <option value="hanmail.net">한메일</option>
-                          <option value="nate.com">네이트</option>
-                          <option value="hotmail.com">핫메일</option>
-                          <option value="w">직접입력</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--tel">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>전화번호</span>
-                      </div>
-                      <div class="fm-ct flex">
-                        <input type="text" name="" id="" class="fm-input">
-                        <span class="fm-sym">-</span>
-                        <input type="text" name="" id="" class="fm-input">
-                        <span class="fm-sym">-</span>
-                        <input type="text" name="" id="" class="fm-input">
-                        <div class="fm-add-wr">
-                          <input type="text" name="" id="" class="fm-input" placeholder="내선번호 입력">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="join_inner member-box">
+              <div class="join0_info-wr">
+                <div class="loin0_info-img">
+                  <img src="../src/img/join0_info.png" alt="">
                 </div>
-                <div class="fm_section join-form-box">
-                  <p class="fm-tit"><span class="c-main">02.</span> 주문정보 입력 (개인정보항목 사용)</p>
-                  <div class="fm_inner">
-                    <div class="fm-row fm-row--part">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>소속/학교</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="fm-input-wr">
-                          <input type="text" name="" id="" class="fm-input" placeholder="소속/학교 검색">
-                          <button type="button" class="btn sizeS round5"><span>검색하기</span></button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--part">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>부서/과</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="fm-input-wr">
-                          <input type="text" name="" id="" class="fm-input" placeholder="부서/과 검색">
-                          <button type="button" class="btn sizeS round5"><span>검색하기</span></button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--part">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>LAB</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="fm-input-wr">
-                          <input type="text" name="" id="" class="fm-input" placeholder="LAB명 검색">
-                          <button type="button" class="btn sizeS round5"><span>검색하기</span></button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--name">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>담당교수</span>
-                      </div>
-                      <div class="fm-ct">
-                        <input type="text" name="" id="" class="fm-input" placeholder="담당교수명 입력">
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--name">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>계산서 담당자</span>
-                      </div>
-                      <div class="fm-ct">
-                        <input type="text" name="" id="" class="fm-input" placeholder="계산서 담당자 입력">
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--address">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>배송주소</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="fm-input-wr">
-                          <input type="text" name="" id="join_postcode" class="fm-input" placeholder="우편번호">
-                          <button type="button" onclick="join_execDaumPostcode()"
-                            class="btn sizeS round5"><span>주소검색</span></button>
-                        </div>
-                        <div id="joinWrap"
-                          style="display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:relative">
-                          <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap"
-                            style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1"
-                            onclick="foldDaumPostcode()" alt="접기 버튼">
-                        </div>
-                        <input type="text" name="" id="join_address" class="fm-input w100" placeholder="주소">
-                        <input type="text" name="" id="join_detailAddress" class="fm-input w100" placeholder="상세주소">
-                        <input type="hidden" id="join_extraAddress">
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--email">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>결과수신용 이메일1</span>
-                      </div>
-                      <div class="fm-ct flex">
-                        <input type="text" name="" id="" class="fm-input fm-mail-input1">
-                        <span class="fm-sym">@</span>
-                        <input type="text" name="" id="" class="fm-input fm-mail-input2">
-                        <select name="" id="" class="fm-select fm-select-1 w fm-mail-select">
-                          <option value="" disabled="" selected="" hidden="">선택하세요</option>
-                          <option value="naver.com">네이버</option>
-                          <option value="gmail.com">Gmail</option>
-                          <option value="daum.net">다음</option>
-                          <option value="hanmail.net">한메일</option>
-                          <option value="nate.com">네이트</option>
-                          <option value="hotmail.com">핫메일</option>
-                          <option value="w">직접입력</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--email">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>결과수신용 이메일2</span>
-                      </div>
-                      <div class="fm-ct flex">
-                        <input type="text" name="" id="" class="fm-input fm-mail-input1">
-                        <span class="fm-sym">@</span>
-                        <input type="text" name="" id="" class="fm-input fm-mail-input2">
-                        <select name="" id="" class="fm-select fm-select-1 w fm-mail-select">
-                          <option value="" disabled="" selected="" hidden="">선택하세요</option>
-                          <option value="naver.com">네이버</option>
-                          <option value="gmail.com">Gmail</option>
-                          <option value="daum.net">다음</option>
-                          <option value="hanmail.net">한메일</option>
-                          <option value="nate.com">네이트</option>
-                          <option value="hotmail.com">핫메일</option>
-                          <option value="w">직접입력</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--tel">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>전화번호</span>
-                      </div>
-                      <div class="fm-ct flex">
-                        <input type="text" name="" id="" class="fm-input">
-                        <span class="fm-sym">-</span>
-                        <input type="text" name="" id="" class="fm-input">
-                        <span class="fm-sym">-</span>
-                        <input type="text" name="" id="" class="fm-input">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fm_section join-form-box">
-                  <p class="fm-tit"><span class="c-main">04.</span> 이메일/SMS 수신설정</p>
-                  <div class="fm_inner">
-                    <div class="fm-row fm-row--check">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>이메일 수신</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="input-container horizontal">
-                          <div class="radio-wr">
-                            <input type="radio" name="mail" id="mailY" class="fm-radio">
-                            <label for="mailY">예</label>
-                          </div>
-                          <div class="radio-wr">
-                            <input type="radio" name="mail" id="mailN" class="fm-radio">
-                            <label for="mailN">아니오</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--check">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>SMS 수신</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="input-container horizontal">
-                          <div class="radio-wr">
-                            <input type="radio" name="sns" id="snsY" class="fm-radio">
-                            <label for="snsY">예</label>
-                          </div>
-                          <div class="radio-wr">
-                            <input type="radio" name="sns" id="snsN" class="fm-radio">
-                            <label for="snsN">아니오</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-row fm-row--check">
-                      <div class="fm-lb">
-                        <span class="fm-t1"><i class="req">*</i>이벤트정보 수신</span>
-                      </div>
-                      <div class="fm-ct">
-                        <div class="input-container horizontal">
-                          <div class="radio-wr">
-                            <input type="radio" name="event" id="eventY" class="fm-radio">
-                            <label for="eventY">예</label>
-                          </div>
-                          <div class="radio-wr">
-                            <input type="radio" name="event" id="eventN" class="fm-radio">
-                            <label for="eventN">아니오</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="sub-title-wr vertical left">
+                  <h3 class="sub-title join-title"><b>회원정보</b>입력</h3>
+                  <p class="sub-title-info"><span>ARIA의 모든 정보는 무료로 제공</span>되며, 서비스 이용은 회원가입을 원칙으로 하고 있습니다. <br>
+                    회원으로 가입하실 때, 입력하신 정보는 사이트를 이용하실 때의 서비스 이용을 위해서만 사용되며 <span>철저하게 비밀이 보장</span>됩니다.</p>
                 </div>
               </div>
-              <div class="btn-wr join-btn-wr">
-                <button type="submit" class="btn sizeM round5"><span>가입하기</span></button>
-                <button type="submit" class="btn sizeM round5"><span>취소하기</span></button>
+              <div class="join-content-wr join0-content-wr">
+                <div class="app-step-wr join-step-wr">
+                  <ul class="app-step-ul">
+                    <li class="app-step-li">
+                      <div class="app-step-circle" data-aos="fade-right" data-aos-delay="0" data-aos-duration="800">
+                        <span class="app-step-txt1">STEP</span>
+                        <span class="app-step-txt2">01</span>
+                        <span class="app-step-txt3">이용약관</span>
+                      </div>
+                    </li>
+                    <li class="app-step-li">
+                      <div class="app-step-circle" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
+                        <span class="app-step-txt1">STEP</span>
+                        <span class="app-step-txt2">02</span>
+                        <span class="app-step-txt3">본인인증</span>
+                      </div>
+                    </li>
+                    <li class="app-step-li active">
+                      <div class="app-step-circle" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
+                        <span class="app-step-txt1">STEP</span>
+                        <span class="app-step-txt2">03</span>
+                        <span class="app-step-txt3">회원정보 입력</span>
+                      </div>
+                    </li>
+                    <li class="app-step-li">
+                      <div class="app-step-circle" data-aos="fade-right" data-aos-delay="900" data-aos-duration="800">
+                        <span class="app-step-txt1">STEP</span>
+                        <span class="app-step-txt2">04</span>
+                        <span class="app-step-txt3">가입완료</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="join-form-wr">
+                  <div class="fm_section join-form-box">
+                    <p class="fm-tit"><span class="icon-bar"></span>회원정보 입력</p>
+                    <div class="fm_inner">
+                      <div class="fm-row">
+                        <div class="fm-lb">
+                          <span class="fm-t1">가입일자</span>
+                        </div>
+                        <div class="fm-ct">
+                          <input type="text" name="joinIp1" id="joinIp1" value="2024.01.08" class="fm-input readonly"
+                            placeholder="가입일자" readonly>
+                          <label for="joinIp1" class="sound_only">가입일자</label>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>이름</span>
+                        </div>
+                        <div class="fm-ct">
+                          <input type="text" name="joinIp2" id="joinIp2" class="fm-input w60" placeholder="이름">
+                          <label for="joinIp2" class="sound_only">이름</label>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--id">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>아이디</span>
+                        </div>
+                        <div class="fm-ct">
+                          <input type="text" name="joinIp3" id="joinIp3" class="fm-input w60" placeholder="아이디">
+                          <label for="joinIp3" class="sound_only">아이디</label>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--pw">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>비밀번호</span>
+                        </div>
+                        <div class="fm-ct">
+                          <input type="password" name="joinIp4" id="joinIp4" class="fm-input w60" placeholder="비밀번호">
+                          <label for="joinIp4" class="sound_only">비밀번호</label>
+                          <!-- <input type="password" name="" id="" class="fm-input" placeholder="비밀번호 확인"> -->
+                          <!-- <p class="fm-info">*영문, 숫자, 특수기호 포함 8자 이상</p> -->
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--pw">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>비밀번호 확인</span>
+                        </div>
+                        <div class="fm-ct">
+                          <input type="password" name="joinIp5" id="joinIp5" class="fm-input w60"
+                            placeholder="비밀번호 재입력">
+                          <label for="joinIp5" class="sound_only">비밀번호 재입력</label>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--tel">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>휴대전화번호</span>
+                        </div>
+                        <div class="fm-ct flex">
+                          <input type="text" name="joinIp6" id="joinIp6" class="fm-input w25" placeholder="000">
+                          <label for="joinIp6" class="sound_only">휴대전화 첫 자리 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp7" id="joinIp7" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp7" class="sound_only">휴대전화 가운데 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp8" id="joinIp8" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp8" class="sound_only">휴대전화 마지막 자리 숫자</label>
+                          <!-- <div class="fm-add-wr">
+                              <input type="text" name="" id="" class="fm-input" placeholder="내선번호 입력">
+                            </div> -->
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--email">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>이메일</span>
+                        </div>
+                        <div class="fm-ct flex">
+                          <input type="text" name="joinIp9" id="joinIp9" class="fm-input fm-mail-input1 w30"
+                            placeholder="이메일">
+                          <label for="joinIp9" class="sound_only">이메일 아이디 입력</label>
+                          <span class="fm-sym">@</span>
+                          <input type="text" name="joinIp10" id="joinIp10" class="fm-input fm-mail-input2 w30"
+                            placeholder="이메일">
+                          <label for="joinIp10" class="sound_only">이메일 도메인 직접 입력</label>
+                          <select name="joinIp11" id="joinIp11" class="fm-select fm-select-2 w fm-mail-select w20">
+                            <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="gmail.com">Gmail</option>
+                            <option value="daum.net">다음</option>
+                            <option value="hanmail.net">한메일</option>
+                            <option value="nate.com">네이트</option>
+                            <option value="hotmail.com">핫메일</option>
+                            <option value="w">직접입력</option>
+                          </select>
+                          <label for="joinIp11" class="sound_only">이메일 도메인 선택</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fm_section join-form-box">
+                    <p class="fm-tit"><span class="icon-bar"></span>주문정보 입력</p>
+                    <div class="fm_inner">
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>소속</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp12" id="joinIp12" class="fm-input w60" placeholder="소속">
+                            <label for="joinIp12" class="sound_only">소속</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>부서</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp13" id="joinIp13" class="fm-input w60" placeholder="부서">
+                            <label for="joinIp13" class="sound_only">부서</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--address">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>배송주소</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="join_postcode" id="join_postcode" class="fm-input"
+                              placeholder="우편번호">
+                            <label for="join_postcode" class="sound_only">우편번호</label>
+                            <button type="button" onclick="execDaumPostcode('join')"
+                              class="btn join-addr-btn"><span>주소찾기</span></button>
+                          </div>
+                          <div id="joinWrap" style="display:none;border:1px solid;margin:5px 0;position:relative">
+                            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap"
+                              style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1"
+                              onclick="foldDaumPostcode('join')" alt="접기 버튼">
+                          </div>
+                          <input type="text" name="join_address" id="join_address" class="fm-input w100"
+                            placeholder="주소">
+                          <label for="join_address" class="sound_only">주소</label>
+                          <input type="text" name="join_detailAddress" id="join_detailAddress" class="fm-input w100"
+                            placeholder="상세주소">
+                          <label for="join_detailAddress" class="sound_only">상세주소</label>
+                          <input type="hidden" name="join_extraAddress" id="join_extraAddress">
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--tel">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>직통번호</span>
+                        </div>
+                        <div class="fm-ct flex">
+                          <input type="text" name="joinIp14" id="joinIp14" class="fm-input w25" placeholder="000">
+                          <label for="joinIp14" class="sound_only">직통번호 첫 자리 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp15" id="joinIp15" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp15" class="sound_only">직통번호 가운데 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp16" id="joinIp16" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp16" class="sound_only">직통번호 마지막 자리 숫자</label>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--tel">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>FAX</span>
+                        </div>
+                        <div class="fm-ct flex">
+                          <input type="text" name="joinIp17" id="joinIp17" class="fm-input w25" placeholder="000">
+                          <label for="joinIp17" class="sound_only">팩스번호 첫 자리 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp18" id="joinIp18" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp18" class="sound_only">팩스번호 가운데 숫자</label>
+                          <span class="fm-sym">-</span>
+                          <input type="text" name="joinIp19" id="joinIp19" class="fm-input w25" placeholder="0000">
+                          <label for="joinIp19" class="sound_only">팩스번호 마지막 자리 숫자</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fm_section join-form-box">
+                    <p class="fm-tit"><span class="icon-bar"></span>계산서 발행정보</p>
+                    <div class="fm_inner">
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>사업자명</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp20" id="joinIp20" class="fm-input w60" placeholder="사업자명">
+                            <label for="joinIp20" class="sound_only">사업자명</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>사업자등록번호</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp21" id="joinIp21" class="fm-input w60" placeholder="사업자등록번호">
+                            <label for="joinIp21" class="sound_only">사업자등록번호</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>대표자</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp22" id="joinIp22" class="fm-input w60" placeholder="대표자">
+                            <label for="joinIp22" class="sound_only">대표자</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--address">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>사업자등록증 주소</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="join2_postcode" id="join2_postcode" class="fm-input"
+                              placeholder="우편번호">
+                            <label for="join2_postcode" class="sound_only">우편번호</label>
+                            <button type="button" onclick="execDaumPostcode('join2')"
+                              class="btn join-addr-btn"><span>주소찾기</span></button>
+                          </div>
+                          <div id="join2Wrap" style="display:none;border:1px solid;margin:5px 0;position:relative">
+                            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap2"
+                              style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1"
+                              onclick="foldDaumPostcode('join2')" alt="접기 버튼">
+                          </div>
+                          <input type="text" name="join2_address" id="join2_address" class="fm-input w100"
+                            placeholder="주소">
+                          <label for="join2_address" class="sound_only">주소</label>
+                          <input type="text" name="join2_detailAddress" id="join2_detailAddress" class="fm-input w100"
+                            placeholder="상세주소">
+                          <label for="join2_detailAddress" class="sound_only">상세주소</label>
+                          <input type="hidden" name="join2_extraAddress" id="join2_extraAddress">
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>업태</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp23" id="joinIp23" class="fm-input w60" placeholder="업태">
+                            <label for="joinIp23" class="sound_only">업태</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>업종</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp24" id="joinIp24" class="fm-input w60" placeholder="업종">
+                            <label for="joinIp24" class="sound_only">업종</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--name">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>담당자</span>
+                        </div>
+                        <div class="fm-ct">
+                          <div class="fm-input-wr">
+                            <input type="text" name="joinIp25" id="joinIp25" class="fm-input w60" placeholder="담당자 이름">
+                            <label for="joinIp25" class="sound_only">담당자</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fm-row fm-row--email">
+                        <div class="fm-lb">
+                          <span class="fm-t1"><i class="req">*</i>이메일</span>
+                        </div>
+                        <div class="fm-ct flex">
+                          <input type="text" name="joinIp26" id="joinIp26" class="fm-input fm-mail-input1 w30"
+                            placeholder="이메일">
+                          <label for="joinIp26" class="sound_only">이메일 아이디 입력</label>
+                          <span class="fm-sym">@</span>
+                          <input type="text" name="joinIp27" id="joinIp27" class="fm-input fm-mail-input2 w30"
+                            placeholder="이메일">
+                          <label for="joinIp27" class="sound_only">이메일 도메인 직접 입력</label>
+                          <select name="joinIp28" id="joinIp28" class="fm-select fm-select-2 w fm-mail-select w20">
+                            <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="gmail.com">Gmail</option>
+                            <option value="daum.net">다음</option>
+                            <option value="hanmail.net">한메일</option>
+                            <option value="nate.com">네이트</option>
+                            <option value="hotmail.com">핫메일</option>
+                            <option value="w">직접입력</option>
+                          </select>
+                          <label for="joinIp28" class="sound_only">이메일 도메인 선택</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fm_section">
+                    <ul class="join-form-agree-ul">
+                      <li class="join-form-agree-li">
+                        <div class="joion-form-agree__l">
+                          이메일 수신 동의
+                        </div>
+                        <div class="joion-form-agree__r">
+                          <div class="input-container horizontal">
+                            <div class="radio-wr">
+                              <input type="radio" name="mail" id="mailY" class="fm-radio" checked>
+                              <label for="mailY">예</label>
+                            </div>
+                            <div class="radio-wr">
+                              <input type="radio" name="mail" id="mailN" class="fm-radio">
+                              <label for="mailN">아니오</label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="join-form-agree-li">
+                        <div class="joion-form-agree__l">
+                          SMS 수신 동의
+                        </div>
+                        <div class="joion-form-agree__r">
+                          <div class="input-container horizontal">
+                            <div class="radio-wr">
+                              <input type="radio" name="sms" id="smsY" class="fm-radio" checked>
+                              <label for="smsY">예</label>
+                            </div>
+                            <div class="radio-wr">
+                              <input type="radio" name="sms" id="smsN" class="fm-radio">
+                              <label for="smsN">아니오</label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="btn-wr join-btn-wr">
+              <a href="./join4.html" class="btn round25 sizeM join-btn submit">회원 가입하기</a>
+              <a href="/" class="btn round25 sizeM join-btn cancel">취소하기</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer 임시 인클루드 { -->
-  <div id="footer-loaction"></div>
-  <!-- } footer 임시 인클루드 -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
-  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-  <script>
-    // Email Select
-    $('.fm-mail-select').on('change', function () {
-      let mailAddr = $(this).val();
+    <script>
+      // Email Select
+      $('.fm-mail-select').on('change', function () {
+        let mailAddr = $(this).val();
 
-      if (mailAddr == 'w') {
-        $(this).siblings('.fm-mail-input2').val('').attr("readonly", false).focus();
-      } else {
-        $(this).siblings('.fm-mail-input2').val(mailAddr).attr("readonly", true);
+        if (mailAddr == 'w') {
+          $(this).siblings('.fm-mail-input2').val('').attr("readonly", false).focus();
+        } else {
+          $(this).siblings('.fm-mail-input2').val(mailAddr).attr("readonly", true);
+        }
+      });
+
+      var element_wrap = null;
+
+      function foldDaumPostcode(formId) {
+        // iframe을 넣은 element를 안보이게 한다.
+        document.getElementById(formId + 'Wrap').style.display = 'none';
       }
-    });
 
-    // Kakao Address
-    // 우편번호 찾기 찾기 화면을 넣을 element
-    var element_wrap = document.getElementById('joinWrap');
+      function execDaumPostcode(formId) {
+        element_wrap = document.getElementById(formId + 'Wrap');
+        // 현재 scroll 위치를 저장해놓는다.
+        var currentScroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+        new daum.Postcode({
+          oncomplete: function (data) {
+            // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+            // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+            var addr = ''; // 주소 변수
+            var extraAddr = ''; // 참고항목 변수
 
-    function foldDaumPostcode() {
-      // iframe을 넣은 element를 안보이게 한다.
-      element_wrap.style.display = 'none';
-    }
-
-    function join_execDaumPostcode() {
-      // 현재 scroll 위치를 저장해놓는다.
-      var currentScroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-      new daum.Postcode({
-        oncomplete: function (data) {
-          // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
-
-          // 각 주소의 노출 규칙에 따라 주소를 조합한다.
-          // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-          var addr = ''; // 주소 변수
-          var extraAddr = ''; // 참고항목 변수
-
-          //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
-          if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
-            addr = data.roadAddress;
-          } else { // 사용자가 지번 주소를 선택했을 경우(J)
-            addr = data.jibunAddress;
-          }
-
-          // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
-          if (data.userSelectedType === 'R') {
-            // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-            // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-            if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
-              extraAddr += data.bname;
+            // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+              addr = data.roadAddress;
+            } else { // 사용자가 지번 주소를 선택했을 경우(J)
+              addr = data.jibunAddress;
             }
-            // 건물명이 있고, 공동주택일 경우 추가한다.
-            if (data.buildingName !== '' && data.apartment === 'Y') {
-              extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+
+            // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+            if (data.userSelectedType === 'R') {
+              // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+              // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+              if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+                extraAddr += data.bname;
+              }
+              // 건물명이 있고, 공동주택일 경우 추가한다.
+              if (data.buildingName !== '' && data.apartment === 'Y') {
+                extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+              }
+              // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+              if (extraAddr !== '') {
+                extraAddr = ' (' + extraAddr + ')';
+              }
+              // 조합된 참고항목을 해당 필드에 넣는다.
+              document.getElementById(formId + "_extraAddress").value = extraAddr;
+            } else {
+              document.getElementById(formId + "_extraAddress").value = '';
             }
-            // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-            if (extraAddr !== '') {
-              extraAddr = ' (' + extraAddr + ')';
-            }
-            // 조합된 참고항목을 해당 필드에 넣는다.
-            document.getElementById("join_extraAddress").value = extraAddr;
 
-          } else {
-            document.getElementById("join_extraAddress").value = '';
-          }
+            // 우편번호와 주소 정보를 해당 필드에 넣는다.
+            document.getElementById(formId + '_postcode').value = data.zonecode;
+            document.getElementById(formId + "_address").value = addr;
+            // 커서를 상세주소 필드로 이동한다.
+            document.getElementById(formId + "_detailAddress").focus();
 
-          // 우편번호와 주소 정보를 해당 필드에 넣는다.
-          document.getElementById('join_postcode').value = data.zonecode;
-          document.getElementById("join_address").value = addr;
-          // 커서를 상세주소 필드로 이동한다.
-          document.getElementById("join_detailAddress").focus();
+            // iframe을 넣은 element를 안보이게 한다.
+            // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+            element_wrap.style.display = 'none';
 
-          // iframe을 넣은 element를 안보이게 한다.
-          // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
-          element_wrap.style.display = 'none';
+            // 우편번호 찾기 화면이 보이기 이전으로 scroll 위치를 되돌린다.
+            // document.body.scrollTop = currentScroll;
+            window.scrollTo(0, currentScroll);
+          },
+          // 우편번호 찾기 화면 크기가 조정되었을때 실행할 코드를 작성하는 부분. iframe을 넣은 element의 높이값을 조정한다.
+          onresize: function (size) {
+            element_wrap.style.height = size.height + 'px';
+          },
+          width: '100%',
+          height: '100%'
+        }).embed(element_wrap);
 
-          // 우편번호 찾기 화면이 보이기 이전으로 scroll 위치를 되돌린다.
-          document.body.scrollTop = currentScroll;
-        },
-        // 우편번호 찾기 화면 크기가 조정되었을때 실행할 코드를 작성하는 부분. iframe을 넣은 element의 높이값을 조정한다.
-        onresize: function (size) {
-          element_wrap.style.height = size.height + 'px';
-        },
-        width: '100%',
-        height: '100%'
-      }).embed(element_wrap);
-
-      // iframe을 넣은 element를 보이게 한다.
-      element_wrap.style.display = 'block';
-    }
-  </script>
+        // iframe을 넣은 element를 보이게 한다.
+        element_wrap.style.display = 'block';
+      }
+    </script>
+  </div>
 
 </body>
 

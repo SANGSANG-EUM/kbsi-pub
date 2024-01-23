@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 이용신청 > 선도연구활동 > 사업공고</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <!-- 공동 작업자 css 추가 -->
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub lead_application">
+
+    <!-- 서브로케이션 { -->
+    <div class="sub-location">
+      <div class="wrapper">
+        <div class="sub-loca-wr">
+          <a href="/" class="sub-loca-home"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
+          <ul class="sub-loca-ul">
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">이용신청</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">ARIA소개</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용신청</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석과학성과</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">가상공간</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용안내</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">선도연구활동</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석지원</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">선도연구활동</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">연구장비아카데미</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">우수회원 소개</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">신청</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">사업안내</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">사업공고</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">신청</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브로케이션 -->
+
+    <!-- 사이드바 { -->
+    <aside class="side-bar">
+      <button type="button" class="side-bar-btn">
+        <span class="pc">MORE</span>
+        <span class="mo">QUICK MENU</span>
+      </button>
+      <div class="side-bar-box">
+        <p class="title">
+          QUICK<br>
+          MENU
+        </p>
+        <button type="button" class="quick-more-btn" onclick="menuPop()">
+          <span></span>
+        </button>
+        <!-- a 대신 button 사용 시에도 class=".inner-btn 고정" -->
+        <ul class="side-quick-ul">
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon01.png" alt="분석신청">
+                <img src="../src/img/side-quick-icon01-active.png" alt="분석신청">
+              </div>
+              <p class="text">분석신청</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon02.png" alt="계산서">
+                <img src="../src/img/side-quick-icon02-active.png" alt="계산서">
+              </div>
+              <p class="text">계산서</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon03.png" alt="Q&A">
+                <img src="../src/img/side-quick-icon03-active.png" alt="Q&A">
+              </div>
+              <p class="text">Q&amp;A</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon04.png" alt="아카데미">
+                <img src="../src/img/side-quick-icon04-active.png" alt="아카데미">
+              </div>
+              <p class="text">아카데미</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon05.png" alt="시료접수">
+                <img src="../src/img/side-quick-icon05-active.png" alt="시료접수">
+              </div>
+              <p class="text">시료접수</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon06.png" alt="가상캠퍼스">
+                <img src="../src/img/side-quick-icon06-active.png" alt="가상캠퍼스">
+              </div>
+              <p class="text">가상캠퍼스</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- } 사이드바 -->
+
+    <!-- 콘텐츠 내용 { -->
+    <!-- 아래 input 및 textarea의 name, id값은 임의로 작성하였으니 개발시 수정 필요  -->
+    <div id="container" class="sub-inner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-top-wr">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>사업</b>공고</h3>
+              <p class="sub-title-info"><span>KBSI</span> 선도연구활동에 관한 사업 공고입니다.</p>
+            </div>
+            <!-- 즐겨찾기 추가 체크박스 { -->
+            <div class="fav-btn-wr">
+              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+              <label for="favBtn" class="fav-btn">
+                <span class="fav-btn-img default">
+                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
+                </span>
+                <span class="fav-btn-img check">
+                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                </span>
+                <span class="fav-btn-txt">
+                  즐겨찾기 메뉴에 추가
+                </span>
+              </label>
+            </div>
+            <!-- } 즐겨찾기 추가 체크박스 -->
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="subsec">
+          <div class="container">
+            <div class="wrapper">
+
+            <div class="la-wr">
+
+              <div class="la-top" data-aos="fade-up" data-aos-duration="1000">
+                <div class="la-title-wr">
+                  <p class="la-title">2023년 KBSI 선도장비 전문연구지원과제 이용신청(상시접수)</p>
+                  <p class="la-cate">연구지원과제</p>
+                </div>
+                <div class="la-top-info-wr">
+                  <div class="la-top-day">
+                    <div class="la-d_day">D-125</div>
+                    <div class="la-deadline">신청마감일 : 2023-12-31</div>
+                  </div>
+                  <div class="la-top-info">
+                    <div class="la-date">등록일 : 2023-12-31</div>
+                    <div class="la-hits">조회수 : 1,876</div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="la-content-ul">
+                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="la-content-title">
+                    <p class="fm-tit">
+                      <span class="icon-bar"></span>
+                      일정
+                    </p>
+                  </div>
+                  <div class="la-content-box table-txt">
+                    <div class="la-table-wr">
+                      <table class="la-table la-table1">
+                        <caption class="sound_only">접수 일정</caption>
+                        <tbody>
+                          <tr>
+                            <th>접수신청</th>
+                            <td>2023-03-13(월)~12.31(일)</td>
+                            <th>심사 및 선정</th>
+                            <td>2023-03-13(월)~12.31(일)</td>
+                          </tr>
+                          <tr>
+                            <th>선전통보</th>
+                            <td>홈페이지 내 결과 확인</td>
+                            <th>장비이용(주간)</th>
+                            <td>사용기간: 2023-04-01~2023-12-31</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="la-content-title">
+                    <p class="fm-tit">
+                      <span class="icon-bar"></span>
+                      상세내용
+                    </p>
+                  </div>
+                  <div class="la-content-box">
+                    <div class="la-content-in">상세내용이 들어갑니다.</div>
+                  </div>
+                </li>
+                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="la-content-title">
+                    <p class="fm-tit">
+                      <span class="icon-bar"></span>
+                      신청가능 선도장비
+                    </p>
+                  </div>
+                  <div class="la-content-box table-txt">
+                    <div class="la-table-wr">
+                      <table class="la-table la-table2">
+                        <caption class="sound_only">신청가능 선도장비</caption>
+                        <thead>
+                          <tr>
+                            <th>번호</th>
+                            <th>장비시스템 영문명</th>
+                            <th>장비시스템 국문명</th>
+                            <th>담당자</th>
+                            <th>연락처</th>
+                            <th>이메일</th>
+                            <th>신청</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>aaaaaaaaaa</td>
+                            <td>장비시스템 국문명</td>
+                            <td>홍길동</td>
+                            <td>010-4498-7895</td>
+                            <td>webmaster@gmailcom</td>
+                            <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>aaaaaaaaaa</td>
+                            <td>장비시스템 국문명</td>
+                            <td>홍길동</td>
+                            <td>010-4498-7895</td>
+                            <td>webmaster@gmailcom</td>
+                            <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="la-content-title">
+                    <p class="fm-tit">
+                      <span class="icon-bar"></span>
+                      첨부파일
+                    </p>
+                  </div>
+                  <div class="la-content-box">
+                    <ul class="la-file-ul">
+                      <li class="la-file-li">
+                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                        <a href="" class="la-file-download btn round25">다운로드</a>
+                      </li>
+                      <li class="la-file-li">
+                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                        <a href="" class="la-file-download btn round25">다운로드</a>
+                      </li>
+                      <li class="la-file-li">
+                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                        <a href="" class="la-file-download btn round25">다운로드</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="la-list-btn-wr"><a href="" class="btn round25 sizeM la-list-btn">목록</a></div>
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 콘텐츠 내용 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+  <script>
+    
+  </script>
+
+</body>
+
+</html>

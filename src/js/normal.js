@@ -263,9 +263,9 @@ $(document).ready(function () {
     let mailAddr = $(this).val();
 
     if (mailAddr == 'w') {
-      $('.fm-mail-input2').val('').attr("readonly", false).focus();
+      $(this).siblings('.fm-mail-input2').val('').attr("readonly", false).focus();
     } else {
-      $('.fm-mail-input2').val(mailAddr).attr("readonly", true);
+      $(this).siblings('.fm-mail-input2').val(mailAddr).attr("readonly", true);
     }
   });
 
