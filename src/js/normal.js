@@ -8,7 +8,7 @@ $(document).ready(function () {
   // datepicker 플러그인
   $.datepicker.setDefaults({
     dateFormat: "yy.mm.dd(D)",
-    minDate: new Date(),
+    // minDate: new Date(),
     // maxDate: new Date(),
     showOtherMonths: true, // 현재 월에 속하지 않는 날짜도 달력 위젯에 표시하도록 지시
     selectOtherMonths: true, // 이전 월 및 다음 월의 날짜를 선택할 수 있도록 함

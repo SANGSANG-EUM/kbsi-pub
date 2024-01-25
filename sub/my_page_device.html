@@ -194,9 +194,21 @@
               <div class="my-border-box my-app-status-box my-app-status-box--5">
                 <div class="my-box-title-wrap">
                   <p class="title">신청현황</p>
-                  <button class="btn round25 sizeS" type="button" onclick="calendarPop()">
-                    <span>분석캘린더</span>
-                  </button>
+                  <div class="my-box-btn-wr">
+                    <button class="btn round25 icon1 icon1_b active my-btn--noti" type="button">
+                      <img src="../src/img/icon-tnb_noti.png" alt="알림" style="width: 14px;" class="my_icon_w">
+                      <img src="../src/img/icon-tnb_noti_pink.png" alt="알림" style="width: 14px;" class="my_icon_p">
+                      <span>17</span>
+                    </button>
+                    <button class="btn round25 icon1 icon1_b my-btn--question" type="button">
+                      <img src="../src/img/icon-tnb_question_white.png" alt="물음표" style="width: 16px;" class="my_icon_w">
+                      <img src="../src/img/icon-tnb_question.png" alt="물음표" style="width: 16px;" class="my_icon_p">
+                      <span>0</span>
+                    </button>
+                    <button class="btn round25 sizeS my-btn--pop" type="button" onclick="calendarPop()">
+                      <span>분석캘린더</span>
+                    </button>
+                  </div>
                 </div>
                 <div class="my-app-status-ul-wrap">
                   <ul class="my-app-status-ul">
@@ -267,6 +279,7 @@
                 <div class="bl-wr">
                   <div class="bl-body">
                     <table class="bl-table">
+                      <caption class="sound_only">접수목록</caption>
                       <thead>
                         <tr>
                           <th class="bl-no">접수번호</th>
@@ -401,6 +414,7 @@
                 <div class="bl-wr">
                   <div class="bl-body">
                     <table class="bl-table">
+                      <caption class="sound_only">미납현황</caption>
                       <thead>
                         <tr>
                           <th class="bl-no">접수번호</th>
@@ -538,6 +552,7 @@
                   <div class="bl-wr">
                     <div class="bl-body">
                       <table class="bl-table">
+                        <caption class="sound_only">교육현황</caption>
                         <thead>
                           <tr>
                             <th class="bl-no">No</th>

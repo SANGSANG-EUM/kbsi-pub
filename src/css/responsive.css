@@ -1,3 +1,17 @@
+@media screen and (max-width:1885px) {
+  /* 마이페이지 */
+  /* > 기타 */
+  .my-sch-box.type1 .my-sch-req-li {width: 100%;}
+
+  .my-sch-box.type3 .my-sch-req-li:nth-child(1) {flex: 0.5; width: auto;}
+  .my-sch-box.type3 .my-sch-req-li:nth-child(2) {flex: 0.5;}
+  .my-sch-box.type3 .my-sch-req-li:nth-child(3) {flex: none; width: 100%;}
+
+  .my-sch-box.type9 .my-sch-req-li:nth-child(1) {width: calc(50% - 6px);}
+  .my-sch-box.type9 .my-sch-req-li:nth-child(2) {width: calc(50% - 6px);}
+  .my-sch-box.type9 .my-sch-req-li:nth-child(3) {width: 100%;}
+}
+
 @media screen and (max-width:1800px) {
 
   /* 마이페이지 */
@@ -13,6 +27,25 @@
   .my-content2 .my-wrapper.detail {width: calc(100% - 300px - 2vw);}
   .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 20%;}
   .my-content2 .sub-vs-quick-li > a {font-size: 13px;}
+
+  /* > 기타 */
+  .my-sch-box.type2 .my-sch-req-li:nth-child(1) {width: 100%;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(2) {flex-grow: 0.3333;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(3) {flex-grow: 0.3333;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(4) {flex-grow: 0.3333;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(5) {width: calc(60% - 12px);}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(6) {width: 40%;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(7) {width: 37.5%;}
+  .my-sch-box.type2 .my-sch-req-li:nth-child(8) {width: calc(62.5% - 12px);}
+
+  .my-sch-box.type4 .my-sch-req-li:nth-child(1), .my-sch-box.type8 .my-sch-req-li:nth-child(1), .my-sch-box.type6 .my-sch-req-li:nth-child(1) {width: 100%;}
+  .my-sch-box.type4 .my-sch-req-li:nth-child(2), .my-sch-box.type8 .my-sch-req-li:nth-child(2), .my-sch-box.type6 .my-sch-req-li:nth-child(2) {width: calc(50% - 6px);}
+  .my-sch-box.type4 .my-sch-req-li:nth-child(3), .my-sch-box.type8 .my-sch-req-li:nth-child(3), .my-sch-box.type6 .my-sch-req-li:nth-child(3) {width: calc(50% - 6px);}
+
+  .my-sch-box.type5 .my-sch-req-li:nth-child(1) {width: 100%;}
+  .my-sch-box.type5 .my-sch-req-li:nth-child(2) {width: 35%;}
+  .my-sch-box.type5 .my-sch-req-li:nth-child(3) {width: calc(65% - 12px);}
+  .my-sch-box.type5 .my-sch-req-li:nth-child(4) {width: 100%;}
 }
 
 @media screen and (max-width:1600px) {
@@ -97,6 +130,18 @@
   /* 선도연구활동 */
   /* > 사업공고 */
   .ln-my-business-btn-box {width: auto; z-index: 1; top: -41px; left: inherit; right: 0; transform: none; gap: 0 25px;}
+
+  /* 마이페이지 */
+  /* > 기타 */
+  .my-top-cate-ul {gap: 1vw;}
+
+  .my-sch-req-ul {gap: 5px;}
+  .my-sch-box .my-sch-req-li {flex-direction: column; align-items: flex-start; gap: 5px; padding: 10px; flex: none !important; width: 100% !important;}
+
+  .my-big-table-box .bl-wr {position: relative;}
+  .my-big-table-box .bl-wr::before {content: '← 양옆으로 드래그하여 확인 →'; position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 12px;}
+  .my-big-table-box .bl-body {overflow: auto; padding-top: 25px;}
+  .my-big-table-box .bl-table {width: 1300px;}
 
 }
 
@@ -253,6 +298,10 @@
   .my-border-box-wrap.col2 > li {padding: 0;}
   .my-noti-list-item .title, .my-noti-list-item .date {width: 100%;}
   .my-box-title-wrap {margin-bottom: 0;}
+
+  /* > 기타 */
+  .my-sch-box.type1 .my-sch-req-li:nth-child(1) .my-sch-req-val {flex-direction: column;}
+  .my-sch-box.type1 .my-sch-req-li:nth-child(1) .fm-select {width: 100%;}
   
 
   /* Board-Write */
@@ -272,6 +321,15 @@
   .ln-my-business-sl-item .inner-btm .btn {width: 100px;}
 
   .ln-table-wrap .bl-table td {font-size: 14px; width: auto; word-break: break-all;}
+
+  /* 회원가입 */
+  .join-step-wr .app-step-txt3 {font-size: clamp(12px, 2vw, 18px); padding-top: 0.5vw;}
+
+  /* > 내국인, 외국인 선택 */
+  .join0_info-wr {flex-direction: column; gap: 0;}
+
+  /* > 약관동의 */
+  .join-agree-box.all .join-agree-box-in--cnt {padding: 12px clamp(10px, 3vw, 30px);}
 }
 
 @media screen and (max-width:1023px) {
@@ -394,6 +452,8 @@
   .my-border-box-wrap.col2 > li {width: 100%;}
   .my-noti-list-item .date {text-align: left; padding-left: 19px; font-size: 14px;}
 
+
+
   /* Board-List */
   .bl-body {padding-bottom: 10px;}
   .bl-btm {flex-direction: column-reverse;}
@@ -426,6 +486,10 @@
   .ln-my-business-sl-item .inner-btm .dday {font-size: 15px;}
   .ln-my-business-sl-item .inner-btm .dday.end {font-size: 15px;}
 
+  /* > 신청 */
+  .la-title-wr {flex-direction: column-reverse; gap: min(2vw, 10px); align-items: flex-start;}
+  .la-cate {min-width: auto; height: auto; padding: 5px 10px; font-size: 14px;}
+
   /* 회원가입 */
   /* > 본인인증 */
   .join2-sel-btn-li .inner {padding: 30px 20px;}
@@ -443,6 +507,21 @@
   .join4-box .text-box .text01 {font-size: 32px;}
   .join4-box .text-box .text01::before {font-size: 28px; left: -17px;}
   .join4-box .text-box .text01::after {font-size: 28px;}
+
+  /* > 내국인, 외국인 선택 */
+  .join0-guide-li {gap: 0 2vw; padding: max(15px, 2vw) 2vw;}
+  .join0-guide-l {width: 150px;}
+  .join0-guide-l__txt1 {font-size: 20px;}
+  .join0-guide-l__txt2 {font-size: 14px;}
+  .join0-guide-r__key {width: 150px;}
+  .join0-sel-btn-li > .border-in {flex-direction: column; gap: 15px;}
+  .join0-sel-btn-img {height: 40%;}
+  .join0-sel-btn-img img {width: 100%; height: 100%; object-fit: contain;}
+
+  /* > 정보입력 */
+  .join-form-box .fm_inner .fm-ct {padding: 10px 0; padding-left: 10px; width: calc(100% - 150px);}
+  .join-form-box .fm_inner .fm-lb {padding: 10px 0; padding-right: 10px; width: 150px;}
+
 }
 
 @media screen and (max-width:767px) {
@@ -490,7 +569,7 @@
   .sub-tab-li > a {font-size: 14px; padding: 0 10px; text-align: center;}
   .sub-title-info {font-size: 15px;}
   .sub-title-wr {flex-direction: column; align-items: center;}
-  .sub-title {padding: 0;}
+  .sub-title {padding: 10px 0;}
   .sub-title::after {top: -8px; left: 50%; transform: translateX(-50%);}
   .sub-top-wr {align-items: center;}
 
@@ -729,6 +808,15 @@
   .srch-thesis-title {font-size: 18px; padding-bottom: 5px;}
   .thesis-btn-wr .btn {font-size: 12px;}
 
+  /* pop */
+  .pop-top .sub-title-wr  {text-align: center; padding: 0; gap: 0;}
+  .pop-top .sub-title {padding-top: 30px;}
+  .pop-top .sub-title::after { left: 50%; transform: translateX(-50%); top: -8px;}
+
+  .pop-close-btn {top: 0; right: 0;}
+
+  .pop-top {padding-right: 0;}
+
   /* 마이페이지 */
   .my-page-left-menu {position: fixed; top: 80px; left: 0; background-color: #fff; z-index: 10;}
   .my-page-left-menu.hidden {position: fixed; top: 80px;}
@@ -794,7 +882,37 @@
   .ln-my-business-sl-item .inner-btm .dday {font-size: 13px; width: 80px; height: 25px;}
   .ln-my-business-sl-item .inner-btm .btn {font-size: 13px; height: 25px; line-height: 22px; width: 80px;}
 
+  /* > 신청 */
+  .la-top-day {flex-direction: row-reverse; justify-content: space-between; align-items: center; width: 100%;}
+  .la-top-info-wr {flex-direction: column; gap: 0; align-items: flex-start;}
+  .la-list-btn.btn {width: clamp(120px, 30%, 200px); height: 40px; line-height: 36px;}
+  .la-table th, .la-table td  {font-size: 14px;}
+
+  /* login */
+  .sub-title-wr.vertical {gap: 0;}
+  .login-input-wr, .login-input-ul {gap: 5px;}
+  .login-submit-btn {width: 100px;}
+  .login-submit-btn.btn.icon1 {gap: 10px;}
+  .login-submit-btn img {width: 16px;}
+
   /* 회원가입 */
+  .join-step-wr .app-step-txt1 {font-size: 10px;}
+
+  /* > 내국인, 외국인 선택 */
+  .join0-guide-li {flex-direction: column;}
+  .join0-guide-l {padding: 5px; width: 100%; min-height: 0;}
+  .join0-guide-r {margin: 0;}
+  .join0-sel-btn-li > .border-in {padding: 0 2vw;}
+
+  /* > 약관동의 */
+  .join-agree-top {flex-direction: column; align-items: flex-start;}
+  .join-agree-btn.btn {width: 80px; height: 30px; line-height: 27px;}
+
+  /* > 정보입력 */
+  .join-form-box .fm_inner .fm-row {padding: 10px 0;}
+  .join-form-box .fm_inner .fm-input.readonly {height: auto;}
+  .join-form-box .fm_inner .fm-lb, .join-form-box .fm_inner .fm-ct {width: 100%; border: 0; padding: 0;}
+
   /* > 본인인증 */
   .join2-sel-btn-li .inner {padding: 2vw;}
   .join2-sel-btn-li .inner .icon {height: 80px;}
@@ -905,6 +1023,9 @@
   .app-form-outer {padding-bottom: 30px; margin-bottom: 30px;}
 
   .pop-box {padding: 30px 7.5px;}
+
+  .info-noti-wr {gap: 10px;}
+  .info-noti-text {font-size: 14px;}
 
   /*  > 이용기기 보유현황(상세정보) */
   .view-dt-thumb-sl .img-exp-btn {width: 38px; height: 38px;}
@@ -1042,12 +1163,32 @@
   .my-sec .bl-table th {font-size: 14px;}
   .my-app-status-ul {padding-top: 5px;}
 
+  .my-box-btn-wr {gap: 2vw;}
+  .my-box-title-wrap .btn {padding: 0 7px; gap: 1vw;}
+  .my-box-title-wrap .btn img {transform: scale(0.8);}
+  .my-box-title-wrap .my-btn--pop {width: auto;}
+
   /* > 외부 */
   .my-content2 .my-page-member-box, .my-content2 .my-wrapper.member .related-box.fav {width: 100%;}
 
   /* > 장비담당 */
   .my-noti-list-item .title {font-size: 14px;}
   .my-noti-list-item .date {font-size: 12px;}
+
+  /* > 기타 */
+  .my-top-cate-li {height: 30px;}
+  .my-top-cate-link {font-size: 13px;}
+
+  .my-sch-box {padding: 10px;}
+  .my-sch-req-ul {padding-bottom: 10px; margin-bottom: 7px;}
+  .my-sch-req-li {flex-direction: column; align-items: flex-start; gap: 2.5px; padding: 5px 10px;}
+  /* .my-sch-req-key {font-size: 14px;} */
+  .my-sch-req-val {gap: 2.5px;}
+  .my-sch-btns {gap: 10px;}
+  .my-sch-btn {font-size: 14px;}
+  .my-top-sel-tit, .my-top-sel-num {font-size: 16px;}
+
+  .info-noti-label-txt {font-size: 14px; padding-left: 7.5px;}
 
   /* 사이드바 */
   /* .side-quick-ul {flex-wrap: wrap;} */
@@ -1104,7 +1245,47 @@
   .ln-my-business-sl-item .inner {padding: 16px;}
   .ln-my-business-sl-item .inner .title {margin: 12px 0; font-size: 16px;}
 
+  /* > 신청 */
+  .la-d_day {font-size: 16px; padding: 3px 15px;}
+  .la-top-info-wr {font-size: 14px;}
+  .la-file-download.btn, .la-table-btn.btn {font-size: 12px;}
+  .la-content-box.table-txt {position: relative; margin-top: 20px;}
+  .la-content-box.table-txt::after {content: '← 양옆으로 드래그하여 확인 →'; position: absolute; top: -20px; left: 0; width: 100%; text-align: left; font-size: 12px;}
+  .la-table-wr {overflow-x: auto;}
+  .la-table {width: 500px;}
+  .la-file-ul {padding: 10px 20px;}
+  .la-file-li {padding: 5px 0;}
+  .la-file-name {font-size: 14px;}
+
+  /* login */
+  .login-find-wr {width: 100%;}
+  .login-find {width: auto; flex: 1;}
+
   /* 회원가입 */
+  .join-step-wr .app-step-txt3 {display: none;}
+  .join-btn {height: 35px; line-height: 32px;}
+  
+  /* > 내국인, 외국인 선택 */
+  .join0-guide-ul {gap: 2vw;}
+  .join0-guide-r {padding-top: 5px;}
+  .join0-guide-r__row {flex-direction: column; gap: 10px; text-align: center;}
+  .join0-guide-r__key {width: 100%; height: 35px;}
+  .join0-sel-btn-li > .border-in {height: 120px;}
+  .join0-guide-l, .join0-guide-r__key {border-radius: 5px;}
+  .join0-guide-l__txt1 {font-size: 16px;}
+  .join0-guide-l__txt2 {font-size: 10px;}
+  .join0-guide-r__key {font-size: 14px; font-weight: 500;}
+  .join0-guide-r__val {font-size: 14px;}
+
+  /* > 약관동의 */
+  .join-agree-box, .agree-li__txt {font-size: 14px;}
+  .agree-content h5 {font-size: 18px; padding-bottom: 5px;}
+
+  /* > 정보입력 */
+  .join-form-agree-li {flex-direction: column; gap: 7.5px;}
+  .joion-form-agree__l {font-weight: 600;}
+  .joion-form-agree__l, .joion-form-agree__r {width: 100%;}
+
   /* > 본인인증 */
   .join2-sel-btn-ul {flex-direction: column;}
   .join2-sel-btn-li .inner {padding: 3vw;}

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 마이페이지 - 기타</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <!-- 공동 작업자 css 추가 -->
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header_mypage.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer_mypage.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub my-page-sub my-member">
+    <div class="my-page-wrap">
+
+      <!-- 페이지 내 모든 인풋, 셀렉트박스 등의 'id, name, label for' 값은 임의로 설정하였으니 개발시 변경 필요 -->
+
+      <!-- 마이페이지 왼쪽 메뉴 { -->
+      <div class="my-page-left-menu">
+        <div class="my-page-left-menu-wrap">
+          <div class="my-page-left-menu-top">
+            <p>MY PAGE</p>
+            <button class="my-page-left-menu-btn" type="button">
+              <span></span>
+            </button>
+          </div>
+          <div class="my-page-left-menu-content">
+            <!-- 마이페이지 메뉴 { -->
+            <!-- 
+              .my-page-menu-depth2-ul : active 클래스 추가 입력시 오픈 상태
+              .my-page-menu-depth2-ul > li : active 클래스 추가 입력시 하위 a 태그에 active 효과
+            -->
+            <div class="my-page-menu-wrap">
+              <ul class="my-page-menu-depth1-ul">
+                <li>
+                  <button class="my-page-menu-depth1">서비스 이용현황</button>
+                  <ul class="my-page-menu-depth2-ul">
+                    <li><a href="">서비스 이용현황2</a></li>
+                    <li><a href="">서비스 이용현황2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="my-page-menu-depth1">분석의뢰 신청</button>
+                  <ul class="my-page-menu-depth2-ul">
+                    <li><a href="">분석의뢰 신청2</a></li>
+                    <li><a href="">분석의뢰 신청2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="my-page-menu-depth1 active">연구성과 현황</button>
+                  <ul class="my-page-menu-depth2-ul active">
+                    <li class="active"><a href="">당해년도 반영예정 연구성과</a></li>
+                    <li><a href="">과거 등록된 연구성과</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- } 마이페이지 메뉴 -->
+            <!-- 마이페이지 배너 영역 { -->
+            <div class="my-page-left-banner-wrap">
+              <div class="my-page-left-banner">
+                <!-- <img src="" alt=""> -->
+                <span style="font-weight: 600; font-size: 20px; line-height: 135px;">베너영역</span>
+              </div>
+              <div class="my-page-left-banner">
+                <!-- <img src="" alt=""> -->
+                <span style="font-weight: 600; font-size: 20px; line-height: 135px;">베너영역</span>
+              </div>
+            </div>
+            <!-- } 마이페이지 배너 영역 -->
+          </div>
+        </div>
+      </div>
+      <!-- } 마이페이지 왼쪽 메뉴 -->
+
+      <!-- 마이페이지 오른쪽 내용 { -->
+      <div class="my-page-content">
+
+        <!-- 마이페이지 로케이션 { -->
+        <div class="my-page-location">
+          <ul class="my-page-loc-ul">
+            <li class="my-page-open-menu-btn-wrap">
+              <button class="my-page-open-menu-btn" type="button">
+                <span></span>
+              </button>
+            </li>
+            <li>
+              <a class="home" href=""><img src="../src/img/icon-home-w.png" alt="마이페이지 홈으로"></a>
+            </li>
+            <li class="text">
+              좌측메뉴 클릭 시 나오는 메뉴 제목
+            </li>
+          </ul>
+        </div>
+        <!-- } 마이페이지 로케이션 -->
+
+
+        <!-- 마이페이지 콘텐츠 { -->
+        <div class="my-content my-content2">
+          <div class="my-wrapper detail">
+
+            <!-- 마이페이지 섹션 (분석의뢰신청) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <ul class="my-top-cate-ul">
+                  <li class="my-top-cate-li active">
+                    <a href="" class="my-top-cate-link">신청목록</a>
+                  </li>
+                  <li class="my-top-cate-li">
+                    <a href="" class="my-top-cate-link">견적서</a>
+                  </li>
+                  <li class="my-top-cate-li">
+                    <a href="" class="my-top-cate-link">거래명세서</a>
+                  </li>
+                  <li class="my-top-cate-li">
+                    <a href="" class="my-top-cate-link">결제목록</a>
+                  </li>
+                  <li class="my-top-cate-li">
+                    <a href="" class="my-top-cate-link">결제내역</a>
+                  </li>
+                </ul>
+                <div class="my-sch-box type1">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            기간설정
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type1-1" id="type1-1" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type1-1" class="sound_only">기간설정</label>
+                            <div class="my-date-wr">
+                              <div class="my-date-start">
+                                <input type="text" name="type1-2" id="type1-2"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type1-2" class="sound_only">시작날짜설정</label>
+                              </div>
+                              <p>~</p>
+                              <div class="my-date-end">
+                                <input type="text" name="type1-3" id="type1-3"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type1-3" class="sound_only">종료날짜설정</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            조건검색
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type1-4" id="type1-4" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type1-4" class="sound_only">조건검색</label>
+                            <input name="type1-5" id="type1-5" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type1-5" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="my-top-sel-box">
+                  <div class="noti-check-box">
+                    <div class="check-wr">
+                      <input type="checkbox" name="type1-6" id="type1-6" class="noti-check">
+                      <label for="type1-6"><span class="info-noti"></span><span class="my-top-sel-tit">전체선택</span><span
+                          class="my-top-sel-num">총 6개</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (분석의뢰신청) -->
+
+            <!-- 마이페이지 섹션 (연구성과) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type2">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            검색어
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type2-1" id="type2-1" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type2-1" class="sound_only">검색조건선택</label>
+                            <input name="type2-2" id="type2-2" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type2-2" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            발행년도
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type2-3" id="type2-3" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type2-3" class="sound_only">발행년도선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            분야
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type2-4" id="type2-4" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type2-4" class="sound_only">분야선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            등급
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type2-5" id="type2-5" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type2-5" class="sound_only">등급선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            SCI등록
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd1" id="type2-6" class="fm-radio" checked>
+                                <label for="type2-6">SCI</label>
+                              </div>
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd1" id="type2-7" class="fm-radio">
+                                <label for="type2-7">SCIE</label>
+                              </div>
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd1" id="type2-8" class="fm-radio">
+                                <label for="type2-8">SCI미등록</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            국내외
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd2" id="type2-9" class="fm-radio" checked>
+                                <label for="type2-9">국내</label>
+                              </div>
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd2" id="type2-10" class="fm-radio">
+                                <label for="type2-10">국외</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            KBSI작성여부
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd3" id="type2-11" class="fm-radio" checked>
+                                <label for="type2-11">있음</label>
+                              </div>
+                              <div class="radio-wr">
+                                <input type="radio" name="type2-rd3" id="type2-12" class="fm-radio">
+                                <label for="type2-12">없음</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            KBSI명
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="check-wr">
+                                <input type="checkbox" name="type2-13" id="type2-13" class="noti-check">
+                                <label for="type2-13"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">공동저자</span></label>
+                              </div>
+                              <div class="check-wr">
+                                <input type="checkbox" name="type2-14" id="type2-14" class="noti-check">
+                                <label for="type2-14"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">실험방법</span></label>
+                              </div>
+                              <div class="check-wr">
+                                <input type="checkbox" name="type2-15" id="type2-15" class="noti-check">
+                                <label for="type2-15"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">감사의글</span></label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (연구성과) -->
+
+            <!-- 마이페이지 섹션 (선도지원장비) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type3">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            검색어
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type3-1" id="type3-1" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type3-1" class="sound_only">검색조건선택</label>
+                            <input name="type3-2" id="type3-2" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type3-2" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            공고기간
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="my-date-wr">
+                              <div class="my-date-start">
+                                <input type="text" name="type3-3" id="type3-3"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type3-3" class="sound_only">시작날짜설정</label>
+                              </div>
+                              <p>~</p>
+                              <div class="my-date-end">
+                                <input type="text" name="type3-4" id="type3-4"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type3-4" class="sound_only">종료날짜설정</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            공고구분
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="check-wr">
+                                <input type="checkbox" name="type3-5" id="type3-5" class="noti-check">
+                                <label for="type3-5"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">전문연구지원과제</span></label>
+                              </div>
+                              <div class="check-wr">
+                                <input type="checkbox" name="type3-6" id="type3-6" class="noti-check">
+                                <label for="type3-6"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">선도장비이용자 프로그램</span></label>
+                              </div>
+                              <div class="check-wr">
+                                <input type="checkbox" name="type3-7" id="type3-7" class="noti-check">
+                                <label for="type3-7"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">글로벌과학자이용분야</span></label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (선도지원장비) -->
+
+            <!-- 마이페이지 섹션 (교육) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type4">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            교육명
+                          </div>
+                          <div class="my-sch-req-val">
+                            <input name="type4-1" id="type4-1" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type4-1" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            접수상태
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type4-2" id="type4-2" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type4-2" class="sound_only">접수상태선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            수료여부
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type4-3" id="type4-3" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type4-3" class="sound_only">수료여부선택</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (교육) -->
+
+            <!-- 마이페이지 섹션 (상담신청) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type5">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            검색어
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type5-1" id="type5-1" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type5-1" class="sound_only">검색조건선택</label>
+                            <input name="type5-2" id="type5-2" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type5-2" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            답변상태
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type5-3" id="type5-3" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type5-3" class="sound_only">답변상태선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            등급
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type5-4" id="type5-4" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type5-4" class="sound_only">등급1선택</label>
+                            <select name="type5-5" id="type5-5" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type5-5" class="sound_only">등급2선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            작성일
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="my-date-wr">
+                              <div class="my-date-start">
+                                <input type="text" name="type5-6" id="type5-6"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type5-6" class="sound_only">시작날짜설정</label>
+                              </div>
+                              <p>~</p>
+                              <div class="my-date-end">
+                                <input type="text" name="type5-7" id="type5-7"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type5-7" class="sound_only">종료날짜설정</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (상담신청) -->
+
+            <!-- 마이페이지 섹션 (Q&A) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type6">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            검색어
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type6-1" id="type6-1" class="fm-select fm-select-2">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type6-1" class="sound_only">검색조건선택</label>
+                            <input name="type6-2" id="type6-2" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type6-2" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            분야
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type6-3" id="type6-3" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type6-3" class="sound_only">분야선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            나의 질문
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="input-container horizontal">
+                              <div class="check-wr">
+                                <input type="checkbox" name="type6-4" id="type6-4" class="noti-check">
+                                <label for="type6-4"><span class="info-noti"></span><span
+                                    class="info-noti-label-txt">내질문보기</span></label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (Q&A) -->
+
+            <!-- 마이페이지 섹션 (우수회원) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type7">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            연도
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type7-1" id="type7-1" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type7-1" class="sound_only">연도선택</label>
+                          </div>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (우수회원) -->
+
+            <!-- 마이페이지 섹션 (즐겨찾기) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type8">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            즐겨찾기명
+                          </div>
+                          <div class="my-sch-req-val">
+                            <input name="type8-1" id="type8-1" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type8-1" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            항목
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type8-2" id="type8-2" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type8-2" class="sound_only">항목선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            등록일자
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="my-date-wr">
+                              <div class="my-date">
+                                <input type="text" name="type8-3" id="type8-3"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type8-3" class="sound_only">등록일자설정</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (즐겨찾기) -->
+
+            <!-- 마이페이지 섹션 (개인/중소 우수회원신청) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-top-wr">
+                <div class="my-sch-box type9">
+                  <form action="">
+                    <div class="my-sch-req">
+                      <ul class="my-sch-req-ul">
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            공고명
+                          </div>
+                          <div class="my-sch-req-val">
+                            <input name="type9-1" id="type9-1" type="text" class="fm-input w100"
+                              placeholder="검색어를 입력하세요.">
+                            <label for="type9-1" class="sound_only">검색어입력</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            진행상태
+                          </div>
+                          <div class="my-sch-req-val">
+                            <select name="type9-2" id="type9-2" class="fm-select fm-select-2 w100">
+                              <option value="" disabled selected hidden>Select Box</option>
+                              <option value="">Select Box1</option>
+                              <option value="">Select Box2</option>
+                              <option value="">Select Box3</option>
+                            </select>
+                            <label for="type9-2" class="sound_only">진행상태선택</label>
+                          </div>
+                        </li>
+                        <li class="my-sch-req-li">
+                          <div class="my-sch-req-key">
+                            접수기간
+                          </div>
+                          <div class="my-sch-req-val">
+                            <div class="my-date-wr">
+                              <div class="my-date-start">
+                                <input type="text" name="type9-3" id="type9-3"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type9-3" class="sound_only">시작날짜설정</label>
+                              </div>
+                              <p>~</p>
+                              <div class="my-date-end">
+                                <input type="text" name="type9-4" id="type9-4"
+                                  class="fm-input w100 datepicker" placeholder="2024.01.01">
+                                <label for="type9-4" class="sound_only">종료날짜설정</label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-sch-btns">
+                      <button type="submit" class="round25 my-sch-btn my-sch-submit"><span>검색하기</span><img
+                          src="../src/img/icon-tnb_search.png" alt="icon" style="width: 20px;"></button>
+                      <button type="submit" class="round25 my-sch-btn my-sch-reset"><span>검색초기화</span><img
+                          src="../src/img/icon-reset.png" alt="icon" style="width: 16px;"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (개인/중소 우수회원신청) -->
+
+            <!-- 마이페이지 섹션 (테이블) { -->
+            <div class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-border-box my-big-table-box">
+                <div class="my-box-title-wrap">
+                  <p class="title">테이블 제목이 들어가는 부분</p>
+                </div>
+                <div class="bl-wr">
+                  <div class="bl-body">
+                    <table class="bl-table">
+                      <caption class="sound_only">테이블 제목이 들어가는 부분</caption>
+                      <thead>
+                        <tr>
+                          <th>번호</th>
+                          <th>신청번호</th>
+                          <th>기기코드</th>
+                          <th>분석서비스 영문명</th>
+                          <th>이용자</th>
+                          <th>대리인</th>
+                          <th>등록일자</th>
+                          <th>접수번호</th>
+                          <th>접수일자</th>
+                          <th>이용료</th>
+                          <th>진행상태</th>
+                          <th>납부</th>
+                          <th>만족도조사</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>2024-000260</td>
+                          <td>am07</td>
+                          <td>multi angle light scattering</td>
+                          <td>관리자</td>
+                          <td>관리자</td>
+                          <td>2024.01.01</td>
+                          <td>ws-2024-000260</td>
+                          <td>2024.01.01</td>
+                          <td>1,000,000원</td>
+                          <td>거래명세서 발급</td>
+                          <td>미납</td>
+                          <td><button type="button" class="device-list-btn">답변</button></td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2024-000260</td>
+                          <td>am07</td>
+                          <td>multi angle light scattering</td>
+                          <td>관리자</td>
+                          <td>관리자</td>
+                          <td>2024.01.01</td>
+                          <td>ws-2024-000260</td>
+                          <td>2024.01.01</td>
+                          <td>1,000,000원</td>
+                          <td>거래명세서 발급</td>
+                          <td>미납</td>
+                          <td><button type="button" class="device-list-btn">답변</button></td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2024-000260</td>
+                          <td>am07</td>
+                          <td>multi angle light scattering</td>
+                          <td>관리자</td>
+                          <td>관리자</td>
+                          <td>2024.01.01</td>
+                          <td>ws-2024-000260</td>
+                          <td>2024.01.01</td>
+                          <td>1,000,000원</td>
+                          <td>거래명세서 발급</td>
+                          <td>미납</td>
+                          <td><button type="button" class="device-list-btn">답변</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- } 마이페이지 섹션 (테이블) -->
+
+          </div>
+          <div class="my-wrapper member">
+            <!-- 마이페이지 우측 회원정보 { -->
+            <div class="my-page-member-wr">
+              <!-- 회원 정보 { -->
+              <div class="my-page-member-box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="my-page-member-info">
+                  <div class="my-page-member-info-top">
+                    <div class="thumb-box">
+                      <div class="thumb">
+                        <img src="../src/img/my-page-member-thumb01.png" alt="회원 이미지">
+                      </div>
+                      <button class="thumb-change-btn">
+                        <img src="../src/img/icon-config.png" alt="이미지 변경 버튼">
+                      </button>
+                    </div>
+                    <p class="name">홍길동</p>
+                  </div>
+                  <div class="my-page-member-info-btm">
+                    <p class="text">우수회원 / 기업회원</p>
+                  </div>
+                </div>
+              </div>
+              <!-- } 회원 정보 -->
+
+              <div class="related-box fav" data-aos="fade-up" data-aos-duration="1000">
+                <div class="related-btn-wr">
+                  <p class="fm-tit">즐겨찾는 메뉴</p>
+                  <button type="button" class="btn-plus" onclick="menuPop()"></button>
+                </div>
+                <ul class="related-menu-ul sub-vs-quick-ul">
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick1.png" alt="" style="width: 22px;">
+                      <span>분석신청</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick4.png" alt="" style="width: 17px;">
+                      <span>계산서</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick2.png" alt="" style="width: 21px;">
+                      <span>Q&amp;A</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick3.png" alt="" style="width: 20px;">
+                      <span>시료접수</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li on">
+                    <a href="">
+                      <img src="../src/img/icon-quick5.png" alt="" style="width: 19px;">
+                      <span>아카데미</span>
+                    </a>
+                  </li>
+                  <li class="related-menu-li sub-vs-quick-li">
+                    <a href="">
+                      <img src="../src/img/icon-quick6.png" alt="" style="width: 22px;">
+                      <span>가상캠퍼스</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">자주쓰는 장비</p>
+                <ul class="related-content">
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <p class="related-content__tit">초고분해능 15T 퓨리에변환 이온싸이 클로 트론공명질량분석기</p>
+                      <p class="related-content__txt">대덕본원 / 김주영</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="related-box" data-aos="fade-up" data-aos-duration="1000">
+                <p class="fm-tit">워드클라우드</p>
+                <div id="word-cloud"></div>
+              </div>
+
+            </div>
+            <!-- } 마이페이지 우측 회원정보 -->
+          </div>
+        </div>
+        <!-- } 마이페이지 콘텐츠 -->
+
+
+      </div>
+      <!-- } 마이페이지 오른쪽 내용 -->
+
+
+    </div>
+
+    <!-- 팝업 { -->
+    <div class="pop menu-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title">제목</h3>
+            </div>
+          </div>
+          <div class="pop-content">
+            <div class="sub-title-wr">
+              <p class="sub-title-info">내용</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 팝업 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+  <script>
+
+    const myPageLeftMenuToggle = () => {
+      let leftMenuBtn = $('.my-page-left-menu-btn');
+      let leftMenuOpenBtnWrap = $('.my-page-open-menu-btn-wrap');
+      let leftMenuOpenBtn = $('.my-page-open-menu-btn');
+      let leftWrap = $('.my-page-left-menu');
+      let rightWrap = $('.my-page-content');
+
+      if ($(window).width() < 768) {
+        leftWrap.addClass('hidden');
+      } else {
+        leftWrap.removeClass('hidden');
+      }
+
+      leftMenuBtn.on('click', function () {
+        leftWrap.addClass('hidden');
+        rightWrap.addClass('on');
+        leftMenuOpenBtnWrap.show();
+      });
+
+      leftMenuOpenBtn.on('click', function () {
+        leftWrap.removeClass('hidden');
+        rightWrap.removeClass('on');
+        leftMenuOpenBtnWrap.hide();
+      });
+    }
+
+    const myPageMenuToggle = () => {
+      let depth1 = $('.my-page-menu-depth1');
+      let depth2Wrap = $('.my-page-menu-depth2-ul');
+
+      depth1.on('click', function () {
+
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $(this).next('.my-page-menu-depth2-ul').slideUp();
+        } else {
+          depth1.removeClass('active');
+          depth2Wrap.slideUp();
+          $(this).addClass('active');
+          $(this).next('.my-page-menu-depth2-ul').slideDown();
+        }
+      });
+    }
+
+    // 팝업
+    const menuPop = () => {
+      $('.menu-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    const popClose = () => {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+
+    $(document).ready(function () {
+      myPageMenuToggle();
+      myPageLeftMenuToggle();
+      wordCloud();
+    });
+  </script>
+
+</body>
+
+</html>
