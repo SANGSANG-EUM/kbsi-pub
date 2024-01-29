@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARiA > 이용신청 > 분석지원 > 분석지원 소개</title>
+  <title>ARiA > 이용신청 > 선도연구활동 > 사업안내</title>
 
   <!-- src > css -->
   <link rel="stylesheet" href="../src/css/fonts.css">
   <link rel="stylesheet" href="../src/css/common.css">
   <link rel="stylesheet" href="../src/css/normal.css">
+  <!-- 공동 작업자 css 추가 -->
   <link rel="stylesheet" href="../src/css/normal2.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
@@ -43,7 +44,8 @@
   <div id="header-loaction"></div>
   <!-- } header 임시 인클루드 -->
 
-  <div class="sub analysis_info">
+  <div class="sub lead_info">
+
     <!-- 서브로케이션 { -->
     <div class="sub-location">
       <div class="wrapper">
@@ -54,24 +56,21 @@
               <button type="button" class="sub-loca-btn" title="열기">이용신청</button>
               <ul class="sub-loca-2dep-ul">
                 <li class="sub-loca-2dep-li">
-                  <a href="">ARIA소개</a>
+                  <a href="">분석지원</a>
                 </li>
                 <li class="sub-loca-2dep-li">
-                  <a href="">이용신청</a>
+                  <a href="">선도연구활동</a>
                 </li>
                 <li class="sub-loca-2dep-li">
-                  <a href="">분석과학성과</a>
+                  <a href="">연구장비 아카데미</a>
                 </li>
                 <li class="sub-loca-2dep-li">
-                  <a href="">가상공간</a>
-                </li>
-                <li class="sub-loca-2dep-li">
-                  <a href="">이용안내</a>
+                  <a href="">우수회원 소개</a>
                 </li>
               </ul>
             </li>
             <li class="sub-loca-li">
-              <button type="button" class="sub-loca-btn" title="열기">분석지원</button>
+              <button type="button" class="sub-loca-btn" title="열기">선도연구활동</button>
               <ul class="sub-loca-2dep-ul">
                 <li class="sub-loca-2dep-li">
                   <a href="">분석지원</a>
@@ -88,16 +87,16 @@
               </ul>
             </li>
             <li class="sub-loca-li">
-              <button type="button" class="sub-loca-btn" title="열기">분석지원 소개</button>
+              <button type="button" class="sub-loca-btn" title="열기">사업안내</button>
               <ul class="sub-loca-2dep-ul">
                 <li class="sub-loca-2dep-li">
-                  <a href="">분석지원 소개</a>
+                  <a href="">사업안내</a>
                 </li>
                 <li class="sub-loca-2dep-li">
-                  <a href="">이용기기보유현황</a>
+                  <a href="">사업공고</a>
                 </li>
                 <li class="sub-loca-2dep-li">
-                  <a href="">시료접수 안내</a>
+                  <a href="">신청</a>
                 </li>
               </ul>
             </li>
@@ -189,59 +188,24 @@
         <div class="wrapper">
           <div class="sub-top-wr">
             <div class="sub-title-wr">
-              <h3 class="sub-title"><b>분석지원</b> 소개</h3>
-              <p class="sub-title-info"><span>KBSI</span>분석지원 페이지 소개 멘트가 들어갈 영역입니다.</p>
+              <h3 class="sub-title"><b>사업</b>안내</h3>
+              <p class="sub-title-info"><span>KBSI</span> 선도연구활동에 관한 사업 안내입니다.</p>
             </div>
             <!-- 즐겨찾기 추가 체크박스 { -->
-            <ul class="fav-btn-wr">
-              <li>
-                <button type="button" class="url-paste-btn" onclick="copyUrl()">
-                  <span class="url-paste-img">
-                    <img src="../src/img/icon-paste.png" alt="URL복사">
-                  </span>
-                  <span class="fav-btn-txt">
-                    URL복사
-                  </span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="url-print-btn" onclick="printPage()">
-                  <span class="url-print-img">
-                    <img src="../src/img/icon-print.png" alt="프린트">
-                  </span>
-                  <span class="fav-btn-txt">
-                    프린트
-                  </span>
-                </button>
-              </li>
-              <li>
-                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
-                <label for="favBtn" class="fav-btn">
-                  <span class="fav-btn-img default">
-                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
-                  </span>
-                  <span class="fav-btn-img check">
-                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
-                  </span>
-                  <span class="fav-btn-txt">
-                    즐겨찾기
-                  </span>
-                </label>
-              </li>
-            </ul>
-            <script>
-              // URL 복사
-              function copyUrl() {
-                const url = window.location.href; // 현재 링크를 가져오는 코드
-                navigator.clipboard.writeText(url);
-                alert('URL이 복사되었습니다.')
-              };
-
-              // 프린트
-              function printPage() {
-                window.print();
-              }
-            </script>
+            <div class="fav-btn-wr">
+              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+              <label for="favBtn" class="fav-btn">
+                <span class="fav-btn-img default">
+                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
+                </span>
+                <span class="fav-btn-img check">
+                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                </span>
+                <span class="fav-btn-txt">
+                  즐겨찾기 메뉴에 추가
+                </span>
+              </label>
+            </div>
             <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
@@ -250,7 +214,7 @@
         <div class="subsec">
           <div class="container">
             <div class="wrapper">
-              
+
             </div>
           </div>
         </div>
@@ -263,6 +227,35 @@
   <!-- footer 임시 인클루드 { -->
   <div id="footer-loaction"></div>
   <!-- } footer 임시 인클루드 -->
+
+  <script>
+    let lnMyBusinessSlick = () => {
+      var lnMyBusinessSl = new Swiper(".ln-my-business-sl", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".ln-my-business-btn-box .next",
+          prevEl: ".ln-my-business-btn-box .prev",
+        },
+        breakpoints: {
+          769: {
+            spaceBetween: 26,
+            slidesPerView: 3,
+          },
+          482: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+        }
+      });
+    }
+
+    $(document).ready(function () {
+      lnMyBusinessSlick();
+    });
+  </script>
 
 </body>
 

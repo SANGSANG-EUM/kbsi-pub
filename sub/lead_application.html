@@ -195,20 +195,55 @@
               <p class="sub-title-info"><span>KBSI</span> 선도연구활동에 관한 사업 공고입니다.</p>
             </div>
             <!-- 즐겨찾기 추가 체크박스 { -->
-            <div class="fav-btn-wr">
-              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
-              <label for="favBtn" class="fav-btn">
-                <span class="fav-btn-img default">
-                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
-                </span>
-                <span class="fav-btn-img check">
-                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
-                </span>
-                <span class="fav-btn-txt">
-                  즐겨찾기 메뉴에 추가
-                </span>
-              </label>
-            </div>
+            <ul class="fav-btn-wr">
+              <li>
+                <button type="button" class="url-paste-btn" onclick="copyUrl()">
+                  <span class="url-paste-img">
+                    <img src="../src/img/icon-paste.png" alt="URL복사">
+                  </span>
+                  <span class="fav-btn-txt">
+                    URL복사
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="url-print-btn" onclick="printPage()">
+                  <span class="url-print-img">
+                    <img src="../src/img/icon-print.png" alt="프린트">
+                  </span>
+                  <span class="fav-btn-txt">
+                    프린트
+                  </span>
+                </button>
+              </li>
+              <li>
+                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+                <label for="favBtn" class="fav-btn">
+                  <span class="fav-btn-img default">
+                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
+                  </span>
+                  <span class="fav-btn-img check">
+                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                  </span>
+                  <span class="fav-btn-txt">
+                    즐겨찾기
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <script>
+              // URL 복사
+              function copyUrl() {
+                const url = window.location.href; // 현재 링크를 가져오는 코드
+                navigator.clipboard.writeText(url);
+                alert('URL이 복사되었습니다.')
+              };
+
+              // 프린트
+              function printPage() {
+                window.print();
+              }
+            </script>
             <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
@@ -218,141 +253,141 @@
           <div class="container">
             <div class="wrapper">
 
-            <div class="la-wr">
+              <div class="la-wr">
 
-              <div class="la-top" data-aos="fade-up" data-aos-duration="1000">
-                <div class="la-title-wr">
-                  <p class="la-title">2023년 KBSI 선도장비 전문연구지원과제 이용신청(상시접수)</p>
-                  <p class="la-cate">연구지원과제</p>
-                </div>
-                <div class="la-top-info-wr">
-                  <div class="la-top-day">
-                    <div class="la-d_day">D-125</div>
-                    <div class="la-deadline">신청마감일 : 2023-12-31</div>
+                <div class="la-top" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="la-title-wr">
+                    <p class="la-title">2023년 KBSI 선도장비 전문연구지원과제 이용신청(상시접수)</p>
+                    <p class="la-cate">연구지원과제</p>
                   </div>
-                  <div class="la-top-info">
-                    <div class="la-date">등록일 : 2023-12-31</div>
-                    <div class="la-hits">조회수 : 1,876</div>
+                  <div class="la-top-info-wr">
+                    <div class="la-top-day">
+                      <div class="la-d_day">D-125</div>
+                      <div class="la-deadline">신청마감일 : 2023-12-31</div>
+                    </div>
+                    <div class="la-top-info">
+                      <div class="la-date">등록일 : 2023-12-31</div>
+                      <div class="la-hits">조회수 : 1,876</div>
+                    </div>
                   </div>
                 </div>
+
+                <ul class="la-content-ul">
+                  <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="la-content-title">
+                      <p class="fm-tit">
+                        <span class="icon-bar"></span>
+                        일정
+                      </p>
+                    </div>
+                    <div class="la-content-box table-txt">
+                      <div class="la-table-wr">
+                        <table class="la-table la-table1">
+                          <caption class="sound_only">접수 일정</caption>
+                          <tbody>
+                            <tr>
+                              <th>접수신청</th>
+                              <td>2023-03-13(월)~12.31(일)</td>
+                              <th>심사 및 선정</th>
+                              <td>2023-03-13(월)~12.31(일)</td>
+                            </tr>
+                            <tr>
+                              <th>선전통보</th>
+                              <td>홈페이지 내 결과 확인</td>
+                              <th>장비이용(주간)</th>
+                              <td>사용기간: 2023-04-01~2023-12-31</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="la-content-title">
+                      <p class="fm-tit">
+                        <span class="icon-bar"></span>
+                        상세내용
+                      </p>
+                    </div>
+                    <div class="la-content-box">
+                      <div class="la-content-in">상세내용이 들어갑니다.</div>
+                    </div>
+                  </li>
+                  <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="la-content-title">
+                      <p class="fm-tit">
+                        <span class="icon-bar"></span>
+                        신청가능 선도장비
+                      </p>
+                    </div>
+                    <div class="la-content-box table-txt">
+                      <div class="la-table-wr">
+                        <table class="la-table la-table2">
+                          <caption class="sound_only">신청가능 선도장비</caption>
+                          <thead>
+                            <tr>
+                              <th>번호</th>
+                              <th>장비시스템 영문명</th>
+                              <th>장비시스템 국문명</th>
+                              <th>담당자</th>
+                              <th>연락처</th>
+                              <th>이메일</th>
+                              <th>신청</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>aaaaaaaaaa</td>
+                              <td>장비시스템 국문명</td>
+                              <td>홍길동</td>
+                              <td>010-4498-7895</td>
+                              <td>webmaster@gmailcom</td>
+                              <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>aaaaaaaaaa</td>
+                              <td>장비시스템 국문명</td>
+                              <td>홍길동</td>
+                              <td>010-4498-7895</td>
+                              <td>webmaster@gmailcom</td>
+                              <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="la-content-title">
+                      <p class="fm-tit">
+                        <span class="icon-bar"></span>
+                        첨부파일
+                      </p>
+                    </div>
+                    <div class="la-content-box">
+                      <ul class="la-file-ul">
+                        <li class="la-file-li">
+                          <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                          <a href="" class="la-file-download btn round25">다운로드</a>
+                        </li>
+                        <li class="la-file-li">
+                          <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                          <a href="" class="la-file-download btn round25">다운로드</a>
+                        </li>
+                        <li class="la-file-li">
+                          <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
+                          <a href="" class="la-file-download btn round25">다운로드</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="la-list-btn-wr"><a href="" class="btn round25 sizeM la-list-btn">목록</a></div>
+
               </div>
-
-              <ul class="la-content-ul">
-                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="la-content-title">
-                    <p class="fm-tit">
-                      <span class="icon-bar"></span>
-                      일정
-                    </p>
-                  </div>
-                  <div class="la-content-box table-txt">
-                    <div class="la-table-wr">
-                      <table class="la-table la-table1">
-                        <caption class="sound_only">접수 일정</caption>
-                        <tbody>
-                          <tr>
-                            <th>접수신청</th>
-                            <td>2023-03-13(월)~12.31(일)</td>
-                            <th>심사 및 선정</th>
-                            <td>2023-03-13(월)~12.31(일)</td>
-                          </tr>
-                          <tr>
-                            <th>선전통보</th>
-                            <td>홈페이지 내 결과 확인</td>
-                            <th>장비이용(주간)</th>
-                            <td>사용기간: 2023-04-01~2023-12-31</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </li>
-                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="la-content-title">
-                    <p class="fm-tit">
-                      <span class="icon-bar"></span>
-                      상세내용
-                    </p>
-                  </div>
-                  <div class="la-content-box">
-                    <div class="la-content-in">상세내용이 들어갑니다.</div>
-                  </div>
-                </li>
-                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="la-content-title">
-                    <p class="fm-tit">
-                      <span class="icon-bar"></span>
-                      신청가능 선도장비
-                    </p>
-                  </div>
-                  <div class="la-content-box table-txt">
-                    <div class="la-table-wr">
-                      <table class="la-table la-table2">
-                        <caption class="sound_only">신청가능 선도장비</caption>
-                        <thead>
-                          <tr>
-                            <th>번호</th>
-                            <th>장비시스템 영문명</th>
-                            <th>장비시스템 국문명</th>
-                            <th>담당자</th>
-                            <th>연락처</th>
-                            <th>이메일</th>
-                            <th>신청</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>aaaaaaaaaa</td>
-                            <td>장비시스템 국문명</td>
-                            <td>홍길동</td>
-                            <td>010-4498-7895</td>
-                            <td>webmaster@gmailcom</td>
-                            <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>aaaaaaaaaa</td>
-                            <td>장비시스템 국문명</td>
-                            <td>홍길동</td>
-                            <td>010-4498-7895</td>
-                            <td>webmaster@gmailcom</td>
-                            <td><button type="button" class="btn colorSub2 round25 la-table-btn">신청</button></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </li>
-                <li class="la-content-li" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="la-content-title">
-                    <p class="fm-tit">
-                      <span class="icon-bar"></span>
-                      첨부파일
-                    </p>
-                  </div>
-                  <div class="la-content-box">
-                    <ul class="la-file-ul">
-                      <li class="la-file-li">
-                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
-                        <a href="" class="la-file-download btn round25">다운로드</a>
-                      </li>
-                      <li class="la-file-li">
-                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
-                        <a href="" class="la-file-download btn round25">다운로드</a>
-                      </li>
-                      <li class="la-file-li">
-                        <div class="la-file-name">선도장비 전문연구지원과제 신청서 양식.hwp</div>
-                        <a href="" class="la-file-download btn round25">다운로드</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="la-list-btn-wr"><a href="" class="btn round25 sizeM la-list-btn">목록</a></div>
-
-            </div>
 
             </div>
           </div>
@@ -368,7 +403,7 @@
   <!-- } footer 임시 인클루드 -->
 
   <script>
-    
+
   </script>
 
 </body>

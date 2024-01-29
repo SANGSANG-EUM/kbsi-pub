@@ -172,9 +172,62 @@
 
       <div class="container">
         <div class="wrapper">
-          <div class="sub-title-wr">
-            <h3 class="sub-title"><b>Q</b> & <b>A</b></h3>
-            <p class="sub-title-info"><span>ARIA</span>에 궁금하신 점이 있으시면 무엇이든 물어보세요.</p>
+          <div class="sub-top-wr">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>Q</b> & <b>A</b></h3>
+              <p class="sub-title-info"><span>ARIA</span>에 궁금하신 점이 있으시면 무엇이든 물어보세요.</p>
+            </div>
+            <!-- 즐겨찾기 추가 체크박스 { -->
+            <ul class="fav-btn-wr">
+              <li>
+                <button type="button" class="url-paste-btn" onclick="copyUrl()">
+                  <span class="url-paste-img">
+                    <img src="../src/img/icon-paste.png" alt="URL복사">
+                  </span>
+                  <span class="fav-btn-txt">
+                    URL복사
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="url-print-btn" onclick="printPage()">
+                  <span class="url-print-img">
+                    <img src="../src/img/icon-print.png" alt="프린트">
+                  </span>
+                  <span class="fav-btn-txt">
+                    프린트
+                  </span>
+                </button>
+              </li>
+              <li>
+                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+                <label for="favBtn" class="fav-btn">
+                  <span class="fav-btn-img default">
+                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
+                  </span>
+                  <span class="fav-btn-img check">
+                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                  </span>
+                  <span class="fav-btn-txt">
+                    즐겨찾기
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <script>
+              // URL 복사
+              function copyUrl() {
+                const url = window.location.href; // 현재 링크를 가져오는 코드
+                navigator.clipboard.writeText(url);
+                alert('URL이 복사되었습니다.')
+              };
+
+              // 프린트
+              function printPage() {
+                window.print();
+              }
+            </script>
+            <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
       </div>
@@ -184,7 +237,7 @@
         <div class="subsec">
           <div class="container">
             <div class="wrapper">
-              <div class="sub-lr-outer qna-lr-outer">
+              <div class="sub-lr-outer qna-lr-outer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="sub-left qna-left">
                   <!-- qna 카테고리 { -->
                   <div class="qna-cate-wr">

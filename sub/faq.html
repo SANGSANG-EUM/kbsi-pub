@@ -178,20 +178,55 @@
               <p class="sub-title-info"><span>ARIA</span>에 자주하시는질문을 정리하여 소개하는 페이지입니다.</p>
             </div>
             <!-- 즐겨찾기 추가 체크박스 { -->
-            <div class="fav-btn-wr">
-              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
-              <label for="favBtn" class="fav-btn">
-                <span class="fav-btn-img default">
-                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
-                </span>
-                <span class="fav-btn-img check">
-                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
-                </span>
-                <span class="fav-btn-txt">
-                  즐겨찾기 메뉴에 추가
-                </span>
-              </label>
-            </div>
+            <ul class="fav-btn-wr">
+              <li>
+                <button type="button" class="url-paste-btn" onclick="copyUrl()">
+                  <span class="url-paste-img">
+                    <img src="../src/img/icon-paste.png" alt="URL복사">
+                  </span>
+                  <span class="fav-btn-txt">
+                    URL복사
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="url-print-btn" onclick="printPage()">
+                  <span class="url-print-img">
+                    <img src="../src/img/icon-print.png" alt="프린트">
+                  </span>
+                  <span class="fav-btn-txt">
+                    프린트
+                  </span>
+                </button>
+              </li>
+              <li>
+                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+                <label for="favBtn" class="fav-btn">
+                  <span class="fav-btn-img default">
+                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
+                  </span>
+                  <span class="fav-btn-img check">
+                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                  </span>
+                  <span class="fav-btn-txt">
+                    즐겨찾기
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <script>
+              // URL 복사
+              function copyUrl() {
+                const url = window.location.href; // 현재 링크를 가져오는 코드
+                navigator.clipboard.writeText(url);
+                alert('URL이 복사되었습니다.')
+              };
+
+              // 프린트
+              function printPage() {
+                window.print();
+              }
+            </script>
             <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
