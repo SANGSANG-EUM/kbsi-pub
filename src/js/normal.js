@@ -25,6 +25,33 @@ $(document).ready(function () {
 
   $('.datepicker').datepicker();
 
+  //시간 연장하기
+  function dailyMissionTimer(duration) {
+    let timer = duration * 3600;
+    let hours, minutes, seconds;
+    
+    let interval = setInterval(function(){
+        hours	= parseInt(timer / 3600, 10);
+        minutes = parseInt(timer / 60 % 60, 10);
+        seconds = parseInt(timer % 60, 10);
+    
+        hours 	= hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+        $('#time-hour').text(hours);
+        $('#time-min').text(minutes);
+        $('#time-sec').text(seconds);
+
+        if (--timer < 0) {
+            timer = 0;
+            clearInterval(interval);
+        }
+    }, 1000);
+  }
+
+  dailyMissionTimer(1);
+
 
   // 헤더 숨기기
   if ($(window).width() > 1024) {

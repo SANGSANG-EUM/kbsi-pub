@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 아이디 찾기</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container" class="content sub">
+    <div class="join_wrap find_id_wrap member_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <div class="login-logo-wr">
+            <a href="/" class="login-logo">
+              <img src="../src/img/login_logo.png" alt="ARiA">
+            </a>
+          </div>
+          <div class="join_inner member-box">
+            <div class="join0_info-wr">
+              <div class="loin0_info-img">
+                <img src="../src/img/join0_info.png" alt="">
+              </div>
+              <div class="sub-title-wr vertical left">
+                <h3 class="sub-title join-title"><b>아이디</b>찾기</h3>
+                <p class="sub-title-info">
+                  ARIA 회원의 아이디 찾기 서비스입니다. <br>
+                  <span>아이디를 모르시나요?</span> 아이디 찾기 방법 중 가능한 방법을 선택해주세요. <br>
+                  ※ ARIA 홈페이지 회원가입 이용자만“아이디(ID)”를 찾을 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="join-content-wr join0-content-wr">
+              <form action="">
+                <div class="login-box">
+                  <div class="login-input-wr">
+                    <ul class="login-input-ul">
+                      <li class="login-input-li"><label for="userId" class="sound_only">아이디</label><input type="text" id="userId" name="userId" class="fm-input w100" placeholder="아이디"></li>
+                      <li class="login-input-li"><label for="useNum" class="sound_only">비밀번호</label><input id="useNum" name="useNum" type="text" class="fm-input w100" placeholder="휴대전화번호"></li>
+                    </ul>
+                    <button type="button" class="btn login-submit-btn find-id-submit" onclick="findIdPop()"><span>확인</span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="join-btn-wr">
+            <a href="./login.html" class="btn round25 sizeM join-btn">로그인 페이지로 이동</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 아이디찾기 팝업 { -->
+    <div class="pop find-id-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box scrollbar pink">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-top">
+          <div class="sub-title-wr">
+            <h3 class="sub-title"><b>아이디</b> 찾기</h3>
+            <p class="sub-title-info">아이디 찾기로 조회하신 아이디입니다. </p>
+          </div>
+        </div>
+        <div class="pop-in">
+          <div class="find-id-pop-box">
+            <div class="find-id-pop-icon">
+              <img src="../src/img/find-id-pop-icon.png" alt="아이디 찾기">
+            </div>
+            <p class="text01">
+              “홍길동”님의 아이디는 <span>WWOWKWOWKWO</span> 입니다.
+            </p>
+            <div class="find-id-pop-sbox">
+              <div class="find-id-pop-sbox-item">
+                <div class="inner">
+                  <div class="left">
+                    가입일
+                  </div>
+                  <div class="right">
+                    2023-12-31
+                  </div>
+                </div>
+              </div>
+              <div class="find-id-pop-sbox-item">
+                <div class="inner">
+                  <div class="left">
+                    최종 로그인 날짜
+                  </div>
+                  <div class="right">
+                    2023-12-31
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-btn-wr">
+          <a href="./login.html" class="btn round25 sizeM join-btn">로그인 페이지로 이동</a>
+        </div>
+      </div>
+    </div>
+    <!-- } 아이디찾기 팝업 -->
+
+  </div>
+
+
+  <script>
+    // 이용약관 팝업 열기
+    function findIdPop() {
+      $('.find-id-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
+
+</body>
+
+</html>

@@ -256,20 +256,55 @@
               <p class="sub-title-info"><span>KBSI</span>가 보유하고 있는 첨단 장비의 보유 현황입니다.</p>
             </div>
             <!-- 즐겨찾기 추가 체크박스 { -->
-            <div class="fav-btn-wr">
-              <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
-              <label for="favBtn" class="fav-btn">
-                <span class="fav-btn-img default">
-                  <img src="../src/img/icon-star_gray.png" alt="즐겨찾기 추가하기">
-                </span>
-                <span class="fav-btn-img check">
-                  <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
-                </span>
-                <span class="fav-btn-txt">
-                  즐겨찾기 메뉴에 추가
-                </span>
-              </label>
-            </div>
+            <ul class="fav-btn-wr">
+              <li>
+                <button type="button" class="url-paste-btn" onclick="copyUrl()">
+                  <span class="url-paste-img">
+                    <img src="../src/img/icon-paste.png" alt="URL복사">
+                  </span>
+                  <span class="fav-btn-txt">
+                    URL복사
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="url-print-btn" onclick="printPage()">
+                  <span class="url-print-img">
+                    <img src="../src/img/icon-print.png" alt="프린트">
+                  </span>
+                  <span class="fav-btn-txt">
+                    프린트
+                  </span>
+                </button>
+              </li>
+              <li>
+                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+                <label for="favBtn" class="fav-btn">
+                  <span class="fav-btn-img default">
+                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
+                  </span>
+                  <span class="fav-btn-img check">
+                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                  </span>
+                  <span class="fav-btn-txt">
+                    즐겨찾기
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <script>
+              // URL 복사
+              function copyUrl() {
+                const url = window.location.href; // 현재 링크를 가져오는 코드
+                navigator.clipboard.writeText(url);
+                alert('URL이 복사되었습니다.')
+              };
+
+              // 프린트
+              function printPage() {
+                window.print();
+              }
+            </script>
             <!-- } 즐겨찾기 추가 체크박스 -->
           </div>
         </div>
@@ -288,7 +323,8 @@
                           <input type="text" name="search2" id="search2" class="fm-input" placeholder="검색어를 입력하세요."
                             title="검색어를 입력하세요.">
                           <label for="search2" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                              style="width: 20px;"><span>검색하기</span></button>
                         </div>
                       </div>
                     </form>
@@ -302,63 +338,63 @@
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel1" id="device_sel1">
                         <label for="device_sel1" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.png" alt=""></span>
                           <span class="device-sel-txt">Atype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel2" id="device_sel2">
                         <label for="device_sel2" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.png" alt=""></span>
                           <span class="device-sel-txt">Btype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel3" id="device_sel3">
                         <label for="device_sel3" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.png" alt=""></span>
                           <span class="device-sel-txt">Ctype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel4" id="device_sel4">
                         <label for="device_sel4" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.png" alt=""></span>
                           <span class="device-sel-txt">Atype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel5" id="device_sel5">
                         <label for="device_sel5" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.png" alt=""></span>
                           <span class="device-sel-txt">Btype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel6" id="device_sel6">
                         <label for="device_sel6" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.png" alt=""></span>
                           <span class="device-sel-txt">Ctype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel7" id="device_sel7">
                         <label for="device_sel7" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.png" alt=""></span>
                           <span class="device-sel-txt">Atype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel8" id="device_sel8">
                         <label for="device_sel8" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.png" alt=""></span>
                           <span class="device-sel-txt">Btype 장비</span>
                         </label>
                       </li>
                       <li class="device-select-li">
                         <input type="checkbox" name="device_sel9" id="device_sel9">
                         <label for="device_sel9" class="device-select-btn">
-                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                          <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.png" alt=""></span>
                           <span class="device-sel-txt">Ctype 장비</span>
                         </label>
                       </li>
@@ -476,63 +512,91 @@
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel1" id="device_sel1">
                           <label for="device_sel1" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.png" alt=""></span>
                             <span class="device-sel-txt">Atype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel2" id="device_sel2">
                           <label for="device_sel2" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.png" alt=""></span>
                             <span class="device-sel-txt">Btype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel3" id="device_sel3">
                           <label for="device_sel3" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.png" alt=""></span>
                             <span class="device-sel-txt">Ctype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel4" id="device_sel4">
                           <label for="device_sel4" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel4.png" alt=""></span>
                             <span class="device-sel-txt">Atype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel5" id="device_sel5">
                           <label for="device_sel5" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel5.png" alt=""></span>
                             <span class="device-sel-txt">Btype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel6" id="device_sel6">
                           <label for="device_sel6" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel6.png" alt=""></span>
                             <span class="device-sel-txt">Ctype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel7" id="device_sel7">
                           <label for="device_sel7" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel1.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel7.png" alt=""></span>
                             <span class="device-sel-txt">Atype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel8" id="device_sel8">
                           <label for="device_sel8" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel2.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel8.png" alt=""></span>
                             <span class="device-sel-txt">Btype 장비</span>
                           </label>
                         </li>
                         <li class="device-select-li">
                           <input type="checkbox" name="device_sel9" id="device_sel9">
                           <label for="device_sel9" class="device-select-btn">
-                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel3.svg" alt=""></span>
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel9.png" alt=""></span>
+                            <span class="device-sel-txt">Ctype 장비</span>
+                          </label>
+                        </li>
+                        <li class="device-select-li">
+                          <input type="checkbox" name="device_sel10" id="device_sel10">
+                          <label for="device_sel10" class="device-select-btn">
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel10.png" alt=""></span>
+                            <span class="device-sel-txt">Ctype 장비</span>
+                          </label>
+                        </li>
+                        <li class="device-select-li">
+                          <input type="checkbox" name="device_sel11" id="device_sel11">
+                          <label for="device_sel11" class="device-select-btn">
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel11.png" alt=""></span>
+                            <span class="device-sel-txt">Ctype 장비</span>
+                          </label>
+                        </li>
+                        <li class="device-select-li">
+                          <input type="checkbox" name="device_sel12" id="device_sel12">
+                          <label for="device_sel12" class="device-select-btn">
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel12.png" alt=""></span>
+                            <span class="device-sel-txt">Ctype 장비</span>
+                          </label>
+                        </li>
+                        <li class="device-select-li">
+                          <input type="checkbox" name="device_sel13" id="device_sel13">
+                          <label for="device_sel13" class="device-select-btn">
+                            <span class="device-sel-icon"><img src="../src/img/icon-device_sel13.png" alt=""></span>
                             <span class="device-sel-txt">Ctype 장비</span>
                           </label>
                         </li>
@@ -595,7 +659,7 @@
                             <span class="region-sel-txt">춘천센터</span>
                           </label>
                         </li>
-                        <li class="region-select-li">
+                        <!-- <li class="region-select-li">
                           <input type="checkbox" name="region_sel8" id="region_sel8">
                           <label for="region_sel8" class="region-select-btn">
                             <span class="region-sel-txt">대구센터</span>
@@ -606,7 +670,7 @@
                           <label for="region_sel9" class="region-select-btn">
                             <span class="region-sel-txt">부산센터</span>
                           </label>
-                        </li>
+                        </li> -->
                       </ul>
                     </div>
                   </div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 아이디 찾기 본인인증</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container" class="content sub">
+    <div class="join_wrap find_pw_certi_wrap member_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <form action="">
+            <div class="login-logo-wr">
+              <a href="/" class="login-logo">
+                <img src="../src/img/login_logo.png" alt="ARiA">
+              </a>
+            </div>
+            <div class="join_inner member-box">
+              <div class="join0_info-wr">
+                <div class="loin0_info-img">
+                  <img src="../src/img/join0_info.png" alt="">
+                </div>
+                <div class="sub-title-wr vertical left">
+                  <h3 class="sub-title join-title"><b>비밀번호 찾기</b> 본인인증서비스</h3>
+                  <p class="sub-title-info">
+                    ARIA 회원의 비밀번호 찾기 서비스입니다. <br>
+                    <span>비밀번호를 모르시나요?</span> 비밀번호 찾기 방법 중 가능한 방법을 선택해주세요. <br>
+                    ※ ARIA 홈페이지 회원가입 이용자만“비밀번호(Password)”를 찾을 수 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="join-content-wr join0-content-wr">
+                <ul class="join2-sel-btn-ul">
+                  <li class="join2-sel-btn-li border-out">
+                    <a href="" class="inner border-in">
+                      <div class="icon">
+                        <img src="../src/img/join2-sel-btn-icon01.png" alt="휴대전화 본인확인">
+                      </div>
+                      <div class="text-box">
+                        <p class="text01">
+                          <b>휴대전화</b> 본인확인
+                        </p>
+                        <p class="text02">
+                          개인정보보호법에 의거 휴대전화를 통하여 <br>
+                          본인 확인 후 회원가입을 받습니다.
+                        </p>
+                      </div>
+                      <div class="go-btn">
+                        휴대전화 인증하기
+                      </div>
+                    </a>
+                  </li>
+                  <li class="join2-sel-btn-li border-out">
+                    <a href="" class="inner border-in">
+                      <div class="icon">
+                        <img src="../src/img/join2-sel-btn-icon02.png" alt="간편 인증">
+                      </div>
+                      <div class="text-box">
+                        <p class="text01">
+                          <b>간편</b> 인증
+                        </p>
+                        <p class="text02">
+                          간편 인증을 통하여 더 편리하게 <br>
+                          회원가입을 하실 수있습니다.
+                        </p>
+                      </div>
+                      <div class="go-btn">
+                        간편 인증하기
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="join2-caution-box">
+                  <p>본인인증 방법 선택 후 팝업창이 나타나지 않으면 브라우저의 팝업차단을 해제해 주시기 바랍니다</p>
+                </div>
+              </div>
+            </div>
+            <div class="join-btn-wr">
+              <a href="./login.html" class="btn round25 sizeM join-btn">로그인 페이지로 이동</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+    // 이용약관 팝업 열기
+    function termPop() {
+      $('.term-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 개인정보 팝업 열기
+    function privacyPop() {
+      $('.privacy-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
+
+</body>
+
+</html>

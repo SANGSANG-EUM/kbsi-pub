@@ -90,7 +90,8 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn {display: inline-block; width: auto; height: auto; max-width: 100%; border: 2px solid #333; font-weight: 400; color: #fff; background-color: #333; text-align: center; transition: .2s;}
 
 .btn.white {background-color: #fff; color: #333;}
-.btn.colorMain {border-color: #614699; background-color: #614699; color: #fff;}
+/* .btn.colorMain {border-color: #614699; background-color: #614699; color: #fff;} */
+.btn.colorMain {border-color: #746397; background-color: #746397; color: #fff;}
 .btn.colorSub1 {border-color: #519ca3; background-color: #519ca3; color: #fff;}
 .btn.colorSub2 {border-color: var(--sub-color__pink); background-color: var(--sub-color__pink); color: #fff;}
 
@@ -98,7 +99,8 @@ h6 {font-size: 16px; font-weight: 700;}
 .btn:hover img {filter: invert(17%) sepia(8%) saturate(11%) hue-rotate(319deg) brightness(39%) contrast(87%);}
 .btn.white:hover {background-color: #333; color: #fff;}
 /* .btn.white:hover img {filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(103%) contrast(102%);} */
-.btn.colorMain:hover {color: #614699;}
+/* .btn.colorMain:hover {color: #614699;} */
+.btn.colorMain:hover {color: #746397;}
 .btn.colorMain:hover img {filter: invert(30%) sepia(90%) saturate(3937%) hue-rotate(219deg) brightness(65%) contrast(88%);}
 .btn.colorSub1:hover {color: #519ca3;}
 .btn.colorSub1:hover img {filter: invert(47%) sepia(11%) saturate(1570%) hue-rotate(137deg) brightness(110%) contrast(88%);}
@@ -128,7 +130,8 @@ h6 {font-size: 16px; font-weight: 700;}
 .fm-lb {width: 170px;}
 .fm-ct {width: calc(100% - 170px);}
 .fm-t1 {font-size: 18px; font-weight: 600; color: #333;}
-.fm-t1 .req {margin-right: 5px; font-size: 18px; font-weight: 600; color: #614699;}
+/* .fm-t1 .req {margin-right: 5px; font-size: 18px; font-weight: 600; color: #614699;} */
+.fm-t1 .req {margin-right: 5px; font-size: 18px; font-weight: 600; color: #746397;}
 
 .fm-bottom-btn_box {display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 12px; margin-top: 30px;}
 
@@ -136,7 +139,8 @@ h6 {font-size: 16px; font-weight: 700;}
 
 .fm-input-wr {display: flex; align-items: center; gap: 10px;}
 .fm-input {max-width: 100%; height: 40px; padding: 0 15px; border: 1px solid #ddd; font-size: 16px; font-weight: 400; color: #333;}
-.fm-input.error {border-color:#614699 ;}
+/* .fm-input.error {border-color:#614699;} */
+.fm-input.error {border-color:#746397;}
 .fm-input::placeholder {color: #999;}
 .fm-search-wr {position: relative;}
 .fm-search-wr .fm-input {padding-right: 50px;}

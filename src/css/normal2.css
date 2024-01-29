@@ -1,5 +1,50 @@
 /* default */
 
+/* 아이디 찾기 */
+.find_id_wrap .login-input-wr {padding-top: 40px;}
+.find-id-pop {}
+.find-id-pop-box {text-align: center; width: 802px; max-width: 100%; margin: 0 auto;}
+.find-id-pop-box .text01 {font-weight: 200; font-size: 30px; padding: 46px 0 49px;}
+.find-id-pop-box .text01 span {font-weight: 600; color: #746397;}
+
+.find-id-pop-sbox {border: 1px solid #ddd; font-size: 0; padding: 26px 38px 31px;}
+.find-id-pop-sbox-item {font-size: 16px; display: inline-block; vertical-align: top; width: 50%;}
+.find-id-pop-sbox-item .inner {display: flex; align-items: center;}
+.find-id-pop-sbox-item .inner .left {width: 145px; border-radius: 10px; display: flex; align-items: center; justify-content: center; height: 39px; border: 1px solid #ddd; font-weight: 500; font-size: 16px; color: #333;}
+.find-id-pop-sbox-item .inner .right {width: calc(100% - 145px); font-weight: 300; font-size: 16px; color: #777; padding-left: 33px; text-align: left;}
+
+.pop-btn-wr {display: flex; align-items: center; justify-content: center; padding-top: 23px;}
+
+/* 비밀번호 찾기 */
+.find-pw-submit {height: 134px;}
+.find-id-pop-sbox .text02 {font-weight: 300; font-size: 16px; color: #777; line-height: 1.6;}
+.find-id-pop-sbox .text02 span {font-weight: 600;}
+
+/* 이용기기 보유현황 - 상세 */
+.img-status {position: absolute; top: 24px; left: 32px; border-radius: 50%; background-color: #ec9292; font-weight: 600; font-size: 20px; color: #fff; display: flex; width: 54px; height: 54px; align-items: center; justify-content: center;}
+.img-status::before {content: ''; width: 54px; height: 54px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border: 10px solid rgba(255,255,255,0.5);}
+
+.view-dt-info-price-box {padding-top: 33px;}
+
+.view-dt-hash-wrap {font-size: 0; margin: -4px -6px; padding-top: 42px;}
+.view-dt-hash-wrap .view-hash-item {display: inline-block; padding: 4px 6px;}
+.view-dt-hash-wrap .view-hash-item span {display: block; border-radius: 12px; border: 1px solid #ddd; background-color: #fff; font-weight: 400; font-size: 15px; color: #333; padding: 1.25px 26.32px;}
+.view-section:first-child {padding-bottom: 18px;}
+
+.view-desc-wrap .preamble {padding-left: 15px; display: none;}
+.view-desc-wrap .preamble.open {display: block;}
+.view-desc-text2-item {font-weight: 200; font-size: 15px;}
+.view-desc-text2-item span {display: block; position: relative; padding-left: 13px; margin-bottom: 7px;}
+.view-desc-text2-item span:last-child {margin-bottom: 0;}
+.view-desc-text2-item span::before {content: ''; width: 5px; height: 2px; background-color: #333; position: absolute; top: 10px; left: 0;}
+.view-desc-text3-item {padding-left: 9px; padding-top: 14px;}
+.view-desc-text3-item span {display: block; font-weight: 300; font-size: 15px; color: #999; position: relative; padding-left: 10px; margin-bottom: 6px;}
+.view-desc-text3-item span:before {content: '';background-color: #999; width: 2px; height: 2px; position: absolute; top: 10px; left: 0;}
+
+.view-desc-btn-wrap {display: flex; align-items: center; justify-content: flex-end; padding-top: 10px;}
+.view-desc-btn-wrap .btn {height: 23px; line-height: 21px; width: 109px;}
+
+
 
 /* 반응형 */
 @media screen and (max-width:1600px) {
@@ -12,11 +57,37 @@
 
 }
 @media screen and (max-width:1023px) {
-
+  /* 아이디 찾기 */
+  .find-id-pop-icon {width: 100px; margin: 0 auto;}
+  .find-id-pop-box .text01 {font-size: 26px; padding: 25px 0 30px;}
+  .find-id-pop-sbox {padding: 20px;}
+  .find-id-pop-sbox-item .inner .left {font-size: 14px;width: 110px; height: 34px;}
+  .find-id-pop-sbox-item .inner .right {width: calc(100% - 110px); font-size: 14px; padding-left: 20px;}
 }
 @media screen and (max-width:767px) {
+  /* 아이디 찾기 */
+  .find-id-pop-icon {width: 70px; margin-top: 20px;}
+  .find-id-pop-box .text01 {font-size: 18px; padding: 16px 0;}
+  .find-id-pop-sbox {padding: 16px;}
+  .find-id-pop-sbox .text02 {font-size: 14px;}
+  .find-id-pop-sbox-item {display: block; width: 100%;}
+  .find-id-pop-sbox-item:last-child {padding-top: 5px;}
+  .pop-btn-wr {padding-top: 12px;}
 
+  /* 이용기기 보유현황 - 상세 */
+  .img-status {top: 10px; left: 10px; font-size: 14px; width: 40px; height: 40px;}
+  .img-status::before {width: 40px; height: 40px; border-width: 5px;}
+
+  .view-dt-hash-wrap {margin: -2px;}
+  .view-dt-hash-wrap .view-hash-item {padding: 2px;}
+  .view-dt-hash-wrap .view-hash-item span {font-size: 13px; padding: 1px 16px;}
+
+  .view-desc-text2-item {font-size: 14px;}
+  .view-desc-text3-item {padding-top: 8px;}
+  .view-desc-text3-item span {font-size: 13px;}
 }
 @media screen and (max-width:480px) {
-
+  /* 아이디 찾기 */
+  .find-id-pop-sbox {padding: 12px;}
+  .find-id-pop-sbox-item .inner .right {padding-left: 12px;}
 }
