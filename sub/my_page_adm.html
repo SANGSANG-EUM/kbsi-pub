@@ -147,9 +147,13 @@
                       <span>17</span>
                     </button>
                     <button class="btn round25 icon1 icon1_b my-btn--question" type="button">
-                      <img src="../src/img/icon-tnb_question_white.png" alt="물음표" style="width: 16px;" class="my_icon_w">
+                      <img src="../src/img/icon-tnb_question_white.png" alt="물음표" style="width: 16px;"
+                        class="my_icon_w">
                       <img src="../src/img/icon-tnb_question.png" alt="물음표" style="width: 16px;" class="my_icon_p">
                       <span>0</span>
+                    </button>
+                    <button class="btn round25 sizeS my-btn--pop" type="button" onclick="calendarPop()">
+                      <span>분석캘린더</span>
                     </button>
                   </div>
                 </div>
@@ -361,7 +365,7 @@
                       </tbody>
                     </table>
                   </div>
-  
+
                   <div class="bl-btm">
                     <div class="search-box">
                       <ul class="bl-page-wr">
@@ -393,17 +397,70 @@
                             <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
                               title="검색어를 입력하세요.">
                             <label for="search1" class="sound_only">검색어 입력</label>
-                            <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
+                            <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                                style="width: 20px;"><span>검색하기</span></button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
-  
+
                 </div>
               </div>
             </section>
             <!-- } 마이페이지 섹션 -->
+            <!-- 마이페이지 섹션 { -->
+            <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-border-box my-unpaid-box">
+                <div class="my-box-title-wrap">
+                  <p class="title">미납 현황</p>
+                </div>
+                <div class="bl-wr">
+                  <div class="bl-body">
+                    <table class="bl-table">
+                      <caption class="sound_only">미납현황</caption>
+                      <thead>
+                        <tr>
+                          <th class="bl-no">접수번호</th>
+                          <th class="bl-name">이름</th>
+                          <th class="bl-iname">기관명</th>
+                          <th class="bl-subject">내용</th>
+                          <th class="bl-date">납기일</th>
+                          <th class="bl-etc">비고</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="bl-no">21</td>
+                          <td class="bl-name">홍길동</td>
+                          <td class="bl-iname">가나다라마바사아자</td>
+                          <td class="bl-subject">리스트 제목입니다.</td>
+                          <td class="bl-date">2023-12-31</td>
+                          <td class="bl-etc">비고</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <!-- } 마이페이지 섹션 -->
+            <!-- 마이페이지 섹션 { -->
+              <section class="my-sec" data-aos="fade-up" data-aos-duration="1000">
+                <div class="my-border-box my-graph-box">
+                  <div class="my-box-title-wrap">
+                    <p class="title">그래프 공간</p>
+                  </div>
+                  <div class="my-graph-wrap">
+                    <div class="my-graph">
+                      <!-- 아래 span 코드 제거 후 그래프 추가 -->
+                      <span style="display: block; text-align: center; padding: 50px 0;">그래프 영역</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- } 마이페이지 섹션 -->
           </div>
           <div class="my-wrapper member">
             <!-- 마이페이지 우측 회원정보 { -->
@@ -495,7 +552,7 @@
     <!-- 팝업 { -->
     <div class="pop menu-pop">
       <div class="pop-dim"></div>
-      <div class="pop-box scrollbar pink">
+      <div class="pop-box">
         <button type="button" class="pop-close-btn" onclick="popClose()"></button>
         <div class="pop-in">
           <div class="pop-top">
@@ -503,7 +560,28 @@
               <h3 class="sub-title"></h3>
             </div>
           </div>
-          <div class="pop-content">
+          <div class="pop-content scrollbar pink">
+            <div class="sub-title-wr">
+              <p class="sub-title-info"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 팝업 -->
+
+    <!-- 팝업 { -->
+    <div class="pop calendar-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"></h3>
+            </div>
+          </div>
+          <div class="pop-content scrollbar pink">
             <div class="sub-title-wr">
               <p class="sub-title-info"></p>
             </div>
@@ -553,7 +631,7 @@
 
       depth1.on('click', function () {
 
-        if($(this).hasClass('active')) {
+        if ($(this).hasClass('active')) {
           $(this).removeClass('active');
           $(this).next('.my-page-menu-depth2-ul').slideUp();
         } else {
@@ -632,6 +710,11 @@
     // 팝업
     const menuPop = () => {
       $('.menu-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    const calendarPop = () => {
+      $('.calendar-pop').fadeIn();
       $('body, html, .container').addClass('scroll-lock');
     };
 

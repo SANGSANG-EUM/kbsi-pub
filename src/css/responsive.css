@@ -25,7 +25,7 @@
   /* > 행정담당 */
   .my-content2 .my-wrapper.member {width: 300px;}
   .my-content2 .my-wrapper.detail {width: calc(100% - 300px - 2vw);}
-  .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 20%;}
+  /* .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 20%;} */
   .my-content2 .sub-vs-quick-li > a {font-size: 13px;}
 
   /* > 기타 */
@@ -103,7 +103,7 @@
   .head-in {flex-wrap: wrap; padding: 0;}
   .head-top {padding: 0 3vw; width: 100%; height: 100%;}
   .tnb2-wr {width: 100%;}
-  .tnb2-ul {border-radius: 0; padding: 6px 3vw; border-bottom: 1px solid #ddd;}
+  .tnb2-ul {border-radius: 0; padding: 6px 3vw; height: 40px; border-bottom: 1px solid #ddd;}
   .tnb-member {padding-left: 0;}
 
 
@@ -147,7 +147,13 @@
   /* > 사업공고 */
   .ln-my-business-btn-box {width: auto; z-index: 1; top: -41px; left: inherit; right: 0; transform: none; gap: 0 25px;}
 
+  /* 분석과학성과 */
+  /* .science-box-btm__cnt {flex-direction: column; gap: 0; align-items: flex-start;} */
+  .science-box-ul {flex-direction: column;}
+
   /* 마이페이지 */
+  .my-page-sub {padding-top: 130px;}
+
   /* > 기타 */
   .my-top-cate-ul {gap: 1vw;}
 
@@ -166,7 +172,7 @@
   .head-logo {width: 90px;}
   .head-in {height: 70px;}
   .tnb-ul {padding: 0 15px;}
-  .header-mypage .head-in {padding: 0 max(10px, 1vw);}
+  .header-mypage .head-in {padding: 0 1vw;}
   .header.hidden {margin-top: -70px;}
 
   /* footer */
@@ -187,7 +193,7 @@
   .sub-location {margin-top: 110px;}
 
   /* > 서브페이지 */
-  .sub-title {font-size: clamp(25px, 8vw, 36px);}
+  .sub-title {font-size: clamp(25px, 7vw, 36px);}
   .sub-top-wr {flex-direction: column; align-items: flex-start;}
   .sub-title-wr {width: 100%;}
 
@@ -241,6 +247,18 @@
   .device-info-txt1 {font-size: 24px;}
   .device-info-loc {width: 158px; font-size: 14px;}
 
+  /* > 선도연구활동 */
+  /*  > 사업공고 */
+  .ln-list {margin: -15px;}
+  .ln-list > li {padding: 15px;}
+  .ln-list > li .inner {padding: 22px; padding-right: 30%;}
+  /* .ln-list > li .inner .inner-btm .btn {width: 100px;} */
+
+  .ln-my-business-sl-item .inner {padding: 22px;}
+  .ln-my-business-sl-item .inner-btm .btn {width: 100px;}
+
+  .ln-table-wrap .bl-table td {font-size: 14px; width: auto; word-break: break-all;}
+
   /* > 연구장비 아카데미 */
   .device-aca-eduing-sl-item .inner {padding: 26px;}
   .device-aca-eduend-list > li .inner {padding: 26px;}
@@ -257,6 +275,14 @@
   .mb_info-slide-cnt {width: 77%;}
 
 
+  /* 분석과학성과 */
+  .science-hover-ul {flex-direction: column; gap: 10px;}
+  .science-hover-li {width: 100%; height: auto; border: 1px solid #ddd;}
+  .science-hover-top {height: auto;}
+  .science-hover-btm {overflow: auto; height: auto;}
+  .science-hover-btm-ul {opacity: 1;}
+  .science-hover-btm::before {display: block; position: static; line-height: 1; padding-bottom: 20px;}
+
   /* 활용안내 */
   /* > 공지사항 */
   .notice-ul > li .inner-box {padding: 30px;}
@@ -267,26 +293,27 @@
   .bl-search2-wr{justify-content: flex-end; width: 100%;}
 
   /* > Q&A */
-  .qna-right {flex-direction: row; flex-wrap: wrap; gap: max(10px, 1vw);}
+  .qna-right {flex-direction: row; flex-wrap: wrap; gap: 1vw;}
   .qna-ct-box {margin: 0; order: 1; width: calc(50% - 0.5vw);}
   .qna-btn-list {gap: max(5px, 0.5vw); padding: 0; order: 2; width: calc(50% - 0.5vw);}
+  .qna-btn {flex: 1;}
   .qna-right .related-list {order: 3; width: 100%;}
   .qna-btn {height: 80px;}
-  .qna-ct-box__ul {max-width: 350px; margin: auto; padding-top: 15px;}
+  .qna-ct-box__ul {max-width: 350px; margin: auto; padding-top: 15px; margin-top: 15px;}
   .qna-right .qna-ct-box {margin: 0;}
 
   /* > FAQ */
   .faq-right .qna-ct-box, .faq-right .qna-btn-list {width: 100%;}
-  .faq-right .related-list, .faq-right .qna-btn-list {padding-top: max(10px, 1vw);}
+  .faq-right .related-list, .faq-right .qna-btn-list {padding-top: 1vw;}
   .faq-list-btn {padding: 2vw 2.5vw;}
   .faq-q-title {font-size: 18px;}
   .faq-icon.faq-q {width: 30px; height: 30px; font-size: 18px;}
 
 
   /* 통합검색결과 */
-  .srch_result_wrap {flex-direction: column; gap: max(10px, 1vw);}
+  .srch_result_wrap {flex-direction: column; gap: 1vw;}
   .srch_result_wrap > .left, .srch_result_wrap > .right {width: 100%;}
-  .related-list {flex-direction: row; gap: max(10px, 1vw); flex-wrap: wrap;}
+  .related-list {flex-direction: row; gap: 1vw; flex-wrap: wrap;}
   .related-box {width: calc(50% - 0.5vw); padding: max(10px, 2vw) max(15px, 2vw);}
 
   /* > 전문가 검색 결과 */
@@ -296,7 +323,7 @@
 
 
   /* 마이페이지 */
-  .my-page-sub {padding-top: 80px;}
+  .my-page-sub {padding-top: 110px;}
 
   /* > 외부 */
   .my-content2 .my-wrapper.member {width: 200px;}
@@ -305,7 +332,7 @@
   .my-content2 .my-wrapper.member .my-page-member-info {padding: 15px;}
   .my-page-member-info-top .name {font-size: 18px; margin: 10px 0 5px;}
   .my-page-member-info-btm p {font-size: 14px;}
-  .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 5%;}
+  /* .my-content2 .my-page-member-info-top .thumb-box .thumb-change-btn {right: 5%;} */
   /* .my-content2 .my-wrapper.member .related-menu-ul {flex-direction: column;} */
   .my-content2 .my-wrapper.member .related-menu-li {width: 100%;}
   .my-sec .bl-table th {font-size: 16px; width: auto; word-break: break-all;}
@@ -330,19 +357,6 @@
   .fm-ct.flex .fm-input {width: calc(100% / 3 - 40px / 3);}
   .fm-ct.flex .fm-sym {margin: 0; width: 20px; text-align: center;}
   .fm-ct.flex .fm-mail-select {margin-left: 5px; width: calc(100% / 3);}
-
-  /* 선도연구활동 */
-  /* > 사업공고 */
-  .ln-list {margin: -15px;}
-  .ln-list > li {padding: 15px;}
-  .ln-list > li .inner {padding: 22px;}
-  .ln-list > li .inner .inner-btm .btn {width: 100px;}
-
-  .ln-my-business-sl-item .inner {padding: 22px;}
-  .ln-my-business-sl-item .inner-btm .btn {width: 100px;}
-
-  .ln-table-wrap .bl-table td {font-size: 14px; width: auto; word-break: break-all;}
-
 
 
   /* 회원가입 */
@@ -435,6 +449,11 @@
   .notice-ul > li {padding: 8px; width: 50%;}
   .notice-ul > li .inner-box {padding: 20px;}
 
+  /* Q&A */
+  .qna-cate-pop-li {flex-direction: column;}
+  .qna-cate-pop-li__l, .qna-cate-pop-li__r {width: 100%; padding: 15px;}
+  .qna-cate-pop-li__l {border: 0; border-bottom: 1px solid #ddd;}
+
   /* > FAQ */
   .faq-cate-ul {gap: 1vw;}
   .faq-cate-li {width: calc(100% / 4 - 3vw / 4);}
@@ -459,6 +478,7 @@
   .my-content2 {flex-direction: column-reverse;}
   .my-content2 .my-wrapper.member {width: 100%;}
   .my-content2 .my-page-member-wr {flex-direction: row; flex-wrap: wrap;}
+  .my-content2 .my-wrapper.member .my-page-member-info {padding: 5px;}
   .my-content2 .my-page-member-box {width: 170px;}
   .my-content2 .my-wrapper.member .related-box.fav {width: calc(100% - 170px - max(10px, 2vw));}
   .my-content2 .my-page-member-box {display: flex; align-items: center; justify-content: center;}
@@ -509,6 +529,8 @@
   .ln-my-business-sl-item .inner-btm {padding-top: 18px;}
   .ln-my-business-sl-item .inner-btm .dday {font-size: 15px;}
   .ln-my-business-sl-item .inner-btm .dday.end {font-size: 15px;}
+
+  .ln-list > li .inner {background-position: bottom 22px right 22px;}
 
   /* > 신청 */
   .la-title-wr {flex-direction: column-reverse; gap: min(2vw, 10px); align-items: flex-start;}
@@ -575,9 +597,9 @@
   .tnb2-txt.tnb2-txt__noti {position: absolute; top: -7px; right: -8px; padding: 3px; border-radius: 10px; font-size: 11px; line-height: 1; background-color: rgb(219, 58, 125); color: #fff; font-weight: 700;}
 
   /* footer */
-  .ft-top-ul {gap: 30px;}
+  .ft-top-ul {gap: 23px;}
   .ft-top-li a {font-size: 14px;}
-  .ft-top-li:not(:last-child):after {right: -14.5px;}
+  .ft-top-li:not(:last-child):after {right: -12px;}
   .ft-info-li {font-size: 14px;}
   .ft-copyright {font-size: 12px;}
 
@@ -724,7 +746,6 @@
 
   .view-same-box {padding: 18px;}
   .view-same-box .title {font-size: 18px;}
-  .view-same-text {font-size: 14px;}
   .view-same-ul li {padding: 10px 0;}
 
   .view-content-right {margin: 0;}
@@ -772,6 +793,22 @@
   .mb_info-sl-btn.prev {left: 10px;}
   .mb_info-sl-btn.next {right: 10px;}
 
+  /* 분석과학성과 */
+  .science-box-top {flex-direction: column; gap: 10px; align-items: center; text-align: center;}
+  .science-box-top__cnt {width: 100%;}
+  .science-box-btm-link {flex-direction: column; align-items: center; gap: 5px;}
+  .science-box-btm__in {flex-direction: column;}
+  .science-box-btm__cnt {flex-direction: column; gap: 0;}
+  .science-box-btm__num {border-left: 0; width: auto;}
+  .science-box-link-wr {text-align: center;}
+  .science-box-btm-ul {flex-direction: row;}
+  .science-box-btm-li {flex: 1;}
+  .science-hover-top, .science-hover-btm {padding: max(15px, 4.5vw);}
+  .science-hover-btm {padding-right: 100px;}
+  .science-hover-li:nth-child(1) .science-hover-btm {background-size: 80px; background-position: bottom 4.5vw right 4.5vw;}
+  .science-hover-li:nth-child(2) .science-hover-btm {background-size: 80px; background-position: bottom 4.5vw right 4.5vw;}
+  .science-hover-li:nth-child(3) .science-hover-btm {background-size: 80px; background-position: bottom 4.5vw right 4.5vw;}
+
   /* 활용안내 */
   /* > 공지사항 */
   .notice-ul {margin: -5px;}
@@ -809,6 +846,9 @@
   .faq-cate-li.qna-cate-li {width: calc(100% / 5 - 4vw / 5); height: auto;}
   .qna-cate-box--1, .qna-cate-box--2 {padding: 3vw;}
 
+  .qna-cate-pop-li__l, .qna-cate-pop-li__r {padding: 10px; gap: 10px;}
+  .qna-cate-pop-tit {font-size: 18px;}
+
   /* > FAQ */
   .faq-left {gap: 5vw;}
   .faq-cate-wr {padding: 3vw;}
@@ -838,6 +878,7 @@
   .srch-expert-sl-img {width: 100%; height: 30vw;}
   .srch-expert-sl-links {gap: 1vw;}
   .srch-expert-sl-links .btn {min-width: auto; width: auto; padding: 0 15px;}
+  .srch-expert-result-li { width: 100%; padding-right: 0; padding-left: 14px;}
 
   /* > 장비 검색 결과 */
   .equip-info-box-wrap > li .inner .title {padding-bottom: 10px; font-size: 16px;}
@@ -855,8 +896,8 @@
   .thesis-btn-wr .btn {font-size: 12px;}
 
   /* pop */
-  .pop-top .sub-title-wr  {text-align: center; padding: 0; gap: 0;}
-  .pop-top .sub-title {padding-top: 30px;}
+  .pop-top .sub-title-wr  {text-align: center; padding: 0; gap: min(2vw, 10px);}
+  .pop-top .sub-title {padding-top: min(2vw, 30px);}
   .pop-top .sub-title::after { left: 50%; transform: translateX(-50%); top: -8px;}
 
   .pop-close-btn {top: 0; right: 0;}
@@ -864,11 +905,11 @@
   .pop-top {padding-right: 0;}
 
   /* 마이페이지 */
-  .my-page-left-menu {position: fixed; top: 80px; left: 0; background-color: #fff; z-index: 10;}
-  .my-page-left-menu.hidden {position: fixed; top: 80px;}
+  .my-page-left-menu {position: fixed; top: 110px; left: 0; background-color: #fff; z-index: 10;}
+  .my-page-left-menu.hidden {position: fixed; top: 110px;}
   .my-page-left-menu::after {content: ''; position: fixed; top: 0; right: 0; width: calc(100% - 243px); height: 100vh; background-color: rgba(0, 0, 0, .5); z-index: 10; transition: .3s; display: block; opacity: 1;}
   .my-page-left-menu.hidden::after {right: -100%; transition: .3s; opacity: 0;}
-  .my-page-left-menu-wrap {min-height: calc(100vh - 80px);}
+  .my-page-left-menu-wrap {min-height: calc(100vh - 110px);}
   .my-page-content {width: 100%;}
   .my-page-open-menu-btn-wrap {display: block !important;}
   .my-page-loc-ul .text {font-size: 16px; padding: 0 2vw;}
@@ -927,6 +968,8 @@
   .ln-my-business-sl-item .inner-btm {padding-top: 10px;}
   .ln-my-business-sl-item .inner-btm .dday {font-size: 13px; width: 80px; height: 25px;}
   .ln-my-business-sl-item .inner-btm .btn {font-size: 13px; height: 25px; line-height: 22px; width: 80px;}
+
+  .ln-list > li .inner {background: none; padding: 20px;}
 
   /* > 신청 */
   .la-top-day {flex-direction: row-reverse; justify-content: space-between; align-items: center; width: 100%;}
@@ -988,6 +1031,7 @@
   .search-input-wr .fm-input {width: calc(100% - 40px);}
   .search-input-wr .search-btn {width: 40px;}
   .search-input-wr .search-btn span {display: none;}
+  .fm-input, .fm-select {height: 30px;}
 
   /* header */
   .head-in {height: 50px;}
@@ -1011,7 +1055,7 @@
   .tnb2-time {margin-right: 0;}
   
   /* footer */
-  .ft-top-ul {gap: 10px;}
+  .ft-top-ul {gap: 0 10px; flex-wrap: wrap; justify-content: flex-start;}
   .ft-top-li a {font-size: 13px;}
   .ft-top-li:not(:last-child):after {right: -5px; height: 8px;}
   .btn.foot-btn {font-size: 12px; padding: 0 15px; height: 30px; line-height: 27px;}
@@ -1104,12 +1148,27 @@
   .view-same-box {padding: 12px;}
   .view-desc-item .inner {padding: 12px;}
 
+  .view-same-text {font-size: 14px;}
+  .view-same-text02 {font-size: 13px;}
+
   .view-dt-info-btns {flex-direction: column; gap: 8px;}
   .view-dt-info-btns > * {width: 100%!important;}
 
   .view-dt-info-item .inner {height: auto; flex-direction: column; align-items: flex-start; padding: 6px 10px;}
 
   .device-info-txt2 {font-size: 12px;}
+
+  .view-charge-list li .inner .info .num-wrap .btn {width: 70px;}
+
+
+  .science-hover-txt, .science-hover-btm-l, .science-hover-btm-r {font-size: 14px;}
+  .science-hover-li .science-hover-btm {background-image: none !important;}
+  .science-hover-btm {padding-right: max(15px, 4.5vw);}
+  .science-hover-btm::before {display: none;}
+  .science-hover-btm-li {gap: 10px;}
+  .science-hover-btm-l {width: 60px;}
+  .science-hover-btm-r {width: calc(100% - 10px - 60px);}
+  .science-box-tit {font-size: 16px; padding-bottom: 5px; line-height: 1.4;}
 
   /* > 연구장비 아카데미 */
   .device-aca-eduend-list > li {width: 100%;}
@@ -1141,6 +1200,7 @@
   .bl-search2-bar {width: 100%;}
 
   /* > Q&A */
+  .qna-right {gap: 10px;}
   .bl-status-icon {width: 50px; height: 20px; font-size: 12px;}
   .pop-sch-wr {width: 100%;}
   .qna-cate-li > a {font-size: 14px;}
@@ -1150,6 +1210,11 @@
   .faq-cate-li.qna-cate-li > a {gap: 0;}
   .qna-cate-box--2 .qna-cate-ul {gap: 1vw;}
   .qna-cate-box--2 .qna-cate-li > a {font-size: 13px;}
+
+  .qna-cate-pop-cnt {font-size: 14px;}
+  .qna-cate-pop-tit {font-size: 16px;}
+  .qna-cate-pop-icon {width: 40px; height: 30px;}
+  .qna-cate-pop-icon img {display: none;}
 
   /* > FAQ */
   .faq-cate-ul {gap: 1vw;}
@@ -1163,6 +1228,7 @@
   .faq-icon.faq-q, .faq-icon.faq-a {width: 20px; height: 20px; font-size: 12px;}
   .faq-question {padding: 0;}
   .faq-list-cnt-in {gap: 7.5px; padding: 2vw 2.5vw;}
+  .faq-right .related-list, .faq-right .qna-btn-list {padding-top: 10px;}
   
 
   /* 통합검색결과 */
@@ -1189,6 +1255,10 @@
   .srch-ex-device-box, .related-list {gap: 10px;}
   .srch-expert-sl-ctr {top: 15px;}
 
+  .srch-expert-sl-btm .my-noti-list-item {flex-direction: column; align-items: flex-start; }
+  .srch-expert-sl-btm .my-noti-list-item .date {padding-left: 18px;}
+  .srch-expert-result-li {font-size: 14px;}
+
   /* 장비 검색 결과 */
   .equip-info-item01 {flex-direction: column; gap: 5px; padding: 8px 12px;}
   .equip-info-txt-box .title {font-size: 18px;}
@@ -1210,10 +1280,10 @@
   .my-app-table-wrap .bl-table, .my-unpaid-box .bl-table, .my-edu-box .bl-table, .ln-table-wrap .bl-table {width: 500px;}
 
   /* 마이페이지 */
-  .my-page-left-menu, .my-page-left-menu.hidden {top: 60px;}
-  .my-page-left-menu-wrap {min-height: calc(100vh - 60px);}
+  .my-page-left-menu, .my-page-left-menu.hidden {top: 90px;}
+  .my-page-left-menu-wrap {min-height: calc(100vh - 90px);}
   .my-page-loc-ul .text {font-size: 14px;}
-  .my-page-sub {padding-top: 60px;}
+  .my-page-sub {padding-top: 90px;}
   .my-app-status-ul li .inner {padding: 5px; border-radius: 5px;}
   .my-app-status-ul li .inner-top .icon {margin-right: 5px;}
   .my-wrapper {margin: -5px 0;}
@@ -1225,6 +1295,8 @@
   .my-box-title-wrap .btn {padding: 0 7px; gap: 1vw;}
   .my-box-title-wrap .btn img {transform: scale(0.8);}
   .my-box-title-wrap .my-btn--pop {width: auto;}
+
+  .my-content2 .my-wrapper.member .my-page-member-info {padding: 15px;}
 
   /* > 외부 */
   .my-content2 .my-page-member-box, .my-content2 .my-wrapper.member .related-box.fav {width: 100%;}
@@ -1294,14 +1366,18 @@
 
   /* 선도연구활동 */
   /* > 사업공고 */
-  .ln-list > li .inner {padding: 16px;}
+  .ln-list > li .inner {padding: 16px; border-width: 5px;}
   .ln-list > li .inner .title {margin: 12px 0; font-size: 16px;}
-  .ln-list > li .inner .info-item {flex-direction: column; align-items: flex-start;}
+  /* .ln-list > li .inner .info-item {flex-direction: column; align-items: flex-start;} */
   .ln-list > li .inner .info-item .left {font-size: 13px;}
   .ln-list > li .inner .info-item .right {font-size: 13px;}
 
   .ln-my-business-sl-item .inner {padding: 16px;}
   .ln-my-business-sl-item .inner .title {margin: 12px 0; font-size: 16px;}
+
+  .ln-list-info-wr {flex-direction: column; gap: 10px;}
+  .ln-list > li .inner .info-item {gap: 5px;}
+  .ln-list > li .inner .inner-btm {flex-direction: row; padding: 0;}
 
   /* > 신청 */
   .la-d_day {font-size: 16px; padding: 3px 15px;}
@@ -1315,6 +1391,8 @@
   .la-file-li {padding: 5px 0;}
   .la-file-name {font-size: 14px;}
 
+  /* 분석과학성과 */
+  .science-box-btm-ul {flex-direction: column;}
 
   .science-li {flex-direction: column;}
   .science-li-cnt {font-size: 14px;}
@@ -1367,4 +1445,7 @@
   .join4-box .text-box {padding-top: 10px;}
   .join4-box .text-box .text01 {font-size: 20px;}
   .join4-box .text-box .text02 {font-size: 13px; margin-top: 10px;}
+
+  /* pop */
+  .pop-content {border: 0;}
 }

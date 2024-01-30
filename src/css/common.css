@@ -33,12 +33,14 @@ h3 {font-size: 40px; font-weight: 600;}
 h4 {font-size: 30px; font-weight: 500;}
 h5 {font-size: 20px; font-weight: 700;}
 h6 {font-size: 16px; font-weight: 700;}
-.c-main {color: #614699;}
+.c-main {color: #746397;}
+/* .c-main {color: #614699;} */
 
 /* Color */
 :root {
   --black-color__1: #333333;
   --black-color__2: #555555;
+  /* --main-color: #746397; */
   --main-color: #614699;
   /* --sub-color__green: #519CA3; */
   --sub-color__green: #4cb5c6;
@@ -158,6 +160,7 @@ h6 {font-size: 16px; font-weight: 700;}
 .fm-textar::-webkit-scrollbar {width: 7px; height: 5px;}
 .fm-textar::-webkit-scrollbar-track {background: #eee; -webkit-border-radius: 0px; border-radius: 10px;}
 .fm-textar::placeholder {color: #999;}
+.scrollbar {overflow-y: auto;}
 .scrollbar::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: var(--main-color); -webkit-border-radius: 0px; border-radius: 0px;}
 .scrollbar::-webkit-scrollbar {width: 7px; height: 5px;}
 .scrollbar::-webkit-scrollbar-track {background: #eee; -webkit-border-radius: 0px; border-radius: 10px;}

@@ -248,6 +248,8 @@
                           분석관련 문의
                           <!-- <p class="qna-cate-txt2">아래 카테고리를 선택하시면 해당 게시물만 노출됩니다.</p> -->
                         </div>
+                        <button type="button" class="qna-cate-btn" onclick="qnaCatePop()"><img src="../src/img/icon-question.png" alt=""
+                            style="width: 20px;"></button>
                       </div>
                       <!-- <ul class="qna-cate-ul">
                         <li class="qna-cate-li">
@@ -338,6 +340,30 @@
                         <li class="faq-cate-li qna-cate-li">
                           <a href="">
                             <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate9.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate10.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate11.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate12.png" alt=""></div>
+                            <p class="faq-cate-txt">기타</p>
+                          </a>
+                        </li>
+                        <li class="faq-cate-li qna-cate-li">
+                          <a href="">
+                            <div class="faq-cate-icon"><img src="../src/img/icon-qna_cate13.png" alt=""></div>
                             <p class="faq-cate-txt">기타</p>
                           </a>
                         </li>
@@ -505,20 +531,32 @@
                     </div>
                     <ul class="qna-ct-box__ul">
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">1번</span>
-                        <span>바이오분야</span>
+                        <span class="qna-ct-box__icon">수도권</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">2번</span>
-                        <span>소재분야</span>
+                        <span class="qna-ct-box__icon">부산</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">3번</span>
-                        <span>환경분야</span>
+                        <span class="qna-ct-box__icon">대구</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">4번</span>
-                        <span>기타문의</span>
+                        <span class="qna-ct-box__icon">광주</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">전주</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">오창</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">대전</span>
+                        <span>000-000-0000</span>
                       </li>
                     </ul>
                   </div>
@@ -623,20 +661,137 @@
       </div>
 
     </div>
-    <!-- } 콘텐츠 내용 -->
+    <!-- } 콘리츠 내용 -->
 
-    <!-- 팝업 { -->
-    <div class="pop qna-pop">
+    <!-- 카테고리 팝업 { -->
+    <div class="pop qna-cate-pop">
       <div class="pop-dim"></div>
-      <div class="pop-box scrollbar pink">
+      <div class="pop-box">
         <button type="button" class="pop-close-btn" onclick="popClose()"></button>
         <div class="pop-in">
-          <div class="pop-top" style="border: 0; padding: 0;">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>연구장비</b> 분류 안내</h3>
+              <p class="sub-title-info">연구장비 분류를 리스트로 안내합니다.</p>
+            </div>
+          </div>
+          <div class="pop-content scrollbar pink">
+            <ul class="qna-cate-pop-ul">
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate1.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate2.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate3.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate4.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate5.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate6.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate7.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+              <li class="qna-cate-pop-li match_h">
+                <div class="qna-cate-pop-li__l">
+                  <div class="qna-cate-pop-icon">
+                    <img src="../src/img/icon-qna_cate8.png" alt="">
+                    <p class="qna-cate-pop-icon__txt">TEM</p>
+                  </div>
+                  <p class="qna-cate-pop-tit">미량/동위원소분석</p>
+                </div>
+                <div class="qna-cate-pop-li__r">
+                  <p class="qna-cate-pop-cnt">간략한 설명이 들어갑니다 간략한 설명이 들어갑니다 간략한 설명이 들어갑니다</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 카테고리 팝업 -->
+
+    <!-- 문의하기 팝업 { -->
+    <div class="pop qna-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
             <div class="sub-title-wr">
               <h3 class="sub-title"><b>Q&A</b> 작성하기</h3>
             </div>
           </div>
-          <div class="pop-content">
+          <div class="pop-content scrollbar pink">
             <form action="" class="register_fm">
               <div class="fm_section">
                 <div class="fm_inner">
@@ -734,7 +889,7 @@
         </div>
       </div>
     </div>
-    <!-- } 팝업 -->
+    <!-- } 문의하기 팝업 -->
 
   </div>
 
@@ -743,10 +898,17 @@
   <!-- } footer 임시 인클루드 -->
 
   <script>
-    // 팝업 열기
+    // 문의하기 팝업 열기
     function qnaPop() {
       $('.qna-pop').fadeIn();
       $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 카테고리 팝업 열기
+    function qnaCatePop() {
+      $('.qna-cate-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+      $(".match_h > *").matchHeight();
     };
 
     // 팝업 닫기
@@ -754,6 +916,49 @@
       $('.pop').fadeOut();
       $('body, html, .container').removeClass('scroll-lock');
     }
+
+    // 파일선택
+    window.onload = function () {
+      // 파일 선택 버튼 요소 가져오기
+      const fileSelectBtn = document.getElementById('fileSelectBtn');
+      const fileInput = document.getElementById('fileImsiId');
+
+      // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+      fileSelectBtn.addEventListener('click', function (event) {
+        // 파일 input 클릭
+        fileInput.click();
+        event.preventDefault(); // 기본 이벤트 방지
+      });
+
+      // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
+      fileSelectBtn.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          // 파일 input 클릭
+          fileInput.click();
+          event.preventDefault(); // 기본 이벤트 방지
+        }
+      });
+
+      // input[type=file]의 변경 이벤트 리스너 추가
+      fileInput.addEventListener('change', function (event) {
+        inputFileName(event);
+      });
+
+      // input[type=file] style custom (return : file name)
+      const inputFileName = (event) => {
+        const fileInput = event.target;
+        let filename = "";
+
+        if (window.FileReader) {
+          filename = fileInput.files[0].name;
+        } else {
+          filename = fileInput.value.split('/').pop().split('\\').pop();
+        }
+
+        // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
+        fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+      };
+    };
   </script>
 
 </body>

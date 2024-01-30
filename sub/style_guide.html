@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
   <link rel="stylesheet" href="../src/css/normal.css">
   <link rel="stylesheet" href="../src/css/responsive.css">
   <!-- plugin > css -->
-  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">  
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="../src/plugin/aos/aos.css">
   <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
 
@@ -37,32 +38,115 @@
 </script>
 
 <style>
-/* style guide layout */
-body {background-color: #f5f5f5;}
+  /* style guide layout */
+  body {
+    background-color: #f5f5f5;
+  }
 
-.guide_wrap:not(:first-child) {margin-top: 100px;}
-.guide-t1 {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #614699; font-size: 28px; font-weight: 600; color: #614699;}
-.guide-t2 {font-size: 20px; font-weight: 600; color: #333;}
+  .guide_wrap:not(:first-child) {
+    margin-top: 100px;
+  }
 
-.guide-color-wrap {display: flex; gap: 20px}
-.guide-color-box {width: calc((100% / 3) - (40px / 2)); background-color: #fff;}
-.guide-color-display {display: flex; height: 80px;}
-.guide-color-display > div {height: 100%;}
-.guide-color_black1 {background-color: #333333;}
-.guide-color_black2 {background-color: #555555;}
-.guide-color_main {background-color: #614699;}
-.guide-color_sub1 {background-color: #519ca3;}
-.guide-color_sub2 {background-color: #ff7b7b;}
-.guide-color_sub3 {background-color: #dddddd;}
-.guide-color-txtbox {padding: 20px;}
-.guide-color-txtbox p:nth-child(1) {font-size: 18px; font-weight: 400; color: #333;}
-.guide-color-txtbox p:nth-child(2) {font-size: 14px; font-weight: 400; color: #999;}
+  .guide-t1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #614699;
+    font-size: 28px;
+    font-weight: 600;
+    color: #614699;
+  }
 
-.guide-btn-row {display: flex; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid #ddd;}
-.guide-btn-row .guide-btn-t1 {font-size: 18px; font-weight: 400; color: #333; width: 80px;}
+  .guide-t2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
 
-.guide-form-wrap {display: flex; gap: 50px}
-.guide-form-box {display: flex; flex-direction: column; gap: 20px 0; width: calc((100% / 2) - (50px / 2));}
+  .guide-color-wrap {
+    display: flex;
+    gap: 20px
+  }
+
+  .guide-color-box {
+    width: calc((100% / 3) - (40px / 2));
+    background-color: #fff;
+  }
+
+  .guide-color-display {
+    display: flex;
+    height: 80px;
+  }
+
+  .guide-color-display>div {
+    height: 100%;
+  }
+
+  .guide-color_black1 {
+    background-color: #333333;
+  }
+
+  .guide-color_black2 {
+    background-color: #555555;
+  }
+
+  .guide-color_main {
+    background-color: #614699;
+  }
+
+  .guide-color_sub1 {
+    background-color: #519ca3;
+  }
+
+  .guide-color_sub2 {
+    background-color: #ff7b7b;
+  }
+
+  .guide-color_sub3 {
+    background-color: #dddddd;
+  }
+
+  .guide-color-txtbox {
+    padding: 20px;
+  }
+
+  .guide-color-txtbox p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .guide-color-txtbox p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+  }
+
+  .guide-btn-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .guide-btn-row .guide-btn-t1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    width: 80px;
+  }
+
+  .guide-form-wrap {
+    display: flex;
+    gap: 50px
+  }
+
+  .guide-form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: calc((100% / 2) - (50px / 2));
+  }
 </style>
 
 <body>
@@ -123,8 +207,8 @@ body {background-color: #f5f5f5;}
             <p class="f-dream">- class(f-dream) : 에스코어 드림</p>
             <p>- Basic : Pretendard</p>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div class="guide_ct">
             <p class="guide-t2"># Titles & Headings</p>
             <h1>H1 - Extra bold, 70px</h1>
@@ -134,14 +218,14 @@ body {background-color: #f5f5f5;}
             <h5>H5 - Bold, 20px</h5>
             <h6>H6 - Bold, 16px</h6>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div class="guide_ct">
             <p class="guide-t2"># Body Text</p>
-            <div class="conText-1">동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. <br/>무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.</div>
+            <div class="conText-1">동해 물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. <br />무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.</div>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div class="guide_ct">
             <p class="guide-t2"># Hyperlink</p>
             <h6>
@@ -187,10 +271,14 @@ body {background-color: #f5f5f5;}
             <div class="guide-btn-row">
               <span class="guide-btn-t1">Icon</span>
               <!-- 아이콘 버튼 내 내용, 이미지 태그 순서 : <span>버튼명</span><img src="..."> / 아이콘 위치는 클래스명으로 변경 -->
-              <button type="button" class="btn sizeM icon1 icon1_f"><span>Button</span><img src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
-              <button type="button" class="btn sizeM icon1 icon1_b"><span>Button</span><img src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
-              <button type="button" class="btn sizeM icon2 icon2_f"><span>Button</span><img src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
-              <button type="button" class="btn sizeM icon2 icon2_b"><span>Button</span><img src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
+              <button type="button" class="btn sizeM icon1 icon1_f"><span>Button</span><img
+                  src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
+              <button type="button" class="btn sizeM icon1 icon1_b"><span>Button</span><img
+                  src="../src/img/icon-tnb_login.png" alt="icon" style="width: 20px;"></button>
+              <button type="button" class="btn sizeM icon2 icon2_f"><span>Button</span><img
+                  src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
+              <button type="button" class="btn sizeM icon2 icon2_b"><span>Button</span><img
+                  src="../src/img/icon-select_white.png" alt="icon" style="width: 17px;"></button>
             </div>
           </div>
         </div>
@@ -207,7 +295,9 @@ body {background-color: #f5f5f5;}
                   <input type="text" name="" id="" class="fm-input w100" placeholder="Text Field">
                 </li>
                 <li>
-                  <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100" placeholder="Search"><button type="submit" class="fm-search-submit"><img src="../src/img/icon-search_black.png" alt="검색"></button></div>
+                  <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100"
+                      placeholder="Search"><button type="submit" class="fm-search-submit"><img
+                        src="../src/img/icon-search_black.png" alt="검색"></button></div>
                 </li>
                 <li>
                   <input type="text" name="" id="" class="fm-input w100" placeholder="Success Validation">
@@ -291,46 +381,82 @@ body {background-color: #f5f5f5;}
           <p class="guide-t1">Board - List</p>
           <div class="guide_ct">
             <div class="bl-wr">
-                <div class="bl-top">
-                  <select name="" id="" class="fm-select fm-select-2 w100 bl-top-select">
-                    <option value="">전체</option>
-                    <option value="">옵션2</option>
-                    <option value="">옵션3</option>
-                  </select>
-                </div>
-                <div class="bl-body">
-                  <table class="bl-table">
-                    <thead>
-                      <tr>
-                        <th class="bl-no">NO</th>
-                        <th class="bl-subject">제목</th>
-                        <th class="bl-date">작성일</th>
-                        <th class="bl-hits">조회수</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="bl-no">21</td>
-                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
-                        <td class="bl-date">2023-12-31</td>
-                        <td class="bl-hits">359</td>
-                      </tr>
-                      <tr>
-                        <td class="bl-no">20</td>
-                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
-                        <td class="bl-date">2023-12-31</td>
-                        <td class="bl-hits">359</td>
-                      </tr>
-                      <tr>
-                        <td class="bl-no">19</td>
-                        <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
-                        <td class="bl-date">2023-12-31</td>
-                        <td class="bl-hits">359</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="bl-btm">
+              <div class="bl-top">
+                <select name="" id="" class="fm-select fm-select-2 w100 bl-top-select">
+                  <option value="">전체</option>
+                  <option value="">옵션2</option>
+                  <option value="">옵션3</option>
+                </select>
+              </div>
+              <div class="bl-body">
+                <table class="bl-table">
+                  <thead>
+                    <tr>
+                      <th class="bl-no">NO</th>
+                      <th class="bl-subject">제목</th>
+                      <th class="bl-date">작성일</th>
+                      <th class="bl-hits">조회수</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="bl-no">21</td>
+                      <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                      <td class="bl-date">2023-12-31</td>
+                      <td class="bl-hits">359</td>
+                    </tr>
+                    <tr>
+                      <td class="bl-no">20</td>
+                      <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                      <td class="bl-date">2023-12-31</td>
+                      <td class="bl-hits">359</td>
+                    </tr>
+                    <tr>
+                      <td class="bl-no">19</td>
+                      <td class="bl-subject"><a href="">리스트 제목입니다.</a></td>
+                      <td class="bl-date">2023-12-31</td>
+                      <td class="bl-hits">359</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="bl-btm">
+                <ul class="bl-page-wr">
+                  <li class="bl-page">
+                    <a href="">PREV</a>
+                  </li>
+                  <li class="bl-page active">
+                    <a href="">1</a>
+                  </li>
+                  <li class="bl-page">
+                    <a href="">2</a>
+                  </li>
+                  <li class="bl-page">
+                    <a href="">3</a>
+                  </li>
+                  <li class="bl-page">
+                    <a href="">4</a>
+                  </li>
+                  <li class="bl-page">
+                    <a href="">5</a>
+                  </li>
+                  <li class="bl-page">
+                    <a href="">NEXT</a>
+                  </li>
+                </ul>
+                <form action="" class="bl-search">
+                  <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100"
+                      placeholder="Search"><button type="submit" class="fm-search-submit"><img
+                        src="../src/img/icon-search_black.png" alt="검색"></button></div>
+                </form>
+              </div>
+
+              <br>
+              <br>
+
+              <div class="bl-btm">
+
+                <div class="search-box">
                   <ul class="bl-page-wr">
                     <li class="bl-page">
                       <a href="">PREV</a>
@@ -355,122 +481,91 @@ body {background-color: #f5f5f5;}
                     </li>
                   </ul>
                   <form action="" class="bl-search">
-                    <div class="fm-search-wr"><input type="text" name="" id="" class="fm-input w100" placeholder="Search"><button type="submit" class="fm-search-submit"><img src="../src/img/icon-search_black.png" alt="검색"></button></div>
+                    <div class="search-in">
+                      <div class="search-input-wr">
+                        <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
+                          title="검색어를 입력하세요.">
+                        <label for="search1" class="sound_only">검색어 입력</label>
+                        <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                            style="width: 20px;"><span>검색하기</span></button>
+                      </div>
+                    </div>
                   </form>
                 </div>
 
-                <br>
-                <br>
+              </div>
 
-                <div class="bl-btm">
+              <br>
+              <br>
 
-                  <div class="search-box">
-                    <ul class="bl-page-wr">
-                      <li class="bl-page">
-                        <a href="">PREV</a>
-                      </li>
-                      <li class="bl-page active">
-                        <a href="">1</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">2</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">3</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">4</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">5</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">NEXT</a>
-                      </li>
-                    </ul>
-                    <form action="" class="bl-search">
-                      <div class="search-in">
-                        <div class="search-input-wr">
-                          <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
-                            title="검색어를 입력하세요.">
-                          <label for="search1" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
-                        </div>
+              <div class="bl-btm">
+
+                <div class="search-box">
+                  <ul class="bl-page-wr">
+                    <li class="bl-page">
+                      <a href="">PREV</a>
+                    </li>
+                    <li class="bl-page active">
+                      <a href="">1</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">2</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">3</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">4</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">5</a>
+                    </li>
+                    <li class="bl-page">
+                      <a href="">NEXT</a>
+                    </li>
+                  </ul>
+                  <form action="" class="bl-search">
+                    <div class="search-in">
+                      <select name="input1" id="input1" class="fm-select fm-select-2" title="선택">
+                        <option value="" disabled="" selected="" hidden="">선택</option>
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                      </select>
+                      <label for="input1" class="sound_only"></label>
+                      <div class="search-input-wr">
+                        <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
+                          title="검색어를 입력하세요.">
+                        <label for="search1" class="sound_only">검색어 입력</label>
+                        <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                            style="width: 20px;"><span>검색하기</span></button>
                       </div>
-                    </form>
-                  </div>
-
+                    </div>
+                  </form>
                 </div>
 
-                <br>
-                <br>
+              </div>
 
-                <div class="bl-btm">
+              <br>
+              <br>
 
-                  <div class="search-box">
-                    <ul class="bl-page-wr">
-                      <li class="bl-page">
-                        <a href="">PREV</a>
-                      </li>
-                      <li class="bl-page active">
-                        <a href="">1</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">2</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">3</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">4</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">5</a>
-                      </li>
-                      <li class="bl-page">
-                        <a href="">NEXT</a>
-                      </li>
-                    </ul>
-                    <form action="" class="bl-search">
-                      <div class="search-in">
-                        <select name="input1" id="input1" class="fm-select fm-select-2" title="선택">
-                          <option value="" disabled="" selected="" hidden="">선택</option>
-                          <option value="">선택</option>
-                          <option value="">선택</option>
-                          <option value="">선택</option>
-                        </select>
-                        <label for="input1" class="sound_only"></label>
-                        <div class="search-input-wr">
-                          <input type="text" name="search1" id="search1" class="fm-input" placeholder="검색어를 입력하세요."
-                            title="검색어를 입력하세요.">
-                          <label for="search1" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
-                        </div>
+              <div class="bl-btm">
+
+                <div class="search-box">
+                  <form action="" class="bl-search mw100">
+                    <div class="search-in">
+                      <div class="search-input-wr">
+                        <input type="text" name="search2" id="search2" class="fm-input" placeholder="검색어를 입력하세요."
+                          title="검색어를 입력하세요.">
+                        <label for="search2" class="sound_only">검색어 입력</label>
+                        <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색"
+                            style="width: 20px;"><span>검색하기</span></button>
                       </div>
-                    </form>
-                  </div>
-
+                    </div>
+                  </form>
                 </div>
 
-                <br>
-                <br>
-
-                <div class="bl-btm">
-
-                  <div class="search-box">
-                    <form action="" class="bl-search mw100">
-                      <div class="search-in">
-                        <div class="search-input-wr">
-                          <input type="text" name="search2" id="search2" class="fm-input" placeholder="검색어를 입력하세요."
-                            title="검색어를 입력하세요.">
-                          <label for="search2" class="sound_only">검색어 입력</label>
-                          <button type="button" class="search-btn"><img src="../src/img/icon-tnb_search.png" alt="검색" style="width: 20px;"><span>검색하기</span></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-
-                </div>
+              </div>
 
             </div>
           </div>
@@ -479,71 +574,75 @@ body {background-color: #f5f5f5;}
     </div>
     <!-- } Board - List -->
     <!-- Board - View { -->
-      <div class="guide_wrap">
-        <div class="container">
-          <div class="wrapper">
-            <p class="guide-t1">Board - View</p>
-            <div class="guide_ct">
-              <div class="bv-wr">
-                <div class="bv-top">
-                  <div class="bv-subject">
-                    글제목이 나오는 부분
-                  </div>
-                  <div class="bv-info">
-                    <div class="bv-date">작성일 : 2023-12-31</div>
-                    <div class="bv-hits">조회수 : 1975</div>
-                  </div>
+    <div class="guide_wrap">
+      <div class="container">
+        <div class="wrapper">
+          <p class="guide-t1">Board - View</p>
+          <div class="guide_ct">
+            <div class="bv-wr">
+              <div class="bv-top">
+                <div class="bv-subject">
+                  글제목이 나오는 부분
                 </div>
-                <div class="bv-body">
-                  <ul class="bv-file-wr">
-                    <li class="bv-file">
-                      <p class="bv-file-field">첨부파일 #1</p>
-                      <a href="" class="bv-file-link">파일명이 들어갑니다.pdf</a>
-                    </li>
-                    <li class="bv-file">
-                      <p class="bv-file-field">첨부파일 #2</p>
-                      <a href="" class="bv-file-link">파일명이 들어갑니다.docx</a>
-                    </li>
-                  </ul>
-                  <div class="bv-content">
-                    <img src="../src/img/img-sample.jpg" alt="">
-                    <br>
-                    <br>
-                    <p style="font-size: 25px; font-weight: 400; color: #333;">내용이 들어갑니다.</p>
-                    <br>
-                    <p style="font-size: 16px; font-weight: 300; color: #333;">
-                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
-                    </p>
-                    <p style="font-size: 16px; font-weight: 300; color: #333;">
-                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 
-                    </p>
-                    <br>
-                    <p style="font-size: 16px; font-weight: 300; color: #333;">
-                      내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
-                    </p>
-                  </div>
-                  <ul class="bv-link-wr">
-                    <li class="bv-link">
-                      <p class="bv-link-field">연관링크 #1</p>
+                <div class="bv-info">
+                  <div class="bv-date">작성일 : 2023-12-31</div>
+                  <div class="bv-hits">조회수 : 1975</div>
+                </div>
+              </div>
+              <div class="bv-body">
+                <ul class="bv-file-wr">
+                  <li class="bv-file">
+                    <p class="bv-file-field">첨부파일 #1</p>
+                    <a href="" class="bv-file-link">파일명이 들어갑니다.pdf</a>
+                  </li>
+                  <li class="bv-file">
+                    <p class="bv-file-field">첨부파일 #2</p>
+                    <a href="" class="bv-file-link">파일명이 들어갑니다.docx</a>
+                  </li>
+                </ul>
+                <div class="bv-content">
+                  <img src="../src/img/img-sample.jpg" alt="">
+                  <br>
+                  <br>
+                  <p style="font-size: 25px; font-weight: 400; color: #333;">내용이 들어갑니다.</p>
+                  <br>
+                  <p style="font-size: 16px; font-weight: 300; color: #333;">
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                  </p>
+                  <p style="font-size: 16px; font-weight: 300; color: #333;">
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                  </p>
+                  <br>
+                  <p style="font-size: 16px; font-weight: 300; color: #333;">
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                  </p>
+                </div>
+                <ul class="bv-link-wr">
+                  <li class="bv-link">
+                    <p class="bv-link-field">연관링크 #1</p>
 
-                      <a href="" class="bv-link-url">https://abc.com</a>
-                    </li>
-                    <li class="bv-link">
-                      <p class="bv-link-field">연관링크 #2</p>
-                      <a href="" class="bv-link-url">https://abc.com</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fm-bottom-btn_box">
-                  <a href="" class="btn sizeS">목록보기</a>
-                  <a href="" class="btn sizeS">글작성하기</a>
-                </div>
+                    <a href="" class="bv-link-url">https://abc.com</a>
+                  </li>
+                  <li class="bv-link">
+                    <p class="bv-link-field">연관링크 #2</p>
+                    <a href="" class="bv-link-url">https://abc.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="fm-bottom-btn_box">
+                <a href="" class="btn sizeS">목록보기</a>
+                <a href="" class="btn sizeS">글작성하기</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- } Board - View -->
+    </div>
+    <!-- } Board - View -->
     <!-- Board - Write (+등록폼) { -->
     <div class="guide_wrap">
       <div class="container">
@@ -570,7 +669,7 @@ body {background-color: #f5f5f5;}
                       <input type="text" name="" id="" class="fm-input" placeholder="실명입력">
                     </div>
                   </div>
-    
+
                   <div class="fm-row fm-row--file">
                     <div class="fm-lb">
                       <span class="fm-t1"><i class="req">*</i>첨부파일</span>
@@ -687,6 +786,50 @@ body {background-color: #f5f5f5;}
     //     });
     //   });
     // });
+
+    // 파일선택
+    window.onload = function () {
+      // 파일 선택 버튼 요소 가져오기
+      const fileSelectBtn = document.getElementById('fileSelectBtn');
+      const fileInput = document.getElementById('fileImsiId');
+
+      // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+      fileSelectBtn.addEventListener('click', function (event) {
+        // 파일 input 클릭
+        fileInput.click();
+        event.preventDefault(); // 기본 이벤트 방지
+      });
+
+      // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
+      fileSelectBtn.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          // 파일 input 클릭
+          fileInput.click();
+          event.preventDefault(); // 기본 이벤트 방지
+        }
+      });
+
+      // input[type=file]의 변경 이벤트 리스너 추가
+      fileInput.addEventListener('change', function (event) {
+        inputFileName(event);
+      });
+
+      // input[type=file] style custom (return : file name)
+      const inputFileName = (event) => {
+        const fileInput = event.target;
+        let filename = "";
+
+        if (window.FileReader) {
+          filename = fileInput.files[0].name;
+        } else {
+          filename = fileInput.value.split('/').pop().split('\\').pop();
+        }
+
+        // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
+        fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+      };
+    };
   </script>
 </body>
+
 </html>

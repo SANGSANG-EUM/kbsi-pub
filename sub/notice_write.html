@@ -346,6 +346,51 @@
   <div id="footer-loaction"></div>
   <!-- } footer 임시 인클루드 -->
 
+  <script>
+      // 파일선택
+  window.onload = function () {
+  // 파일 선택 버튼 요소 가져오기
+  const fileSelectBtn = document.getElementById('fileSelectBtn');
+  const fileInput = document.getElementById('fileImsiId');
+
+  // 파일 선택 버튼에 클릭 이벤트 리스너 추가
+  fileSelectBtn.addEventListener('click', function (event) {
+    // 파일 input 클릭
+    fileInput.click();
+    event.preventDefault(); // 기본 이벤트 방지
+  });
+
+  // 파일 선택 버튼에 키보드 이벤트 리스너 추가 (Enter 키)
+  fileSelectBtn.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      // 파일 input 클릭
+      fileInput.click();
+      event.preventDefault(); // 기본 이벤트 방지
+    }
+  });
+
+  // input[type=file]의 변경 이벤트 리스너 추가
+  fileInput.addEventListener('change', function (event) {
+    inputFileName(event);
+  });
+
+  // input[type=file] style custom (return : file name)
+  const inputFileName = (event) => {
+    const fileInput = event.target;
+    let filename = "";
+
+    if (window.FileReader) {
+      filename = fileInput.files[0].name;
+    } else {
+      filename = fileInput.value.split('/').pop().split('\\').pop();
+    }
+
+    // fileInput.closest(".filebox").querySelector(".upload-name").textContent = filename;
+    fileInput.closest(".filebox").querySelector(".upload-name").value = filename;
+  };
+};
+  </script>
+
 </body>
 
 </html>
