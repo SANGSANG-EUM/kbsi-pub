@@ -35,29 +35,31 @@
         <div class="wrapper">
           <div class="login-logo-wr">
             <a href="/" class="login-logo">
-              <img src="../src/img/login_logo.png" alt="ARiA">
+              <img src="../src/img/logo_g.png" alt="ARiA">
             </a>
           </div>
           <div class="login_inner member-box">
             <div class="sub-title-wr vertical">
               <h3 class="sub-title login-title"><b>로그인</b></h3>
-                <p class="sub-title-info"><span>ARIA 로그인</span> 페이지입니다. <span>맞춤형 정보 제공</span>을 위해 로그인이 필요합니다.</p>
+              <p class="sub-title-info"><span>ARIA 로그인</span> 페이지입니다. <span>맞춤형 정보 제공</span>을 위해 로그인이 필요합니다.</p>
             </div>
             <form action="">
               <div class="login-box">
                 <div class="login-input-wr">
                   <ul class="login-input-ul">
-                    <li class="login-input-li"><label for="userId" class="sound_only">아이디</label><input type="text" id="userId" name="userId"
-                        class="fm-input w100" placeholder="아이디"></li>
-                    <li class="login-input-li"><label for="usePsw" class="sound_only">비밀번호</label><input id="usePsw" name="usePsw" type="password"
-                        class="fm-input w100" placeholder="비밀번호"></li>
+                    <li class="login-input-li"><label for="userId" class="sound_only">아이디</label><input type="text"
+                        id="userId" name="userId" class="fm-input w100" placeholder="아이디"></li>
+                    <li class="login-input-li"><label for="usePsw" class="sound_only">비밀번호</label><input id="usePsw"
+                        name="usePsw" type="password" class="fm-input w100" placeholder="비밀번호"></li>
                   </ul>
-                  <button type="submit" class="btn login-submit-btn icon1 icon1_f"><span>로그인</span><img src="../src/img/icon-person.png" alt=""></button>
+                  <button type="button" class="btn login-submit-btn icon1 icon1_f" onclick="loginErrPop();"><span>로그인</span><img src="../src/img/icon-person.png" alt=""></button>
+                  <!-- <button type="submit" class="btn login-submit-btn icon1 icon1_f" onclick="loginErrPop();"><span>로그인</span><img src="../src/img/icon-person.png" alt=""></button> -->
                 </div>
                 <div class="login-link-wr">
                   <div class="check-wr">
                     <input type="checkbox" name="idSave" id="idSave" class="noti-check">
-                    <label for="idSave" class="info-noti-wr"><span class="info-noti"></span><span class="info-noti-text">아이디 저장</span></label>
+                    <label for="idSave" class="info-noti-wr"><span class="info-noti"></span><span
+                        class="info-noti-text">아이디 저장</span></label>
                   </div>
                   <div class="login-find-wr">
                     <a href="./join0.html" class="btn round25 login-find join">회원가입</a>
@@ -78,6 +80,51 @@
       </div>
     </div>
   </div>
+
+  <!-- 팝업 { -->
+  <div class="pop login-error-pop">
+    <div class="pop-dim"></div>
+    <div class="pop-box">
+      <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+      <div class="pop-top">
+        <div class="sub-title-wr">
+          <h3 class="sub-title"><b>팝업</b> 제목</h3>
+          <p class="sub-title-info">팝업 간단 설명이 들어갑니다. </p>
+        </div>
+      </div>
+      <div class="pop-in">
+        <div class="find-id-pop-box">
+          <div class="find-id-pop-logo">
+            <img src="../src/img/logo_g.png" alt="ARiA" style="width: clamp(100px, 30%, 200px); margin: auto;">
+          </div>
+          <p class="text01">
+            입력하신 내용과 일치하는  회원이 없습니다.!
+          </p>
+          <div class="find-id-pop-sbox">
+            <p>간단한 추가 설명이 들어가는 자립니다. <br> 없으면 무엇이 문제인지 안내를 햊는 텍스트를 입력하는 곳입니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pop-btn-wr">
+        <a href="./login.html" class="btn round25 sizeM join-btn">로그인 페이지로 이동</a>
+      </div>
+    </div>
+  </div>
+  <!-- } 팝업 -->
+
+  <script>
+    // 팝업 열기
+    function loginErrPop() {
+      $('.login-error-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 팝업 닫기
+    function popClose() {
+      $('.pop').fadeOut();
+      $('body, html, .container').removeClass('scroll-lock');
+    }
+  </script>
 
 </body>
 

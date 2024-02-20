@@ -102,7 +102,7 @@
           QUICK<br>
           MENU
         </p>
-        <button type="button" class="quick-more-btn" onclick="menuPop()">
+        <button type="button" class="quick-more-btn">
           <span></span>
         </button>
         <!-- a 대신 button 사용 시에도 class=".inner-btn 고정" -->
@@ -422,22 +422,47 @@
                     </div>
                     <ul class="qna-ct-box__ul">
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">1번</span>
-                        <span>바이오분야</span>
+                        <span class="qna-ct-box__icon">수도권</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">2번</span>
-                        <span>소재분야</span>
+                        <span class="qna-ct-box__icon">부산</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">3번</span>
-                        <span>환경분야</span>
+                        <span class="qna-ct-box__icon">대구</span>
+                        <span>000-000-0000</span>
                       </li>
                       <li class="qna-ct-box__li">
-                        <span class="qna-ct-box__icon">4번</span>
-                        <span>기타문의</span>
+                        <span class="qna-ct-box__icon">광주</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">전주</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">오창</span>
+                        <span>000-000-0000</span>
+                      </li>
+                      <li class="qna-ct-box__li">
+                        <span class="qna-ct-box__icon">대전</span>
+                        <span>000-000-0000</span>
                       </li>
                     </ul>
+                    <table class="qna-ct-box-hour">
+                      <caption class="sound_only">상담시간 및 점심시간 안내</caption>
+                      <tbody>
+                        <tr>
+                          <th>상담시간</th>
+                          <td>오전 10시 ~ 오후 5시</td>
+                        </tr>
+                        <tr>
+                          <th>점심시간</th>
+                          <td>오후 12시 ~ 1시</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
                   <ul class="qna-btn-list">
@@ -542,27 +567,6 @@
     </div>
     <!-- } 콘텐츠 내용 -->
 
-    <!-- 팝업 { -->
-    <div class="pop menu-pop">
-      <div class="pop-dim"></div>
-      <div class="pop-box">
-        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
-        <div class="pop-in">
-          <div class="pop-top">
-            <div class="sub-title-wr">
-              <h3 class="sub-title"></h3>
-            </div>
-          </div>
-          <div class="pop-content scrollbar pink">
-            <div class="sub-title-wr">
-              <p class="sub-title-info"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- } 팝업 -->
-
   </div>
 
   <!-- footer 임시 인클루드 { -->
@@ -581,18 +585,6 @@
         $(this).next('.faq-list-cnt').stop().slideDown();
       }
     });
-
-    // 팝업
-    const menuPop = () => {
-      $('.menu-pop').fadeIn();
-      $('body, html, .container').addClass('scroll-lock');
-    };
-
-    // 팝업 닫기
-    const popClose = () => {
-      $('.pop').fadeOut();
-      $('body, html, .container').removeClass('scroll-lock');
-    }
   </script>
 
 </body>

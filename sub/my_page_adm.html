@@ -160,7 +160,7 @@
                 <div class="my-app-status-ul-wrap">
                   <ul class="my-app-status-ul">
                     <li>
-                      <div class="inner">
+                      <a href="javascript:void(0);" class="inner active">
                         <div class="inner-top">
                           <div class="icon">
                             <img src="../src/img/my-app-status-icon01.png" alt="신청">
@@ -168,10 +168,10 @@
                           <p>신청</p>
                         </div>
                         <div class="f-dream num">133</div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div class="inner">
+                      <a href="javascript:void(0);" class="inner">
                         <div class="inner-top">
                           <div class="icon">
                             <img src="../src/img/my-app-status-icon06.png" alt="청구관리">
@@ -179,10 +179,10 @@
                           <p>청구관리</p>
                         </div>
                         <div class="f-dream num">27</div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div class="inner">
+                      <a href="javascript:void(0);" class="inner">
                         <div class="inner-top">
                           <div class="icon">
                             <img src="../src/img/my-app-status-icon04.png" alt="결제관리">
@@ -190,10 +190,10 @@
                           <p>결제관리</p>
                         </div>
                         <div class="f-dream num">578</div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div class="inner">
+                      <a href="javascript:void(0);" class="inner">
                         <div class="inner-top">
                           <div class="icon">
                             <img src="../src/img/my-app-status-icon05.png" alt="최소현황">
@@ -201,7 +201,7 @@
                           <p>취소</p>
                         </div>
                         <div class="f-dream num zero">0</div><!-- 숫자가 0일때 zero 클래스 추가 -->
-                      </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -728,6 +728,11 @@
       myPageMenuToggle();
       myPageLeftMenuToggle();
       wordCloud();
+    });
+
+    // 단순 active 클래스 붙이기
+    $('.my-app-status-ul li .inner').on('click', function () {
+      $(this).toggleClass('active');
     });
   </script>
 

@@ -960,6 +960,8 @@
                             <p class="noti-check-tit2">신청내용공개</p>
                             <p class="noti-check-txt">신청내용을 공개에 문제가 없으며 동의합니다. (연구장비 공동활용촉진 및 예약정보연계 등을 위한
                               ZEUS장비활용종합포털(www.zeus.go.kr)로의 정보제공 포함)</p>
+                            <div class="noti-check-btn-wr"><button type="button" class="btn round25 sizeS"
+                                onclick="termSamplePop()">전문보기</button></div>
                           </div>
                         </div>
                       <li class="app-side-li">
@@ -972,6 +974,8 @@
                           <div class="noti-check-txt-wr">
                             <p class="noti-check-tit2">분석 관련 정보 플랫폼 공개 동의</p>
                             <p class="noti-check-txt">신청내용 공개에 문제가 없으며 동의합니다.</p>
+                            <div class="noti-check-btn-wr"><button type="button" class="btn round25 sizeS"
+                                onclick="termSamplePop()">전문보기</button></div>
                           </div>
                         </div>
                       </li>
@@ -985,6 +989,8 @@
                           <div class="noti-check-txt-wr">
                             <p class="noti-check-tit2">기초연구분야오픈데이터 공개 동의</p>
                             <p class="noti-check-txt">신청내용 공개에 문제가 없으며 동의합니다.</p>
+                            <div class="noti-check-btn-wr"><button type="button" class="btn round25 sizeS"
+                                onclick="termSamplePop()">전문보기</button></div>
                           </div>
                         </div>
                       </li>
@@ -998,6 +1004,8 @@
                           <div class="noti-check-txt-wr">
                             <p class="noti-check-tit2">개인정보 수집 동의</p>
                             <p class="noti-check-txt">개인정보 수집 동의에 문제가 없으며 동의합니다.</p>
+                            <div class="noti-check-btn-wr"><button type="button" class="btn round25 sizeS"
+                                onclick="termSamplePop()">전문보기</button></div>
                           </div>
                         </div>
                       </li>
@@ -1212,6 +1220,32 @@
     </div>
     <!-- } 동일장비 신청내역 팝업 -->
 
+
+    <!-- 장비스케줄 팝업 { -->
+    <div class="pop term-sample-pop">
+      <div class="pop-dim"></div>
+      <div class="pop-box">
+        <button type="button" class="pop-close-btn" onclick="popClose()"></button>
+        <div class="pop-in">
+          <div class="pop-top">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>해당 약관</b> 전체 내용</h3>
+            </div>
+          </div>
+          <div class="pop-content scrollbar pink">
+            <div class="sub-title-wr">
+              <p class="sub-title-info">해당 약관의 전문이 나오는 영역</p>
+            </div>
+          </div>
+          <!-- <div class="pop-btns">
+            <a href="/" class="btn sizeM">메인으로 이동</a>
+            <a href="" class="btn sizeM">신청내역 확인</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- } 가장비스케줄 팝업 -->
+
   </div>
 
   <!-- footer 임시 인클루드 { -->
@@ -1222,6 +1256,12 @@
     // 장비 팝업 열기
     function devicePop() {
       $('.device-pop').fadeIn();
+      $('body, html, .container').addClass('scroll-lock');
+    };
+
+    // 장비 팝업 열기
+    function termSamplePop() {
+      $('.term-sample-pop').fadeIn();
       $('body, html, .container').addClass('scroll-lock');
     };
 

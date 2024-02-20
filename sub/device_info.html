@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARiA > 이용신청 > 분석지원 > 분석지원 소개</title>
+
+  <!-- src > css -->
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/normal2.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+  <!-- plugin > css -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/plugin/aos/aos.css">
+  <link rel="stylesheet" href="../src/plugin/datepicker/jquery-ui.min.css">
+
+  <!-- src > js -->
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/js/normal.js"></script>
+  <!-- plugin > js -->
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js"></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../src/plugin/aos/aos.js"></script>
+  <script src="../src/plugin/datepicker/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header, footer 임시 인클루드 -->
+  <script>
+    $(document).ready(function () {
+      $('#header-loaction').load("../include/header.html");
+    });
+    $(document).ready(function () {
+      $('#footer-loaction').load("../include/footer.html");
+    });
+  </script>
+
+  <!-- header 임시 인클루드 { -->
+  <div id="header-loaction"></div>
+  <!-- } header 임시 인클루드 -->
+
+  <div class="sub device_info">
+    <!-- 서브로케이션 { -->
+    <div class="sub-location">
+      <div class="wrapper">
+        <div class="sub-loca-wr">
+          <a href="/" class="sub-loca-home"><img src="../src/img/icon-home.png" alt="홈으로" style="width: 18px;"></a>
+          <ul class="sub-loca-ul">
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">이용신청</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">ARIA소개</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용신청</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석과학성과</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">가상공간</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용안내</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">분석지원</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석지원</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">선도연구활동</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">연구장비아카데미</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">우수회원 소개</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-loca-li">
+              <button type="button" class="sub-loca-btn" title="열기">분석지원 소개</button>
+              <ul class="sub-loca-2dep-ul">
+                <li class="sub-loca-2dep-li">
+                  <a href="">분석지원 소개</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">이용기기보유현황</a>
+                </li>
+                <li class="sub-loca-2dep-li">
+                  <a href="">시료접수 안내</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- } 서브로케이션 -->
+
+    <!-- 사이드바 { -->
+    <aside class="side-bar">
+      <button type="button" class="side-bar-btn">
+        <span class="pc">MORE</span>
+        <span class="mo">QUICK MENU</span>
+      </button>
+      <div class="side-bar-box">
+        <p class="title">
+          QUICK<br>
+          MENU
+        </p>
+        <button type="button" class="quick-more-btn" onclick="menuPop()">
+          <span></span>
+        </button>
+        <!-- a 대신 button 사용 시에도 class=".inner-btn 고정" -->
+        <ul class="side-quick-ul">
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon01.png" alt="분석신청">
+                <img src="../src/img/side-quick-icon01-active.png" alt="분석신청">
+              </div>
+              <p class="text">분석신청</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon02.png" alt="계산서">
+                <img src="../src/img/side-quick-icon02-active.png" alt="계산서">
+              </div>
+              <p class="text">계산서</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon03.png" alt="Q&A">
+                <img src="../src/img/side-quick-icon03-active.png" alt="Q&A">
+              </div>
+              <p class="text">Q&amp;A</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon04.png" alt="아카데미">
+                <img src="../src/img/side-quick-icon04-active.png" alt="아카데미">
+              </div>
+              <p class="text">아카데미</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon05.png" alt="시료접수">
+                <img src="../src/img/side-quick-icon05-active.png" alt="시료접수">
+              </div>
+              <p class="text">시료접수</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="inner-btn">
+              <div class="icon">
+                <img src="../src/img/side-quick-icon06.png" alt="가상캠퍼스">
+                <img src="../src/img/side-quick-icon06-active.png" alt="가상캠퍼스">
+              </div>
+              <p class="text">가상캠퍼스</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- } 사이드바 -->
+
+    <!-- 콘텐츠 내용 { -->
+    <!-- 아래 input 및 textarea의 name, id값은 임의로 작성하였으니 개발시 수정 필요  -->
+    <div id="container" class="sub-inner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="sub-top-wr">
+            <div class="sub-title-wr">
+              <h3 class="sub-title"><b>분석지원</b> 소개</h3>
+              <p class="sub-title-info"><span>KBSI</span>분석지원 페이지 소개 멘트가 들어갈 영역입니다.</p>
+            </div>
+            <!-- 즐겨찾기 추가 체크박스 { -->
+            <ul class="fav-btn-wr">
+              <li>
+                <button type="button" class="url-paste-btn" onclick="copyUrl()">
+                  <span class="url-paste-img">
+                    <img src="../src/img/icon-paste.png" alt="URL복사">
+                  </span>
+                  <span class="fav-btn-txt">
+                    URL복사
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="url-print-btn" onclick="printPage()">
+                  <span class="url-print-img">
+                    <img src="../src/img/icon-print.png" alt="프린트">
+                  </span>
+                  <span class="fav-btn-txt">
+                    프린트
+                  </span>
+                </button>
+              </li>
+              <li>
+                <input type="checkbox" name="favBtn" id="favBtn" class="fav-btn-input" checked>
+                <label for="favBtn" class="fav-btn">
+                  <span class="fav-btn-img default">
+                    <img src="../src/img/icon-star_black.png" alt="즐겨찾기 추가하기">
+                  </span>
+                  <span class="fav-btn-img check">
+                    <img src="../src/img/icon-star_pink.png" alt="즐겨찾기 추가됨">
+                  </span>
+                  <span class="fav-btn-txt">
+                    즐겨찾기
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <script>
+              // URL 복사
+              function copyUrl() {
+                const url = window.location.href; // 현재 링크를 가져오는 코드
+                navigator.clipboard.writeText(url);
+                alert('URL이 복사되었습니다.')
+              };
+
+              // 프린트
+              function printPage() {
+                window.print();
+              }
+            </script>
+            <!-- } 즐겨찾기 추가 체크박스 -->
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="subsec">
+          <div class="container">
+            <div class="wrapper">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } 콘텐츠 내용 -->
+
+  </div>
+
+  <!-- footer 임시 인클루드 { -->
+  <div id="footer-loaction"></div>
+  <!-- } footer 임시 인클루드 -->
+
+</body>
+
+</html>

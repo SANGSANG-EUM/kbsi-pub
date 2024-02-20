@@ -55,8 +55,55 @@
   font-style: normal;
 }
 
-/*Pretendard*/
+/*NotoSans*/
 @font-face {
+  font-family: 'Noto Sans KR';/*Light*/
+  font-style: normal;
+  font-weight: 300;
+  src: local('NotoSans-Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/NotoSans-Light.woff2) format('woff2'),
+  url(../fonts/NotoSans-Light.woff) format('woff');
+  }
+  @font-face {
+  font-family: 'Noto Sans KR';/*DemiLight*/
+  font-style: normal;
+  font-weight: 350;
+  src: local('NotoSans-DemiLight'), local('NotoSans-DemiLight'), url(../fonts/NotoSans-DemiLight.eot);
+  src: url(../fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/NotoSans-DemiLight.woff2) format('woff2'),
+  url(../fonts/NotoSans-DemiLight.woff) format('woff');
+  }
+  @font-face {
+  font-family: 'Noto Sans KR';/*Regular*/
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSans-Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+  url(../fonts/NotoSans-Regular.woff) format('woff');
+  }
+  @font-face {
+  font-family: 'Noto Sans KR';/*Medium*/
+  font-style: normal;
+  font-weight: 500;
+  src: local('NotoSans-Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+  url(../fonts/NotoSans-Medium.woff) format('woff');
+  }
+  @font-face {
+  font-family: 'Noto Sans KR';/*Bold*/
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSans-Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+  url(../fonts/NotoSans-Bold.woff) format('woff');
+  }
+
+/*Pretendard*/
+/* @font-face {
   font-family: 'Pretendard';
   font-style: normal;
   font-weight: 100;
@@ -126,4 +173,4 @@
   font-weight: 900;
   font-display: swap;
   src: url('../fonts/Pretendard-Black.woff') format('woff'), url('../fonts/Pretendard-Black.woff2') format('woff2');
-}
+} */

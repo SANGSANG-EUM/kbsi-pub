@@ -1,7 +1,7 @@
 /* default */
 
 /* 아이디 찾기 */
-.find_id_wrap .login-input-wr {padding-top: 40px;}
+.find_id_wrap .login-input-wr {padding-top: 0px;}
 .find-id-pop {}
 .find-id-pop-box {text-align: center; width: 802px; max-width: 100%; margin: 0 auto;}
 .find-id-pop-box .text01 {font-weight: 200; font-size: 30px; padding: 46px 0 49px;}
@@ -12,11 +12,12 @@
 .find-id-pop-sbox-item .inner {display: flex; align-items: center;}
 .find-id-pop-sbox-item .inner .left {width: 145px; border-radius: 10px; display: flex; align-items: center; justify-content: center; height: 39px; border: 1px solid #ddd; font-weight: 500; font-size: 16px; color: #333;}
 .find-id-pop-sbox-item .inner .right {width: calc(100% - 145px); font-weight: 300; font-size: 16px; color: #777; padding-left: 33px; text-align: left;}
+.find-id-pop-sbox > p {font-size: 16px; text-align: center;}
 
 .pop-btn-wr {display: flex; align-items: center; justify-content: center; padding-top: 23px;}
 
 /* 비밀번호 찾기 */
-.find-pw-submit {height: 134px;}
+/* .find-pw-submit {height: 134px;} */
 .find-id-pop-sbox .text02 {font-weight: 300; font-size: 16px; color: #777; line-height: 1.6;}
 .find-id-pop-sbox .text02 span {font-weight: 600;}
 
@@ -28,11 +29,11 @@
 
 .view-dt-hash-wrap {font-size: 0; margin: -4px -6px; padding-top: 42px;}
 .view-dt-hash-wrap .view-hash-item {display: inline-block; padding: 4px 6px;}
-.view-dt-hash-wrap .view-hash-item span {display: block; border-radius: 12px; border: 1px solid #ddd; background-color: #fff; font-weight: 400; font-size: 15px; color: #333; padding: 1.25px 26.32px;}
+.view-dt-hash-wrap .view-hash-item span {display: block; border-radius: 12px; border: 1px solid #ddd; background-color: #fff; font-weight: 400; font-size: 15px; color: #333; padding: 1.25px 26.32px; transition: .2s;}
 .view-section:first-child {padding-bottom: 18px;}
 
 .view-desc-wrap .preamble {padding-left: 15px; display: none;}
-.view-desc-wrap .preamble.open {display: block;}
+/* .view-desc-wrap .preamble.open {display: block;} */
 .view-desc-text2-item {font-weight: 200; font-size: 15px;}
 .view-desc-text2-item span {display: block; position: relative; padding-left: 13px; margin-bottom: 7px;}
 .view-desc-text2-item span:last-child {margin-bottom: 0;}
