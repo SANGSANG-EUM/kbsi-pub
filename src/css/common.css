@@ -18,6 +18,8 @@ input{border-radius: 0;}
 .container {padding-left: 50px; padding-right: 50px; width: 100%;}
 .wrapper {width: 1300px; max-width: 100%; margin: 0 auto;}
 .wrapper2 {width: 1400px; max-width: 100%; margin: 0 auto;}
+.wrapper3 {width: 1620px; max-width: 100%; margin: 0 auto;}
+.wrapper4 {width: 1760px; max-width: 100%; margin: 0 auto;}
 .scroll-lock {overflow: hidden;}
 .sound_only {display: inline-block !important; position: absolute; top: 0; left: 0; width: 0; height: 0; margin: 0 !important; padding: 0 !important; font-size: 0; line-height: 0; border: 0 !important; overflow: hidden !important;}
 .sub-lr-outer {display: flex; gap: clamp(40px, 8vw, 70px); padding: clamp(20px, 4vw, 35px) 0 0;}
