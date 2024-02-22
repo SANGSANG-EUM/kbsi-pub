@@ -54,26 +54,26 @@ $(document).ready(function () {
 
 
   // 헤더 숨기기
-  // if ($(window).width() > 1024) {
-  //   let last_scrollTop = 0;
-  //   $(window).scroll(function () {
-  //     if ($(this).scrollTop() > 150) {
-  //       let tmp = $(this).scrollTop();
-  //       if (tmp > last_scrollTop) {
-  //         // scroll down event
-  //         $('.header').addClass('hidden');
-  //         $('.gnb2-ul').fadeOut(100);
-  //         $('.head-bg').fadeOut(100);
-  //       } else {
-  //         // scroll up event
-  //         $('.header').removeClass('hidden');
-  //       }
-  //       last_scrollTop = tmp;
-  //     } else {
-  //       $('.header').removeClass('hidden');
-  //     }
-  //   });
-  // }
+  if ($(window).width() > 1024) {
+    let last_scrollTop = 0;
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 150) {
+        let tmp = $(this).scrollTop();
+        if (tmp > last_scrollTop) {
+          // scroll down event
+          $('.header').addClass('hidden');
+          $('.gnb2-ul').fadeOut(100);
+          $('.head-bg').fadeOut(100);
+        } else {
+          // scroll up event
+          $('.header').removeClass('hidden');
+        }
+        last_scrollTop = tmp;
+      } else {
+        $('.header').removeClass('hidden');
+      }
+    });
+  }
 
   
 

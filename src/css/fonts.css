@@ -103,7 +103,7 @@
   }
 
 /*Pretendard*/
-/* @font-face {
+@font-face {
   font-family: 'Pretendard';
   font-style: normal;
   font-weight: 100;
@@ -173,4 +173,4 @@
   font-weight: 900;
   font-display: swap;
   src: url('../fonts/Pretendard-Black.woff') format('woff'), url('../fonts/Pretendard-Black.woff2') format('woff2');
-} */
+}
